@@ -96,9 +96,9 @@ if(布林邏輯運算式)
 
 # 程式邏輯：if
 
+<br>
+
 ```cs
-int myApple = 0;
-bool sellApple = true;
 if(sellApple)
 {
     myApple += 3;

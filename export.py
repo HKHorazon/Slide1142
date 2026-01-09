@@ -9,8 +9,10 @@ def export_marp_slides(input_file, output_format='pdf', theme_path=None):
     command = [
         'marp', input_file, 
         '--pdf',
+        '--allow-local-files'
         '--theme--set', theme_path,
-        '-o', output_file]
+        '-o', output_file
+    ]
     
 
     try:
@@ -35,12 +37,14 @@ def multi_export_marp_slides(theme_path=None):
                 print(f"Exporting {input_file_path} to {output_file_path}...")
                 
                 # Build command
-                command = ['marp', input_file_path, '-o', output_file_path]
-                
-                # Add theme if specified
-                if theme_path and os.path.exists(theme_path):
-                    command.extend(['--theme-set', theme_path])
-                
+                command = [
+                    'marp', input_file_path, 
+                    '--pdf',
+                    '--allow-local-files',
+                    '--theme--set', theme_path,
+                    '-o', output_file_path
+                ]
+
                 try:
                     subprocess.run(command, check=True)
                     print(f"Successfully exported to {output_file_path}")
@@ -50,6 +54,6 @@ def multi_export_marp_slides(theme_path=None):
 
 if __name__ == "__main__":
     # Usage examples
-    # multi_export_marp_slides(theme_path='themes/my-theme.css')
-    export_marp_slides('a.md', 'pdf', theme_path='HoraStyle.css')
+    multi_export_marp_slides(theme_path='./HoraStyle.css')
+    # export_marp_slides('a.md', 'pdf', theme_path='./HoraStyle.css')
     # export_marp_slides('presentation.md', 'pptx', theme_path='themes/my-theme.css')
