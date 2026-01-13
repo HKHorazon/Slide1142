@@ -7,6 +7,8 @@ paginate: true
 
 <!-- _class: lead -->
 <!-- _paginate: false -->
+
+### Ch. 3
 # 你好世界
 ## Horazon
 ## C#程式設計

@@ -21,12 +21,6 @@ section {
   padding: 2em;
 }
 
-section.lead {
-  text-align: center;
-}
-section.lead h1{
-  font-size: 4.5em;
-}
 
 
 header {
@@ -97,16 +91,17 @@ section::after {
   content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
   position: absolute;
   text-align: right;
-  top: 96.2%;
+  top: 94%;
   width: 100%;
   right: 0;
   left: -0.5em;
-  color: white;
+  color: rgb(116, 125, 255);
 }
 
 mark {
-  background-color: rgba(255, 107, 70, 0.4);
+  background-color: rgba(255, 149, 122, 0.4);
   font-weight: bold;
+  font-size: 1.1em;
 }
 
 /* inline math was too large wrt text */
@@ -123,29 +118,51 @@ img[alt~="center"] {
 
 /* || SECTION CLASS: title */
 /* title page - only to be used as for a single slide */
-/* <!-- _class: title --> */
-section.title>h1 {
+/* <!-- _class: lead --> */
+section.lead{
+  padding: 0em;
+}
+
+section.lead>h1 {
   font-family: "CMU Bright", "Segoe UI Semibold";
   color: #ffffff;
-  background-color: var(--main);
-  border-radius: 25px;
+  /* background-color: var(--main); */
   text-align: center;
-  top: 25%;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  font-size: 4em;
+  border-radius: 25px;
+  top: 15%;
+  left: 5%;
+  right: 5%;
+  padding-left: 0;
+  padding-right: 0;
+  width: 90%;
+  padding-top: 0.2em;
   padding-bottom: 0.2em;
   height: auto;
 }
 
-/* remake this to be positioned with respect to h1 */
-section.title>p {
+section.lead>h2 {
   position: relative;
   text-align: center;
-  top: 35px;
+  top: 3.2em;
 }
+section.lead>h3 {
+  font-family: "CMU Bright", "Segoe UI Semibold";
+  color: #ffffff;
+  position: fixed;
+  font-size: 1.5em;
+  z-index: 1;
+  text-align: center;
+  top: 20%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding-bottom: 0.2em;
+  height: auto;
+}
+
 
 /* || SECTION CLASS: tinytext */
 /* new class that makes p, ul, and blockquote text smaller */

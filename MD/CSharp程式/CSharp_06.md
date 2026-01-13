@@ -7,6 +7,7 @@ paginate: true
 
 <!-- _class: lead -->
 <!-- _paginate: false -->
+### Ch. 6
 # 流程控制
 ## Horazon
 ## C#程式設計
@@ -110,11 +111,10 @@ if(sellApple) {
     myApple += 3;
 }
 ```
-當只有一行的時候，可以省略 大括號 { } 
+當只有一行的時候，可以省略 大括號 { }  
 ```cs
 if(sellApple) 
     myApple += 3;
-
 ```
 
 ---
@@ -231,6 +231,7 @@ if(周末)
 ---
 # 邏輯運算子
 
+//TODO: 介紹&& || ^ !
 
 ---
 # 運用與思考

@@ -7,6 +7,9 @@ paginate: true
 
 <!-- _class: lead -->
 <!-- _paginate: false -->
+
+### Ch. 1
+
 # 學習程式
 
 ## Horazon

@@ -8,6 +8,8 @@ paginate: true
 
 <!-- _class: lead -->
 <!-- _paginate: false -->
+
+### Ch. 4
 # 變數宣告與使用
 ## Horazon
 ## C#程式設計

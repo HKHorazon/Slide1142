@@ -2,10 +2,11 @@
 marp: true
 backgroundImage: url('https://marp.app/assets/hero-background.jpg')
 theme: HoraStyle
-  
+paginate: true
 ---
 
 <!-- _class: lead -->
+<!--_paginate: false-->
 
 # HTML 與 CSS
 
