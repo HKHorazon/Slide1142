@@ -1,8 +1,16 @@
 ---
 marp: true
-backgroundImage: url('https://marp.app/assets/hero-background.jpg')
+
 theme: HoraStyle
 paginate: false
+style: |
+  :root {
+    --title-bg: linear-gradient(90deg, #333333, #000000);
+    --title-text-color: #ffffff;
+  }
+  section.lead {
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+  }
 ---
 
 <!-- _class: lead -->

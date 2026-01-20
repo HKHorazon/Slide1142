@@ -1,8 +1,16 @@
 ---
 marp: true
-backgroundImage: url('https://marp.app/assets/hero-background.jpg')
+
 theme: HoraStyle
 paginate: true
+style: |
+  :root {
+    --title-bg: linear-gradient(90deg, #2563eb, #3b82f6);
+    --title-text-color: #ffffff;
+  }
+  section.lead {
+    background: linear-gradient(135deg, #172554 0%, #000000 100%);
+  }
 ---
 
 
@@ -71,22 +79,7 @@ double height = 175.5;
 
 # 常用資料型別
 
-<style scoped>
-table {
-    height: 100%;
-    width: 100%;
-    font-size: 40px;
-    color: black;
-    text-align: center;
-    margin:100px 0px 0px 100px;
-}
-th {
-    color: blue;
-}
-table td {
-    padding:10px 50px;
-}
-</style>
+
 
 
 型別 | 說明 | 範例 

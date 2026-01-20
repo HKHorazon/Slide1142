@@ -1,8 +1,16 @@
 ---
 marp: true
-backgroundImage: url('https://marp.app/assets/hero-background.jpg')
+
 theme: HoraStyle
 paginate: true
+style: |
+  :root {
+    --title-bg: linear-gradient(90deg, #2563eb, #3b82f6);
+    --title-text-color: #ffffff;
+  }
+  section.lead {
+    background: linear-gradient(135deg, #172554 0%, #000000 100%);
+  }
 ---
 
 <!-- _class: lead -->
@@ -147,6 +155,8 @@ Word、Excel
 #### 循序
 #### 選擇 (if, switch)
 #### 迴圈 (for, while, do-while)
+#### 陣列 (Array)
+#### 字串 (String)
 
 ---
 
