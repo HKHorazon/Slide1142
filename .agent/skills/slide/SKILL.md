@@ -70,3 +70,5 @@ description: 用於建立與管理課程 Marp 投影片的技能。
     -   **匯出所有**: `python .agent/skills/slide/scripts/export.py` (預設)
     -   **匯出單檔**: `python .agent/skills/slide/scripts/export.py -f <path/to/file.md>`
     -   **匯出資料夾**: `python .agent/skills/slide/scripts/export.py -d <path/to/directory>`
+    -   **清理舊檔**: `python .agent/skills/slide/scripts/cleanup_pdf.py`
+        -   刪除 `PDF` 資料夾中沒有對應 Markdown 來源的孤立 PDF 檔案。
