@@ -1,0 +1,12 @@
+<html>
+	<head>
+		<title>TITLE</title>
+	</head>
+	<body>
+		<header> HEADER</header>
+		<section>
+			<h1> CONTENT </h1>
+		</section>
+		<footer> FOOTER </footer>
+	</body>
+</html>

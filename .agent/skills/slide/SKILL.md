@@ -27,6 +27,7 @@ description: 用於建立與管理課程 Marp 投影片的技能。
     -   **WebHalf互動媒體**: **橘色系**.
     -   **CSharp程式**: **藍色系**.
     -   **AI2應用程式**: **紫色系**.
+    -   **Horazon額外內容**: **灰紫色系** (`#581c87` -> `#64748b`).
     -   (若遇**新科目**，請務必先詢問使用者偏好顏色).
 
 ## 使用方法 (Usage)
@@ -40,6 +41,16 @@ description: 用於建立與管理課程 Marp 投影片的技能。
     -   標題：`h1` 用於大標題，`h3` 用於章節標示。
     -   程式碼區塊：使用標準 Markdown 語法 (```)。
     -   視覺效果：使用 `HoraStyle.css` 定義的樣式類別。
+
+3.  **匯出方法 (Export Method)**:
+    -   當使用者提出「匯出資料夾」或「匯出 .md 檔案」為 PDF 時。
+    -   **第一步**: 確認該檔案是否為 Marp 格式 (檢查 frontmatter 是否含有 `marp: true`)。
+    -   **第二步**: 若確認為 Marp 檔案，**必須優先使用** `python .agent/skills/slide/scripts/export.py` 進行匯出。
+    -   **具體執行**:
+        -   匯出單檔：`python .agent/skills/slide/scripts/export.py -f <檔案路徑>`
+        -   匯出資料夾：`python .agent/skills/slide/scripts/export.py -d <資料夾路徑>`
+        -   匯出所有：`python .agent/skills/slide/scripts/export.py -a`
+    -   **第三步**: 匯出完成後，告知使用者 PDF 已儲存於 `PDF` 對應目錄。
 
 ## 參考模板 (Reference)
 
