@@ -2,6 +2,7 @@ import argparse
 import os
 import subprocess
 import sys
+import json
 import re
 
 # Configuration
@@ -38,7 +39,7 @@ def get_slide_title(md_file_path):
         print(f"Warning: Could not read title from {md_file_path}: {e}")
     return None
 
-def format_display_name(category, filename, title):
+def format_display_name(category_display_name, filename, title):
     """Formats the display name: {Course}_Ch{Num}_{Title}"""
     name_without_ext = os.path.splitext(filename)[0]
     
@@ -52,17 +53,32 @@ def format_display_name(category, filename, title):
 
     # If we have a title, use the full format
     if title:
-        # Avoid duplicating the chapter info if it's already in the title roughly
-        # But per user request: {Course}_Ch{Chapter}_{ChapterName}
-        # Let's stick to the requested format strictly.
-        
-        # Clean category name (remove spaces or special chars if needed, but keeping as is for now)
-        display = f"{category}_Ch{chapter_part}_{title}"
+        display = f"{category_display_name}_Ch{chapter_part}_{title}"
     else:
         # Fallback if no title found
         display = name_without_ext
         
     return display
+
+def get_category_settings(category_name):
+    """Reads settings.json for a given category. Returns a dict with defaults if not found."""
+    settings_path = os.path.join(INPUT_ROOT_DIR, category_name, 'settings.json')
+    defaults = {
+        "ChapterName": category_name, # Default to folder name
+        "IsDisplay": True,
+        "Sequence": 999
+    }
+    
+    if os.path.exists(settings_path):
+        try:
+            with open(settings_path, 'r', encoding='utf-8') as f:
+                user_settings = json.load(f)
+                # Merge user settings into defaults
+                defaults.update(user_settings)
+        except Exception as e:
+            print(f"Warning: Failed to load settings for {category_name}: {e}")
+            
+    return defaults
 
 def export_file(file_path):
     if not os.path.exists(file_path):
@@ -116,8 +132,14 @@ def generate_index_html():
 
     os.makedirs(DISPLAY_DIR, exist_ok=True)
     
-    # Data structure: { "Category": [ ("FormattedName", "RelativeLink"), ... ] }
-    pdf_files = {}
+    # Data structure: 
+    # { 
+    #   "CategoryFolder": {
+    #       "data": [ ("FormattedName", "RelativeLink"), ... ],
+    #       "settings": { "ChapterName":..., "IsDisplay":..., "Sequence":... }
+    #   } 
+    # }
+    categories_data = {}
 
     for root, dirs, files in os.walk(OUTPUT_ROOT_DIR):
         for file in files:
@@ -133,16 +155,26 @@ def generate_index_html():
                 except ValueError:
                     rel_link = pdf_abs
                 
-                # Determine Category
+                # Determine Category (Folder Name)
                 rel_root = os.path.relpath(root, OUTPUT_ROOT_DIR)
                 if rel_root == '.':
-                    category = "Uncategorized"
+                    category_folder = "Uncategorized"
                 else:
-                    category = rel_root
+                    category_folder = rel_root
                 
+                # Initialize category data if new
+                if category_folder not in categories_data:
+                    categories_data[category_folder] = {
+                        "data": [],
+                        "settings": get_category_settings(category_folder)
+                    }
+                
+                # Skip if not displayed (Optimization: Don't process file if category is hidden)
+                # But we might want to check per file? No, settings are per folder.
+                if not categories_data[category_folder]["settings"]["IsDisplay"]:
+                    continue
+
                 # Find corresponding MD file to get title
-                # Mapping mechanism: PDF/Cat/File.pdf -> MD/Cat/File.md
-                # This assumes structure is mirrored exactly.
                 rel_from_pdf_root = os.path.relpath(full_path, OUTPUT_ROOT_DIR)
                 base_name_no_ext = os.path.splitext(rel_from_pdf_root)[0]
                 md_guess_path = os.path.join(INPUT_ROOT_DIR, base_name_no_ext + '.md')
@@ -151,13 +183,12 @@ def generate_index_html():
                     title = get_slide_title(md_guess_path)
                 else:
                     title = None
-                    
-                formatted_name = format_display_name(category, file, title)
-
-                if category not in pdf_files:
-                    pdf_files[category] = []
                 
-                pdf_files[category].append((formatted_name, rel_link))
+                # Use the Display Name for formatting
+                category_display_name = categories_data[category_folder]["settings"]["ChapterName"]
+                formatted_name = format_display_name(category_display_name, file, title)
+
+                categories_data[category_folder]["data"].append((formatted_name, rel_link))
 
     # Generate HTML content
     html_content = f"""<!DOCTYPE html>
@@ -165,7 +196,7 @@ def generate_index_html():
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Slides Index</title>
+    <title>Horazon 課程投影片一覽</title>
     <style>
         body {{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; padding: 40px; color: #1e1b4b; margin: 0; }}
         .container {{ max-width: 900px; margin: 0 auto; }}
@@ -231,19 +262,39 @@ def generate_index_html():
 </head>
 <body>
     <div class="container">
-        <h1>📚 Course Slides Index</h1>
+        <h1>Horazon 課程投影片一覽</h1>
 """
 
-    sorted_categories = sorted(pdf_files.keys())
+    # Filter and Sort Categories
+    # List of tuples: (CategoryFolder, DataDict)
+    # Filter: IsDisplay must be True
+    # Sort Key: (Sequence, ChapterName)
     
-    for category in sorted_categories:
-        html_content += f'        <div class="category">\n            <details>\n                <summary><h2>{category}</h2></summary>\n                <ul class="file-list">\n'
-        for name, link in sorted(pdf_files[category]):
+    valid_categories = []
+    for cat_folder, info in categories_data.items():
+        if info["settings"].get("IsDisplay", True):
+             valid_categories.append((cat_folder, info))
+    
+    sorted_categories = sorted(
+        valid_categories, 
+        key=lambda item: (item[1]["settings"]["Sequence"], item[1]["settings"]["ChapterName"])
+    )
+    
+    for cat_folder, info in sorted_categories:
+        display_name = info["settings"]["ChapterName"]
+        file_list = info["data"]
+        
+        # Only render if there are files (though logic guarantees files exist if we iterated PDF folder)
+        if not file_list:
+            continue
+            
+        html_content += f'        <div class="category">\n            <details>\n                <summary><h2>{display_name}</h2></summary>\n                <ul class="file-list">\n'
+        for name, link in sorted(file_list):
             html_content += f'                    <li class="file-item"><a class="file-link" href="{link}" target="_blank">{name}</a></li>\n'
         html_content += '                </ul>\n            </details>\n        </div>\n'
 
     html_content += """        <div class="footer">
-            <p>Generated by Antigravity Slide Skill</p>
+            <p>Horazon 弘光科大多遊系 張仕明</p>
         </div>
     </div>
 </body>
