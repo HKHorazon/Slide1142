@@ -83,3 +83,7 @@ description: 用於建立與管理課程 Marp 投影片的技能。
     -   **匯出資料夾**: `python .agent/skills/slide/scripts/export.py -d <path/to/directory>`
     -   **清理舊檔**: `python .agent/skills/slide/scripts/cleanup_pdf.py`
         -   刪除 `PDF` 資料夾中沒有對應 Markdown 來源的孤立 PDF 檔案。
+
+-   `generate_map`: 生成課程進度地圖。
+    -   **Trigger**: 當使用者說「更新課程地圖」或 "Update course map" 時，請詢問或確認目標課程資料夾。
+    -   **Command**: `python .agent/skills/slide/scripts/generate_map.py -d <CourseFolder>` (例如: `Mobile手遊`)
