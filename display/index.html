@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Slides Index</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            padding: 40px;
+            color: #1e1b4b;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #581c87;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .category {
+            background: white;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        details>summary {
+            padding: 20px 25px;
+            cursor: pointer;
+            background-color: #fff;
+            list-style: none;
+            /* Hide default triangle */
+            position: relative;
+            transition: background-color 0.2s;
+        }
+
+        details>summary:hover {
+            background-color: #f8fafc;
+        }
+
+        details>summary::-webkit-details-marker {
+            display: none;
+        }
+
+        details>summary h2 {
+            border-bottom: none;
+            margin: 0;
+            font-size: 1.3em;
+            color: #1e1b4b;
+            display: inline-block;
+        }
+
+        /* Custom arrow */
+        details>summary::after {
+            content: '+';
+            position: absolute;
+            right: 25px;
+            font-size: 1.5em;
+            color: #581c87;
+            font-weight: bold;
+        }
+
+        details[open]>summary::after {
+            content: '-';
+        }
+
+        details[open]>summary {
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .file-list {
+            list-style: none;
+            padding: 15px 25px;
+            margin: 0;
+            background-color: #fff;
+        }
+
+        .file-item {
+            margin: 8px 0;
+        }
+
+        .file-link {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #334155;
+            border-radius: 6px;
+            transition: all 0.2s;
+        }
+
+        .file-link:hover {
+            background: #eff6ff;
+            color: #581c87;
+            padding-left: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #64748b;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Horazon 課程投影片一覽</h1>
+        <div class="category">
+            <details>
+                <summary>
+                    <h2>AI2應用程式</h2>
+                </summary>
+                <ul class="file-list">
+                    <li class="file-item"><a class="file-link" href="../PDF/AI2應用程式/AI2_01.pdf"
+                            target="_blank">AI2應用程式_Ch01_應用程式概論與安裝</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/AI2應用程式/AI2_02.pdf"
+                            target="_blank">AI2應用程式_Ch02_第一個程式：Hello World</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/AI2應用程式/AI2_03.pdf"
+                            target="_blank">AI2應用程式_Ch03_基本元件與排版</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/AI2應用程式/AI2_04.pdf"
+                            target="_blank">AI2應用程式_Ch04_簡易計算機</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/AI2應用程式/AI2_05.pdf"
+                            target="_blank">AI2應用程式_Ch05_亂數應用：骰子遊戲</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/AI2應用程式/AI2_06.pdf"
+                            target="_blank">AI2應用程式_Ch06_邏輯判斷：猜數字遊戲</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/AI2應用程式/AI2_07.pdf"
+                            target="_blank">AI2應用程式_Ch07_邏輯練習：剪刀石頭布</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/AI2應用程式/AI2_08.pdf"
+                            target="_blank">AI2應用程式_Ch08_重複的力量：迴圈</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/AI2應用程式/AI2_09.pdf"
+                            target="_blank">AI2應用程式_Ch09_切換畫面：多重 Screen</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/AI2應用程式/AI2_10.pdf"
+                            target="_blank">AI2應用程式_Ch10_清單應用：樂透遊戲</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/AI2應用程式/AI2_11.pdf"
+                            target="_blank">AI2應用程式_Ch11_有聲有色：多媒體元件</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/AI2應用程式/AI2_12.pdf"
+                            target="_blank">AI2應用程式_Ch12_動畫與遊戲：Canvas</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/AI2應用程式/AI2_13.pdf"
+                            target="_blank">AI2應用程式_Ch13_專案實作技巧</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/AI2應用程式/AI2_14.pdf"
+                            target="_blank">AI2應用程式_Ch14_期末專案發表</a></li>
+                </ul>
+            </details>
+        </div>
+        <div class="category">
+            <details>
+                <summary>
+                    <h2>Antigravity</h2>
+                </summary>
+                <ul class="file-list">
+                    <li class="file-item"><a class="file-link" href="../PDF/Antigravity/Antigravity_Agent_Skills.pdf"
+                            target="_blank">Antigravity_ChAgent_Skills_Agent Skills</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Antigravity/Antigravity_Intro.pdf"
+                            target="_blank">Antigravity_ChIntro_Antigravity 介紹</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Antigravity/Antigravity_Unity_MCP.pdf"
+                            target="_blank">Antigravity_ChUnity_MCP_Unity MCP</a></li>
+                </ul>
+            </details>
+        </div>
+        <div class="category">
+            <details>
+                <summary>
+                    <h2>CSharp程式</h2>
+                </summary>
+                <ul class="file-list">
+                    <li class="file-item"><a class="file-link" href="../PDF/CSharp程式/CSharp_00.pdf"
+                            target="_blank">CSharp程式_Ch00_C# 程式設計課程大綱</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/CSharp程式/CSharp_01.pdf"
+                            target="_blank">CSharp程式_Ch01_學習程式</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/CSharp程式/CSharp_02.pdf"
+                            target="_blank">CSharp程式_Ch02_程式語言 與 C#</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/CSharp程式/CSharp_03.pdf"
+                            target="_blank">CSharp程式_Ch03_你好世界</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/CSharp程式/CSharp_04.pdf"
+                            target="_blank">CSharp程式_Ch04_變數宣告與使用</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/CSharp程式/CSharp_05.pdf"
+                            target="_blank">CSharp程式_Ch05_運算式與運算子</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/CSharp程式/CSharp_06.pdf"
+                            target="_blank">CSharp程式_Ch06_流程控制</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/CSharp程式/CSharp_07.pdf"
+                            target="_blank">CSharp程式_Ch07_迴圈控制</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/CSharp程式/CSharp_08.pdf"
+                            target="_blank">CSharp程式_Ch08_陣列 (Array)</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/CSharp程式/CSharp_09.pdf"
+                            target="_blank">CSharp程式_Ch09_字串 (String)</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/CSharp程式/CSharp_10.pdf"
+                            target="_blank">CSharp程式_Ch10_函式與方法 (Function & Method)</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/CSharp程式/CSharp_11.pdf"
+                            target="_blank">CSharp程式_Ch11_類別與物件 (Class & Object)</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/CSharp程式/CSharp_12.pdf"
+                            target="_blank">CSharp程式_Ch12_封裝與建構子 (Encapsulation & Constructor)</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/CSharp程式/CSharp_13.pdf"
+                            target="_blank">CSharp程式_Ch13_繼承與多型 (Inheritance & Polymorphism)</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/CSharp程式/CSharp_14.pdf"
+                            target="_blank">CSharp程式_Ch14_集合與泛型 (Collections & Generics)</a></li>
+                </ul>
+            </details>
+        </div>
+        <div class="category">
+            <details>
+                <summary>
+                    <h2>General</h2>
+                </summary>
+                <ul class="file-list">
+                    <li class="file-item"><a class="file-link" href="../PDF/General/課程須知.pdf"
+                            target="_blank">General_Ch課程須知_課程說明</a></li>
+                </ul>
+            </details>
+        </div>
+        <div class="category">
+            <details>
+                <summary>
+                    <h2>Mobile手遊</h2>
+                </summary>
+                <ul class="file-list">
+                    <li class="file-item"><a class="file-link" href="../PDF/Mobile手遊/Mobile_00.pdf"
+                            target="_blank">Mobile手遊_Ch00_手機遊戲程式設計</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Mobile手遊/Mobile_01.pdf"
+                            target="_blank">Mobile手遊_Ch01_手機遊戲開發概論</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Mobile手遊/Mobile_02.pdf"
+                            target="_blank">Mobile手遊_Ch02_專案建置與初體驗</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Mobile手遊/Mobile_03.pdf"
+                            target="_blank">Mobile手遊_Ch03_地圖繪製 (Tilemap)</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Mobile手遊/Mobile_04.pdf"
+                            target="_blank">Mobile手遊_Ch04_物理與機關</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Mobile手遊/Mobile_05.pdf"
+                            target="_blank">Mobile手遊_Ch05_互動與邏輯 (預製功能)</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Mobile手遊/Mobile_06.pdf"
+                            target="_blank">Mobile手遊_Ch06_C# 程式基礎入門</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Mobile手遊/Mobile_07.pdf"
+                            target="_blank">Mobile手遊_Ch07_角色移動原理 (Input)</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Mobile手遊/Mobile_08.pdf"
+                            target="_blank">Mobile手遊_Ch08_跳躍與地面檢測 (Physics Logic)</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Mobile手遊/Mobile_09.pdf"
+                            target="_blank">Mobile手遊_Ch09_角色動畫系統 (Animator)</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Mobile手遊/Mobile_10.pdf"
+                            target="_blank">Mobile手遊_Ch10_遊戲管理與核心邏輯 (Singleton)</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Mobile手遊/Mobile_11.pdf"
+                            target="_blank">Mobile手遊_Ch11_UI 介面設計 (UGUI)</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Mobile手遊/Mobile_12.pdf"
+                            target="_blank">Mobile手遊_Ch12_遊戲體感優化 (Audio & VFX)</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Mobile手遊/Mobile_13.pdf"
+                            target="_blank">Mobile手遊_Ch13_手機觸控操作 (Mobile Input)</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Mobile手遊/Mobile_14.pdf"
+                            target="_blank">Mobile手遊_Ch14_專案建置與發布 (Build & Publish)</a></li>
+                </ul>
+            </details>
+        </div>
+        <div class="category">
+            <details>
+                <summary>
+                    <h2>Project_112</h2>
+                </summary>
+                <ul class="file-list">
+                    <li class="file-item"><a class="file-link" href="../PDF/Project_112/Project_112橫向卷軸.pdf"
+                            target="_blank">Project_112_Ch112橫向卷軸_企劃</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/Project_112/Project_112音樂遊戲.pdf"
+                            target="_blank">Project_112_Ch112音樂遊戲_遊戲核心程式</a></li>
+                </ul>
+            </details>
+        </div>
+        <div class="category">
+            <details>
+                <summary>
+                    <h2>WebHalf互動媒體</h2>
+                </summary>
+                <ul class="file-list">
+                    <li class="file-item"><a class="file-link" href="../PDF/WebHalf互動媒體/Web_02.pdf"
+                            target="_blank">WebHalf互動媒體_Ch02_網頁三大元素</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/WebHalf互動媒體/Web_CSS.pdf"
+                            target="_blank">WebHalf互動媒體_ChCSS_CSS 基礎入門</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/WebHalf互動媒體/Web_JS.pdf"
+                            target="_blank">WebHalf互動媒體_ChJS_JavaScript 基礎入門</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/WebHalf互動媒體/Web_New.pdf"
+                            target="_blank">WebHalf互動媒體_ChNew_現代前端技術與 AI 開發</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/WebHalf互動媒體/Web_VSCode.pdf"
+                            target="_blank">WebHalf互動媒體_ChVSCode_VS Code 安裝與設定</a></li>
+                    <li class="file-item"><a class="file-link" href="../PDF/WebHalf互動媒體/Web_html.pdf"
+                            target="_blank">WebHalf互動媒體_Chhtml_HTML 基礎入門</a></li>
+                </ul>
+            </details>
+        </div>
+        <div class="footer">
+            <p>Horazon 弘光科大多遊系 張仕明</p>
+        </div>
+    </div>
+</body>
+
+</html>

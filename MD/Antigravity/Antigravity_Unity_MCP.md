@@ -15,10 +15,10 @@ style: |
 
 <!-- _class: lead -->
 <!-- _paginate: false -->
-### Extra
+### Chapter 3
 # Unity MCP
 ## Horazon
-## Model Context Protocol
+## Antigravity
 
 ---
 

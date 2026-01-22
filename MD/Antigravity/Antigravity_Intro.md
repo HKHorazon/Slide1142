@@ -43,9 +43,9 @@ table {
 | :--- | :--- | :--- |
 | **Antigravity (Preview)** | 2025/11 | 首次私人預覽 |
 | **Gemini 3 Pro** | 2025/11 | 邏輯推理能力大幅提升 |
-| **Antigravity 1.0** | 2026 Q1 | 正式公開版本 |
+| **Antigravity 1.0** | 2026/01 | 正式公開版本 |
 ||||
-| **Agent Skills** | 2025/10 | Anthropic推出Skills協定 |
+| **Agent Skills** | 2025/12 | Anthropic推出Skills協定 |
 | **Antigravity Skills** | 2026/01 | Antigravity可使用Skills協定 |
 
 ---
