@@ -34,10 +34,48 @@ style: |
 
 
 ---
-# 程式碼：為什麼需要變數
+# 符號的稱呼方式
+
+### 括號 (Brackets)
+常用於範圍界定、優先權處理
+```text
+{ }   大括號   Curly Brackets    (程式區塊 Scope)
+[ ]   中括號   Square Brackets   (陣列 Array)
+( )   小括號   Parentheses       (函式、運算優先權)
+```
+
+### 引號 (Quotation Marks)
+常用於文字資料的定義
+```text
+" "   雙引號   Double Quote      (字串 String)
+' '   單引號   Single Quote      (字元 Char)
+```
+
+
+
+---
+# 小嘗試
+
+我們先嘗試修改第一個程式碼  
+```cs
+Console.WriteLine("Hello, World!");
+```
+改成中文與加上自己的名字
+```cs
+Console.WriteLine("你好, Horazon!");
+```
+
+
+---
+# 為何需要變數
+
 
 ```cs
 Console.WriteLine("你好, Horazon!");
+```
+如果使用者名稱改變了，我們就要修改程式。
+```cs
+Console.WriteLine("你好, 張仕明!");
 ```
 在程式使用中，如果都是一成不變的輸出文字，是無法發揮電腦功能的。
 我們要製作一個可以修改的 **容器** 來儲存資料
@@ -107,6 +145,17 @@ string | 字串 | "你好","Hello"
 ❌ 123name (不能數字開頭)
 
 ❌ my name (不能有空格)
+
+
+<style scoped>
+img[alt="小駝峰式"] {
+  position: absolute;
+  right: 50px;
+  top: 200px;
+  width: 250px;
+}
+</style>
+![小駝峰式](../../IMAGE/CSharp/Ch3/CSharp_Ch03_12.png)
 
 ---
 
@@ -196,7 +245,7 @@ myName = 50;                //此行錯誤❌
 ```
 
 ---
-# 常見問題：常數
+# 常見問題：常數問題
 
 沒有給予常數初始值
 
@@ -211,5 +260,15 @@ string myName = "Horazon";
 myName = "Horazon2";    //此行錯誤❌
 ```
 
+---
 
+# 常見問題：溢位例外
 
+每一種型態都有其極限，有興趣可以自行研究
+<style scoped>
+img {
+  scale: 0.8;
+  translate: 0 -50px;
+}
+</style>
+![溢位例外](../../IMAGE/CSharp/Ch3/CSharp_Ch03_10.png)

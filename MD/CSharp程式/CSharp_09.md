@@ -41,7 +41,7 @@ char firstChar = name[0]; // 可以像陣列一樣用索引存取，取得 'H'
 
 將變數插入字串中的方法。
 
-**1. 字串插值 (String Interpolation) `$`** (推薦)
+**1. 字串插值 (String Interpolation) `$`** 
 ```cs
 int age = 18;
 string message = $"我的年齡是 {age} 歲";
@@ -173,3 +173,47 @@ string result = sb.ToString(); // 最後再轉回字串
 - 若需頻繁修改字串，請務必使用 **StringBuilder** 以提升效能。
 
 
+---
+
+# 綜合練習 1：隱藏敏感資料
+
+**題目：**
+將手機號碼 `0912-345-678` 的中間三碼 `345` 隱藏為 `***`，變成 `0912-***-678`。
+
+
+
+```cs
+string phone = "0912-345-678";
+
+// 方法 1：使用 Replace (簡單，但若有重複數字可能會誤取代)
+string result1 = phone.Replace("345", "***");
+Console.WriteLine(result1);
+
+// 方法 2：使用 Substring (較精準)
+// 取出前 5 個字元 + "***" + 取出 index 8 之後的字元
+string result2 = $"{phone.Substring(0, 5)}***{phone.Substring(8)}";
+Console.WriteLine(result2);
+```
+
+---
+
+# 綜合練習 2：句子單字計數
+
+**題目：**
+計算句子 `"C# is a powerful language"` 中有幾個單字。
+
+
+```cs
+string sentence = "C# is a powerful language";
+
+// 使用空白切割字串
+string[] words = sentence.Split(' ');
+
+Console.WriteLine($"單字數量：{words.Length}"); // 5
+
+// 印出每個單字
+foreach (string word in words)
+{
+    Console.WriteLine(word);
+}
+```

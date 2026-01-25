@@ -52,6 +52,14 @@ while (條件運算式)
 3. 回到步驟 1。
 4. 若為 false，結束迴圈。
 
+<style scoped>
+    img{
+        scale: 1.1;
+        translate: 850px -300px
+    }
+</style>
+![While Flowchart](../../MERMAID/IMAGE/while.png)
+
 ---
 
 # while 範例
@@ -83,6 +91,14 @@ do
     // 執行此區塊
 } while (條件運算式); // 注意結尾有分號
 ```
+
+<style scoped>
+    img{
+        scale: 1.1;
+        translate: 850px -250px
+    }
+</style>
+![Do-While Flowchart](../../MERMAID/IMAGE/do_while.png)
 
 ---
 
@@ -116,6 +132,14 @@ for (初始化; 條件; 迭代)
     // 執行區塊
 }
 ```
+
+<style scoped>
+    img{
+        scale: 1.1;
+        translate: 850px -300px
+    }
+</style>
+![For Flowchart](../../MERMAID/IMAGE/for.png)
 
 ---
 
@@ -198,4 +222,59 @@ for (int i = 1; i <= 10; i++)
 
 
 
+-
+---
 
+# 常見範例 1：累加計算 (Sum)
+
+計算 1 加到 10 的總和。
+
+```cs
+int sum = 0;
+
+for (int i = 1; i <= 10; i++)
+{
+    sum += i;  // 等同於 sum = sum + i;
+}
+
+Console.WriteLine($"總和為：{sum}"); // 55
+```
+重點：**累加變數** (`sum`) 必須在迴圈外宣告並初始化為 0。
+
+---
+
+# 常見範例 2：倒數計時 (Countdown)
+
+從 10 倒數到 1，最後發射！
+
+```cs
+for (int i = 10; i >= 1; i--)
+{
+    Console.WriteLine($"倒數：{i}");
+}
+
+Console.WriteLine("發射！");
+```
+重點：
+- 初始值較大 (10)。
+- 條件為大於等於 (`>=`)。
+- 迭代為遞減 (`i--`)。
+
+---
+
+# 常見範例 3：巢狀迴圈 (Nested Loop)
+
+雙層迴圈：九九乘法表 (部分)
+
+```cs
+for (int i = 2; i <= 9; i++)
+{
+    for (int j = 1; j <= 9; j++)
+    {
+        Console.Write($"{i}x{j}={i * j}\t");
+    }
+    Console.WriteLine(); // 換行，準備印下一列
+}
+```
+重點：**外層跑一次，內層跑全部**。
+`\t` 為定位字元 (Tab)，讓排版對齊。

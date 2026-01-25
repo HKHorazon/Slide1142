@@ -58,6 +58,21 @@ string[] fruits = new string[] { "Apple", "Banana" };
 
 ---
 
+# 陣列結構示意
+
+假設宣告 `int[] array = { 2, 4, 6, 8, 10 };`
+
+| 索引 (Index) | 0 | 1 | 2 | 3 | 4 |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| **數值 (Value)** | **2** | **4** | **6** | **8** | **10** |
+
+- **陣列長度 (Length)**：5 (共有 5 個元素)
+- **索引範圍**：0 ~ 4 (最後一個元素的索引是 `Length - 1`)
+
+
+---
+
+
 # 存取陣列元素
 
 - 陣列的索引 (Index) 是從 **0** 開始的。
@@ -165,6 +180,20 @@ Console.WriteLine(matrix[1, 2]); // 印出 6 (第二列第三欄)
 常用於地圖、棋盤遊戲等應用。
 
 ---
+# 二維陣列結構示意
+
+假設宣告 `int[,] data = new int[3, 4];` (3列 4欄)
+
+| 索引 | Col 0 | Col 1 | Col 2 | Col 3 |
+| :---: | :---: | :---: | :---: | :---: |
+| **Row 0** | `[0,0]` | `[0,1]` | `[0,2]` | `[0,3]` |
+| **Row 1** | `[1,0]` | `[1,1]` | `[1,2]` | `[1,3]` |
+| **Row 2** | `[2,0]` | `[2,1]` | `[2,2]` | `[2,3]` |
+
+存取方式：`data[列索引, 欄索引]`
+例如：`data[1, 2]` 代表 **第 2 列、第 3 欄** 的資料。
+
+---
 
 # 總結
 
@@ -174,5 +203,139 @@ Console.WriteLine(matrix[1, 2]); // 印出 6 (第二列第三欄)
 - 使用 `for` 或 `foreach` 遍歷資料。
 - 善用 `Array.Sort()` 等內建方法來處理資料。
 
+---
+
+# 常見範例 1：計算總和與平均
+
+計算全班 5 位同學的數學成績總和與平均分數。
+
+```cs
+int[] scores = { 80, 95, 78, 92, 85 };
+int sum = 0;
+
+foreach (int score in scores)
+{
+    sum += score;
+}
+
+double average = (double)sum / scores.Length;
+
+Console.WriteLine($"總分：{sum}");
+Console.WriteLine($"平均：{average:F2}"); // 取小數點後兩位
+```
+
+
+---
+
+# 常見範例 2：計算總和
+
+**題目：計算總和**
+
+請宣告一個整數陣列包含 `10, 20, 30, 40, 50`，並使用 `foreach` 計算總和。
+
+
+
+```cs
+int[] numbers = { 10, 20, 30, 40, 50 };
+int sum = 0;
+
+foreach (int num in numbers)
+{
+    sum += num;
+}
+
+Console.WriteLine($"總和為：{sum}"); // 150
+```
+
+
+---
+
+# 常見範例 3：尋找最大值與最小值
+
+找出陣列中的最大值與最小值。
+
+```cs
+int[] nums = { 10, 5, 40, 30, 20 };
+
+int max = nums[0]; // 假設第一個數是最大的
+int min = nums[0]; // 假設第一個數是最小的
+
+foreach (int n in nums)
+{
+    if (n > max) max = n;
+    if (n < min) min = n;
+}
+
+Console.WriteLine($"最大值：{max}");
+Console.WriteLine($"最小值：{min}");
+```
+---
+# 常見範例 4 : 選擇排序法
+
+```cs
+int[] nums = { 10, 5, 40, 30, 20 };
+
+for (int i = 0; i < nums.Length - 1; i++)
+{
+    int minIndex = i;
+    for (int j = i + 1; j < nums.Length; j++)
+    {
+        if (nums[j] < nums[minIndex])
+        {
+            minIndex = j;
+        }
+    }
+    // 交換最小值
+    int temp = nums[i];
+    nums[i] = nums[minIndex];
+    nums[minIndex] = temp;
+}
+
+Console.WriteLine(string.Join(", ", nums));
+```
+
+---
+<!--簡單介紹一下 資料結構 & 演算法-->
+---
+
+# 常見範例 3 : 選擇排序法
+
+用程式碼模擬從小到大排序的過程。
+
+`cs
+int[] nums = { 10, 5, 40, 30, 20 };
+
+for (int i = 0; i < nums.Length - 1; i++)
+{
+    int minIndex = i;
+    for (int j = i + 1; j < nums.Length; j++)
+    {
+        if (nums[j] < nums[minIndex])
+        {
+            minIndex = j;
+        }
+    }
+    // 交換最小值
+    int temp = nums[i];
+    nums[i] = nums[minIndex];
+    nums[minIndex] = temp;
+}
+
+Console.WriteLine(string.Join(", ", nums));
+`
+
+---
+
+# 資料結構與演算法簡介
+
+- **資料結構 (Data Structure)**：
+  - 用來儲存與組織資料的方式。
+  - 就像是：**置物櫃**、**書架**、**排隊隊伍**。
+  - 範例：**陣列 (Array)**。
+
+- **演算法 (Algorithm)**：
+  - 解決問題的明確步驟與流程。s
+  - 就像是：**食譜**、**組裝說明書**。
+  - 範例：**排序 (Sort)**、**搜尋 (Search)**。
 
 

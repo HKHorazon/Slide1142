@@ -87,3 +87,4 @@ description: 用於建立與管理課程 Marp 投影片的技能。
 -   `generate_map`: 生成課程進度地圖。
     -   **Trigger**: 當使用者說「更新課程地圖」或 "Update course map" 時，請詢問或確認目標課程資料夾。
     -   **Command**: `python .agent/skills/slide/scripts/generate_map.py -d <CourseFolder>` (例如: `Mobile手遊`)
+    -   **MapLock**: 若 `settings.json` 中的 `"MapLock"` 為 `true`，則腳本會自動跳過更新，請告知使用者該地圖已鎖定。

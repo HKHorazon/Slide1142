@@ -65,7 +65,7 @@ str = "Hi";
 運算元 (operand)
 運算子 (operator)
 
-&nbsp; &nbsp; &nbsp; ![drop-shadow](../../IMAGE/CSharp程式/CSharp_05_01.png)
+&nbsp; &nbsp; &nbsp; ![drop-shadow](../../IMAGE/CSharp/Ch5/CSharp_Ch05_01.png)
 
 由於乘法有兩個運算元，則屬於二元運算子 (binary operator)
 
@@ -89,14 +89,27 @@ str = "Hi";
 ---
 # 指定運算子 ( = Assignment Operator)
 
+<br>
+
 在剛才的範例與之前的變數宣告中，我們已經使用多次這個運算子了
+
 = 它是一個二元運算子，會將右邊的值，賦予左邊的變數
+
 可以和算術運算混用
+
 ```cs
 int p = 5 + 3;          //將p初始化賦值為8
 p = (5 * 3) / 2;        //將p賦值為7 (非7.5, 整數運算問題)
-p = -5 + -3;            //-8
 ```
+
+<style scoped>
+img {
+  scale: 0.3;
+  translate: 400px -650px;
+}
+</style>
+![小駝峰式](../../IMAGE/CSharp/Ch4/CSharp_Ch04_03.jpeg)
+
 
 ---
 # 複合指定運算子
@@ -108,7 +121,7 @@ int value = 1;
 value = value + 3;      //與下一行相同，value結果為4
 value += 3;             //與上一行相同，value結果為7
 ```
-除此之外，也有-= *= /= %=
+除此之外，也有　 -= 　 *=　   /=　  %=
 
 ---
 
@@ -152,21 +165,19 @@ int value = 0;
 ++在後，會在執行完該行程式碼後，才進去x=x+1的運算
 ```cs
 value = a++ + b++;
-Console.WriteLine($"value={value}, a={a}, b={b}");  
-//value=10, a=6, b=6
+Console.WriteLine($"value={value}, a={a}, b={b}");  　　//value=10, a=6, b=6
 ```
 ++在前，會在執行完該行程式碼後，才進去x=x+1的運算
 ```cs
 value = ++a + ++b;
-Console.WriteLine($"value={value}, a={a}, b={b}");  
-//value=12, a=6, b=6
+Console.WriteLine($"value={value}, a={a}, b={b}");  　　//value=12, a=6, b=6
 ```
 
 ---
 
 # 小括號的運用
 
-如同以前的數學，我們可以使用小括號 ( )來調整算數的運算順序
+如同以前的數學，我們可以使用小括號 ( )來調整算術的運算順序
 
 ```cs
 int result = (5+3) * (2+4);
@@ -207,7 +218,7 @@ Console.WriteLine(result);          //Hello, Horazon!!
 ```
 
 ---
-# 進階：+ 與 += 在字串的運用
+# 進階內容：+ 與 += 在字串的運用
 
 在以上片段 + 與 += 稱之為字串的串接(concat)，與數字的加法不同
 在字串中只有+與+=可以使用，沒有其他運算
@@ -222,4 +233,91 @@ int b = 3;
 Console.WriteLine("First " + a + b);        //First 53
 Console.WriteLine("First " + (a + b));      //First 8
 Console.WriteLine( a + b +" Second");       //8 Second
+```
+
+---
+# 進階內容：整數除法
+
+在 C# 中，如果兩個 **整數 (int)** 相除，結果也會是 **整數**。
+小數點後面的部分會被直接 **捨棄 (Truncated)**，而不是四捨五入。
+
+```cs
+int a = 5;
+int b = 2;
+
+Console.WriteLine(a / b);   // 輸出: 2 (不是 2.5)
+```
+
+若要把小數點留下來，必須讓其中一個數變成浮點數：
+```cs
+Console.WriteLine((double)a / b); // 輸出: 2.5 (強制轉型)
+```
+
+---
+
+# 常見問題：除以零 (Division by Zero)
+
+在數學中，除數不能為 0，在程式中也是如此。
+
+```cs
+int a = 5 / 0;      // ❌ 執行期間錯誤: DivideByZeroException
+int b = 10 % 0;     // ❌ 執行期間錯誤: DivideByZeroException
+```
+
+### **浮點數除以零的例外**
+如果是浮點數 (`float` 或 `double`)，除以 0 不會報錯，而是會得到 `Infinity` (無限大)。
+
+```cs
+double c = 5.0 / 0; // ⭕ 結果為 Infinity (不會當機)
+```
+
+---
+
+# 範例練習 1：計算總價
+
+計算 5 個 35 元的商品總額。
+
+```cs
+int price = 35;
+int quantity = 5;
+
+// 計算總價
+int total = price * quantity;
+
+Console.WriteLine("總價格：" + total); 
+// 輸出：總價格：175
+```
+
+---
+
+# 範例練習 2：自我介紹 (字串串接)
+
+將名字與年齡組合成一句話。
+
+```cs
+string name = "Horazon";
+int age = 18;
+
+// 使用 + 號串接字串與數字
+Console.WriteLine("我是 " + name + "，今年 " + age + " 歲。");
+// 輸出：我是 Horazon，今年 18 歲。
+```
+
+---
+
+# 範例練習 3：時間轉換 (除法與餘數)
+
+將 150 分鐘轉換為「幾小時幾分」。
+
+```cs
+int totalMinutes = 150;
+
+// 整數除法求小時
+int hours = totalMinutes / 60;  // 150 / 60 = 2
+
+// 取餘數求剩餘分鐘
+int minutes = totalMinutes % 60; // 150 % 60 = 30
+
+Console.WriteLine(totalMinutes + " 分 = " + hours + " 小時 " + minutes + " 分");
+// 輸出：150 分 = 2 小時 30 分
 ```

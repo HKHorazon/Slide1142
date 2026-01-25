@@ -39,9 +39,22 @@ def generate_map(course_dir):
 
     print(f"Generating Course Map for: {course_dir}")
 
-    # 1. Get Course Name
+    # 1. Get Course Name & MapLock
     settings_path = os.path.join(full_course_path, 'settings.json')
-    course_name = get_course_name_from_settings(settings_path)
+    
+    settings_data = {}
+    if os.path.exists(settings_path):
+        try:
+            with open(settings_path, 'r', encoding='utf-8') as f:
+                settings_data = json.load(f)
+        except:
+            pass
+            
+    if settings_data.get("MapLock", False):
+        print(f"Skipping {course_dir}: MapLock is enabled.")
+        return
+
+    course_name = settings_data.get("ChapterName", "Course Name")
 
     # 2. Scan Markdown files
     md_files = glob.glob(os.path.join(full_course_path, '*.md'))

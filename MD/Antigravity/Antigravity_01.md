@@ -1,6 +1,5 @@
 ---
 marp: true
-
 theme: HoraStyle
 paginate: true
 style: |
@@ -12,6 +11,7 @@ style: |
     background: linear-gradient(135deg, #1e1b4b 0%, #000000 100%);
   }
 ---
+
 
 <!-- _class: lead -->
 <!-- _paginate: false -->

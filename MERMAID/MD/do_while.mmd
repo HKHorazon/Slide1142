@@ -1,0 +1,11 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryTextColor': '#000000', 'edgeLabelBackground': '#f2f2f2', 'tertiaryColor': '#f2f2f2'}}}%%
+flowchart TD
+    Start([開始]) --> Process[執行程式區塊]
+    Process --> Condition{條件成立?}
+    Condition -- Yes --> Process
+    Condition -- No --> End([結束])
+
+    style Start fill:#f9f,stroke:#333
+    style End fill:#f9f,stroke:#333
+    style Condition fill:#ff9,stroke:#333
+    style Process fill:#9cf,stroke:#333

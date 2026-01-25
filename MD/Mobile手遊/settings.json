@@ -1,5 +1,6 @@
 {
     "ChapterName": "手機遊戲開發",
     "IsDisplay": true,
-    "Sequence": 20
+    "Sequence": 20,
+    "MapLock": false
 }

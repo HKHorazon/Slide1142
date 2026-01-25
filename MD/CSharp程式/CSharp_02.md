@@ -45,7 +45,15 @@ style: |
 ---
 # 高階與低階語言
 #### 電腦只能閱讀機械語言，高階語言是給人類閱讀的
-//TODO
+* 我們學習的程式語言幾乎都是高階語言
+* 電腦必須藉由編譯器 或 直譯器 將高階語言轉換為機械語言
+<!-- 向右移動 -->
+<style scoped>
+img {
+  transform: translateX(500px) translateY(20px);
+}
+</style>
+![HighVsLow](../../IMAGE/CSharp/Ch2/CSharp_Ch02_02.gif)
 
 ---
 # 編譯器與直譯器
@@ -73,17 +81,17 @@ style: |
 
 ---
 # 整合開發環境 (IDE)
-#### Integrated Development Environment
 
- 一種輔助程式開發人員開發軟體的應用軟體
+**Integrated Development Environment**
+* 一種輔助程式開發人員開發軟體的應用軟體
 
- 適用於一或多種程式語言
+* 適用於一或多種程式語言
 
- 高亮關鍵字、外框、行號等
+* 高亮關鍵字、外框、行號等
 
- 自動提示、完成程式碼、AI整合等
+* 自動提示、完成程式碼、AI整合等
 
- 如：Visual Studio, Eclipse
+* 如：Visual Studio, Eclipse
 
 ---
 # C# (C Sharp) 本堂課的程式語言
@@ -105,5 +113,8 @@ style: |
 https://visualstudio.microsoft.com/zh-hant/downloads/
 <br>
 
-#### 建議註冊微軟帳號、能註冊Github帳號更好
+建議註冊微軟帳號、能註冊Github帳號更好
+
+實際上，可以使用其他IDE，如VS Code來撰寫會更方便
+但是需要額外安裝一些套件
 

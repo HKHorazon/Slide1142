@@ -34,19 +34,31 @@ https://visualstudio.microsoft.com/zh-hant/downloads/
 # 開啟專案
 #### 在初學程式的時候，我們使用較純粹的方式來學習
 #### 主控台應用程式 (必須選擇C#)
-//TODO:圖片
+![開啟專案](../../IMAGE/CSharp/Ch3/CSharp_Ch03_02.png)
+
+開啟時會要求你決定名稱，及一些其他設定(可忽略)
 
 ---
 # Visual Studio IDE 展示
-//TODO: 圖片
+<!-- 縮小一點 -->
+<style scoped>
+img {
+  transform: scale(1);
+  translate: 0 -20px
+}
+</style>
+![IDE展示](../../IMAGE/CSharp/Ch3/CSharp_Ch03_13.png)
 
 ---
 # Visual Studio 主要介面
 
-#### 方案總管
-#### 主要區域 (程式碼)
-#### 錯誤清單
-#### 輸出
+#### 方案總管 (右上)
+#### 主要區域 (程式碼、中間)
+#### 屬性 (右下)
+#### 其他資訊(左側)
+
+#### 錯誤清單 (下方)
+#### 輸出 (下方)
 <br>
 如果消失，如何開啟？  <mark>工具列 > 檢視 > 需要的區塊</mark>
 
@@ -75,9 +87,14 @@ Console.WriteLine("Hello, World!");
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 ```
-//TODO:執行按鈕圖片
-//TODO:結果畫面
-按下<mark>執行按鈕</mark>，你就會看到Hello, World! 文字
+按下<mark>執行按鈕</mark>，
+
+![執行按鈕](../../IMAGE/CSharp/Ch3/CSharp_Ch03_05.png)
+
+<br>
+
+你就會看到Hello, World! 文字
+![結果](../../IMAGE/CSharp/Ch3/CSharp_Ch03_14.png)
 
 ---
 # 程式碼：註解

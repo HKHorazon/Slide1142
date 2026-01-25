@@ -1,0 +1,41 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryTextColor': '#000000', 'edgeLabelBackground': '#f2f2f2', 'tertiaryColor': '#f2f2f2'}}}%%
+flowchart TD
+    subgraph WhileLoop [While 迴圈]
+        W_Start([開始]) --> W_Cond{條件成立?}
+        W_Cond -- Yes --> W_Process[執行程式區塊]
+        W_Process --> W_Cond
+        W_Cond -- No --> W_End([結束])
+    end
+
+    style W_Start fill:#f9f,stroke:#333
+    style W_End fill:#f9f,stroke:#333
+    style W_Cond fill:#ff9,stroke:#333
+    style W_Process fill:#9cf,stroke:#333
+
+    subgraph DoWhileLoop [Do-While 迴圈]
+        D_Start([開始]) --> D_Process[執行程式區塊]
+        D_Process --> D_Cond{條件成立?}
+        D_Cond -- Yes --> D_Process
+        D_Cond -- No --> D_End([結束])
+    end
+
+    style D_Start fill:#f9f,stroke:#333
+    style D_End fill:#f9f,stroke:#333
+    style D_Cond fill:#ff9,stroke:#333
+    style D_Process fill:#9cf,stroke:#333
+
+    subgraph ForLoop [For 迴圈]
+        F_Start([開始]) --> F_Init[初始化]
+        F_Init --> F_Cond{條件成立?}
+        F_Cond -- Yes --> F_Process[執行程式區塊]
+        F_Process --> F_Iter[迭代更新]
+        F_Iter --> F_Cond
+        F_Cond -- No --> F_End([結束])
+    end
+
+    style F_Start fill:#f9f,stroke:#333
+    style F_End fill:#f9f,stroke:#333
+    style F_Init fill:#9cf,stroke:#333
+    style F_Cond fill:#ff9,stroke:#333
+    style F_Process fill:#caffbf,stroke:#333
+    style F_Iter fill:#9cf,stroke:#333

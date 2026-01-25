@@ -11,7 +11,7 @@ style: |
     background: linear-gradient(135deg, #052e16 0%, #000000 100%);
   }
   table {
-    font-size: 24px;
+    font-size: 30px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -20,10 +20,10 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-### Syllabus
-# {COURSE_NAME} 課程地圖
+### 課程地圖
+# {CourseName} 
 ## Horazon
-## {SEMESTER}
+
 
 ---
 
@@ -37,43 +37,65 @@ style: |
 | **作業 (Homework)** | **80%** | 共三次主要作業，包含期中作業與期末作業。 |
 
 > **Note**: 這是實作課程，請務必動手練習。
+> **Note**: 作業會有繳交期限，學期間的作業若未繳交，可以補交期限為期末，但該作業分數會乘上80%。
 
 ---
 
+<style scoped>
+table { 
+  font-size: 0.8em !important; 
+  margin-left: 100px !important;
+}
+/* 第一格的寬 */
+table th:first-child {
+  width: 100px !important;
+}
+/* 第二欄的寬 */
+table th:nth-child(2) {
+  width: 800px !important;
+}
+</style>
 # 課程進度表 (上半學期)
 
-| 週次 | 主題 | 備註 |
-| :---: | :--- | :--- |
-| **W1** | **課程簡介與環境建置** | 課程說明、評分方式、軟體安裝 |
-| W2 | {WEEK_02} | |
-| W3 | {WEEK_03} | |
-| W4 | {WEEK_04} | |
-| W5 | {WEEK_05} | |
-| W6 | {WEEK_06} | |
-| W7 | {WEEK_07} | |
-| W8 | {WEEK_08} | |
-| **W9** | **期中考週 (Midterm)** | **繳交期中作業** |
+| 週次 | 主題 |
+| :---: | :--- |
+| **W1** | **課程簡介與環境建置** |
+| W2 | {Topic_01} |
+| W3 | {Topic_02} |
+| W4 | {Topic_03} |
+| W5 | {Topic_04} |
+| W6 | {Topic_05} |
+| W7 | {Topic_06} |
+| W8 | {Topic_07} |
+| **W9** | **期中考週 (Midterm)** |
 
 ---
+
+<style scoped>
+table { 
+  font-size: 0.8em !important; 
+  margin-left: 100px !important;
+}
+/* 第一格的寬 */
+table th:first-child {
+  width: 100px !important;
+}
+/* 第二欄的寬 */
+table th:nth-child(2) {
+  width: 800px !important;
+}
+</style>
 
 # 課程進度表 (下半學期)
 
-| 週次 | 主題 | 備註 |
-| :---: | :--- | :--- |
-| W10 | {WEEK_10} | |
-| W11 | {WEEK_11} | |
-| W12 | {WEEK_12} | |
-| W13 | {WEEK_13} | |
-| W14 | {WEEK_14} | |
-| W15 | {WEEK_15} | |
-| W16 | {WEEK_16} | |
-| **W17** | **期末考週 (Final)** | **繳交期末作業** |
-| W18 | 彈性教學與總結 | 優秀作品展示 |
-
----
-
-# 總結
-
--   請按時繳交作業。
--   有問題隨時詢問。
--   Happy Coding!
+| 週次 | 主題 |
+| :---: | :--- |
+| W10 | {Topic_08} |
+| W11 | {Topic_09} |
+| W12 | {Topic_10} |
+| W13 | {Topic_11} |
+| W14 | {Topic_12} |
+| W15 | {Topic_13} |
+| W16 | {Topic_14} |
+| **W17** | **期末考週 (Final)** |
+| W18 | 彈性教學與總結 |

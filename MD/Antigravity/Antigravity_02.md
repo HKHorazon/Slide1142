@@ -48,6 +48,23 @@ style: |
 
 ---
 
+# Context Engineering (上下文工程)
+
+### 定義
+不僅僅是「寫好提示詞 (Prompt Engineering)」，而是**系統化地設計 AI 接收的資訊環境**。
+
+### 核心概念
+- **提供背景**：讓 AI 知道它是誰、任務是什麼 (System Instructions)。
+- **注入知識**：自動提供相關文件、程式碼片段 (RAG)。
+- **設定規則**：明確規範什麼能做、什麼不能做 (User Rules)。
+
+> **Prompt 是戰術 (單次提問技巧)，Context 是戰略 (整體資訊佈局)。**
+
+
+
+
+---
+
 # System Instructions (系統指令)
 
 ### 賦予 AI 「角色」
@@ -62,7 +79,7 @@ style: |
 
 ---
 
-# Part 2: 什麼是 Agent Skill? (The What)
+# Part 2: 什麼是 Agent Skill? 
 
 ### 定義
 - **Agent Skill** 是一包預先定義好的**專門知識**或**標準作業程序 (SOP)**。
@@ -85,7 +102,8 @@ table {
 </style>
 | 時間點 | 事件 | 影響 |
 | :--- | :--- | :--- |
-| **2025/12** | **Anthropic** 發布 Agent Skills | 定義了 Agent Skill Protocol，為 AI 提供標準化的技能擴充協定。 |
+| **2025/10** | **Anthropic** 推出 Agent Skills | **功能公測 (Beta)**：首度展示 Agent Skill，能執行特殊任務。 |
+| **2025/12** | **Anthropic** 發布 Agent Skills | **協議開源 (Open Source)**：正式發布，定義標準化介面。 |
 | **2026/01** | **Antigravity** 引入 Skills | Google 團隊將此概念整合進 VS Code Agent，讓開發者能自定義 AI 的能力。 |
 
 ### 為什麼這很重要？
@@ -150,7 +168,7 @@ description: 專門負責中英翻譯的技能
 你不一定需要從頭開始造輪子。
 
 ### 資源來源
-1.  **Claude MCP / Skills**：Anthropic 官方或社群維護的列表。
+1.  **Claude MCP / Skills**：Anthropic 官方或社群維護的列表。  https://skills.sh/
 2.  **Git Hub Open Source**：許多開發者公開分享他們的 Prompt。
 3.  **Team Shared**：資深工程師寫好 Skill，透過 Git 分享給全團隊使用 (如 Coding Style 檢查)。
 
@@ -159,6 +177,7 @@ description: 專門負責中英翻譯的技能
 # 途徑三：叫 AI 寫 (Generate)
 
 這是最快的方法！直接命令 Antigravity 幫你產生。
+(推薦安裝 https://skills.sh/ 的 skill-creator)
 
 ### 範例指令
 > *"Hey Agent, 我想要一個翻譯成中文的 Skill。請幫我建立一個 `translate_cn` skill，當我輸入英文時，自動幫我翻譯成流暢的繁體中文。"*

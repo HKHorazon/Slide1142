@@ -1,0 +1,26 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryTextColor': '#000000', 'edgeLabelBackground': '#f2f2f2', 'tertiaryColor': '#f2f2f2', 'fontSize': '20px'}}}%%
+flowchart TD
+    Agent("Antigravity Agent<br>(Core Brain)")
+
+    subgraph Context ["Context & Memory"]
+        Rules["User Rules<br>(Constraints & Persona)"]
+    end
+
+    subgraph Capabilities ["Extensions"]
+        Skills["Agent Skills<br>(Local Workflows)"]
+        MCP["MCP Servers<br>(External Tools)"]
+    end
+
+    Rules -->|Guide / Constrain| Agent
+    Agent -->|Execute| Skills
+    Agent -->|Connect via Protocol| MCP
+
+    %% Styling
+    style Agent fill:#f9d5e5,stroke:#333,stroke-width:2px,color:#000
+    style Rules fill:#eeeeee,stroke:#333,stroke-dasharray: 5 5,color:#000
+    style Skills fill:#d7ecfb,stroke:#333,color:#000
+    style MCP fill:#e0fbf6,stroke:#333,color:#000
+
+    linkStyle 0 stroke:#ff5555,stroke-width:2px
+    linkStyle 1 stroke:#5555ff,stroke-width:2px
+    linkStyle 2 stroke:#00aa00,stroke-width:2px
