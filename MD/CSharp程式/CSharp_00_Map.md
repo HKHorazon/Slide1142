@@ -4,11 +4,11 @@ theme: HoraStyle
 paginate: true
 style: |
   :root {
-    --title-bg: linear-gradient(90deg, #1d4ed8, #60a5fa);
+    --title-bg: linear-gradient(90deg, #15803d, #22c55e);
     --title-text-color: #ffffff;
   }
   section.lead {
-    background: linear-gradient(135deg, #1e3a8a 0%, #000000 100%);
+    background: linear-gradient(135deg, #052e16 0%, #000000 100%);
   }
   table {
     font-size: 30px;
@@ -20,10 +20,10 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-### Syllabus
-# C# 程式設計 課程地圖
+### 課程地圖
+# {CourseName} 
 ## Horazon
-## 114-2
+
 
 ---
 
@@ -60,13 +60,13 @@ table th:nth-child(2) {
 | 週次 | 主題 |
 | :---: | :--- |
 | **W1** | **課程簡介與環境建置** |
-| W2 | 程式語言與 C# (Hello World) |
-| W3 | 變數宣告與使用 |
-| W4 | 運算式與運算子 |
-| W5 | 流程控制 (If/Switch) |
-| W6 | 迴圈控制 (Loop) |
-| W7 | 陣列 (Array) |
-| W8 | 字串處理 (String) |
+| W2 | {Topic_01} |
+| W3 | {Topic_02} |
+| W4 | {Topic_03} |
+| W5 | {Topic_04} |
+| W6 | {Topic_05} |
+| W7 | {Topic_06} |
+| W8 | {Topic_07} |
 | **W9** | **期中考週 (Midterm)** |
 
 ---
@@ -90,12 +90,12 @@ table th:nth-child(2) {
 
 | 週次 | 主題 |
 | :---: | :--- |
-| W10 | 函式與方法 (Function & Method) |
-| W11 | 類別與物件 (Class & Object) |
-| W12 | 封裝與建構子 (Encapsulation) |
-| W13 | 繼承與多型 (Inheritance) |
-| W14 | 集合與泛型 (Collections) |
-| W15 | 檔案與串流 (File I/O) |
-| W16 | 例外處裡 (Exception) |
+| W10 | {Topic_08} |
+| W11 | {Topic_09} |
+| W12 | {Topic_10} |
+| W13 | {Topic_11} |
+| W14 | {Topic_12} |
+| W15 | {Topic_13} |
+| W16 | {Topic_14} |
 | **W17** | **期末考週 (Final)** |
 | W18 | 彈性教學與總結 |

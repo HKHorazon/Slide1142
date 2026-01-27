@@ -4,11 +4,11 @@ theme: HoraStyle
 paginate: true
 style: |
   :root {
-    --title-bg: linear-gradient(90deg, #7c3aed, #8b5cf6);
+    --title-bg: linear-gradient(90deg, #15803d, #22c55e);
     --title-text-color: #ffffff;
   }
   section.lead {
-    background: linear-gradient(135deg, #2e1065 0%, #000000 100%);
+    background: linear-gradient(135deg, #052e16 0%, #000000 100%);
   }
   table {
     font-size: 30px;
@@ -20,10 +20,10 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-### Syllabus
-# 應用程式設計 課程地圖
+### 課程地圖
+# {CourseName} 
 ## Horazon
-## 應用程式設計
+
 
 ---
 
@@ -60,13 +60,13 @@ table th:nth-child(2) {
 | 週次 | 主題 |
 | :---: | :--- |
 | **W1** | **課程簡介與環境建置** |
-| W2 | 第一個程式：Hello World |
-| W3 | 基本元件與排版 |
-| W4 | 簡易計算機 |
-| W5 | 亂數應用：骰子遊戲 |
-| W6 | 邏輯判斷：猜數字遊戲 |
-| W7 | 邏輯練習：剪刀石頭布 |
-| W8 | 重複的力量：迴圈 |
+| W2 | {Topic_01} |
+| W3 | {Topic_02} |
+| W4 | {Topic_03} |
+| W5 | {Topic_04} |
+| W6 | {Topic_05} |
+| W7 | {Topic_06} |
+| W8 | {Topic_07} |
 | **W9** | **期中考週 (Midterm)** |
 
 ---
@@ -90,12 +90,12 @@ table th:nth-child(2) {
 
 | 週次 | 主題 |
 | :---: | :--- |
-| W10 | 切換畫面：多重 Screen |
-| W11 | 清單應用：樂透遊戲 |
-| W12 | 有聲有色：多媒體元件 |
-| W13 | 動畫與遊戲：Canvas |
-| W14 | 專案實作技巧 |
-| W15 | 資料儲存：TinyDB |
-| W16 | 期末專案實作 (Project) |
+| W10 | {Topic_08} |
+| W11 | {Topic_09} |
+| W12 | {Topic_10} |
+| W13 | {Topic_11} |
+| W14 | {Topic_12} |
+| W15 | {Topic_13} |
+| W16 | {Topic_14} |
 | **W17** | **期末考週 (Final)** |
 | W18 | 彈性教學與總結 |
