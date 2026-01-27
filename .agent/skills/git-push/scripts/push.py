@@ -57,18 +57,39 @@ def git_push_flow():
     else:
         print(f"[GitPush] Warning: Cleanup script not found at {cleanup_script}")
 
-    # 4. Update display/index.html paths (Verification)
-    # The export script generates display/index.html by design.
-    # We verify it exists.
-    print("\n[GitPush] >>> Step 4: Verifying Index...")
-    index_path = os.path.join("display", "index.html")
-    if os.path.exists(index_path):
-        print(f"[GitPush] Verified: {index_path} exists and was updated.")
-    else:
-        print(f"[GitPush] Warning: {index_path} was not found after export.")
+    # 4. Regenerate Index (To remove deleted PDFs from listing)
+    print("\n[GitPush] >>> Step 4: Regenerating Index...")
+    # reuse export_script path, use -i flag
+    try:
+        subprocess.run([sys.executable, export_script, "-i"], check=True)
+        print("[GitPush] Index regenerated.")
+    except subprocess.CalledProcessError as e:
+        print(f"[GitPush] Index regeneration failed: {e}")
 
-    # 5. Git Commit
-    print("\n[GitPush] >>> Step 5: Git Commit...")
+    # 5. Sync Index to Root (display/index.html -> index.html)
+    print("\n[GitPush] >>> Step 5: Syncing Root Index...")
+    display_index = os.path.join("display", "index.html")
+    root_index = "index.html"
+    
+    if os.path.exists(display_index):
+        try:
+            with open(display_index, "r", encoding="utf-8") as f:
+                content = f.read()
+            
+            # Fix relative paths: ../PDF -> PDF
+            content = content.replace('../PDF', 'PDF')
+            
+            with open(root_index, "w", encoding="utf-8") as f:
+                f.write(content)
+            
+            print(f"[GitPush] Updated root {root_index} from {display_index}")
+        except Exception as e:
+            print(f"[GitPush] Failed to sync root index: {e}")
+    else:
+        print(f"[GitPush] Warning: {display_index} not found.")
+
+    # 6. Git Commit
+    print("\n[GitPush] >>> Step 6: Git Commit...")
     try:
         subprocess.run(["git", "add", "."], check=True)
         

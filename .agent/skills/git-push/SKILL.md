@@ -14,7 +14,7 @@ This skill automates the process of updating the course materials and syncing th
   1.  **Generate Maps**: Calls `slide` skill's `generate_map.py` to update course maps (respects `MapLock`).
   2.  **Export Slides**: Calls `slide` skill's `export.py` to convert all `.md` files to PDF.
   3.  **Cleanup Old PDFs**: Calls `slide` skill's `cleanup_pdf.py` to remove orphaned files.
-  4.  **Update Index**: The export script automatically regenerates `display/index.html` with correct paths/names.
+  4.  **Update Index**: Regenerates `display/index.html` to reflect cleaner PDF list, then syncs to root `index.html`.
   5.  **Git Sync**: Adds all files, commits with "Auto update", and pushes to remote.
 
 ## Usage
