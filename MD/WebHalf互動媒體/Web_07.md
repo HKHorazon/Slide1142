@@ -16,9 +16,11 @@ style: |
 <!-- _class: lead -->
 <!--_paginate: false-->
 
-# JavaScript 基礎入門
+### Chapter 07
+# DOM與JavaScript
+
 ## Horazon
-## 互動媒體
+## 互動媒體設計
 
 ---
 

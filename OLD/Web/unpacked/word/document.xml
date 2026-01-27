@@ -1,0 +1,4343 @@
+<?xml version="1.0" encoding="ascii"?><w:document xmlns:ve="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml">
+  <w:body>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="5000" w:type="pct"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="000000" w:themeColor="text1"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="000000" w:themeColor="text1"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000" w:themeColor="text1"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="000000" w:themeColor="text1"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="000000" w:themeColor="text1"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="000000" w:themeColor="text1"/>
+        </w:tblBorders>
+        <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+        <w:tblCellMar>
+          <w:top w:w="15" w:type="dxa"/>
+          <w:left w:w="15" w:type="dxa"/>
+          <w:bottom w:w="15" w:type="dxa"/>
+          <w:right w:w="15" w:type="dxa"/>
+        </w:tblCellMar>
+        <w:tblLook w:val="04A0"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="1433"/>
+        <w:gridCol w:w="2867"/>
+        <w:gridCol w:w="1382"/>
+        <w:gridCol w:w="1473"/>
+        <w:gridCol w:w="1508"/>
+        <w:gridCol w:w="1856"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidTr="00573991">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="681" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31185;&#30446;&#21517;&#31281;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1363" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidRDefault="00F2396C" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00F2396C">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#20114;&#21205;&#23186;&#39636;&#35069;&#20316;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="657" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#19978;&#35506;&#26178;&#38291;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2299" w:type="pct"/>
+            <w:gridSpan w:val="3"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r w:rsidR="00B31C36">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#20116;</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)2,3,4</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidTr="00573991">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="681" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36984;&#35506;&#34399;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1363" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidRDefault="00AE1339" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AE1339">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>0</w:t>
+            </w:r>
+            <w:r w:rsidR="00B31C36">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>1196</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="657" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#38283;&#35506;&#29677;&#32026;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="0" w:type="auto"/>
+            <w:gridSpan w:val="3"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#26085;&#22235;&#25216;&#22810;&#36938;</w:t>
+            </w:r>
+            <w:r w:rsidR="00B31C36">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>2</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#24180;&#30002;&#29677;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidTr="00573991">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="681" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#20219;&#35506;&#25945;&#24107;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1363" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#27946;&#26126;&#39023;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="657" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#23416;&#20998;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#26178;&#25976;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="700" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>3/3</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="717" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#25945;&#23460;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="882" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00E22474" w:rsidRDefault="00B965DD" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:color w:val="FF0000"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:color w:val="FF0000"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>G501</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidTr="00573991">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="681" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#35506;&#31243;&#31777;&#20171;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="4319" w:type="pct"/>
+            <w:gridSpan w:val="5"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#19968;&#12289;&#35506;&#31243;&#31777;&#20171;</w:t>
+            </w:r>
+            <w:r w:rsidR="006C1A3F">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#65306;</w:t>
+            </w:r>
+            <w:r w:rsidR="006E2C58" w:rsidRPr="006E2C58">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#26412;&#35506;&#31243;&#36939;&#29992;</w:t>
+            </w:r>
+            <w:r w:rsidR="006E2C58" w:rsidRPr="006E2C58">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>Unity</w:t>
+            </w:r>
+            <w:r w:rsidR="006E2C58" w:rsidRPr="006E2C58">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#24341;&#25806;&#38283;&#30332;&#24037;&#20855;&#27231;&#23637;&#31034;</w:t>
+            </w:r>
+            <w:r w:rsidR="006E2C58" w:rsidRPr="006E2C58">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>APP</w:t>
+            </w:r>
+            <w:r w:rsidR="006E2C58" w:rsidRPr="006E2C58">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#65292;&#25972;&#21512;</w:t>
+            </w:r>
+            <w:r w:rsidR="006E2C58" w:rsidRPr="006E2C58">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>UI/UX</w:t>
+            </w:r>
+            <w:r w:rsidR="006E2C58" w:rsidRPr="006E2C58">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#35373;&#35336;&#12289;</w:t>
+            </w:r>
+            <w:r w:rsidR="006E2C58" w:rsidRPr="006E2C58">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>3D</w:t>
+            </w:r>
+            <w:r w:rsidR="006E2C58" w:rsidRPr="006E2C58">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#27169;&#22411;&#33287;&#20114;&#21205;&#31243;&#24335;&#38283;&#30332;&#12290;&#20839;&#23481;&#28085;&#33995;&#20171;&#38754;&#35215;&#21123;&#12289;&#26448;&#36074;&#28210;&#26579;&#21450;&#21205;&#24907;&#37007;&#36655;&#65292;&#36879;&#36942;&#23560;&#26696;&#23526;&#20316;&#65292;&#22521;&#39178;&#23416;&#29983;&#25171;&#36896;&#25976;&#20301;&#23637;&#31034;&#25033;&#29992;&#30340;&#26680;&#24515;&#33021;&#21147;&#12290;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00573991" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#20108;&#12289;&#36969;&#29992;&#23565;&#35937;</w:t>
+            </w:r>
+            <w:r w:rsidR="00E22474">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#65306;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#22810;&#23186;&#31995;&#23416;&#29983;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00573991" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#19977;&#12289;&#23416;&#21069;&#33021;&#21147;</w:t>
+            </w:r>
+            <w:r w:rsidR="00E22474">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#65306;</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>3D</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#27169;&#22411;&#35069;&#20316;</w:t>
+            </w:r>
+            <w:r w:rsidR="0098714B">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#12289;&#24433;&#20687;&#34389;&#29702;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="006C1A3F" w:rsidRDefault="006C1A3F" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="006C1A3F" w:rsidRPr="00414DC3" w:rsidRDefault="006E2C58" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="006E2C58">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>This course uses Unity to develop machine tool showcase Apps, integrating UI/UX design, 3D model optimization, and interactive programming. Students will learn interface planning, rendering, and dynamic logic. Through project-based learning, they will gain the practical skills needed to build digital applications.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidTr="0073346A">
+        <w:trPr>
+          <w:trHeight w:val="3582"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="681" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00573991" w:rsidRPr="00414DC3" w:rsidRDefault="00573991" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00414DC3">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#25945;&#23416;&#30446;&#27161;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="4319" w:type="pct"/>
+            <w:gridSpan w:val="5"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00E22474" w:rsidRDefault="00E22474" w:rsidP="00E22474">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00E22474">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>1.</w:t>
+            </w:r>
+            <w:r w:rsidR="004F22D2" w:rsidRPr="004F22D2">
+              <w:rPr>
+                <w:rFonts w:ascii="&#27161;&#26999;&#39636;" w:eastAsia="&#27161;&#26999;&#39636;" w:hAnsi="&#27161;&#26999;&#39636;" w:hint="eastAsia"/>
+              </w:rPr>
+              <w:t>&#25484;&#25569;Unity&#38283;&#30332;&#29872;&#22659;&#33287;&#22522;&#30990;&#25805;&#20316;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00E22474" w:rsidRDefault="00E22474" w:rsidP="00E22474">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00E22474">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>2.</w:t>
+            </w:r>
+            <w:r w:rsidR="004F22D2" w:rsidRPr="004F22D2">
+              <w:rPr>
+                <w:rFonts w:ascii="&#27161;&#26999;&#39636;" w:eastAsia="&#27161;&#26999;&#39636;" w:hAnsi="&#27161;&#26999;&#39636;" w:hint="eastAsia"/>
+              </w:rPr>
+              <w:t>&#23526;&#20316;3D&#27169;&#22411;&#34389;&#29702;&#33287;&#28210;&#26579;&#25216;&#34899;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00E22474" w:rsidRDefault="00E22474" w:rsidP="00E22474">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00E22474">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>3.</w:t>
+            </w:r>
+            <w:r w:rsidR="00065CE9" w:rsidRPr="00065CE9">
+              <w:rPr>
+                <w:rFonts w:ascii="&#27161;&#26999;&#39636;" w:eastAsia="&#27161;&#26999;&#39636;" w:hAnsi="&#27161;&#26999;&#39636;" w:hint="eastAsia"/>
+              </w:rPr>
+              <w:t>&#25033;&#29992;UI/UX&#21407;&#21063;&#24314;&#27083;&#20114;&#21205;&#20171;&#38754;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00E22474" w:rsidRDefault="00E22474" w:rsidP="00E22474">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00E22474">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>4.</w:t>
+            </w:r>
+            <w:r w:rsidR="007D27AD" w:rsidRPr="007D27AD">
+              <w:rPr>
+                <w:rFonts w:ascii="&#27161;&#26999;&#39636;" w:eastAsia="&#27161;&#26999;&#39636;" w:hAnsi="&#27161;&#26999;&#39636;"/>
+              </w:rPr>
+              <w:t>&#36939;&#29992;C#&#33139;&#26412;&#38283;&#30332;&#26680;&#24515;&#20114;&#21205;&#37007;&#36655;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00573991" w:rsidRDefault="00E22474" w:rsidP="00E22474">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00E22474">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>5.</w:t>
+            </w:r>
+            <w:r w:rsidR="007D27AD" w:rsidRPr="007D27AD">
+              <w:rPr>
+                <w:rFonts w:ascii="&#27161;&#26999;&#39636;" w:eastAsia="&#27161;&#26999;&#39636;" w:hAnsi="&#27161;&#26999;&#39636;"/>
+              </w:rPr>
+              <w:t>&#25972;&#21512;&#36328;&#24179;&#21488;&#23560;&#26696;&#30332;&#24067;&#33287;&#20778;&#21270;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00FC11E7" w:rsidRDefault="00FC11E7" w:rsidP="00E22474">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+          </w:p>
+          <w:p w:rsidR="00B436CC" w:rsidRPr="00B436CC" w:rsidRDefault="00B436CC" w:rsidP="00B436CC">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B436CC">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t xml:space="preserve">1. </w:t>
+            </w:r>
+            <w:r w:rsidR="00AE3889" w:rsidRPr="00AE3889">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>Master Unity Development Environment and Basics.</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00B436CC" w:rsidRPr="00B436CC" w:rsidRDefault="00B436CC" w:rsidP="00B436CC">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B436CC">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t xml:space="preserve">2. </w:t>
+            </w:r>
+            <w:r w:rsidR="00AE3889" w:rsidRPr="00AE3889">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>Implement 3D Model Processing and Rendering.</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00B436CC" w:rsidRPr="00B436CC" w:rsidRDefault="00B436CC" w:rsidP="00B436CC">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B436CC">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t xml:space="preserve">3. </w:t>
+            </w:r>
+            <w:r w:rsidR="00AE3889" w:rsidRPr="00AE3889">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>Apply UI/UX Principles to Construct Interactive Interfaces.</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00B436CC" w:rsidRPr="00B436CC" w:rsidRDefault="00B436CC" w:rsidP="00B436CC">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B436CC">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t xml:space="preserve">4. </w:t>
+            </w:r>
+            <w:r w:rsidR="00AE3889" w:rsidRPr="00AE3889">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>Develop Core Interactive Logic using C# Scripting.</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00B436CC" w:rsidRPr="00414DC3" w:rsidRDefault="00B436CC" w:rsidP="00B436CC">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B436CC">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t xml:space="preserve">5. </w:t>
+            </w:r>
+            <w:r w:rsidR="00AE3889" w:rsidRPr="00AE3889">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>Integrate Cross-Platform Project Deployment and Optimization.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="0073346A" w:rsidRPr="00414DC3" w:rsidTr="00573991">
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="681" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="0073346A" w:rsidRPr="00414DC3" w:rsidRDefault="0073346A" w:rsidP="00573991">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#21443;&#32771;&#26360;&#31821;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="4319" w:type="pct"/>
+            <w:gridSpan w:val="5"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="0073346A" w:rsidRPr="0073346A" w:rsidRDefault="0073346A" w:rsidP="00774D97">
+            <w:pPr>
+              <w:ind w:right="113"/>
+              <w:jc w:val="both"/>
+            </w:pPr>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w:rsidR="00FB3B31" w:rsidRDefault="00FB3B31" w:rsidP="008434DD">
+      <w:r w:rsidRPr="00FB3B31">
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>&#33258;&#32232;&#25945;&#26448;</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> S</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00FB3B31">
+        <w:t>elf-designed teaching material</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00573991" w:rsidRDefault="00BB3B23" w:rsidP="008434DD">
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>&#28961;</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00BB3B23">
+        <w:t>N/A</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00035398" w:rsidRDefault="00BB3B23" w:rsidP="008434DD">
+      <w:r w:rsidRPr="00BB3B23">
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>&#19978;&#35506;&#12289;&#23526;&#20316;</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00BB3B23">
+        <w:t>Lectures and Practicals</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="5000" w:type="pct"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="000000" w:themeColor="text1"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="000000" w:themeColor="text1"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000" w:themeColor="text1"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="000000" w:themeColor="text1"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="000000" w:themeColor="text1"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="000000" w:themeColor="text1"/>
+        </w:tblBorders>
+        <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+        <w:tblCellMar>
+          <w:top w:w="15" w:type="dxa"/>
+          <w:left w:w="15" w:type="dxa"/>
+          <w:bottom w:w="15" w:type="dxa"/>
+          <w:right w:w="15" w:type="dxa"/>
+        </w:tblCellMar>
+        <w:tblLook w:val="04A0"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="1149"/>
+        <w:gridCol w:w="1843"/>
+        <w:gridCol w:w="7527"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidTr="00B67F37">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00573991" w:rsidRDefault="00B67F37" w:rsidP="00B67F37">
+            <w:pPr>
+              <w:widowControl/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="&#26032;&#32048;&#26126;&#39636;" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="&#26032;&#32048;&#26126;&#39636;" w:cs="&#26032;&#32048;&#26126;&#39636;"/>
+                <w:color w:val="000000"/>
+                <w:kern w:val="0"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00573991">
+              <w:rPr>
+                <w:rFonts w:ascii="&#26032;&#32048;&#26126;&#39636;" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="&#26032;&#32048;&#26126;&#39636;" w:cs="&#26032;&#32048;&#26126;&#39636;" w:hint="eastAsia"/>
+                <w:color w:val="000000"/>
+                <w:kern w:val="0"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;&#27425;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00573991" w:rsidRDefault="00B67F37" w:rsidP="00B67F37">
+            <w:pPr>
+              <w:widowControl/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="&#26032;&#32048;&#26126;&#39636;" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="&#26032;&#32048;&#26126;&#39636;" w:cs="&#26032;&#32048;&#26126;&#39636;"/>
+                <w:color w:val="000000"/>
+                <w:kern w:val="0"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00573991">
+              <w:rPr>
+                <w:rFonts w:ascii="&#26032;&#32048;&#26126;&#39636;" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="&#26032;&#32048;&#26126;&#39636;" w:cs="&#26032;&#32048;&#26126;&#39636;" w:hint="eastAsia"/>
+                <w:color w:val="000000"/>
+                <w:kern w:val="0"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#26085;&#26399;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00573991" w:rsidRDefault="00B67F37" w:rsidP="00FB15C6">
+            <w:pPr>
+              <w:widowControl/>
+              <w:rPr>
+                <w:rFonts w:ascii="&#26032;&#32048;&#26126;&#39636;" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="&#26032;&#32048;&#26126;&#39636;" w:cs="&#26032;&#32048;&#26126;&#39636;"/>
+                <w:color w:val="000000"/>
+                <w:kern w:val="0"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00573991">
+              <w:rPr>
+                <w:rFonts w:ascii="&#26032;&#32048;&#26126;&#39636;" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="&#26032;&#32048;&#26126;&#39636;" w:cs="&#26032;&#32048;&#26126;&#39636;" w:hint="eastAsia"/>
+                <w:color w:val="000000"/>
+                <w:kern w:val="0"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#25945;&#23416;&#20839;&#23481;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidTr="00BE66C9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidRDefault="00B67F37" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>1</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidRDefault="00B67F37" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(0</w:t>
+            </w:r>
+            <w:r w:rsidR="001C6E09">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>2</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="001C6E09">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>23</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-0</w:t>
+            </w:r>
+            <w:r w:rsidR="001C6E09">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>2</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="001C6E09">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>27</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00D37FB6" w:rsidRDefault="00F24CA0" w:rsidP="0026409A">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="&#27161;&#26999;&#39636;" w:eastAsia="&#27161;&#26999;&#39636;" w:hAnsi="&#27161;&#26999;&#39636;" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00F24CA0">
+              <w:rPr>
+                <w:rFonts w:ascii="&#27161;&#26999;&#39636;" w:eastAsia="&#27161;&#26999;&#39636;" w:hAnsi="&#27161;&#26999;&#39636;" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#35506;&#31243;&#20171;&#32057;&#33287;&#20114;&#21205;&#35373;&#35336;&#27010;&#35542;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00437B58" w:rsidRPr="00B67F37" w:rsidRDefault="00F24CA0" w:rsidP="0026409A">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00F24CA0">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>Course Introduction and Interaction Design Overview</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidTr="00BE66C9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidRDefault="00B67F37" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>2</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidRDefault="00B67F37" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(0</w:t>
+            </w:r>
+            <w:r w:rsidR="00BE66C9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>3</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="00BE66C9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>02</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-0</w:t>
+            </w:r>
+            <w:r w:rsidR="00BE66C9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>3</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="00BE66C9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>06</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00437B58" w:rsidRDefault="002347D9" w:rsidP="006E74E4">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="002347D9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>UI</w:t>
+            </w:r>
+            <w:r w:rsidRPr="002347D9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#20171;&#38754;&#35215;&#21123;&#33287;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="002347D9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>uGUI</w:t>
+            </w:r>
+            <w:r w:rsidRPr="002347D9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#23526;&#20316;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AE43B7" w:rsidRPr="00B67F37" w:rsidRDefault="00AE43B7" w:rsidP="006E74E4">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AE43B7">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>UI Interface Planning and uGUI Implementation</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006E74E4" w:rsidRPr="00B67F37" w:rsidTr="00BE66C9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="006E74E4" w:rsidRPr="00B67F37" w:rsidRDefault="006E74E4" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>3</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="006E74E4" w:rsidRPr="00B67F37" w:rsidRDefault="006E74E4" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(0</w:t>
+            </w:r>
+            <w:r w:rsidR="00BE66C9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>3</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="00BE66C9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>09</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-0</w:t>
+            </w:r>
+            <w:r w:rsidR="00BE66C9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>3</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="00BE66C9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>13</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="006E74E4" w:rsidRDefault="002347D9" w:rsidP="006E74E4">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="002347D9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>DOTween</w:t>
+            </w:r>
+            <w:r w:rsidRPr="002347D9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#20837;&#38272;&#33287;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="002347D9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>UI</w:t>
+            </w:r>
+            <w:r w:rsidRPr="002347D9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#21205;&#24907;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AE43B7" w:rsidRPr="00B67F37" w:rsidRDefault="00AE43B7" w:rsidP="006E74E4">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AE43B7">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>Introduction to DOTween and UI Animation</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="006E74E4" w:rsidRPr="00B67F37" w:rsidTr="00BE66C9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="006E74E4" w:rsidRPr="00B67F37" w:rsidRDefault="006E74E4" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>4</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="006E74E4" w:rsidRPr="00B67F37" w:rsidRDefault="006E74E4" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(0</w:t>
+            </w:r>
+            <w:r w:rsidR="00BE66C9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>3</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="00BE66C9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>16</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-</w:t>
+            </w:r>
+            <w:r w:rsidR="00BE66C9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>03</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="00BE66C9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>20</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="006E74E4" w:rsidRDefault="002347D9" w:rsidP="006E74E4">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="002347D9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>3D</w:t>
+            </w:r>
+            <w:r w:rsidRPr="002347D9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#35222;&#35282;&#25511;&#21046;&#33287;&#29305;&#23531;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AE43B7" w:rsidRPr="00B67F37" w:rsidRDefault="00AE43B7" w:rsidP="006E74E4">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AE43B7">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>3D Camera Control and Focus</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidTr="00BE66C9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidRDefault="00B67F37" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>5</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidRDefault="00B67F37" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>03</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>23</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>03</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>27</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="0062560A" w:rsidRDefault="002347D9" w:rsidP="0027578D">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="002347D9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#27231;&#26800;&#21205;&#24907;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AE43B7" w:rsidRPr="00B67F37" w:rsidRDefault="00AE43B7" w:rsidP="0027578D">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AE43B7">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>Mechanical Dynamics (Animation)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidTr="00BE66C9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidRDefault="00B67F37" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>6</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidRDefault="00B67F37" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>03</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>30</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>04</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>03</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p w:rsidR="00C429F6" w:rsidRDefault="002347D9" w:rsidP="002347D9">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="004D49B8">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36039;&#35338;&#27161;&#31844;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AE43B7" w:rsidRPr="00B67F37" w:rsidRDefault="00AE43B7" w:rsidP="002347D9">
+            <w:pPr>
+              <w:ind w:left="425" w:right="113" w:hangingChars="177" w:hanging="425"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AE43B7">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>Information Tags</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidTr="00BE66C9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidRDefault="00B67F37" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>7</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidRDefault="00B67F37" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>04</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>06</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>04</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>10</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRDefault="00AB285F" w:rsidP="00611188">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AB285F">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#26448;&#36074;&#33287;&#20809;&#24433;&#28210;&#26579;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AE43B7" w:rsidRPr="00B67F37" w:rsidRDefault="00AE43B7" w:rsidP="00611188">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AE43B7">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>Materials and Lighting Rendering</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidTr="00BE66C9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidRDefault="00B67F37" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:lastRenderedPageBreak/>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>8</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidRDefault="00B67F37" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>04</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>13</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>04</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>17</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRDefault="00ED0091" w:rsidP="00611188">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>PC</w:t>
+            </w:r>
+            <w:r w:rsidR="002347D9" w:rsidRPr="002347D9">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#24179;&#21488;&#24314;&#32622;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00AE43B7" w:rsidRPr="00B67F37" w:rsidRDefault="00AE43B7" w:rsidP="00611188">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00AE43B7">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>PC Platform Building and Deployment</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidTr="00BE66C9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidRDefault="00B67F37" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>9</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRPr="00B67F37" w:rsidRDefault="00B67F37" w:rsidP="00BE66C9">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>04</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>20</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>04</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r w:rsidR="007B6981">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>24</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00B67F37" w:rsidRDefault="004D49B8" w:rsidP="00B67F37">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="004D49B8">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#26399;&#20013;&#23560;&#26696;&#27298;&#26680;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00515357" w:rsidRPr="00B67F37" w:rsidRDefault="004D49B8" w:rsidP="00B67F37">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="004D49B8">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>Mid-term Project Review (Milestone 1)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidTr="002347D9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>10</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>04</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>27</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>05</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>01</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="006A2257" w:rsidP="001350DF">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="006A2257">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#20114;&#21205;&#23186;&#39636;&#33287;&#32178;&#38913;&#27010;&#35542;</w:t>
+            </w:r>
+          </w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="734376CA" w14:textId="6C8A1358"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr></w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="53F6F819" w14:textId="069E2953"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr><w:r w:rsidR="D30097E3"><w:t>Introduction to Interactive Media and Web</w:t></w:r></w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidTr="002347D9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>11</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>05</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>04</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>05</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>08</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="006A2257" w:rsidP="001350DF">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="006A2257">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31777;&#26131;&#32178;&#31449;&#38283;&#30332;&#39636;&#39511;</w:t>
+            </w:r>
+          </w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="45F540DD" w14:textId="3BCF16FE"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr></w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="0654819A" w14:textId="2B5BBC6F"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr><w:r w:rsidR="D30097E3"><w:t>Simple Website Development Experience</w:t></w:r></w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidTr="002347D9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>12</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>05</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>11</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>05</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>15</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="006A2257" w:rsidP="001350DF">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="006A2257">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#32178;&#31449;&#21069;&#31471;&#33287;&#24460;&#31471;</w:t>
+            </w:r>
+          </w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="7101E373" w14:textId="233AAC24"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr></w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="447991A5" w14:textId="76DCC5CE"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr><w:r w:rsidR="D30097E3"><w:t>Frontend vs Backend</w:t></w:r></w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidTr="00D74923">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>13</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>05</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>18</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>05</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>22</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="006A2257" w:rsidP="001350DF">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="006A2257">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>Html</w:t>
+            </w:r>
+            <w:r w:rsidRPr="006A2257">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#22522;&#26412;&#35486;&#27861;</w:t>
+            </w:r>
+          </w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="19EF4E1D" w14:textId="4ED4EDD5"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr></w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="6919A306" w14:textId="58372465"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr><w:r w:rsidR="D30097E3"><w:t>HTML Basics</w:t></w:r></w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidTr="002347D9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>14</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>05</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>25</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>04</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>29</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="006A2257" w:rsidP="001350DF">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="006A2257">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>Style</w:t>
+            </w:r>
+            <w:r w:rsidRPr="006A2257">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#33287;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="006A2257">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>CSS</w:t>
+            </w:r>
+          </w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="7E5E28B6" w14:textId="782A95AA"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr></w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="683FC54B" w14:textId="335304C8"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr><w:r w:rsidR="D30097E3"><w:t>Style and CSS</w:t></w:r></w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidTr="002347D9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>15</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>06</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>01</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>06</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>05</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="006A2257" w:rsidP="001350DF">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="006A2257">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>DOM</w:t>
+            </w:r>
+            <w:r w:rsidRPr="006A2257">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#33287;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="006A2257">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>JavaScript</w:t>
+            </w:r>
+          </w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="120C3DC2" w14:textId="0AE2D0B7"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr></w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="7A22A78E" w14:textId="76FF0A28"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr><w:r w:rsidR="D30097E3"><w:t>DOM and JavaScript</w:t></w:r></w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidTr="002347D9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>16</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>06</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>08</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>06</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>12</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="001A273D" w:rsidRDefault="006A2257" w:rsidP="001350DF">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="006A2257">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#21069;&#31471;&#26694;&#26550;&#33287;&#29694;&#20195;&#32178;&#31449;&#38283;&#30332;</w:t>
+            </w:r>
+          </w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="72A3AAE6" w14:textId="748D8DFC"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr></w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="128FAA27" w14:textId="4CE15082"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr><w:r w:rsidR="D30097E3"><w:t>Frontend Frameworks and Modern Web Development</w:t></w:r></w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidTr="002347D9">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>17</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>06</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>15</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>06</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>19</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="006A2257" w:rsidP="001350DF">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="006A2257">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>AI</w:t>
+            </w:r>
+            <w:r w:rsidRPr="006A2257">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#38283;&#30332;&#32178;&#31449;&#39636;&#39511;</w:t>
+            </w:r>
+          </w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="5CAB84E2" w14:textId="565362BA"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr></w:p><w:p w:rsidR="D30097E3" w:rsidRDefault="D30097E3" w:rsidP="D30097E3" w14:paraId="0FEBC94F" w14:textId="39DCC10A"><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr><w:r w:rsidR="D30097E3"><w:t>AI Web Development Experience</w:t></w:r></w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidTr="00035398">
+        <w:trPr>
+          <w:trHeight w:val="340"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="546" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#31532;</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>18</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#36913;</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="876" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:vAlign w:val="center"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00D74923" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="center"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>(</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>06</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>22</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>-0</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>6</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>/</w:t>
+            </w:r>
+            <w:r>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>26</w:t>
+            </w:r>
+            <w:r w:rsidRPr="00B67F37">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>)</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3578" w:type="pct"/>
+            <w:shd w:val="clear" w:color="auto" w:fill="FFFFFF"/>
+            <w:hideMark/>
+          </w:tcPr>
+          <w:p w:rsidR="00D74923" w:rsidRDefault="00041493" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00041493">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman" w:hint="eastAsia"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>&#26399;&#26411;&#25104;&#26524;&#30332;&#34920;</w:t>
+            </w:r>
+          </w:p>
+          <w:p w:rsidR="00D74923" w:rsidRPr="00B67F37" w:rsidRDefault="00041493" w:rsidP="00D74923">
+            <w:pPr>
+              <w:adjustRightInd w:val="0"/>
+              <w:snapToGrid w:val="0"/>
+              <w:jc w:val="both"/>
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+            </w:pPr>
+            <w:r w:rsidRPr="00041493">
+              <w:rPr>
+                <w:rFonts w:ascii="Times New Roman" w:eastAsia="&#26032;&#32048;&#26126;&#39636;" w:hAnsi="Times New Roman" w:cs="Times New Roman"/>
+                <w:szCs w:val="24"/>
+              </w:rPr>
+              <w:t>Final Project Presentation</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w:rsidR="00B67F37" w:rsidRDefault="00B67F37" w:rsidP="008434DD"/>
+    <w:p w:rsidR="0094600E" w:rsidRDefault="0094600E" w:rsidP="008434DD">
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>&#35506;&#22530;&#39184;&#33287;&#35342;&#35542;</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> 20</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="0094600E" w:rsidRDefault="0094600E" w:rsidP="008434DD">
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>&#24179;&#26178;&#20316;&#26989;</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> 30</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="0094600E" w:rsidRDefault="0094600E" w:rsidP="008434DD">
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>&#26399;&#20013;&#32771;</w:t>
+      </w:r>
+      <w:r w:rsidR="00026018">
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>20</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="0094600E" w:rsidRDefault="0094600E" w:rsidP="008434DD">
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>&#26399;&#26411;&#32771;</w:t>
+      </w:r>
+      <w:r w:rsidR="00026018">
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>30</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00B65881" w:rsidRDefault="00B65881" w:rsidP="008434DD"/>
+    <w:p w:rsidR="00B65881" w:rsidRDefault="00B65881" w:rsidP="008434DD">
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>SDGs</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00B65881" w:rsidRDefault="00B65881" w:rsidP="008434DD">
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>04</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>&#25945;&#32946;&#21697;&#36074;</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>-</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>&#30693;&#35672;&#38754;</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>-06</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00B65881">
+        <w:t>&#33021;&#21147;&#26412;&#20301;&#35506;&#31243;&#33287;&#23416;&#32722;&#25104;&#26524;&#35413;&#37327;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="00B65881" w:rsidRDefault="00B65881" w:rsidP="008434DD">
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>04</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>&#25945;&#32946;&#21697;&#36074;</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>-</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>&#24907;&#24230;&#38754;</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>-02</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00B65881">
+        <w:t>&#29702;&#35299;&#33258;&#36523;&#30340;&#25216;&#33021;&#23565;&#26044;&#25913;&#21892;&#33258;&#24049;&#30340;&#29983;&#27963;&#65292;&#29305;&#21029;&#26159;&#23601;&#26989;&#21644;&#21109;&#26989;&#30340;&#37325;&#35201;&#24615;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="006A2587" w:rsidRDefault="006A2587" w:rsidP="008434DD"/>
+    <w:p w:rsidR="006A2587" w:rsidRDefault="006A2587" w:rsidP="008434DD">
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>&#20849;&#36890;&#32887;&#33021;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="006A2587" w:rsidRDefault="00AB7C9E" w:rsidP="008434DD">
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>05</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AB7C9E">
+        <w:t>&#21839;&#38988;&#35299;&#27770;</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> - </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AB7C9E">
+        <w:t>&#36935;&#21040;&#29376;&#27841;&#26178;&#33021;&#37328;&#28165;&#21839;&#38988;&#65292;&#36879;&#36942;&#31995;&#32113;&#21270;&#30340;&#36039;&#35338;&#33936;&#38598;&#33287;&#20998;&#26512;&#65292;&#25552;&#20986;&#35299;&#27770;&#26041;&#26696;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="006A2587" w:rsidRDefault="00AB7C9E" w:rsidP="008434DD">
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t>08</w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AB7C9E">
+        <w:t>&#36039;&#35338;&#31185;&#25216;&#25033;&#29992;</w:t>
+      </w:r>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:hint="eastAsia"/>
+        </w:rPr>
+        <w:t xml:space="preserve"> - </w:t>
+      </w:r>
+      <w:r w:rsidRPr="00AB7C9E">
+        <w:t>&#36939;&#29992;&#21508;&#34892;&#26989;&#25152;&#38656;&#30340;&#36039;&#35338;&#25216;&#34899;&#24037;&#20855;&#65292;&#26377;&#25928;&#23384;&#21462;&#12289;&#31649;&#29702;&#12289;&#25972;&#21512;&#20006;&#20659;&#36958;&#35338;&#24687;&#12290;</w:t>
+      </w:r>
+    </w:p>
+    <w:p w:rsidR="006A2587" w:rsidRDefault="006A2587" w:rsidP="008434DD"/>
+    <w:sectPr w:rsidR="006A2587" w:rsidSect="00C9551F">
+      <w:pgSz w:w="11906" w:h="16838"/>
+      <w:pgMar w:top="993" w:right="566" w:bottom="426" w:left="851" w:header="851" w:footer="992" w:gutter="0"/>
+      <w:cols w:space="425"/>
+      <w:docGrid w:type="lines" w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>

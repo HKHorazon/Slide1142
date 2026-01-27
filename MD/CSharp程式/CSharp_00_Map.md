@@ -95,7 +95,7 @@ table th:nth-child(2) {
 | W12 | 封裝與建構子 (Encapsulation) |
 | W13 | 繼承與多型 (Inheritance) |
 | W14 | 集合與泛型 (Collections) |
-| W15 | 列舉與結構 (Enum & Struct) |
+| W15 | 檔案與串流 (File I/O) |
 | W16 | 例外處裡 (Exception) |
 | **W17** | **期末考週 (Final)** |
 | W18 | 彈性教學與總結 |

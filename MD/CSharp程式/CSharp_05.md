@@ -218,7 +218,7 @@ Console.WriteLine(result);          //Hello, Horazon!!
 ```
 
 ---
-# 進階內容：+ 與 += 在字串的運用
+# 進階：+ 與 += 在字串的運用
 
 在以上片段 + 與 += 稱之為字串的串接(concat)，與數字的加法不同
 在字串中只有+與+=可以使用，沒有其他運算
@@ -238,20 +238,8 @@ Console.WriteLine( a + b +" Second");       //8 Second
 ---
 # 進階內容：整數除法
 
-在 C# 中，如果兩個 **整數 (int)** 相除，結果也會是 **整數**。
-小數點後面的部分會被直接 **捨棄 (Truncated)**，而不是四捨五入。
 
-```cs
-int a = 5;
-int b = 2;
 
-Console.WriteLine(a / b);   // 輸出: 2 (不是 2.5)
-```
-
-若要把小數點留下來，必須讓其中一個數變成浮點數：
-```cs
-Console.WriteLine((double)a / b); // 輸出: 2.5 (強制轉型)
-```
 
 ---
 
@@ -271,53 +259,3 @@ int b = 10 % 0;     // ❌ 執行期間錯誤: DivideByZeroException
 double c = 5.0 / 0; // ⭕ 結果為 Infinity (不會當機)
 ```
 
----
-
-# 範例練習 1：計算總價
-
-計算 5 個 35 元的商品總額。
-
-```cs
-int price = 35;
-int quantity = 5;
-
-// 計算總價
-int total = price * quantity;
-
-Console.WriteLine("總價格：" + total); 
-// 輸出：總價格：175
-```
-
----
-
-# 範例練習 2：自我介紹 (字串串接)
-
-將名字與年齡組合成一句話。
-
-```cs
-string name = "Horazon";
-int age = 18;
-
-// 使用 + 號串接字串與數字
-Console.WriteLine("我是 " + name + "，今年 " + age + " 歲。");
-// 輸出：我是 Horazon，今年 18 歲。
-```
-
----
-
-# 範例練習 3：時間轉換 (除法與餘數)
-
-將 150 分鐘轉換為「幾小時幾分」。
-
-```cs
-int totalMinutes = 150;
-
-// 整數除法求小時
-int hours = totalMinutes / 60;  // 150 / 60 = 2
-
-// 取餘數求剩餘分鐘
-int minutes = totalMinutes % 60; // 150 % 60 = 30
-
-Console.WriteLine(totalMinutes + " 分 = " + hours + " 小時 " + minutes + " 分");
-// 輸出：150 分 = 2 小時 30 分
-```

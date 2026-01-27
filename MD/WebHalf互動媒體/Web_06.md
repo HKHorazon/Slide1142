@@ -16,9 +16,11 @@ style: |
 <!-- _class: lead -->
 <!--_paginate: false-->
 
-# CSS 基礎入門
+### Chapter 06
+# Style與CSS
+
 ## Horazon
-## 互動媒體
+## 互動媒體設計
 
 ---
 
@@ -71,37 +73,20 @@ h1 {
 
 <style scoped>
 table {
-    height: 100%;
-    width: 100%;
-    font-size: 40px;
-    color: black;
+    font-size: 35px;
     text-align: center;
-    margin:20px 0px 0px 0px;
-}
-table td {
-    padding:10px 50px;
-    font-size: 25px;
-    width: 80px;
-    text-align: center;
-    border: 1px solid black;
-}
-th {
-    padding:10px 50px;
-    font-size: 30px;
-    text-align: center;
-    border: 1px solid black;
 }
 td:nth-child(1) {
-    width: 130px;
-}
-td:nth-child(2) {
-    width: 80px;
-}
-td:nth-child(3) {
     width: 200px;
 }
+td:nth-child(2) {
+    width: 60px;
+}
+td:nth-child(3) {
+    width: 220px;
+}
 td:nth-child(4) {
-    width: 300px;
+    width: 550px;
 }
 </style>
 
@@ -110,14 +95,16 @@ td:nth-child(4) {
 <br>
 
 決定 CSS 要套用在哪些元素上。
-<br>
 
 | 選擇器 | 符號 | 範例 | 說明 |
 | :--- | :--- | :--- | :--- |
-| 標籤選擇器 | 無 | p { ... } | 選取所有 <p> 標籤 |
+| 標籤選擇器 | 無 | p { ... } | 選取所有 \<p\> 標籤 |
 | 類別選擇器 | `.` | .title { ... } | 選取 class="title" 的元素 (**最常用!**) |
 | ID 選擇器 | `#` | #header { ... } | 選取 id="header" 的元素 (唯一) |
 | 全域選擇器 | `*` | * { ... } | 選取網頁上所有元素 |
+
+
+
 
 ---
 
@@ -260,6 +247,83 @@ p {
     object-fit: cover;
 }
 ```
+
+
+---
+
+# RWD 響應式網頁設計 (深入解析)
+
+**Responsive Web Design**
+
+隨著手機上網的人越來越多，網頁必須能**自動適應**各種螢幕尺寸。
+
+**核心概念**：
+1. **流動網格 (Fluid Grids)**：寬度使用 `%` 而不是 `px`，讓區塊隨螢幕伸縮。
+2. **彈性圖片 (Flexible Images)**：`max-width: 100%`，防止圖片撐破版面。
+3. **媒體查詢 (Media Queries)**：針對不同尺寸設定不同 CSS。
+
+---
+
+# Media Query RWD 範例
+
+讓我們練習一個最簡單的 RWD 效果：
+**「當螢幕變窄時，背景變色」**
+
+```css
+/* 1. 預設 (電腦版大螢幕) */
+.box {
+    background-color: lightblue; 
+}
+
+/* 2. 當螢幕寬度小於 768px (手機/平板) */
+@media (max-width: 768px) {
+    .box {
+        background-color: pink; /* 變成粉紅色 */
+    }
+}
+```
+
+> **實作與測試**：
+> 開發人員工具 (F12) -> 切換手機模式 -> 觀察顏色變化！
+
+---
+
+# 常見的 RWD 製作方法
+
+現代開發有幾種主流做法：
+
+### 1. CSS Flexbox (彈性盒子)
+最推薦！直接用 flex-wrap: wrap 讓元素在小螢幕自動換行。
+
+### 2. CSS Grid (網格系統)
+適合大型排版，可以精準控制「幾欄幾列」。
+
+### 3. CSS 框架 (Frameworks)
+站在巨人的肩膀上！
+- **Bootstrap**：最老牌，用 class (`col-6`, `col-md-4`) 來排版。
+- **Tailwind CSS**：現代主流，寫法極簡 (`w-1/2`, `md:w-1/3`)。
+
+---
+
+# 實戰：用 Flex 做 RWD
+
+不用寫 Media Query 也能做 RWD？
+
+```css
+.container {
+    display: flex;
+    flex-wrap: wrap; /* 空間不夠時自動換行 */
+}
+
+.box {
+    flex: 1 1 300px; /* 彈性縮放，最小寬度 300px */
+}
+```
+
+- **大螢幕**：空間夠，三個箱子並排 (300px + 300px + 300px)。
+- **手機**：空間不夠 (< 600px)，箱子自動掉下來變垂直排列。
+
+> 這就是 **無痛 RWD**！
 
 ---
 

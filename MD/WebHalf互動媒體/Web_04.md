@@ -16,9 +16,11 @@ style: |
 <!-- _class: lead -->
 <!--_paginate: false-->
 
-# VS Code 安裝與設定
-## Horazon 
-## 互動媒體
+### Chapter 04
+# VS Code
+
+## Horazon
+## 互動媒體設計
 
 ---
 

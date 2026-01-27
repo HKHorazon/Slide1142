@@ -16,9 +16,11 @@ style: |
 <!-- _class: lead -->
 <!--_paginate: false-->
 
-# HTML 基礎入門
+### Chapter 05
+# Html基本語法
+
 ## Horazon
-## 互動媒體
+## 互動媒體設計
 
 ---
 
@@ -29,15 +31,6 @@ style: |
 ## 它**不是**程式語言，它是**標記語言**
 
 ## 負責定義網頁的**結構**與**內容** (骨架)
-
----
-# 什麼是 DOM?
-
-- **D**ocument **O**bject **M**odel (文件物件模型)
-- 瀏覽器將 HTML 解析為**樹狀結構** (Tree Structure)
-- 讓程式 (如 JavaScript) 可以改變網頁的**架構**、**樣式**與**內容**
-
-HTML 標籤不僅是文字，更是 **DOM 節點 (Nodes)**。
 
 ---
 
@@ -58,6 +51,17 @@ HTML 標籤不僅是文字，更是 **DOM 節點 (Nodes)**。
 </body>
 </html>
 ```
+
+
+---
+# 什麼是 DOM?
+
+HTML是一種DOM結構
+- **D**ocument **O**bject **M**odel (文件物件模型)
+- 瀏覽器將 HTML 解析為**樹狀結構** (Tree Structure)
+- 讓程式 (如 JavaScript) 可以改變網頁的**架構**、**樣式**與**內容**
+
+HTML 標籤不僅是文字，更是 **DOM 節點 (Nodes)**。
 
 ---
 

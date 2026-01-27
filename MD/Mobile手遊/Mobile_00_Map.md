@@ -95,8 +95,8 @@ table th:nth-child(2) {
 | W12 | 角色動畫系統 (Animator) |
 | W13 | 遊戲管理與核心邏輯 (Singleton) |
 | W14 | UI 介面設計 (UGUI) |
-| W15 | 遊戲體感優化 (Audio & VFX) |
-| W16 | 手機觸控操作 (Mobile Input) |
+| W15 | 遊戲存檔系統 (Save & Load) |
+| W16 | 遊戲體感優化 (Audio & VFX) |
 | **W17** | **期末考週 (Final)** |
 | W18 | 彈性教學與總結 |
 
