@@ -1,6 +1,7 @@
 {
-    "ChapterName": "AI2 應用程式",
     "IsDisplay": true,
     "Sequence": 40,
-    "MapLock": false
+    "MapLock": false,
+    "GenerateMap": true,
+    "CourseName": "應用程式設計"
 }

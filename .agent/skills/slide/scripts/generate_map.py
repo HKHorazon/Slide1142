@@ -39,7 +39,7 @@ def generate_map(course_dir):
 
     print(f"Generating Course Map for: {course_dir}")
 
-    # 1. Get Course Name & MapLock
+    # 1. Get Settings
     settings_path = os.path.join(full_course_path, 'settings.json')
     
     settings_data = {}
@@ -50,11 +50,18 @@ def generate_map(course_dir):
         except:
             pass
             
+    # Check GenerateMap (Default True) and MapLock (Legacy, Default False)
+    # If MapLock is True, it overrides GenerateMap -> False
+    should_generate = settings_data.get("GenerateMap", True)
     if settings_data.get("MapLock", False):
-        print(f"Skipping {course_dir}: MapLock is enabled.")
+        should_generate = False
+        
+    if not should_generate:
+        print(f"Skipping {course_dir}: GenerateMap is false or MapLock is enabled.")
         return
 
-    course_name = settings_data.get("ChapterName", "Course Name")
+    # CourseName priority: CourseName > "Course Name" (ChapterName removed)
+    course_name = settings_data.get("CourseName", "Course Name")
 
     # 2. Scan Markdown files
     md_files = glob.glob(os.path.join(full_course_path, '*.md'))
@@ -62,13 +69,40 @@ def generate_map(course_dir):
     
     # Filter files
     valid_files = []
+    # Pattern to match strictly {Subject}_{Number}.md (e.g. Mobile_05.md)
+    # Exclude files with suffixes like Mobile_05B.md
+    # Assuming standard format is {Subject}_{Number}.md where Number is digits.
+    # We want to keep files that end with digits.md
+    
     for f in md_files:
         filename = os.path.basename(f)
-        # Skip settings, map itself, and maybe intro/00 if needed (but currently we map them to weeks)
+        # Skip settings, map itself
         if filename.lower() == 'settings.json': continue
         if '_map.md' in filename.lower(): continue
         
-        valid_files.append(f)
+        # Check if filename ends with digits.md
+        name_no_ext = os.path.splitext(filename)[0]
+        # Regex: ends with _\d+$
+        if re.search(r'_\d+$', name_no_ext):
+            valid_files.append(f)
+        else:
+            # Check if it's a special file like "Web_00.md" -> yes it ends with digits
+            # What about "Web_05B.md"? -> ends with 5B -> no match
+            # What about files without underscore? e.g. "Intro.md" -> no match, so ignored?
+            # Previous logic included everything. 
+            # If we want to support non-standard names but exclude specific "B/C" suffixes...
+            # The rule is: "Allow inserting B, C etc after arbitrary slide".
+            # So if we have "Course_05.md" and "Course_05B.md", ignore 05B.
+            
+            # Alternative: explicit exclude pattern
+            # If name ends with digit + letter(s) -> Exclude?
+             if re.search(r'\d+[a-zA-Z]+\.md$', filename):
+                 # e.g. 05B.md
+                 print(f"Skipping supplementary slide: {filename}")
+                 continue
+             
+             # Otherwise include (standard behavior)
+             valid_files.append(f)
 
     # 3. Extract Titles
     titles = []
@@ -86,20 +120,20 @@ def generate_map(course_dir):
     
     placeholders = {}
     
-    # Fill W2-W8
+    # Fill W2-W8 (Topic 01-07)
     for i in range(7):
-        week_num = i + 2
-        key = f"{{WEEK_{week_num:02d}}}"
+        topic_num = i + 1
+        key = f"{{Topic_{topic_num:02d}}}"
         if i < len(titles):
             placeholders[key] = titles[i]
         else:
             placeholders[key] = "(自行安排進度)"
             
-    # Fill W10-W16
+    # Fill W10-W16 (Topic 08-14)
     for i in range(7):
-        week_num = i + 10
+        topic_num = i + 8
         idx = i + 7 # Start after the first 7
-        key = f"{{WEEK_{week_num}}}"
+        key = f"{{Topic_{topic_num:02d}}}"
         if idx < len(titles):
             placeholders[key] = titles[idx]
         else:
@@ -114,7 +148,7 @@ def generate_map(course_dir):
         content = f.read()
 
     # 6. Replace Placeholders
-    content = content.replace("{COURSE_NAME}", course_name)
+    content = content.replace("{CourseName}", course_name)
     content = content.replace("{SEMESTER}", "114-2") # Hardcoded or passed arg
 
     for key, value in placeholders.items():
@@ -140,7 +174,19 @@ def generate_map(course_dir):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate Course Map Markdown.")
-    parser.add_argument("-d", "--dir", required=True, help="Target Course Directory relative to MD/")
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("-d", "--dir", help="Target Course Directory relative to MD/")
+    group.add_argument("-a", "--all", action="store_true", help="Generate maps for ALL courses in MD/")
+    
     args = parser.parse_args()
 
-    generate_map(args.dir)
+    if args.all:
+        if os.path.exists(INPUT_ROOT_DIR):
+            for item in os.listdir(INPUT_ROOT_DIR):
+                full_path = os.path.join(INPUT_ROOT_DIR, item)
+                if os.path.isdir(full_path):
+                    generate_map(item)
+        else:
+            print(f"Error: {INPUT_ROOT_DIR} not found.")
+    else:
+        generate_map(args.dir)

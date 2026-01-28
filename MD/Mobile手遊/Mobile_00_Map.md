@@ -20,9 +20,9 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-### 課程地圖
-# {CourseName} 
+# 評分標準與課程大綱 
 ## Horazon
+## 手機遊戲開發
 
 
 ---
@@ -60,13 +60,13 @@ table th:nth-child(2) {
 | 週次 | 主題 |
 | :---: | :--- |
 | **W1** | **課程簡介與環境建置** |
-| W2 | {Topic_01} |
-| W3 | {Topic_02} |
-| W4 | {Topic_03} |
-| W5 | {Topic_04} |
-| W6 | {Topic_05} |
-| W7 | {Topic_06} |
-| W8 | {Topic_07} |
+| W2 | 手機遊戲開發概論 |
+| W3 | 專案建置與初體驗 |
+| W4 | 地圖繪製 (Tilemap) |
+| W5 | 物理與機關 |
+| W6 | 互動與邏輯 (預製功能) |
+| W7 | C# 程式基礎入門 |
+| W8 | 角色移動原理 (Input) |
 | **W9** | **期中考週 (Midterm)** |
 
 ---
@@ -90,12 +90,12 @@ table th:nth-child(2) {
 
 | 週次 | 主題 |
 | :---: | :--- |
-| W10 | {Topic_08} |
-| W11 | {Topic_09} |
-| W12 | {Topic_10} |
-| W13 | {Topic_11} |
-| W14 | {Topic_12} |
-| W15 | {Topic_13} |
-| W16 | {Topic_14} |
+| W10 | 跳躍與地面檢測 (Physics Logic) |
+| W11 | 角色動畫系統 (Animator) |
+| W12 | 遊戲管理與核心邏輯 (Singleton) |
+| W13 | UI 介面設計 (UGUI) |
+| W14 | 遊戲體感優化 (Audio & VFX) |
+| W15 | 手機觸控操作 (Mobile Input) |
+| W16 | 專案建置與發布 (Build & Publish) |
 | **W17** | **期末考週 (Final)** |
 | W18 | 彈性教學與總結 |

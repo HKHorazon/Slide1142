@@ -16,331 +16,237 @@ style: |
 <!-- _class: lead -->
 <!--_paginate: false-->
 
-### Chapter 06
-# Style與CSS
+### Chapter 07
+# DOM與JavaScript
 
 ## Horazon
 ## 互動媒體設計
 
 ---
 
-# 什麼是 CSS?
+# 什麼是 JavaScript?
 
-## **C**ascading **S**tyle **S**heets (階層式樣式表)
+## **J**ava**S**cript (簡稱 JS)
 
-## 負責網頁的**外觀**、**排版**與**視覺效果** (皮膚與衣服)
+## 它**是**一種程式語言 (Programming Language)
 
-HTML 是**骨架** (內容)，CSS 是**樣式** (裝飾)。
+## 負責網頁的**互動**、**邏輯**與**資料處理** (大腦與肌肉)
 
-沒有 CSS 的網頁，就像沒有裝潢的毛胚屋。
+> [!WARNING]
+> JavaScript 與 Java 是完全不同的兩種語言！就像「熱狗」與「狗」的關係。
+
+---
+# 網頁三兄弟
+
+- **HTML** (結構/骨架)：網頁有什麼內容？(標題、圖片、按鈕)
+- **CSS** (樣式/皮膚)：網頁長什麼樣子？(顏色、字體、排版)
+- **JavaScript** (行為/動作)：網頁能做什麼？(點擊、運算、變更內容)
+
+JavaScript 讓靜態的網頁動起來，產生**互動性**。
 
 ---
 
-# CSS 的三種寫法
+# HTML 內的 JavaScript
 
-1. **行內樣式 (Inline)**：直接寫在 HTML 標籤上 (不推薦)。
-   `<h1 style="color: red;">標題</h1>`
-2. **內部樣式 (Internal)**：寫在 `<head>` 的 `<style>` 標籤內。
-3. **外部樣式 (External)**：寫在獨立的 `.css` 檔案 (**最推薦**)。
+JavaScript 程式碼必須放在 `<script>` 標籤內：
 
 ```html
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>我的第一個 JS</h1>
+    
+    <script>
+       alert('哈囉，JS！');
+    </script>
+    
+</body>
+</html>
+```
+
+通常建議將 `<script>` 放在 `<body>` 的**最下方**，確保網頁元素載入完成後再執行程式。
+
+---
+
+# 輸出方式 (Output)
+
+如何讓程式「說話」或顯示結果？
+
+- **`alert()`**：跳出警告視窗 (最簡單，但會中斷操作)。
+- **`console.log()`**：在瀏覽器控制台 (F12) 顯示訊息 (開發者常用)。
+- **`document.querySelector().innerText`**：直接改變網頁內容。
+
+```javascript
+alert("跳出視窗");
+console.log("這是在控制台顯示的訊息");
 ```
 
 ---
 
-# CSS 語法結構
+# 變數 (Variables)
 
-```css
-選擇器 {
-    屬性: 設定值;
-    屬性: 設定值;
-}
-```
+用來**儲存資料**的箱子。
 
-- **選擇器 (Selector)**：選到誰？ (例如 `h1`, `p`, `.box`)
-- **屬性 (Property)**：改什麼？ (例如 `color`, `font-size`)
-- **設定值 (Value)**：改多少？ (例如 `red`, `16px`)
+現代 JS 推薦使用 `let` 與 `const`：
 
-```css
-h1 {
-    color: blue;
-    font-size: 24px;
-}
+- **`let`**：宣告**可變動**的變數 (例如：分數、計數器)。
+- **`const`**：宣告**常數** (不可變動，例如：圓周率、網站網址)。
+
+```javascript
+let score = 100;
+score = 95;      // OK，可以改變
+
+const pi = 3.14;
+// pi = 3.14159; // Error! 不能改變 const
 ```
 
 ---
 
-<style scoped>
-table {
-    font-size: 35px;
-    text-align: center;
-}
-td:nth-child(1) {
-    width: 200px;
-}
-td:nth-child(2) {
-    width: 60px;
-}
-td:nth-child(3) {
-    width: 220px;
-}
-td:nth-child(4) {
-    width: 550px;
-}
-</style>
+# 資料型態 (Data Types)
 
-# 選擇器 (Selectors)
+變數可以存放不同類型的資料：
 
-<br>
+- **字串 (String)**：文字，需用引號包起來 (`"文字"` 或 `'文字'`)。
+- **數字 (Number)**：整數或小數 (`10`, `3.5`)。
+- **布林值 (Boolean)**：只有 `true` (真) 或 `false` (假)。
 
-決定 CSS 要套用在哪些元素上。
-
-| 選擇器 | 符號 | 範例 | 說明 |
-| :--- | :--- | :--- | :--- |
-| 標籤選擇器 | 無 | p { ... } | 選取所有 \<p\> 標籤 |
-| 類別選擇器 | `.` | .title { ... } | 選取 class="title" 的元素 (**最常用!**) |
-| ID 選擇器 | `#` | #header { ... } | 選取 id="header" 的元素 (唯一) |
-| 全域選擇器 | `*` | * { ... } | 選取網頁上所有元素 |
-
-
-
-
----
-
-# 常用文字屬性
-
-- **`color`**：文字顏色 (`red`, `#FF0000`, `rgb(255, 0, 0)`).
-- **`font-size`**：文字大小 (`16px`, `1.5rem`).
-- **`font-weight`**：文字粗細 (`bold`, `700`).
-- **`text-align`**：文字對齊 (`center`, `left`, `right`).
-- **`line-height`**：行高 (閱讀舒適度關鍵).
-
-```css
-p {
-    color: #333;
-    font-size: 18px;
-    line-height: 1.6;
-}
+```javascript
+let name = "Horazon";  // 字串
+let age = 18;          // 數字
+let isTeacher = true;  // 布林值
 ```
 
 ---
 
-# 盒子模型 (Box Model)
+# 函式 (Functions)
 
-每個 HTML 元素都是一個**盒子**，由內而外包含：
+將一段程式碼包裝起來，需要時再呼叫使用 (像是「技能」或「SOP」)。
 
-1. **Content** (內容)：文字或圖片本身。
-2. **Padding** (內距)：內容與邊框之間的距離 (留白)。
-3. **Border** (邊框)：盒子的框線。
-4. **Margin** (外距)：盒子與盒子之間的距離。
-
----
-
-# 盒子模型示意圖
-
-<style>
-.box-demo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    height: 150px;
-    background: #add8e6;
-    border: 5px solid #00008b;
-    margin: 20px auto;
-    padding: 20px;
-    font-weight: bold;
-    color: black;
-}
-</style>
-
-```css
-.box {
-    width: 300px;
-    padding: 20px;   /* 內距 (藍色背景部分變大) */
-    border: 5px solid blue; /* 邊框 */
-    margin: 20px;    /* 外距 (推開別人) */
-}
-```
-
-<div class="box-demo">
-    我是內容 (Content)
-</div>
-
----
-
-# 排版神器：Flexbox
-
-現代網頁排版最常用的工具 (`display: flex`)。
-它可以輕鬆讓元素**並排**、**置中**或**平均分配**。
-
-```css
-.container {
-    display: flex; /* 開啟 Flex 模式 */
-    justify-content: center; /* 水平置中 */
-    align-items: center;     /* 垂直置中 */
-}
-```
-
-常用屬性：
-- `justify-content`: `center` (置中), `space-between` (兩側推開), `flex-start` (靠左)。
-- `align-items`: `center` (垂直置中), `flex-end` (靠底)。
-
----
-
-# 響應式設計 (RWD)
-
-讓網頁在手機、平板、電腦上都好看。
-主要使用 **Media Queries (`@media`)**。
-
-```css
-/* 電腦版樣式 */
-.box {
-    width: 50%;
+```javascript
+// 定義函式
+function sayHello() {
+    alert("你好！");
 }
 
-/* 當螢幕寬度小於 600px (手機) */
-@media (max-width: 600px) {
-    .box {
-        width: 100%; /* 手機版變全寬 */
-    }
-}
+// 呼叫函式 (執行)
+sayHello();
 ```
 
 ---
 
-# 實作練習：個人卡片
+# DOM 操作 (Document Object Model)
 
-製作一張個人簡介卡片，包含：
-1. 一個外框 (`div`)：設定邊框、陰影、圓角。
-2. 圓形大頭貼 (`img`)：使用 `border-radius: 50%`。
-3. 名字與簡介 (`h2`, `p`)：設定置中與適當間距。
+JavaScript 透過 DOM 來控制 HTML 元素。
+
+最常用的選取方式：**`document.querySelector()`**
 
 ```html
-<div class="card">
-    <img src="avatar.jpg" class="avatar">
-    <h2>Horazon</h2>
-    <p>前端工程師</p>
-</div>
+<h1 id="title">原本的標題</h1>
+```
+
+```javascript
+// 選取 ID 為 title 的元素
+let myTitle = document.querySelector("#title");
+
+// 修改文字內容
+myTitle.innerText = "被 JS 修改後的標題";
+
+// 修改樣式
+myTitle.style.color = "red";
 ```
 
 ---
 
-# 實作練習：CSS 參考
 
-```css
-.card {
-    width: 300px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px; /* 圓角 */
-    text-align: center;  /* 文字置中 */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 陰影 */
-    margin: 50px auto;   /* 整個卡片置中 */
+# 事件 (Events)
+
+偵測使用者的行為，例如點擊、滑鼠移入、鍵盤輸入。
+最常用的是 **`onclick`** (點擊事件)。
+
+```html
+<button onclick="changeText()">點我改變標題</button>
+<h1 id="demo">你好</h1>
+
+<script>
+function changeText() {
+    let el = document.querySelector("#demo");
+    el.innerText = "文字變了！";
+    el.style.color = "blue";
 }
+</script>
+```
 
-.avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* 變圓形 */
-    object-fit: cover;
+---
+
+# 條件判斷 (If...Else)
+
+如果...就...，否則... (邏輯判斷)。
+
+```javascript
+let score = 80;
+
+if (score >= 60) {
+    console.log("及格！");
+} else {
+    console.log("不及格...");
 }
 ```
 
+---
+
+# 實作練習：計數器 (Counter)
+
+建立一個網頁，包含：
+1. 一個數字顯示 `0` (使用 `<h1>` 或 `<span>`)。
+2. 一個「+1」按鈕。
+3. 一個「重置」按鈕。
+
+**功能要求**：
+- 點擊「+1」，數字會增加。
+- 點擊「重置」，數字歸零。
 
 ---
 
-# RWD 響應式網頁設計 (深入解析)
+# 實作練習：計數器 (參考解答)
 
-**Responsive Web Design**
+```html
+<h1>目前數字：<span id="count">0</span></h1>
+<button onclick="add()">+1</button>
+<button onclick="reset()">重置</button>
 
-隨著手機上網的人越來越多，網頁必須能**自動適應**各種螢幕尺寸。
+<script>
+    let number = 0; // 變數記住目前的數字
+    let el = document.querySelector("#count");
 
-**核心概念**：
-1. **流動網格 (Fluid Grids)**：寬度使用 `%` 而不是 `px`，讓區塊隨螢幕伸縮。
-2. **彈性圖片 (Flexible Images)**：`max-width: 100%`，防止圖片撐破版面。
-3. **媒體查詢 (Media Queries)**：針對不同尺寸設定不同 CSS。
-
----
-
-# Media Query RWD 範例
-
-讓我們練習一個最簡單的 RWD 效果：
-**「當螢幕變窄時，背景變色」**
-
-```css
-/* 1. 預設 (電腦版大螢幕) */
-.box {
-    background-color: lightblue; 
-}
-
-/* 2. 當螢幕寬度小於 768px (手機/平板) */
-@media (max-width: 768px) {
-    .box {
-        background-color: pink; /* 變成粉紅色 */
+    function add() {
+        number = number + 1; // 數字加一
+        el.innerText = number; // 更新畫面
     }
-}
+
+    function reset() {
+        number = 0; // 歸零
+        el.innerText = number; // 更新畫面
+    }
+</script>
 ```
-
-> **實作與測試**：
-> 開發人員工具 (F12) -> 切換手機模式 -> 觀察顏色變化！
-
----
-
-# 常見的 RWD 製作方法
-
-現代開發有幾種主流做法：
-
-### 1. CSS Flexbox (彈性盒子)
-最推薦！直接用 flex-wrap: wrap 讓元素在小螢幕自動換行。
-
-### 2. CSS Grid (網格系統)
-適合大型排版，可以精準控制「幾欄幾列」。
-
-### 3. CSS 框架 (Frameworks)
-站在巨人的肩膀上！
-- **Bootstrap**：最老牌，用 class (`col-6`, `col-md-4`) 來排版。
-- **Tailwind CSS**：現代主流，寫法極簡 (`w-1/2`, `md:w-1/3`)。
-
----
-
-# 實戰：用 Flex 做 RWD
-
-不用寫 Media Query 也能做 RWD？
-
-```css
-.container {
-    display: flex;
-    flex-wrap: wrap; /* 空間不夠時自動換行 */
-}
-
-.box {
-    flex: 1 1 300px; /* 彈性縮放，最小寬度 300px */
-}
-```
-
-- **大螢幕**：空間夠，三個箱子並排 (300px + 300px + 300px)。
-- **手機**：空間不夠 (< 600px)，箱子自動掉下來變垂直排列。
-
-> 這就是 **無痛 RWD**！
 
 ---
 
 # 結論
 
-1. CSS 負責網頁的「樣式」，讓 HTML 變漂亮。
-2. 推薦使用**外部樣式表** (External Style)。
-3. 善用 **Class (`.`)** 來管理樣式。
-4. 解 **Box Model** (Padding/Margin/Border) 是排版基礎。
-5. **Flexbox** 是最強大的排版工具。
+1. JavaScript 是網頁的「大腦」，負責邏輯與互動。
+2. 使用 `<script>` 撰寫 JS 程式碼。
+3. **變數** (`let`/`const`) 用來存資料。
+4. **函式** (`function`) 用來定義動作。
+5. **DOM** (`document.querySelector`) 讓 JS 能控制 HTML。
+6. **事件** (`onclick`) 讓網頁能回應使用者的操作。
 
 ---
 
 # 重點回顧
 
-1. **選擇器**：`.class` 最常用，`#id` 只有一個。
-2. **顏色**：`color` (字), `background-color` (底)。
-3. **距離**：`padding` (內), `margin` (外)。
-4. **排版**：`display: flex` 讓元素乖乖排好。
-5. **RWD**：`@media` 讓手機板也好用。
+1. **結構**：放在 `<body>` 結束前。
+2. **語法**：分號 `;` 結尾 (建議)，區分大小寫。
+3. **除錯**：善用 `console.log()` 與 F12 開發者工具。
+4. **核心**：選取元素 -> 監聽事件 -> 修改內容/樣式。

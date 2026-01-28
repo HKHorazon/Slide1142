@@ -1,6 +1,7 @@
 {
-    "ChapterName": "112 級畢業專題",
     "IsDisplay": false,
     "Sequence": 50,
-    "MapLock": false
+    "MapLock": false,
+    "GenerateMap": false,
+    "CourseName": "112 級畢業專題"
 }

@@ -1,6 +1,7 @@
 {
-    "ChapterName": "手機遊戲開發",
     "IsDisplay": true,
     "Sequence": 20,
-    "MapLock": false
+    "MapLock": false,
+    "GenerateMap": true,
+    "CourseName": "手機遊戲開發"
 }

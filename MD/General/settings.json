@@ -1,6 +1,7 @@
 {
-  "ChapterName": "課程須知",
-  "IsDisplay": true,
-  "Sequence": 0,
-  "MapLock": false
+    "IsDisplay": true,
+    "Sequence": 0,
+    "MapLock": false,
+    "GenerateMap": true,
+    "CourseName": "課程須知"
 }

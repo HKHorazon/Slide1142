@@ -20,9 +20,9 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-### 課程地圖
-# {CourseName} 
+# 評分標準與課程大綱 
 ## Horazon
+## {CourseName}
 
 
 ---

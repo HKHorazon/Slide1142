@@ -1,6 +1,7 @@
 {
-    "ChapterName": "C# 程式設計",
     "IsDisplay": true,
     "Sequence": 10,
-    "MapLock": false
+    "MapLock": false,
+    "GenerateMap": true,
+    "CourseName": "C# 程式設計"
 }

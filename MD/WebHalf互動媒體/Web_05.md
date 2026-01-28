@@ -16,316 +16,331 @@ style: |
 <!-- _class: lead -->
 <!--_paginate: false-->
 
-### Chapter 05
-# Html基本語法
+### Chapter 06
+# Style與CSS
 
 ## Horazon
 ## 互動媒體設計
 
 ---
 
-# 什麼是 HTML?
+# 什麼是 CSS?
 
-## **H**yper**T**ext **M**arkup **L**anguage (超文字標記語言)
+## **C**ascading **S**tyle **S**heets (階層式樣式表)
 
-## 它**不是**程式語言，它是**標記語言**
+## 負責網頁的**外觀**、**排版**與**視覺效果** (皮膚與衣服)
 
-## 負責定義網頁的**結構**與**內容** (骨架)
+HTML 是**骨架** (內容)，CSS 是**樣式** (裝飾)。
+
+沒有 CSS 的網頁，就像沒有裝潢的毛胚屋。
 
 ---
 
-# HTML 基本結構
+# CSS 的三種寫法
 
-一個標準的 HTML 檔案包含：
+1. **行內樣式 (Inline)**：直接寫在 HTML 標籤上 (不推薦)。
+   `<h1 style="color: red;">標題</h1>`
+2. **內部樣式 (Internal)**：寫在 `<head>` 的 `<style>` 標籤內。
+3. **外部樣式 (External)**：寫在獨立的 `.css` 檔案 (**最推薦**)。
 
 ```html
-<!DOCTYPE html>       <!-- 宣告文件類型 -->
-<html>                <!-- 根元素 -->
-<head>
-    <title>標題</title> <!-- 網頁資訊 (不會顯示在頁面上) -->
-    <meta charset="UTF-8">
-</head>
-<body>
-    <!-- 這裡放網頁內容 -->
-    <h1>哈囉，世界！</h1>
-</body>
-</html>
-```
-
-
----
-# 什麼是 DOM?
-
-HTML是一種DOM結構
-- **D**ocument **O**bject **M**odel (文件物件模型)
-- 瀏覽器將 HTML 解析為**樹狀結構** (Tree Structure)
-- 讓程式 (如 JavaScript) 可以改變網頁的**架構**、**樣式**與**內容**
-
-HTML 標籤不僅是文字，更是 **DOM 節點 (Nodes)**。
-
----
-
-# HTML 標籤語法
-
-標籤通常成對出現：
-```html
-<標籤名>內容</標籤名>
-```
-
-標籤內可以設定**屬性** (Attribute)：
-```html
-<標籤名 屬性名="屬性值">內容</標籤名>
-```
-
-部分標籤是**空標籤** (Empty Tag)，沒有結束標籤：
-```html
-<br> <!-- 換行 -->
-```
-
-
----
-
-# 核心標籤解說
-
-- **`<html>`**：HTML 文件的根元素，包裹所有內容。
-- **`<head>`**：包含網頁的元數據 (metadata)，如標題、編碼設定、CSS 連結等。
-- **`<body>`**：包含網頁的所有**可見內容**，如文字、圖片、影片等。
-
-
----
-# Meta 標籤 (Metadata)
-
-位於 `<head>` 內，提供**瀏覽器**與**搜尋引擎**資訊。
-`<meta>`是一種**空標籤** (不需要結束標籤)。
-
-
-- **編碼設定** (防止亂碼)：
-  `<meta charset="UTF-8">`
-- **RWD 設定** (讓網頁在不同設備上正確縮放)：
-  `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
-- **SEO 描述** (讓搜尋引擎知道你的網站是什麼)：
-  `<meta name="description" content="網頁簡介...">`
-
----
-
-
-# 文字標籤 (Text Tags)
-
-- **標題**：`<h1>` (最大) ~ `<h6>` (最小)
-- **段落**：`<p>` 文字段落 `</p>` (會有上下間距)
-- **換行**：`<br>` (強制換行)
-- **水平線**：`<hr>` (分隔線)
-- **強調**：`<b>` (粗體), `<i>` (斜體)
-- **行內容器**：`<span>` (用於特定文字樣式設定)
-
-```html
-<h1>主標題</h1>
-<p>這是一段文字，包含 <b>粗體</b> 與 <i>斜體</i>。<br>這是第二行。</p>
+<link rel="stylesheet" href="style.css">
 ```
 
 ---
 
-# 圖片標籤 (Image Tag)
+# CSS 語法結構
 
-使用 `<img>` 標籤插入圖片 (不須成對出現的標籤)。
+```css
+選擇器 {
+    屬性: 設定值;
+    屬性: 設定值;
+}
+```
 
-- **`src`** (Source)：圖片的路徑 (網址或檔案路徑)。
-- **`alt`** (Alternative)：圖片無法顯示時的替代文字 (對 SEO 與無障礙很重要)。
-- **`width` / `height`**：設定寬高 (像素或百分比)。
+- **選擇器 (Selector)**：選到誰？ (例如 `h1`, `p`, `.box`)
+- **屬性 (Property)**：改什麼？ (例如 `color`, `font-size`)
+- **設定值 (Value)**：改多少？ (例如 `red`, `16px`)
 
-```html
-<img src="logo.png" alt="網站 Logo" width="200">
-
-<img src="https://example.com/cat.jpg" alt="可愛貓咪">
+```css
+h1 {
+    color: blue;
+    font-size: 24px;
+}
 ```
 
 ---
 
-# 連結標籤 (Link Tag)
+<style scoped>
+table {
+    font-size: 35px;
+    text-align: center;
+}
+td:nth-child(1) {
+    width: 200px;
+}
+td:nth-child(2) {
+    width: 60px;
+}
+td:nth-child(3) {
+    width: 220px;
+}
+td:nth-child(4) {
+    width: 550px;
+}
+</style>
 
-使用 `<a>` (Anchor) 標籤建立超連結。
-
-- **`href`** (Hypertext Reference)：連結的目標網址。
-- **`target`**：開啟方式，`_blank` 代表在新分頁開啟。
-
-```html
-<!-- 連到外部網站 -->
-<a href="https://www.google.com" target="_blank">Google</a>
-
-<!-- 連到同網站的其他頁面 -->
-<a href="about.html">關於我們</a>
-
-<!-- 圖片連結 -->
-<a href="index.html">
-  <img src="home-icon.png" alt="首頁">
-</a>
-```
-
----
-# 表格標籤 (Table Tags)
+# 選擇器 (Selectors)
 
 <br>
 
-使用 `<table>` 建立表格。
-`<tr>` (Table Row)：表格的一列
-`<th>` (Table Header)：標題儲存格 (通常粗體置中)
-`<td>` (Table Data)：資料儲存格
+決定 CSS 要套用在哪些元素上。
 
-```html
-<table border="1">
-  <tr>
-    <th>姓名</th>
-    <th>分數</th>
-  </tr>
-  <tr>
-    <td>小明</td>
-    <td>90</td>
-  </tr>
-</table>
-```
+| 選擇器 | 符號 | 範例 | 說明 |
+| :--- | :--- | :--- | :--- |
+| 標籤選擇器 | 無 | p { ... } | 選取所有 \<p\> 標籤 |
+| 類別選擇器 | `.` | .title { ... } | 選取 class="title" 的元素 (**最常用!**) |
+| ID 選擇器 | `#` | #header { ... } | 選取 id="header" 的元素 (唯一) |
+| 全域選擇器 | `*` | * { ... } | 選取網頁上所有元素 |
 
----
-# 其他常用標籤
-
-- **`<br>`**：換行  (不須成對出現的標籤)
-- **`<hr>`**：水平線 (不須成對出現的標籤)
-- **`<span>`**：行內容器 (用於特定文字樣式設定)
-
-```html
-<br>
-<hr>
-<span>特定文字樣式</span>
-```
 
 
 
 ---
-# div ：現在HTML最重要的標籤
 
-```html
-<div>特定區塊樣式</div>
+# 常用文字屬性
+
+- **`color`**：文字顏色 (`red`, `#FF0000`, `rgb(255, 0, 0)`).
+- **`font-size`**：文字大小 (`16px`, `1.5rem`).
+- **`font-weight`**：文字粗細 (`bold`, `700`).
+- **`text-align`**：文字對齊 (`center`, `left`, `right`).
+- **`line-height`**：行高 (閱讀舒適度關鍵).
+
+```css
+p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
 ```
-
-為什麼\<div\>是現在HTML最重要的標籤？
-1. **佈局核心**：它是 CSS Flexbox 和 Grid 佈局的基礎，能自由建構複雜的網頁架構。
-2. **樣式容器**：作為無語義的區塊元素，它不會自帶多餘樣式，是套用 CSS 樣式的最佳選擇。
-3. **邏輯分組**：能將相關元素組成獨立區塊，方便進行內容管理與區塊化設計。
-4. **組件化開發**：在現代前端框架中，`<div>` 常用作組件的封裝容器，便於維護與重用。
-
 
 ---
 
-# 清單標籤 (List Tags)
+# 盒子模型 (Box Model)
 
-- **無序清單** (`<ul>` + `<li>`)：項目符號通常是圓點。
-- **有序清單** (`<ol>` + `<li>`)：項目會有數字排序 (1, 2, 3...)。
+每個 HTML 元素都是一個**盒子**，由內而外包含：
 
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+1. **Content** (內容)：文字或圖片本身。
+2. **Padding** (內距)：內容與邊框之間的距離 (留白)。
+3. **Border** (邊框)：盒子的框線。
+4. **Margin** (外距)：盒子與盒子之間的距離。
 
-<div>
+---
 
-**無序清單 (Unordered)**
-```html
-<ul>
-  <li>蘋果</li>
-  <li>香蕉</li>
-</ul>
+# 盒子模型示意圖
+
+<style>
+.box-demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    background: #add8e6;
+    border: 5px solid #00008b;
+    margin: 20px auto;
+    padding: 20px;
+    font-weight: bold;
+    color: black;
+}
+</style>
+
+```css
+.box {
+    width: 300px;
+    padding: 20px;   /* 內距 (藍色背景部分變大) */
+    border: 5px solid blue; /* 邊框 */
+    margin: 20px;    /* 外距 (推開別人) */
+}
 ```
-</div>
 
-<div>
-
-**有序清單 (Ordered)**
-```html
-<ol>
-  <li>註冊帳號</li>
-  <li>驗證信箱</li>
-</ol>
-```
-</div>
-
+<div class="box-demo">
+    我是內容 (Content)
 </div>
 
 ---
 
-# 按鈕與表單 (Button & Input)
+# 排版神器：Flexbox
 
-用於與使用者互動。
+現代網頁排版最常用的工具 (`display: flex`)。
+它可以輕鬆讓元素**並排**、**置中**或**平均分配**。
 
-- **按鈕**：`<button>`
-- **輸入框**：`<input>` (空標籤)，透過 `type` 屬性改變類型。
+```css
+.container {
+    display: flex; /* 開啟 Flex 模式 */
+    justify-content: center; /* 水平置中 */
+    align-items: center;     /* 垂直置中 */
+}
+```
 
-```html
-<!-- 普通按鈕 -->
-<button>點我</button>
+常用屬性：
+- `justify-content`: `center` (置中), `space-between` (兩側推開), `flex-start` (靠左)。
+- `align-items`: `center` (垂直置中), `flex-end` (靠底)。
 
-<!-- 文字輸入框 -->
-<input type="text" placeholder="請輸入姓名">
+---
 
-<!-- 密碼輸入框 -->
-<input type="password">
+# 響應式設計 (RWD)
 
-<!-- 日期選擇 -->
-<input type="date">
+讓網頁在手機、平板、電腦上都好看。
+主要使用 **Media Queries (`@media`)**。
+
+```css
+/* 電腦版樣式 */
+.box {
+    width: 50%;
+}
+
+/* 當螢幕寬度小於 600px (手機) */
+@media (max-width: 600px) {
+    .box {
+        width: 100%; /* 手機版變全寬 */
+    }
+}
 ```
 
 ---
 
-# 實作練習：個人簡介
+# 實作練習：個人卡片
 
-建立 `index.html`，試著包含以下內容：
-
-1. `<h1>` 顯示你的名字。
-2. `<p>` 簡短自我介紹。
-3. `<img>` 放一張你的大頭貼或喜歡的圖片。
-4. `<ul>` 列出 3 個興趣。
-5. `<a href="...">` 連結到你的 IG 或 FB (設定新分頁開啟)。
-6. `<button>` 一個 "聯絡我" 的按鈕。
-
----
-# 實作練習：個人簡介 (結果)
-
-<br>
+製作一張個人簡介卡片，包含：
+1. 一個外框 (`div`)：設定邊框、陰影、圓角。
+2. 圓形大頭貼 (`img`)：使用 `border-radius: 50%`。
+3. 名字與簡介 (`h2`, `p`)：設定置中與適當間距。
 
 ```html
-<!DOCTYPE html>
-<html>
-<head>
-    <title>個人簡介</title>
-</head>
-<body>
-    <h1>Horazon</h1>
-    <p>多遊系老師，教學遊戲開發。</p>
-    <img src="Horazon.jpg" alt="陳大衛">
-    <ul>
-        <li>電子遊戲</li>
-        <li>桌上遊戲</li>
-        <li>程式設計</li>
-    </ul>
-    <a href="https://www.instagram.com/username" target="_blank">Discord</a>
-    <button>聯絡我</button>
-</body>
-</html>
+<div class="card">
+    <img src="avatar.jpg" class="avatar">
+    <h2>Horazon</h2>
+    <p>前端工程師</p>
+</div>
 ```
+
+---
+
+# 實作練習：CSS 參考
+
+```css
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* 圓角 */
+    text-align: center;  /* 文字置中 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 陰影 */
+    margin: 50px auto;   /* 整個卡片置中 */
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* 變圓形 */
+    object-fit: cover;
+}
+```
+
+
+---
+
+# RWD 響應式網頁設計 (深入解析)
+
+**Responsive Web Design**
+
+隨著手機上網的人越來越多，網頁必須能**自動適應**各種螢幕尺寸。
+
+**核心概念**：
+1. **流動網格 (Fluid Grids)**：寬度使用 `%` 而不是 `px`，讓區塊隨螢幕伸縮。
+2. **彈性圖片 (Flexible Images)**：`max-width: 100%`，防止圖片撐破版面。
+3. **媒體查詢 (Media Queries)**：針對不同尺寸設定不同 CSS。
+
+---
+
+# Media Query RWD 範例
+
+讓我們練習一個最簡單的 RWD 效果：
+**「當螢幕變窄時，背景變色」**
+
+```css
+/* 1. 預設 (電腦版大螢幕) */
+.box {
+    background-color: lightblue; 
+}
+
+/* 2. 當螢幕寬度小於 768px (手機/平板) */
+@media (max-width: 768px) {
+    .box {
+        background-color: pink; /* 變成粉紅色 */
+    }
+}
+```
+
+> **實作與測試**：
+> 開發人員工具 (F12) -> 切換手機模式 -> 觀察顏色變化！
+
+---
+
+# 常見的 RWD 製作方法
+
+現代開發有幾種主流做法：
+
+### 1. CSS Flexbox (彈性盒子)
+最推薦！直接用 flex-wrap: wrap 讓元素在小螢幕自動換行。
+
+### 2. CSS Grid (網格系統)
+適合大型排版，可以精準控制「幾欄幾列」。
+
+### 3. CSS 框架 (Frameworks)
+站在巨人的肩膀上！
+- **Bootstrap**：最老牌，用 class (`col-6`, `col-md-4`) 來排版。
+- **Tailwind CSS**：現代主流，寫法極簡 (`w-1/2`, `md:w-1/3`)。
+
+---
+
+# 實戰：用 Flex 做 RWD
+
+不用寫 Media Query 也能做 RWD？
+
+```css
+.container {
+    display: flex;
+    flex-wrap: wrap; /* 空間不夠時自動換行 */
+}
+
+.box {
+    flex: 1 1 300px; /* 彈性縮放，最小寬度 300px */
+}
+```
+
+- **大螢幕**：空間夠，三個箱子並排 (300px + 300px + 300px)。
+- **手機**：空間不夠 (< 600px)，箱子自動掉下來變垂直排列。
+
+> 這就是 **無痛 RWD**！
 
 ---
 
 # 結論
 
-1. HTML 是一種標記語言，用於描述網頁的結構和內容。
-2. HTML 標籤用來定義網頁的結構，如 `<html>`, `<head>`, `<body>` 等。
-3. HTML 標籤可以包含屬性，用來提供額外的資訊。
-4. HTML 標籤可以成對使用，如 `<p>` 與 `</p>`。
-5. 也可以是空標籤，如 `<br>`。
-
+1. CSS 負責網頁的「樣式」，讓 HTML 變漂亮。
+2. 推薦使用**外部樣式表** (External Style)。
+3. 善用 **Class (`.`)** 來管理樣式。
+4. 解 **Box Model** (Padding/Margin/Border) 是排版基礎。
+5. **Flexbox** 是最強大的排版工具。
 
 ---
 
 # 重點回顧
 
-1. **結構**：`html`, `head`, `body` 是基本骨架。
-2. **文字**：標題用 `h1-h6`，段落用 `p`。
-3. **媒體**：圖片用 `img` (記得 `alt`)，連結用 `a` (記得 `href`)。
-4. **清單**：`ul` (點點) 與 `ol` (數字)，項目都用 `li`。
-5. **互動**：`button` 與 `input` 讓使用者輸入資訊。
-
+1. **選擇器**：`.class` 最常用，`#id` 只有一個。
+2. **顏色**：`color` (字), `background-color` (底)。
+3. **距離**：`padding` (內), `margin` (外)。
+4. **排版**：`display: flex` 讓元素乖乖排好。
+5. **RWD**：`@media` 讓手機板也好用。

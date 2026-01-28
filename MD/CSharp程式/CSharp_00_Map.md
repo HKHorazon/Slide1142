@@ -20,9 +20,9 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-### 課程地圖
-# {CourseName} 
+# 評分標準與課程大綱 
 ## Horazon
+## C# 程式設計
 
 
 ---
@@ -60,13 +60,13 @@ table th:nth-child(2) {
 | 週次 | 主題 |
 | :---: | :--- |
 | **W1** | **課程簡介與環境建置** |
-| W2 | {Topic_01} |
-| W3 | {Topic_02} |
-| W4 | {Topic_03} |
-| W5 | {Topic_04} |
-| W6 | {Topic_05} |
-| W7 | {Topic_06} |
-| W8 | {Topic_07} |
+| W2 | 學習程式 |
+| W3 | 程式語言 與 C# |
+| W4 | 你好世界 |
+| W5 | 變數宣告與使用 |
+| W6 | 運算式與運算子 |
+| W7 | 流程控制 |
+| W8 | 迴圈控制 |
 | **W9** | **期中考週 (Midterm)** |
 
 ---
@@ -90,12 +90,12 @@ table th:nth-child(2) {
 
 | 週次 | 主題 |
 | :---: | :--- |
-| W10 | {Topic_08} |
-| W11 | {Topic_09} |
-| W12 | {Topic_10} |
-| W13 | {Topic_11} |
-| W14 | {Topic_12} |
-| W15 | {Topic_13} |
-| W16 | {Topic_14} |
+| W10 | 陣列 (Array) |
+| W11 | 字串 (String) |
+| W12 | 函式與方法 (Function & Method) |
+| W13 | 類別與物件 (Class & Object) |
+| W14 | 封裝與建構子 (Encapsulation & Constructor) |
+| W15 | 繼承與多型 (Inheritance & Polymorphism) |
+| W16 | 集合與泛型 (Collections & Generics) |
 | **W17** | **期末考週 (Final)** |
 | W18 | 彈性教學與總結 |

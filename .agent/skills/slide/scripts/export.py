@@ -64,7 +64,7 @@ def get_category_settings(category_name):
     """Reads settings.json for a given category. Returns a dict with defaults if not found."""
     settings_path = os.path.join(INPUT_ROOT_DIR, category_name, 'settings.json')
     defaults = {
-        "ChapterName": category_name, # Default to folder name
+        "CourseName": category_name, # Default to folder name
         "IsDisplay": True,
         "Sequence": 999
     }
@@ -136,7 +136,7 @@ def generate_index_html():
     # { 
     #   "CategoryFolder": {
     #       "data": [ ("FormattedName", "RelativeLink"), ... ],
-    #       "settings": { "ChapterName":..., "IsDisplay":..., "Sequence":... }
+    #       "settings": { "CourseName":..., "IsDisplay":..., "Sequence":... }
     #   } 
     # }
     categories_data = {}
@@ -185,10 +185,12 @@ def generate_index_html():
                     title = None
                 
                 # Use the Display Name for formatting
-                category_display_name = categories_data[category_folder]["settings"]["ChapterName"]
+                category_display_name = categories_data[category_folder]["settings"]["CourseName"]
                 formatted_name = format_display_name(category_display_name, file, title)
 
-                categories_data[category_folder]["data"].append((formatted_name, rel_link))
+                # Store filename as sort key to ensure correct order (e.g. 04 before 04B)
+                # Tuple: (filename, formatted_name, rel_link)
+                categories_data[category_folder]["data"].append((file, formatted_name, rel_link))
 
     # Generate HTML content
     html_content = f"""<!DOCTYPE html>
@@ -277,11 +279,11 @@ def generate_index_html():
     
     sorted_categories = sorted(
         valid_categories, 
-        key=lambda item: (item[1]["settings"]["Sequence"], item[1]["settings"]["ChapterName"])
+        key=lambda item: (item[1]["settings"]["Sequence"], item[1]["settings"]["CourseName"])
     )
     
     for cat_folder, info in sorted_categories:
-        display_name = info["settings"]["ChapterName"]
+        display_name = info["settings"]["CourseName"]
         file_list = info["data"]
         
         # Only render if there are files (though logic guarantees files exist if we iterated PDF folder)
@@ -289,7 +291,8 @@ def generate_index_html():
             continue
             
         html_content += f'        <div class="category">\n            <details>\n                <summary><h2>{display_name}</h2></summary>\n                <ul class="file-list">\n'
-        for name, link in sorted(file_list):
+        # Sort by filename (first element of tuple)
+        for sort_key, name, link in sorted(file_list):
             html_content += f'                    <li class="file-item"><a class="file-link" href="{link}" target="_blank">{name}</a></li>\n'
         html_content += '                </ul>\n            </details>\n        </div>\n'
 

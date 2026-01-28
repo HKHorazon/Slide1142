@@ -1,6 +1,7 @@
 {
-    "ChapterName": "Antigravity AI",
     "IsDisplay": true,
     "Sequence": 99,
-    "MapLock": false
+    "MapLock": false,
+    "GenerateMap": false,
+    "CourseName": "Antigravity"
 }
