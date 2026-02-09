@@ -2,6 +2,6 @@
     "IsDisplay": true,
     "Sequence": 0,
     "MapLock": false,
-    "GenerateMap": true,
+    "GenerateMap": false,
     "CourseName": "課程須知"
 }

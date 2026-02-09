@@ -183,23 +183,165 @@ Console.WriteLine($"BMI: {myBMI}");
 
 ---
 
-# return 的特性
+# return 的特性 (1)：回傳數值
 
-`return` 關鍵字有兩個作用：
-1. **回傳數值**給呼叫者。
-2. **立即結束**該方法的執行。
+`return` 關鍵字最主要的作用是**回傳運算結果**給呼叫者。
+一旦執行到 `return`，方法就會帶著結果**立即返回**，後面的程式碼不會被執行。
 
 ```cs
 string CheckScore(int score)
 {
-    if (score < 0 || score > 100)
+    if (score >= 60) 
+        return "及格";
+    else 
+        return "不及格";
+}
+```
+
+---
+
+# return 的特性 (2)：立即結束 (void)
+
+在 `void` (不回傳值) 的方法中，我們可以使用 `return;` (不帶值) 來**強制結束**方法的執行。
+通常用於**排除異常狀況**，稱為 **Early Return (提早離開)**。
+
+```cs
+void Heal(int amount)
+{
+    // 1. 檢查無效狀況 (Guard Clause)
+    if (amount <= 0)
     {
-        return "錯誤的分數"; // 遇到 return 直接結束，下面不會執行
+        Console.WriteLine("補血量無效！");
+        return; // 遇到 return 直接結束，下面不會執行
     }
 
-    if (score >= 60) return "及格";
-    else return "不及格";
+    // 2. 執行正常邏輯
+    Console.WriteLine($"恢復了 {amount} 點生命值");
+```
+
+---
+
+# 方法呼叫方法 (Method Calling Method)
+
+方法不只能被 `Main` 呼叫，也可以**呼叫其他方法**。
+透過層層呼叫，我們可以將複雜的任務拆解成簡單的小步驟。
+
+```cs
+void Cook()
+{
+    BoilWater();   // 呼叫煮水
+    AddNoodles();  // 呼叫放麵
+    Console.WriteLine("麵煮好了！");
 }
+
+void BoilWater()
+{
+    Console.WriteLine("水滾了...");
+}
+
+void AddNoodles()
+{
+    Console.WriteLine("放入麵條...");
+}
+```
+
+---
+
+# 進階概念：遞迴 (Recursion)
+
+方法不只可以被別人呼叫，還可以**呼叫自己**！
+這稱為 **遞迴 (Recursion)**。
+
+> 就像是俄羅斯娃娃，一層一層打開，直到最後一個 (終止條件)。
+
+## 遞迴的兩大關鍵
+1. **終止條件 (Base Case)**：什麼時候停下來？(沒有這個會變成無窮迴圈)
+2. **遞迴步驟 (Recursive Step)**：呼叫自己，但問題規模變小。
+
+---
+
+# 遞迴範例：計算次方 (Power)
+
+計算 2 的 3 次方：`2^3 = 2 * 2 * 2`
+
+**方法 1：使用遞迴**
+```cs
+int Power(int baseNum, int exp)
+{
+    // 1. 終止條件：任何數的 0 次方都是 1
+    if (exp == 0) return 1;
+
+    // 2. 遞迴步驟：2^3 = 2 * 2^2
+    return baseNum * Power(baseNum, exp - 1);
+}
+Console.WriteLine(Power(2, 3)); // 8
+```
+
+**方法 2：使用內建函式庫 (更常用)**
+```cs
+double result = Math.Pow(2, 3); // 需回傳 double
+Console.WriteLine(result);      // 8
+```
+
+---
+
+# 綜合練習 1：溫度轉換
+
+請撰寫一個方法 `CtoF`，將攝氏溫度轉為華氏。
+公式：`F = C * 1.8 + 32`
+
+```cs
+double CtoF(double c)
+{
+    return c * 1.8 + 32;
+}
+
+Console.WriteLine(CtoF(25)); // 77
+```
+
+---
+
+# 綜合練習 2：比大小
+
+請撰寫一個方法 `GetMax`，傳入兩個整數，回傳比較大的那個。
+
+```cs
+int GetMax(int a, int b)
+{
+    if (a > b) return a;
+    else return b;
+}
+
+// 或是使用更簡潔的寫法
+// int GetMax(int a, int b) => (a > b) ? a : b;
+
+Console.WriteLine(GetMax(10, 20)); // 20
+```
+
+---
+
+# 綜合練習 3：印出星星塔
+
+請撰寫一個方法 `PrintStars`，輸入層數，印出對應的星星塔。
+
+```cs
+void PrintStars(int rows)
+{
+    for (int i = 1; i <= rows; i++)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            Console.Write("*");
+        }
+        Console.WriteLine(); // 換行
+    }
+}
+
+PrintStars(3);
+
+//*
+//**
+//***
 ```
 
 ---
@@ -211,14 +353,4 @@ string CheckScore(int score)
 - **參數**是方法的輸入，讓方法更具彈性。
 - **return** 用來回傳值並結束方法。
 - 變數有其**作用域**，方法內的變數外面看不到。
-
----
-
-# 下章預告：類別與物件 (Class & Object)
-
-我們即將進入物件導向程式設計 (OOP) 的核心！
-
-- 什麼是類別 (Class)？
-- 什麼是物件 (Object)？
-- 屬性 (Field/Property) 與 建構子 (Constructor)
-
+- **遞迴**是方法呼叫自己的技巧，需注意設定終止條件。

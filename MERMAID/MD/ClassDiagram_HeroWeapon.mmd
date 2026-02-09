@@ -1,0 +1,12 @@
+classDiagram
+    direction LR
+    class Hero {
+        +string name
+        +Weapon myWeapon
+        +Attack()
+    }
+    class Weapon {
+        +string name
+        +int damage
+    }
+    Hero --> Weapon : 擁有 (Has-a)

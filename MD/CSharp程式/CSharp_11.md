@@ -22,6 +22,56 @@ style: |
 
 ---
 
+# 結構 (Struct)
+
+除了 Class，C# 還有一個很像的東西叫做 **Struct (結構)**。
+通常用來定義**輕量級的資料結構**，例如座標 (x, y)、顏色 (r, g, b)。
+
+```cs
+struct Point
+{
+    public int x;
+    public int y;
+}
+```
+
+它跟 Class 長得很像，但運作方式完全不同 (稍後揭曉)！
+
+---
+# 範例：使用 Struct
+
+Struct 是**實值型別**，通常直接宣告後使用，不需要 `new` (也可以用，但意義不同)。
+
+```cs
+// 在 Main 中使用 Point
+Point p1; 
+p1.x = 10;
+p1.y = 20;
+
+Point p2 = p1; // p2 是 p1 的複製品 (Copy)
+p2.x = 999;
+
+Console.WriteLine(p1.x); // 10 (p1 不受影響)
+Console.WriteLine(p2.x); // 999
+```
+
+如果是 Class，p1.x 也會變成 999！這就是關鍵差異。
+
+---
+
+# 程式語言的三大典範 (Paradigms)
+
+1. **程序導向 (Procedural)**：C 語言
+   - 指令式，一步一步執行，強調函式 (Function)。
+2. **物件導向 (OOP)**：C#, Java, C++
+   - 強調「物件」與「物件」之間的互動。
+   - 適合大型專案，易於維護與擴充。
+3. **函數式 (Functional)**：Haskell, F#
+   - 強調數學函數的對應，避免副作用 (Side Effect)。
+   - 近年來 C# 也加入了許多函數式特性 (如 LINQ)。
+
+---
+
 # 什麼是物件導向 (Object-Oriented)
 
 在我們之前的課程中，程式碼多半是「一行一行」或「一個函式」的概念。
@@ -107,6 +157,43 @@ void Main()
 當你寫 `Player p3 = p1;` 時，其實只是複製了「地址」。
 修改 `p3.hp`，`p1.hp` 也會跟著變！(因為它們指向同一個實體)
 
+
+---
+
+# 範例：物件與物件的互動 (多 Class)
+
+勇者 (Hero) 手上拿著武器 (Weapon) 攻擊怪物。
+
+```cs
+class Weapon {
+    public string name;
+    public int damage;
+}
+
+class Hero {
+    public string name;
+    public Weapon myWeapon; // 勇者擁有一個武器物件
+
+    public void Attack() {
+        Console.WriteLine($"{name} 用 {myWeapon.name} 造成 {myWeapon.damage} 點傷害！");
+    }
+}
+```
+
+這就是**組合 (Composition)** 的概念：一個物件可以包含另一個物件。
+
+---
+
+# 類別圖 (Class Diagram)
+
+我們可以用圖形來表示類別之間的關係：
+
+<br>
+
+![Class Diagram w:900](../../MERMAID/IMAGE/ClassDiagram_HeroWeapon.png)
+<!-- 請自行將 MERMAID/MD/ClassDiagram_HeroWeapon.mmd 轉檔為圖片並放置於 MERMAID/IMAGE -->
+
+
 ---
 
 # 為什麼需要類別？
@@ -115,7 +202,27 @@ void Main()
 2. **邏輯統一**：將操作這些資料的函式 (`Attack`, `Heal`) 也放在一起，更好維護。
 3. **擴充性**：可以輕易產生多個獨立的物件 (多個敵人、多個 NPC)。
 
-Unity 中的 `GameObject` 或是 `MonoBehaviour`，本質上全都是類別！
+> **疑問：這些事情 Struct 不也辦得到嗎？**
+> Struct 也可以有欄位、也可以有方法啊！為什麼要用 Class？
+
+沒錯！Struct 確實可以做到類似的事情，但最關鍵的差異在於**記憶體行為**與**特性**。
+
+---
+
+# Class vs Struct：世紀大對決
+
+| 特性 | Class (類別) | Struct (結構) |
+| :--- | :--- | :--- |
+| **型別種類** | **參考型別 (Reference Type)** | **實值型別 (Value Type)** |
+| **記憶體位置** | Heap (堆積) | Stack (堆疊) |
+| **賦值行為** | 複製記憶體地址 (參考) | **複製整個數值** (深拷貝) |
+| **繼承** | 支援繼承 (Inheritance) | **不支援**繼承 |
+| **適用場景** | 大型物件、邏輯複雜、需要繼承 | 小型資料 (座標、簡單數值) |
+| **預設值** | null | 該型別的預設值 (全為0) |
+
+> **記憶點**：
+> 要做**物件 (Object)** 用 Class (如: Player, Enemy, GameManager)。
+> 要做**單純資料 (Data)** 用 Struct (如: Vector3, Color, Rect)。
 
 ---
 
@@ -128,12 +235,55 @@ Unity 中的 `GameObject` 或是 `MonoBehaviour`，本質上全都是類別！
 
 ---
 
-# 下章預告：封裝與建構子
 
-現在我們的變數都是 `public` (公開的)，這其實有點危險！
-任何人都可以隨意修改 `hp` 成 `-1000` 或是奇怪的數值。
+---
 
-下一章我們將學習如何保護資料：
-- **封裝 (Encapsulation)**
-- **屬性 (Property)**
-- **建構子 (Constructor)**
+# 綜合範例：銀行帳戶 (OOP)
+
+```cs
+class BankAccount
+{
+    public string owner;
+    public int balance;
+
+    public void Deposit(int amount) {
+        if (amount > 0) {
+            balance += amount;
+            Console.WriteLine($"{owner} 存入 {amount}，餘額: {balance}");
+        }
+    }
+
+    public void Withdraw(int amount) {
+        if (amount <= balance) {
+            balance -= amount;
+            Console.WriteLine($"{owner} 提款 {amount}，餘額: {balance}");
+        } else {
+            Console.WriteLine($"{owner} 餘額不足！");
+        }
+    }
+}
+```
+
+# 綜合範例：學生成績系統
+
+```cs
+class Student
+{
+    public string name;
+    public int score;
+
+    public void CheckPass()
+    {
+        if (score >= 60)
+            Console.WriteLine($"{name} 及格了！");
+        else
+            Console.WriteLine($"{name} 需要補考...");
+    }
+}
+
+Student s1 = new Student();
+s1.name = "小明";
+s1.score = 59;
+s1.CheckPass(); // 小明 需要補考...
+```
+

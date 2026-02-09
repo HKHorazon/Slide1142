@@ -189,8 +189,10 @@ def generate_index_html():
                 formatted_name = format_display_name(category_display_name, file, title)
 
                 # Store filename as sort key to ensure correct order (e.g. 04 before 04B)
-                # Tuple: (filename, formatted_name, rel_link)
-                categories_data[category_folder]["data"].append((file, formatted_name, rel_link))
+                # Tuple: (priority, filename, formatted_name, rel_link)
+                # Priority: 0 for normal, 1 for HW (to put HW at the end)
+                priority = 1 if "HW" in file else 0
+                categories_data[category_folder]["data"].append((priority, file, formatted_name, rel_link))
 
     # Generate HTML content
     html_content = f"""<!DOCTYPE html>
@@ -291,8 +293,8 @@ def generate_index_html():
             continue
             
         html_content += f'        <div class="category">\n            <details>\n                <summary><h2>{display_name}</h2></summary>\n                <ul class="file-list">\n'
-        # Sort by filename (first element of tuple)
-        for sort_key, name, link in sorted(file_list):
+        # Sort by priority (0->1) then filename
+        for priority, sort_key, name, link in sorted(file_list):
             html_content += f'                    <li class="file-item"><a class="file-link" href="{link}" target="_blank">{name}</a></li>\n'
         html_content += '                </ul>\n            </details>\n        </div>\n'
 

@@ -103,6 +103,17 @@ def generate_map(course_dir):
              
              # Otherwise include (standard behavior)
              valid_files.append(f)
+             
+    # Filter out HW files
+    # Requirement: Files with "HW" in name should NOT be in the map
+    non_hw_files = []
+    for f in valid_files:
+        filename = os.path.basename(f)
+        if "HW" in filename:
+             print(f"Skipping Homework slide: {filename}")
+             continue
+        non_hw_files.append(f)
+    valid_files = non_hw_files
 
     # 3. Extract Titles
     titles = []

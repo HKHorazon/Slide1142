@@ -69,6 +69,31 @@ class Player {
 }
 ```
 
+
+---
+
+# 傳統的 Getter 與 Setter
+
+在沒有屬性語法之前 (如 Java)，我們通常這樣寫：
+
+```cs
+class Player {
+    private int hp;
+
+    // 取得 HP (Getter)
+    public int GetHP() {
+        return hp;
+    }
+
+    // 設定 HP (Setter)
+    public void SetHP(int value) {
+        if (value < 0) value = 0;
+        hp = value;
+    }
+}
+```
+呼叫稍微麻煩一點：`p.SetHP(100);`
+
 ---
 
 # 屬性 (Property)
@@ -143,22 +168,7 @@ Player p1 = new Player("勇者", 100);
 Player p2 = new Player("魔王", 999);
 ```
 
-**建構子多載 (Constructor Overloading)**
-你可以定義多個建構子，提供不同的初始化方式。
 
-```cs
-class Player {
-    public Player() { // 無參數建構子 (預設值)
-        Name = "Unknown";
-        HP = 10;
-    }
-    
-    public Player(string name) {
-        Name = name;
-        HP = 10;
-    }
-}
-```
 
 ---
 
@@ -182,6 +192,55 @@ Item potion = new Item
 
 ---
 
+# 建構子多載 (Constructor Overloading)
+
+如同方法多載，建構子也可以有很多個，只要**參數列表不同**即可。
+
+```cs
+class Player {
+    public string Name { get; set; }
+    public int HP { get; set; }
+
+    // 1. 無參數建構子 (給預設值)
+    public Player() {
+        Name = "Unknown";
+        HP = 10;
+    }
+
+    // 2. 指定名稱的建構子
+    public Player(string name) {
+        Name = name;
+        HP = 100;
+    }
+
+    // 3. 指定全部的建構子 (使用 this 呼叫其他建構子)
+    public Player(string name, int hp) : this(name) {
+        HP = hp;
+    }
+}
+```
+
+---
+
+
+# 解構子 (Destructor)
+
+相對應於建構子，**解構子**是在物件「被回收」前執行的。
+寫法是 `~類別名稱()`。
+
+```cs
+class Player {
+    ~Player() {
+        Console.WriteLine("Player 物件被銷毀了...");
+    }
+}
+```
+
+> **注意：** 在 C# (託管語言) 中，記憶體由 **垃圾回收器 (GC)** 自動管理。
+> 我們無法確定解構子什麼時候會執行，因此**非常少用**。除非你需要手動釋放非託管資源 (如檔案串流、C++ DLL)。
+
+---
+
 # 總結
 
 1.  **封裝**：使用 `private` 隱藏細節，使用 `public` 開放介面。
@@ -192,8 +251,5 @@ Item potion = new Item
 
 ---
 
-# 下章預告：繼承與多型
+<!-- TODO 移除下張預告 -->
 
-如果我要做「戰士」、「法師」、「盜賊」，他們都有 HP 和 Name，我需要寫三個類別嗎？
-
-下一章：**繼承 (Inheritance)**，讓我們不重複造輪子！
