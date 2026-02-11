@@ -1,6 +1,5 @@
 ---
 marp: true
-
 theme: HoraStyle
 paginate: true
 style: |
@@ -16,8 +15,8 @@ style: |
 <!-- _class: lead -->
 <!--_paginate: false-->
 
-### Chapter 07
-# DOM與JavaScript
+### Chapter 06
+# DOM 與 JavaScript 互動
 
 ## Horazon
 ## 互動媒體設計
@@ -26,170 +25,178 @@ style: |
 
 # 什麼是 JavaScript?
 
-## **J**ava**S**cript (簡稱 JS)
+回顧一下：
+-   HTML 是 **骨架** (結構)。
+-   CSS 是 **外觀** (樣式)。
+-   JavaScript 是 **大腦與肌肉** (行為)。
 
-## 它**是**一種程式語言 (Programming Language)
+JS 讓網頁從「靜態文件」變成「動態應用程式」。
 
-## 負責網頁的**互動**、**邏輯**與**資料處理** (大腦與肌肉)
-
-> [!WARNING]
-> JavaScript 與 Java 是完全不同的兩種語言！就像「熱狗」與「狗」的關係。
-
----
-# 網頁三兄弟
-
-- **HTML** (結構/骨架)：網頁有什麼內容？(標題、圖片、按鈕)
-- **CSS** (樣式/皮膚)：網頁長什麼樣子？(顏色、字體、排版)
-- **JavaScript** (行為/動作)：網頁能做什麼？(點擊、運算、變更內容)
-
-JavaScript 讓靜態的網頁動起來，產生**互動性**。
+### 它能做什麼？
+-   點擊按鈕跳出視窗。
+-   檢查表單有沒有填寫。
+-   **切換深色模式 (Dark Mode)**。
+-   從伺服器抓取天氣資料。
 
 ---
 
-# HTML 內的 JavaScript
+# 認識 DOM (Document Object Model)
 
-JavaScript 程式碼必須放在 `<script>` 標籤內：
+瀏覽器把 HTML 檔案讀進去後，會把它變成一棵 **樹狀結構 (Tree)**。
+這棵樹就叫做 **DOM**。
 
-```html
-<!DOCTYPE html>
-<html>
-<body>
-
-    <h1>我的第一個 JS</h1>
-    
-    <script>
-       alert('哈囉，JS！');
-    </script>
-    
-</body>
-</html>
-```
-
-通常建議將 `<script>` 放在 `<body>` 的**最下方**，確保網頁元素載入完成後再執行程式。
+### 為什麼叫 DOM?
+-   **Document (文件)**：整個網頁。
+-   **Object (物件)**：每個標籤 (`<h1>`, `<div>`) 都被轉換成一個「物件」。
+-   **Model (模型)**：這棵樹的結構模型。
 
 ---
 
-# 輸出方式 (Output)
+# DOM Tree 視覺化
 
-如何讓程式「說話」或顯示結果？
+想像 HTML 像家族族譜一樣：
 
-- **`alert()`**：跳出警告視窗 (最簡單，但會中斷操作)。
-- **`console.log()`**：在瀏覽器控制台 (F12) 顯示訊息 (開發者常用)。
-- **`document.querySelector().innerText`**：直接改變網頁內容。
+-   `document` (祖先)
+    -   `html` (根)
+        -   `head`
+            -   `title`
+        -   `body`
+            -   `h1` (標題)
+            -   `button` (按鈕)
+            -   `div` (容器)
+                -   `p` (段落)
+
+JS 就是透過這棵樹，**找到 (Select)** 特定的節點，然後**修改 (Modify)** 它。
+
+---
+
+# 第一步：抓取元素 (Selection)
+
+要控制某個元素，得先「抓到」它。
+我們用 `document.querySelector()` 這個萬能夾子。
 
 ```javascript
-alert("跳出視窗");
-console.log("這是在控制台顯示的訊息");
+// 抓取第一個 h1
+let title = document.querySelector('h1');
+
+// 抓取 class="btn" 的按鈕
+let btn = document.querySelector('.btn');
+
+// 抓取 id="menu" 的選單
+let menu = document.querySelector('#menu');
+```
+
+> 變數 (`let`) 就像一個**箱子**，我們把抓到的元素放進去，取名叫 `title`，方便以後呼叫。
+
+---
+
+# 第二步：監聽事件 (Events)
+
+抓到元素後，我們要等待使用者的動作。
+這就像設下一個**觸發機關 (Trigger)**。
+
+常見事件：
+-   `click` (點擊)
+-   `mouseover` (滑鼠移入)
+-   `input` (輸入文字)
+-   `scroll` (捲動頁面)
+
+```javascript
+// 當按鈕被點擊 (click) 時，執行後面的功能 (function)
+btn.addEventListener('click', function() {
+    alert('按鈕被按了！');
+});
 ```
 
 ---
 
-# 變數 (Variables)
+# 第三步：修改內容與樣式 (Manipulation)
 
-用來**儲存資料**的箱子。
+事件觸發後，我們可以做什麼？
 
-現代 JS 推薦使用 `let` 與 `const`：
+### 1. 修改文字 (`textContent`)
+```javascript
+title.textContent = "你好，JavaScript！";
+```
 
-- **`let`**：宣告**可變動**的變數 (例如：分數、計數器)。
-- **`const`**：宣告**常數** (不可變動，例如：圓周率、網站網址)。
+### 2. 修改樣式 (`style`)
+```javascript
+// 直接改 CSS (不推薦寫太多，偶爾用)
+title.style.color = "red";
+title.style.fontSize = "50px"; // CSS 的 font-size 變 fontSize
+```
+
+---
+
+# 最佳實踐：切換 Class (`classList`)
+
+與其用 JS 一行行改樣式，不如**寫好 CSS Class**，用 JS 切換開關。
+這是最乾淨的做法！
+
+**CSS:**
+```css
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+```
+
+**JS:**
+```javascript
+// 切換 class (有就刪掉，沒有就加上)
+body.classList.toggle('dark-mode');
+```
+
+---
+
+# 瀏覽器開發者工具 (DevTools)
+
+按 **F12** 或 **右鍵 -> 檢查 (Inspect)**。
+
+### Console (控制台)
+這裡是 JS 的遊樂場。你可以在這裡：
+1.  查看 `console.log()` 印出的訊息 (除錯用)。
+2.  直接打 JS 程式碼測試。
+3.  看到紅色的錯誤訊息 (Error)。
+
+> **練習：** 打開 Console，輸入 `alert('Hi')` 試試看！
+
+---
+
+# 變數 (Variables) 與 資料型態
+
+程式裡需要儲存資料。
 
 ```javascript
+// 字串 (String) - 用引號包起來
+let name = "Horazon";
+
+// 數字 (Number) - 可以做運算
 let score = 100;
-score = 95;      // OK，可以改變
+let price = 50.5;
 
-const pi = 3.14;
-// pi = 3.14159; // Error! 不能改變 const
+// 布林值 (Boolean) - 是非題
+let isLogin = true;
+let isDark = false;
 ```
 
 ---
 
-# 資料型態 (Data Types)
+# 邏輯判斷 (Logic)
 
-變數可以存放不同類型的資料：
-
-- **字串 (String)**：文字，需用引號包起來 (`"文字"` 或 `'文字'`)。
-- **數字 (Number)**：整數或小數 (`10`, `3.5`)。
-- **布林值 (Boolean)**：只有 `true` (真) 或 `false` (假)。
+電腦會根據情況做不同決定。
 
 ```javascript
-let name = "Horazon";  // 字串
-let age = 18;          // 數字
-let isTeacher = true;  // 布林值
-```
-
----
-
-# 函式 (Functions)
-
-將一段程式碼包裝起來，需要時再呼叫使用 (像是「技能」或「SOP」)。
-
-```javascript
-// 定義函式
-function sayHello() {
-    alert("你好！");
-}
-
-// 呼叫函式 (執行)
-sayHello();
-```
-
----
-
-# DOM 操作 (Document Object Model)
-
-JavaScript 透過 DOM 來控制 HTML 元素。
-
-最常用的選取方式：**`document.querySelector()`**
-
-```html
-<h1 id="title">原本的標題</h1>
-```
-
-```javascript
-// 選取 ID 為 title 的元素
-let myTitle = document.querySelector("#title");
-
-// 修改文字內容
-myTitle.innerText = "被 JS 修改後的標題";
-
-// 修改樣式
-myTitle.style.color = "red";
-```
-
----
-
-
-# 事件 (Events)
-
-偵測使用者的行為，例如點擊、滑鼠移入、鍵盤輸入。
-最常用的是 **`onclick`** (點擊事件)。
-
-```html
-<button onclick="changeText()">點我改變標題</button>
-<h1 id="demo">你好</h1>
-
-<script>
-function changeText() {
-    let el = document.querySelector("#demo");
-    el.innerText = "文字變了！";
-    el.style.color = "blue";
-}
-</script>
-```
-
----
-
-# 條件判斷 (If...Else)
-
-如果...就...，否則... (邏輯判斷)。
-
-```javascript
-let score = 80;
+let score = 59;
 
 if (score >= 60) {
+    // 條件成立 (True)
     console.log("及格！");
+    title.style.color = "green";
 } else {
+    // 條件不成立 (False)
     console.log("不及格...");
+    title.style.color = "red";
 }
 ```
 
@@ -197,56 +204,191 @@ if (score >= 60) {
 
 # 實作練習：計數器 (Counter)
 
-建立一個網頁，包含：
-1. 一個數字顯示 `0` (使用 `<h1>` 或 `<span>`)。
-2. 一個「+1」按鈕。
-3. 一個「重置」按鈕。
+做一個按鈕，按一下數字加 1。
 
-**功能要求**：
-- 點擊「+1」，數字會增加。
-- 點擊「重置」，數字歸零。
-
----
-
-# 實作練習：計數器 (參考解答)
-
+**HTML:**
 ```html
-<h1>目前數字：<span id="count">0</span></h1>
-<button onclick="add()">+1</button>
-<button onclick="reset()">重置</button>
+<h1 id="count">0</h1>
+<button id="addBtn">加 1</button>
+```
 
-<script>
-    let number = 0; // 變數記住目前的數字
-    let el = document.querySelector("#count");
+**JS:**
+```javascript
+let count = 0; // 1. 準備變數
+let text = document.querySelector('#count'); // 2. 抓元素
+let btn = document.querySelector('#addBtn');
 
-    function add() {
-        number = number + 1; // 數字加一
-        el.innerText = number; // 更新畫面
-    }
-
-    function reset() {
-        number = 0; // 歸零
-        el.innerText = number; // 更新畫面
-    }
-</script>
+btn.addEventListener('click', function() { // 3. 監聽點擊
+    count = count + 1; // 4. 變數加 1
+    text.textContent = count; // 5. 更新畫面
+});
 ```
 
 ---
 
-# 結論
+# 實作練習：開關燈 (Light Switch)
 
-1. JavaScript 是網頁的「大腦」，負責邏輯與互動。
-2. 使用 `<script>` 撰寫 JS 程式碼。
-3. **變數** (`let`/`const`) 用來存資料。
-4. **函式** (`function`) 用來定義動作。
-5. **DOM** (`document.querySelector`) 讓 JS 能控制 HTML。
-6. **事件** (`onclick`) 讓網頁能回應使用者的操作。
+做一個按鈕，切換網頁亮/暗模式。
+
+**CSS:**
+```css
+.dark { 
+    background: #333; 
+    color: #fff; 
+}
+```
+
+**JS:**
+```javascript
+let btn = document.querySelector('button');
+let body = document.querySelector('body');
+
+btn.addEventListener('click', function() {
+    body.classList.toggle('dark'); // 切換 class
+});
+```
 
 ---
 
-# 重點回顧
+# 實作練習：彈出視窗 (Modal)
 
-1. **結構**：放在 `<body>` 結束前。
-2. **語法**：分號 `;` 結尾 (建議)，區分大小寫。
-3. **除錯**：善用 `console.log()` 與 F12 開發者工具。
-4. **核心**：選取元素 -> 監聽事件 -> 修改內容/樣式。
+點按鈕顯示，點叉叉關閉。
+
+**CSS:**
+```css
+#modal {
+    display: none; /* 預設隱藏 */
+    position: fixed; /* 蓋在最上面 */
+    /* ...略 (置中樣式) */
+}
+.show { display: block !important; }
+```
+
+**JS:**
+```javascript
+let modal = document.querySelector('#modal');
+let btn = document.querySelector('#openBtn');
+let close = document.querySelector('#closeBtn');
+
+btn.addEventListener('click', function() {
+    modal.classList.add('show');
+});
+close.addEventListener('click', function() {
+    modal.classList.remove('show');
+});
+```
+
+---
+
+# 實作練習：圖片切換 (Image Switcher)
+
+點擊小圖，變大圖。
+
+**HTML:**
+```html
+<img id="bigImg" src="a.jpg" width="300">
+<img src="a.jpg" onclick="change('a.jpg')">
+<img src="b.jpg" onclick="change('b.jpg')">
+```
+
+**JS:**
+```javascript
+let big = document.querySelector('#bigImg');
+
+function change(file) {
+    big.src = file; // 直接改 src 屬性
+}
+```
+> **屬性也能改**：除了 `textContent` 和 `style`，`src`, `href`, `id` 都能改！
+
+---
+
+# 實作練習：滾動偵測 (Scroll Event)
+
+網頁捲動時，導覽列變色。
+
+```javascript
+let nav = document.querySelector('nav');
+
+window.addEventListener('scroll', function() {
+    // 取得目前捲軸垂直位置
+    let y = window.scrollY;
+
+    if (y > 100) {
+        nav.classList.add('active'); // 變色
+    } else {
+        nav.classList.remove('active'); // 復原
+    }
+});
+```
+
+---
+
+# 實作練習：輸入檢查 (Validation)
+
+防止使用者沒填資料就送出。
+
+```javascript
+let input = document.querySelector('#username');
+let submit = document.querySelector('#submitBtn');
+
+submit.addEventListener('click', function() {
+    // 取得輸入框的值 (value)
+    let val = input.value;
+
+    if (val === "") {
+        alert("請輸入名字！");
+        input.style.border = "2px solid red"; // 變紅框警告
+    } else {
+        alert("歡迎，" + val);
+    }
+});
+```
+
+---
+
+# 定時器 (Timer) - 讓網頁有時間觀念
+
+想做「3秒後自動彈出廣告」？
+
+### `setTimeout` (鬧鐘)
+單位是**毫秒** (1000 ms = 1秒)。
+
+```javascript
+setTimeout(function() {
+    alert("時間到！");
+}, 3000); 
+```
+
+> **用途**：廣告彈窗、過場動畫結束後跳轉。
+
+---
+
+# 常見錯誤 (Debugging)
+
+如果程式不動：
+
+1.  **看 Console 有沒有紅字**。
+    -   `Uncaught TypeError: Cannot read property '...' of null`
+    -   意思通常是：**你抓錯元素了** (ID 打錯字，或者 script 放在 head 裡還沒讀到 body)。
+2.  **檢查拼字**。
+    -   `getElementByid` (錯) -> `getElementById` (對)
+    -   JS 大小寫很敏感！
+3.  **Script 標籤位置**。
+    -   放在 `</body>` 結束標籤的**前一行**最保險。
+
+---
+
+# 總結
+
+JavaScript 的核心流程就是三步驟：
+
+1.  **抓 (Select)**：`document.querySelector`
+2.  **聽 (Listen)**：`addEventListener`
+3.  **改 (Modify)**：`textContent`, `style`, `classList`
+
+不用死記語法，只要知道這個邏輯，
+你可以做出任何互動網頁！
+
+**下週，我們將看看現代網頁開發的神器：前端框架！**
+
