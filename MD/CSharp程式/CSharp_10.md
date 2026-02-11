@@ -16,7 +16,7 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 ### Ch. 10
-# 函式與方法 (Function & Method)
+# 函式與方法 
 ## Horazon
 ## C#程式設計
 

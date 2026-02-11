@@ -3,6 +3,7 @@ marp: true
 
 theme: HoraStyle
 paginate: true
+
 style: |
   :root {
     --title-bg: linear-gradient(90deg, #ea580c, #f97316);

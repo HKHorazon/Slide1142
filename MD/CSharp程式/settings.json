@@ -3,5 +3,6 @@
     "Sequence": 10,
     "MapLock": false,
     "GenerateMap": true,
-    "CourseName": "C# 程式設計"
+    "CourseName": "C# 程式設計",
+    "CompleteChapter": 9
 }

@@ -13,166 +13,302 @@ style: |
 ---
 
 <!-- _class: lead -->
-<!--_paginate: false-->
+<!-- _paginate: false -->
 
 ### Chapter 06
-# C# 程式基礎入門
+# 互動機制與金幣 
 
 ## Horazon
-## 手遊程式設計
+## 手機遊戲開發
 
 ---
 
-# 章節目標 (第二階段啟動)
+# 複習：上週重點
 
-從現在開始，我們進入 **Phase 2：程式開發階段**。
+-   [x] 物理與碰撞系統 (Rigidbody & Collider)。
+-   [x] 物理材質 (Physics Material)。
+-   [x] Trigger (觸發器) 的概念。
 
--   建立第一支 **C# Script** (腳本)
--   認識程式編輯器 (Visual Studio)
--   理解 Unity 腳本結構 (**Start** vs **Update**)
--   學會使用 **Console** (控制台) 除錯
-
----
-
-# 1. 為什麼要寫程式？
-
-雖然 Unity 提供了很多組件 (Component)，但它們的功能是固定的。
-
--   **客製化邏輯**：如果我想「收集 10 個金幣就進化」，這沒有現成的組件。
--   **變數管理**：紀錄分數、血量、彈藥量。
--   **事件溝通**：當 A 碰到 B，要叫 C 去做 D 事情。
-
-**C# (C Sharp)** 是 Unity 使用的語言，它是微軟開發的主流語言，強大且嚴謹。
+但目前為止，撞到東西只會從 Console 說「痛」，這不是遊戲啊！
+今天要來做真正的**遊戲機制**。
 
 ---
 
-# 2. 建立你的第一個腳本
+# 本章目標
 
-1.  到 Project 視窗，進入 `Scripts` 資料夾 (好習慣)。
-2.  右鍵 -> `Create` -> `C# Script`。
-3.  **立刻命名**！輸入 `HelloWorld` 然後按 Enter。
+我們將製作遊戲中最經典的元素：
 
-<br>
-<mark>注意：檔案名稱必須跟裡面的 Class 名稱完全一樣！如果建立後才改檔名，程式會報錯。</mark>
-
----
-
-# 程式命名規則
-
-為了避免錯誤，請遵守工程師的命名規範：
-
--   ✅ **PascalCase (大駝峰)**：單字首字母大寫。例如 `PlayerController`, `GameManager`。
--   ❌ **不要用中文**：雖然可用，但易出相容性問題。
--   ❌ **不要有空格**：電腦會讀錯。
--   ❌ **不要數字開頭**：`1stScript` 是錯的。
+1.  **Prefab (預製物件)**：大量製作金幣。
+2.  **Tag (標籤)**：分辨誰是金幣、誰是陷阱。
+3.  **Script Logic**：吃金幣加分、踩陷阱重來。
+4.  **Audio**：加入吃金幣的音效。
 
 ---
 
-# 3. 認識編輯器
+# 什麼是 Prefab (預製物件)？
 
-雙擊剛剛建立的腳本，會開啟 **Visual Studio** (或 VS Code)。
+這可能是 Unity 最重要的概念之一。
 
--   **Intellisense (智慧感知)**：
-    打程式時會跳出選單讓你選，這是寫程式的好幫手。
--   如果你的程式碼全是白色的 (沒有顏色區分)，代表 Intellisense 沒運作。
-    (請檢查 Unity -> Preferences -> External Tools)。
+### 餅乾模具 (Cookie Cutter) 理論
+-   **Prefab** = 模具。
+-   **Instance (場景裡的物件)** = 印出來的餅乾。
+
+如果你想把 100 塊餅乾從圓形改成星形...
+**只要改模具 (Prefab) 或是資料，這 100 塊餅乾就會全部變成星形！**
+
 
 ---
 
-# 4. 腳本結構拆解
+# 為什麼需要 Prefab？
 
-打開腳本，你會看到這幾行預設代碼：
+想像你場景裡有 50 枚金幣。
+
+**不用 Prefab：**
+-   你想把金幣變大一點。
+-   你必須選取 50 個物件，一個個改 (或是全選改)。
+-   如果以後又要改顏色？又要再做一次。
+
+**使用 Prefab：**
+-   雙擊 Prefab 檔案進入編輯。
+-   改一次。
+-   **全世界的 50 枚金幣同步更新！**
+
+---
+
+# 實作練習 1：製作金幣 Prefab
+
+1.  在場景建立一個 **Circle** (改名 Coin)。
+2.  將顏色改為黃色。
+3.  加入 **Circle Collider 2D**。
+4.  勾選 **Is Trigger** (因為我們要穿過它)。
+5.  **關鍵步驟**：將 `Coin` 從 Hierarchy 拖曳到 Project 視窗的 `Prefabs` 資料夾中。
+6.  你會發現 Hierarchy 的 `Coin` 字體變成**藍色**了。
+
+
+---
+
+# 實作練習 2：量產金幣
+
+現在你有了模具。
+
+1.  從 Project 視窗把 `Coin` Prefab 拖進場景。
+2.  拖 10 次，放在不同位置。
+3.  或者用 Ctrl+D 複製場景裡已經是 Prefab 的金幣。
+
+**試驗**：
+-   點選 Project 裡的 Coin Prefab。
+-   修改顏色變成紅色。
+-   看場景裡的 10 枚金幣是不是都變紅了？
+
+---
+
+# Unpack Prefab (解壓縮)
+
+如果你希望某個金幣「與眾不同」，不再受 Prefab 控制...
+
+1.  在該物件上按右鍵 -> **Prefab** -> **Unpack**。
+2.  它會變回普通的 GameObject (黑色字體)。
+3.  之後修改 Prefab，這個物件就不會跟著變了。
+
+---
+
+# Tag (標籤) 系統
+
+程式怎麼知道玩家撞到的是「好吃的金幣」還是「會死的陷阱」？
+
+我們需要貼標籤。
+
+### Unity 內建標籤：
+-   **Untagged** (預設)
+-   **Player**
+-   **MainCamera**
+-   ...
+
+---
+
+# 自訂 Tag
+
+1.  點選任一物件，看 Inspector 最上方。
+2.  點選 **Tag** 下拉選單 -> **Add Tag...**。
+3.  點 `+` 號，新增兩個 Tag：
+    -   `Coin`
+    -   `Trap`
+
+*(注意：大小寫要完全一致，建議首字大寫)*
+
+---
+
+# 賦予 Tag
+
+1.  選取 Project 裡的 **Coin Prefab**。
+2.  將 Tag 改為 `Coin`。
+3.  現在場景裡那 10 枚金幣都會自動變成 Coin Tag 了！
+
+*(再次證明 Prefab 的強大)*
+
+---
+
+# 實作練習 3：收集金幣腳本
+
+我們需要一個腳本來處理「碰到東西」的邏輯。
+通常這個腳本會掛在**玩家 (Player)** 身上。
+
+
+建立腳本 `PlayerCollection.cs`：
 
 ```csharp
-using UnityEngine; // 1. 引用函式庫 (工具箱)
+using UnityEngine;
 
-// 2. 類別宣告 (一定要繼承 MonoBehaviour 才能掛在物件上)
-public class HelloWorld : MonoBehaviour 
+public class PlayerCollection : MonoBehaviour
 {
-    // 3. Start 事件：遊戲開始時執行一次
-    void Start()
+    public int score = 0; // 記分板
+
+    // 當穿過 Trigger 時
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
+        // 如果撞到的東西標籤是 "Coin"
+        if (other.CompareTag("Coin"))
+        {
+            // 1. 加分
+            score++;
+            Debug.Log("吃到金幣了！目前分數：" + score);
 
-    // 4. Update 事件：每一格畫面執行一次 (約每秒 60 次)
-    void Update()
+            // 2. 銷毀金幣 (other.gameObject 是金幣，不是我)
+            Destroy(other.gameObject);
+        }
+    }
+}
+```
+
+---
+
+# 測試遊戲
+
+1.  場景上有一個代表玩家的膠囊 (或是方塊)。
+2.  掛上 `PlayerCollection` 腳本，還有 `Rigidbody 2D`。
+3.  確認金幣都有勾 `Is Trigger` 且 Tag 是 `Coin`。
+4.  Play！
+5.  控制玩家撞金幣，觀察金幣是否消失？Console 分數是否增加？
+
+---
+
+# 陷阱製作 (Trap)
+
+1.  找一張尖刺的圖片 (或用三角形 Sprite)。
+2.  製作成 **Trap Prefab**。
+3.  Tag 設為 `Trap`。
+4.  Collider 也可以勾 Is Trigger (代表碰到就死)。
+
+---
+
+# 遊戲重來 (Reload Scene)
+
+當玩家碰到陷阱，我們希望遊戲重來。
+這需要用到 **SceneManagement**。
+
+在 `PlayerCollection` 最上方加入：
+```csharp
+using UnityEngine.SceneManagement; // 引用場景管理工具
+```
+
+---
+
+# 實作練習 4：死亡邏輯
+
+修改 `OnTriggerEnter2D` 方法，加入陷阱判斷：
+
+```csharp
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.CompareTag("Coin"))
+        {
+            score++;
+            Destroy(other.gameObject);
+        }
+        else if (other.CompareTag("Trap")) // 如果撞到陷阱
+        {
+            Debug.Log("你死了！");
+            // 重新讀取目前場景
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
-}
 ```
 
 ---
 
-# 5. 第一個指令：Debug.Log
+# 音效回饋 (Audio)
 
-我們要叫電腦講話。在 `Start()` 的大括號 `{ }` 中間輸入：
+吃金幣要有「叮」一聲才爽。
 
-```csharp
-void Start()
-{
-    Debug.Log("Hello World! 這是我的第一支程式");
-}
-```
+1.  準備一個 mp3 音效檔，放入 `Audio` 資料夾。
+2.  但在哪裡播放？
+    -   如果在金幣身上放 AudioSource，金幣被 Destroy 的瞬間，聲音也會被切斷！
 
--   `Debug.Log`：叫 Unity 的控制台印出訊息。
--   `()`：放參數的地方 (這裡是文字)。
--   `""`：字串 (文字) 必需被雙引號包起來。
--   `;`：**分號**。每一行指令結束都要加！(很重要)
+### 解法：AudioSource.PlayClipAtPoint
+這是一個靜態方法，會在特定位置產生一個暫時的聲音物件，播完自動銷毀。
 
 ---
 
-# 6. 讓程式運作
+# 實作練習 5：加入音效
 
-只有寫完程式，它是不會動的。腳本只是「藍圖」。
-
-1.  在編譯器按 **Ctrl + S** 存檔 (看檔名旁的星號消失)。
-2.  回到 Unity Editor。
-3.  選取場景上的一個物件 (例如 Player，或新增一個 Empty Object)。
-4.  將腳本拖曳到該物件的 **Inspector** 上。
-
-**現在，這個物件擁有了這個腳本的大腦。**
-
----
-
-# 7. 驗證結果
-
-1.  按下 Unity 上方的 **Play (▶)** 按鈕。
-2.  切換視窗到左下角的 **Console** (或是 Window -> General -> Console)。
-3.  你應該會看到一行字：
-    `Hello World! 這是我的第一支程式`
-
-恭喜！你已經成功跟電腦對話了。
+1.  在腳本宣告變數：
+    ```csharp
+    public AudioClip coinSound;
+    ```
+2.  修改吃金幣邏輯：
+    ```csharp
+    if (other.CompareTag("Coin"))
+    {
+        score++;
+        // 在金幣的位置播放聲音 (音量 1.0)
+        AudioSource.PlayClipAtPoint(coinSound, other.transform.position, 1.0f);
+        Destroy(other.gameObject);
+    }
+    ```
+3.  **記得回 Unity，把音樂檔拖進腳本的 Coin Sound 欄位！**
 
 ---
 
-# 8. 實驗：Start vs Update
+# 常見錯誤 (Debug)
 
-讓我們體驗一下 Update 的威力。修改程式碼：
+Q: 撞到金幣沒反應？
+A:
+1.  金幣有 Collider 2D 嗎？
+2.  金幣有勾 Is Trigger 嗎？
+3.  金幣的 Tag 設對了嗎？(拼字要一樣)
+4.  Player 身上有 Rigidbody 2D 嗎？(碰撞雙方至少要有一方有剛體)
 
-```csharp
-void Update()
-{
-    Debug.Log("我正在持續運作..." + Time.time);
-}
-```
-
-1.  存檔 -> 回 Unity -> Play。
-2.  你會發現 Console 裡的訊息**瘋狂跳動**！
-3.  因為 Update 每一秒鐘會執行約 60 次 (依電腦效能而定)。
-
-**結論**：初始設定放 Start，持續偵測 (如按鍵、移動) 放 Update。
+Q: 聲音沒出來？
+A: 檢查 Inspector 的 Coin Sound 欄位是不是空的 (None)。
 
 ---
 
 # 總結
 
-今天開啟了程式設計的大門：
+今天我們完成了遊戲的核心迴圈雛形：
 
--   **建立腳本**：注意命名規則。
--   **掛載腳本**：Script 也是一種 Component，要掛在物件上才會跑。
--   **Debug.Log**：這是最基本的除錯工具。
--   **Start / Update**：理解 Unity 的生命週期。
+1.  **Prefab** 讓我們快速佈置關卡。
+2.  **Tag** 讓我們區分物件功能。
+3.  **Destroy** 讓物件消失。
+4.  **SceneManager** 讓遊戲重來。
 
-下一章，我們要學習如何用程式**控制變數**，讓遊戲數據活起來！
+現在這已經是一個「能玩」的遊戲了！
+
+---
+
+# 下週預告
+
+目前的遊戲還有一個大問題：
+**攝影機不會動！**
+
+主角走出畫面就看不到了。
+下週我們將介紹神器 **Cinemachine**，讓攝影機像拍電影一樣運鏡。
+
+---
+
+# Q & A
+
+-   可以做補血道具嗎？(原理跟金幣一模一樣，只是 score++ 變成 hp++)
+-   可以做會動的敵人嗎？(加上移動程式的 Trap 就是敵人了)
+
+*(助教巡堂協助)*

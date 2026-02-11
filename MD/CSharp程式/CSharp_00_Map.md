@@ -92,7 +92,7 @@ table th:nth-child(2) {
 | :---: | :--- |
 | W10 | 陣列 (Array) |
 | W11 | 字串 (String) |
-| W12 | 函式與方法 (Function & Method) |
+| W12 | 函式與方法 |
 | W13 | 類別與物件 (Class & Object) |
 | W14 | 封裝與建構子 (Encapsulation & Constructor) |
 | W15 | 繼承與多型 (Inheritance & Polymorphism) |

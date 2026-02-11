@@ -3,5 +3,6 @@
     "Sequence": 20,
     "MapLock": false,
     "GenerateMap": true,
-    "CourseName": "手機遊戲開發"
+    "CourseName": "手機遊戲開發",
+    "CompleteChapter": 0
 }

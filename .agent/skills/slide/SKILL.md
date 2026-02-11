@@ -42,15 +42,10 @@ description: 用於建立與管理課程 Marp 投影片的技能。
     -   程式碼區塊：使用標準 Markdown 語法 (```)。
     -   視覺效果：使用 `HoraStyle.css` 定義的樣式類別。
 
-3.  **匯出方法 (Export Method)**:
-    -   當使用者提出「匯出資料夾」或「匯出 .md 檔案」為 PDF 時。
-    -   **第一步**: 確認該檔案是否為 Marp 格式 (檢查 frontmatter 是否含有 `marp: true`)。
-    -   **第二步**: 若確認為 Marp 檔案，**必須優先使用** `python .agent/skills/slide/scripts/export.py` 進行匯出。
-    -   **具體執行**:
-        -   匯出單檔：`python .agent/skills/slide/scripts/export.py -f <檔案路徑>`
-        -   匯出資料夾：`python .agent/skills/slide/scripts/export.py -d <資料夾路徑>`
-        -   匯出所有：`python .agent/skills/slide/scripts/export.py -a`
-    -   **第三步**: 匯出完成後，告知使用者 PDF 已儲存於 `PDF` 對應目錄。
+3.  **格式規則**:
+    -   標題：`h1` 用於大標題，`h3` 用於章節標示。
+    -   程式碼區塊：使用標準 Markdown 語法 (```)。
+    -   視覺效果：使用 `HoraStyle.css` 定義的樣式類別。
 
 ## 參考模板 (Reference)
 
@@ -59,7 +54,7 @@ description: 用於建立與管理課程 Marp 投影片的技能。
 
 ## 內容撰寫指南 (Content Guide)
 
-4.  **投影片結構**:
+1.  **投影片結構**:
     -   **首頁 (Lead)**: 包含課程標題 (#) -> 章節編號 (###) -> 章節副標 (##)。需使用 `<!-- _class: lead -->`。
     -   **內容頁**: 每頁一個核心主題，使用 H1 (#) 作為頁面標題。
     -   **程式教學**: 先說明觀念，再展示程式碼，最後解釋輸出結果。
@@ -74,17 +69,7 @@ description: 用於建立與管理課程 Marp 投影片的技能。
     -   務必指定語言以啟用語法高亮 (例如: ` ```csharp ` 或 ` ```html `)。
     -   字串請依照 `HoraStyle` 設定，顯示為紅色以利閱讀 (自動套用)。
 
-## 指令 (Commands)
+## 匯出與發布 (Export & Publish)
 
--   `export_pdf`: 執行 `.agent/skills/slide/scripts/export.py` 以產生 PDF 檔案。
-    -   **注意**: 請務必在**使用者明確要求匯出**時才執行此指令。
-    -   **匯出所有**: `python .agent/skills/slide/scripts/export.py` (預設)
-    -   **匯出單檔**: `python .agent/skills/slide/scripts/export.py -f <path/to/file.md>`
-    -   **匯出資料夾**: `python .agent/skills/slide/scripts/export.py -d <path/to/directory>`
-    -   **清理舊檔**: `python .agent/skills/slide/scripts/cleanup_pdf.py`
-        -   刪除 `PDF` 資料夾中沒有對應 Markdown 來源的孤立 PDF 檔案。
-
--   `generate_map`: 生成課程進度地圖。
-    -   **Trigger**: 當使用者說「更新課程地圖」或 "Update course map" 時，請詢問或確認目標課程資料夾。
-    -   **Command**: `python .agent/skills/slide/scripts/generate_map.py -d <CourseFolder>` (例如: `Mobile手遊`)
-    -   **MapLock**: 若 `settings.json` 中的 `"MapLock"` 為 `true`，則腳本會自動跳過更新，請告知使用者該地圖已鎖定。
+關於匯出 PDF、生成地圖或發布到 Git 的操作，請切換至 **`export-slide`** 技能或使用相關指令。
+本技能僅專注於投影片的**內容製作**。

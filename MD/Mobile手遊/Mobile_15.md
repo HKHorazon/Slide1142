@@ -13,201 +13,228 @@ style: |
 ---
 
 <!-- _class: lead -->
-<!--_paginate: false-->
+<!-- _paginate: false -->
 
-### 補充教材
-# 遊戲存檔系統 (Save & Load)
+# Chapter 15
+# 手機部署 (Build & Run)
 
 ## Horazon
 ## 手機遊戲開發
 
 ---
 
+# 複習：遊戲完成
+
+-   [x] 遊戲邏輯 (Game Loop) 完整。
+-   [x] 主選單、遊玩、結算皆已串接。
+-   [x] 玩家、敵人、UI 皆已實作。
+
+現在，它還只是一個「電腦遊戲」。
+今天我們要把它變成真正的**App**！
+
+---
+
 # 本章目標
 
-1. 理解 **PlayerPrefs** 的運作原理
-2. 實作 **儲存 (Save)**：分數、音量設定
-3. 實作 **讀取 (Load)**：恢復上次遊玩的狀態
-4. 實作：最高分 (High Score) 系統
+1.  切換平台至 **Android**。
+2.  開啟手機 **Developer Mode** (開發者模式)。
+3.  設定 **Player Settings** (Icon, Name)。
+4.  輸出 **APK** 檔案。
+5.  了解常見建置錯誤 (Build Error)。
 
 ---
 
-# 為什麼需要存檔？
+# 步驟 1：切換平台 (Switch Platform)
 
-試著想像一款 RPG 遊戲，每次關掉重開都要從 Level 1 開始打...
-**玩家會崩潰！**
+Unity 預設是用 PC (Windows/Mac) 模式開發。
+我們要切換到 Android。
 
-手機遊戲常見的存檔需求：
-- **進度**：關卡解鎖狀態 (Level 1, Level 2...)
-- **貨幣**：金幣數量、鑽石
-- **設定**：音樂大小聲、語言
-- **成就**：最高分數
-
----
-
-# Unity 的神器：PlayerPrefs
-
-Unity 內建了一個非常簡單的存檔工具，叫做 `PlayerPrefs` (Player Preferences)。
-它適合儲存**簡單的資料**。
-
-### 支援的三種型別
-- `SetInt(key, value)`：存整數 (分數、關卡)
-- `SetFloat(key, value)`：存浮點數 (音量、靈敏度)
-- `SetString(key, value)`：存文字 (玩家名稱)
+1.  **File** -> **Build Settings**。
+2.  在 Platform 下拉選單選擇 **Android**。
+3.  按下右下角的 **Switch Platform** 按鈕。
+4.  *(這步會跑很久，因為 Unity 要重新壓縮所有貼圖)*。
 
 ---
 
-# 儲存資料 (Save)
+# 步驟 2：設定 Player Settings
 
-把它想像成一個**置物櫃**，每個格子都有一個**鑰匙 (Key)**。
+這是你 App 的身分證。
 
-```cs
-// 存分數 (整數)
-PlayerPrefs.SetInt("Score", 100);
+1.  在 Build Settings 視窗左下角，點 **Player Settings**。
+2.  展開 **Player** 分頁。
 
-// 存音量 (小數)
-PlayerPrefs.SetFloat("MusicVol", 0.8f);
-
-// 存名字 (字串)
-PlayerPrefs.SetString("PlayerName", "Horazon");
-
-// 重要！存完記得呼叫 Save，確保寫入硬碟
-PlayerPrefs.Save(); 
-```
+### Company Name & Product Name
+-   **Company Name**：你的名字或公司名 (如 `HorazonGame`)。
+-   **Product Name**：遊戲顯示在手機上的名稱 (如 `Super Cat`)。
 
 ---
 
-# 讀取資料 (Load)
+# 設定 Icon (圖示)
 
-讀取時，要告訴它如果**找不到**該怎麼辦 (預設值)。
+選一張漂亮的圖當 App 圖示。
 
-```cs
-// 讀取分數，如果沒存過，預設給 0
-int currentScore = PlayerPrefs.GetInt("Score", 0);
-
-// 讀取音量，預設 1.0 (最大聲)
-float vol = PlayerPrefs.GetFloat("MusicVol", 1.0f);
-
-// 讀取名字
-string name = PlayerPrefs.GetString("PlayerName", "Unknown Hero");
-```
+1.  在 Player Settings -> **Default Icon**。
+2.  點選 Select，選擇你的圖片。
+3.  *(Unity 會自動幫你裁切成各種大小)*。
 
 ---
 
-# 實作：最高分系統 (High Score)
+# 重要設定：Identification
 
-我們希望遊戲結束時，如果分數創新高，就存起來。
+展開 **Other Settings** -> **Identification**。
 
-```cs
-public class GameManager : MonoBehaviour
-{
-    public int currentScore;
-    
-    public void GameOver()
-    {
-        // 1. 讀取舊的最高分
-        int highest = PlayerPrefs.GetInt("HighScore", 0);
-        
-        // 2. 比較
-        if (currentScore > highest)
-        {
-            // 3. 創新高了！存起來！
-            PlayerPrefs.SetInt("HighScore", currentScore);
-            PlayerPrefs.Save();
-            Debug.Log("New High Score Saved!");
-        }
-    }
-}
-```
+### Package Name (套件名稱)
+-   這是 App 在 Android 系統裡的**唯一身分證字號**。
+-   格式：`com.公司名.產品名` (全小寫)。
+-   例如：`com.horazon.supercat`。
+-   **絕對不能跟別人重複！**
+
+### Minimum API Level
+-   支援的最低 Android 版本。
+-   建議設為 **Android 7.0 (Nougat)** 或 8.0，相容性較好。
 
 ---
 
-# 實作：刪除資料 (Reset)
+# 重要設定：Configuration
 
-開發時常需要重置進度測試。
+### Scripting Backend
+-   **Mono**：建置快，相容性好 (開發測試用)。
+-   **IL2CPP**：效能好，安全性高 (上架 Google Play 必選)。
+    -   注意：選 IL2CPP 需要花更久時間打包，且需要安裝 NDK。
 
-```cs
-// 刪除單一資料
-PlayerPrefs.DeleteKey("Score");
+### Target Architectures
+-   如果是 IL2CPP，記得勾選 **ARM64** (支援現代手機)。
 
-// 刪除全部資料 (慎用！)
-PlayerPrefs.DeleteAll();
-```
-
-> **Tip**: 也可以在 Unity 上方選單 `Edit` -> `Clear All PlayerPrefs` 來手動清除。
+*(如果是課堂練習，建議先選 Mono 比較快)*
 
 ---
 
-# PlayerPrefs 的缺點
+# 步驟 3：手機端設定 (Developer Mode)
 
-雖然簡單，但它有缺點：
-1.  **不安全**：資料是明碼存的，玩家很容易修改 (作弊)。
-2.  **型別少**：只能存 int, float, string。
-3.  **效能**：資料量大時 (例如存幾百個道具) 會變慢。
+你的手機必須允許「被除錯」。
 
-**進階解法**：
-使用 `JsonUtility` 將複雜物件轉成文字 (JSON)，再寫入檔案或加密儲存。
-
----
-
-# 進階：儲存複雜資料 (JSON)
-
-如果想存背包裡的所有道具 (List)，PlayerPrefs 做不到。
-我們需要把物件轉成 **JSON 字串**。
-
-```cs
-[System.Serializable]
-public class SaveData
-{
-    public int gold;
-    public List<string> items;
-}
-
-// 轉成文字
-SaveData data = new SaveData();
-string json = JsonUtility.ToJson(data);
-PlayerPrefs.SetString("SaveData", json);
-
-// 讀回來
-SaveData loaded = JsonUtility.FromJson<SaveData>(json);
-```
-
-這就是商業遊戲常用的存檔方式！
+1.  打開手機 **設定** -> **關於手機**。
+2.  找到 **版本號碼 (Build Number)**。
+3.  **狂按它 7 次**，直到出現「您現在是開發人員！」。
+4.  回到上一頁，找到 **系統** -> **開發人員選項**。
+5.  開啟 **USB 偵錯 (USB Debugging)**。
 
 ---
 
+# 連接手機
+
+1.  用 USB 線連接手機與電腦。
+2.  手機會跳出「允許 USB 偵錯嗎？」-> 勾選 **一律允許** 並確定。
+3.  回到 Unity Build Settings。
+4.  在 **Run Device** 下拉選單中，按 Refresh。
+5.  你應該要看到你的手機型號！
+
+*(如果沒看到，可能是驅動程式沒裝，或線材只有充電功能)*
+
+---
+
+# 步驟 4：建置與執行 (Build And Run)
+
+最緊張的時刻。
+
+1.  在 Build Settings 視窗。
+2.  按下 **Build And Run**。
+3.  選擇一個資料夾存放 APK (建議開個 `Builds` 資料夾)。
+4.  取檔名 `MyGame_v1.apk`。
+5.  存檔！
+
+---
+
+# 等待建置 (Building...)
+
+Unity 會開始編譯。
+-   Compiling Shader...
+-   Building Gradle Project...
+-   Copying to Device...
+
+如果一切順利，你的手機會**自動黑屏，然後啟動遊戲！**
+
+---
+
+# 常見錯誤：JDK / SDK 找不到？
+
+Q: 跳出視窗說 "JDK not found"？
+
+A:
+1.  Edit -> **Preferences** -> **External Tools**。
+2.  檢查 **JDK, SDK, NDK** 是否都勾選了 **Installed with Unity**？
+3.  如果沒勾，或是路徑是空的 -> 代表你安裝 Unity 時忘了勾 Android Build Support 裡的 OpenJDK。
+4.  **解法**：開 Unity Hub -> Installs -> Add Modules -> 補勾。
+
+---
+
+# 常見錯誤：Build 失敗 (Gradle Error)
+
+Q: 紅字一堆 "Gradle Build Failed"？
+
+A:
+這通常是路徑或套件名稱問題。
+1.  檢查 **Company Name / Product Name** 有沒有中文或怪符號？
+2.  檢查 **Package Name** 格式對不對？(`com.xxx.xxx`)
+3.  檢查專案路徑有沒有中文？(`D:\我的遊戲\...` -> 母湯)
+
+---
+
+# 輸出純 APK (給朋友玩)
+
+如果你只想輸出 APK 檔，不需要直接跑在手機上。
+
+1.  在 Build Settings 按 **Build** (不要按 Build And Run)。
+2.  生成的 `.apk` 檔案，可以用 Line 或雲端傳給朋友。
+3.  朋友安裝時手機會警告「未知的來源」，點允許安裝即可。
+
+---
+
+# 優化：螢幕方向 (Orientation)
+
+如果你的遊戲是橫向的，但手機一轉就變直向？
+
+1.  Player Settings -> **Resolution and Presentation**。
+2.  **Default Orientation**：
+    -   **Portrait**：直向 (如跑酷、益智)。
+    -   **Landscape Left/Right**：橫向 (如捲軸動作)。
+    -   **Auto Rotation**：自動旋轉。
+
+*(本課程建議鎖定為 Landscape)*
+
+---
 
 # 總結
 
-1. 使用 `PlayerPrefs` 快速實作存檔功能。
-2. 記得 `Set` 完要呼叫 `Save()`。
-3. `Get` 時要設定好**預設值**。
-4. 適合存**設定**與**簡單數據**，不適合存複雜的大型資料。
+今天我們成功把遊戲帶出了電腦。
 
+1.  **Switch Platform** 切換到 Android。
+2.  設定 **Package Name** 與 **Icon**。
+3.  開啟手機 **USB Debugging**。
+4.  **Build And Run** 實機測試。
 
----
-
-# 未來展望：從 Demo 到上架
-
-做完這個遊戲後，下一步呢？
-
-### 1. 上架商店 (Store Release)
-- **Google Play**: 開發者帳號 (25 美金/一次性)。
-- **App Store**: 開發者帳號 (99 美金/每年)。
-- 這是檢驗自己游戲最快的方式，面對真實玩家的評價！
-
-### 2. 商業化 (Monetization)
-- **廣告 (Ads)**: AdMob, Unity Ads。
-- **內購 (IAP)**: 買鑽石、去廣告。
-
-### 3. 持續優化 (Optimization)
-- 減少過場讀取時間
-- 降低耗電量與發熱
-- 支援更多種解析度
-
-遊戲開發是一條漫長但有趣的道路，加油！
+看到自己的遊戲在手機上跑，是開發者最有成就感的一刻！
 
 ---
 
-### 下一章：學期總結與專案發布
+# 下週預告
 
+我們已經能打包了，但 App 只有基本的「點擊」。
+下週是最後一堂課，我們要加入：
+
+-   **Mobile Input** (手機專用操作)。
+-   虛擬搖桿 (Joystick) 或按鈕。
+-   多點觸控 (Multi-touch) 概念。
+
+---
+
+# Q & A
+
+-   USB 連不到手機？
+    -   換一條線試試看 (很多線只能充電)。
+    -   安裝手機品牌的 USB Driver (Samsung Driver 等)。
+-   可以出 iOS 版嗎？
+    -   需要 Mac 電腦 + Xcode + Apple 開發者帳號 ($99/年)。
+    -   流程比 Android 複雜非常多。
+
+*(助教巡堂協助)*

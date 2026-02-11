@@ -3,5 +3,6 @@
     "Sequence": 40,
     "MapLock": false,
     "GenerateMap": true,
-    "CourseName": "應用程式設計"
+    "CourseName": "應用程式設計",
+    "CompleteChapter": 6
 }

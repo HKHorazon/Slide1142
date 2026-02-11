@@ -60,13 +60,13 @@ table th:nth-child(2) {
 | 週次 | 主題 |
 | :---: | :--- |
 | **W1** | **課程簡介與環境建置** |
-| W2 | 手機遊戲開發概論 |
-| W3 | 專案建置與初體驗 |
-| W4 | 地圖繪製 (Tilemap) |
-| W5 | 物理與機關 |
-| W6 | 互動與邏輯 (預製功能) |
-| W7 | C# 程式基礎入門 |
-| W8 | 角色移動原理 (Input) |
+| W2 | Chapter 01 |
+| W3 | Chapter 02 |
+| W4 | Chapter 03 |
+| W5 | Chapter 04 |
+| W6 | Chapter 05 |
+| W7 | 互動機制與金幣 |
+| W8 | Chapter 07 |
 | **W9** | **期中考週 (Midterm)** |
 
 ---
@@ -90,12 +90,12 @@ table th:nth-child(2) {
 
 | 週次 | 主題 |
 | :---: | :--- |
-| W10 | 跳躍與地面檢測 (Physics Logic) |
-| W11 | 角色動畫系統 (Animator) |
-| W12 | 遊戲管理與核心邏輯 (Singleton) |
-| W13 | UI 介面設計 (UGUI) |
-| W14 | 遊戲體感優化 (Audio & VFX) |
-| W15 | 手機觸控操作 (Mobile Input) |
-| W16 | 專案建置與發布 (Build & Publish) |
+| W10 | Chapter 08 |
+| W11 | Chapter 09 |
+| W12 | Chapter 10 |
+| W13 | Chapter 11 |
+| W14 | Chapter 12 |
+| W15 | Chapter 13 |
+| W16 | Chapter 14 |
 | **W17** | **期末考週 (Final)** |
 | W18 | 彈性教學與總結 |
