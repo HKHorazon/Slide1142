@@ -53,11 +53,11 @@ style: |
 2.  點選右上角 **New project**。
 3.  **Editor Version**：確認選 2022.3 LTS。
 4.  **Template (範本)**：
-    -   請選擇 **2D Core**。
+    -   請選擇 **Universal 2D**。
     -   *(註：不要選到 3D 或 VR 範本，設定會很麻煩)*
-5.  **Project Name**：取名為 `L02_Interface`。
+5.  **Project Name**：取名為 `MobileGame`。
 
-6.  **Location**：選一個乾淨的 D 槽資料夾。
+6.  **Location**：選一個乾淨的資料夾。
 
 ---
 
@@ -316,6 +316,12 @@ Unity 的開發過程，就是在**組合這些 Component**。
 
 # 快速鍵總整理 (Cheat Sheet)
 
+<style scoped>
+table {
+    font-size: 30px;
+}
+</style>
+
 | 按鍵 | 功能 |
 | :--- | :--- |
 | **Q, W, E, R, T** | 切換操作工具 |
@@ -335,19 +341,8 @@ Q: 「我不小心把 Game 視窗關掉了！」
 
 ### 解法：
 1.  上方選單 **Window** -> **General** -> 找回你要的視窗。
-2.  放大絕：**Window** -> **Layouts** -> **Reset All Layouts**。
+2.  放大絕：**Window** -> **Layouts** -> **Default**。
     -   直接恢復原廠設定。
-
----
-
-# 下週預告
-
-我們學會了放圖片，但如果要畫一個很大的迷宮，一張張放太累了。
-下週我們將學習 **Tilemap (瓦片地圖)** 技術：
-
--   像畫家一樣用筆刷畫地圖。
--   切圖 (Sprite Slice)。
--   圖層管理。
 
 ---
 

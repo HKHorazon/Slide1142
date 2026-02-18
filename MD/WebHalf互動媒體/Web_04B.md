@@ -283,7 +283,18 @@ HTML5 引入了更有意義的標籤，取代滿滿的 `<div>`。
 
 ---
 
-# 語意化結構範例
+
+# 語意化標籤
+
+<div style="display: flex; justify-content: center; gap:300px; align-items: center;">
+
+![語意化標籤結構 w:300](../../image/web/Ch6/Web_Ch06_03.png)
+
+![語意化標籤結構 w:300](../../image/web/Ch6/Web_Ch06_04.png)
+
+</div>
+
+---
 
 ```html
 <body>

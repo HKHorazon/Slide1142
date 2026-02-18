@@ -65,7 +65,7 @@ table th:nth-child(2) {
 | W4 | Chapter 03 |
 | W5 | Chapter 04 |
 | W6 | Chapter 05 |
-| W7 | 互動機制與金幣 |
+| W7 | Chapter 06 |
 | W8 | Chapter 07 |
 | **W9** | **期中考週 (Midterm)** |
 

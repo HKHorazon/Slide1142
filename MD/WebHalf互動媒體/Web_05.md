@@ -72,12 +72,25 @@ h1 {
 
 # 選擇器 (Selectors) - 基礎篇
 
+<style scoped>
+table {
+    font-size: 0.8em;
+    margin: 0 auto;
+}
+th:nth-child(1) { width: 18%; } /* 符號 */
+th:nth-child(2) { width: 18%; } /* 代碼 */
+th:nth-child(3) { width: 18%; } /* 說明 */
+th:nth-child(4) { width: 80%; } /* 說明 */
+</style>
+
 | 選擇器 | 符號 | 範例 | 說明 |
 | :--- | :--- | :--- | :--- |
 | **標籤**Element | 無 | `p` | 選取所有 `<p>` 標籤 |
 | **類別**Class | **`.`** | `.title` | 選取 `class="title"` 的元素 (**最常用!**) |
 | **ID** | **`#`** | `#header` | 選取 `id="header"` 的元素 (唯一) |
 | **全域** | **`*`** | `*` | 選取網頁上所有元素 (Reset用) |
+
+<br>
 
 > **ID 像是身分證字號** (全校只有一個)。
 > **Class 像是制服** (很多人都可以穿一樣的)。
@@ -164,6 +177,8 @@ h1 {
 2.  **Padding** (內距)：內容與邊框之間的距離 (留白)。
 3.  **Border** (邊框)：盒子的框線。
 4.  **Margin** (外距)：盒子與盒子之間的距離。
+
+![盒子模型 center w:300px](../../IMAGE/Web/Ch8/Web_Ch08_02.png)
 
 ---
 

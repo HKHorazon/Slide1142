@@ -46,7 +46,6 @@ style: |
 1.  **GitHub Copilot** (付費)
     -   直接整合在 VS Code 裡。
     -   你打註解，它幫你寫完程式碼。
-    -   最強大的自動補全 (Autocomplete)。
 2.  **ChatGPT / Gemini / Claude** (對話型)
     -   適合問問題、產生整段程式碼、解釋觀念。
     -   可以把錯誤訊息貼給它除錯。

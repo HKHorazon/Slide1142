@@ -37,10 +37,66 @@ style: |
 今天我們要打造遊戲的舞台！
 
 1.  理解為什麼需要 **Tilemap**。
-2.  學會 **Sprite Editor** 切割圖片。
+2.  學會匯入與設定 **Sprite** 素材。
 3.  建立 **Tile Palette** (瓦片調色盤)。
 4.  使用 **Brush** (筆刷) 繪製關卡。
 5.  掌握 **Sorting Layer** (圖層管理)。
+
+
+---
+
+
+# 從 GitHub 下載專案
+
+1.  **取得連結**：使用老師提供的 GitHub 專案網址。
+2.  **下載檔案**：
+    -   點選綠色的 **<> Code** 按鈕。
+    -   選擇 **Download ZIP**。
+3.  **解壓縮 (非常重要！)**：
+    -   下載後是一個 `.zip` 檔。
+    -   **請按右鍵 -> 解壓縮 (Extract All)**。
+    -   <span style="color:red">不要直接點兩下進去執行，會發生錯誤！</span>這點非常重要！
+
+---
+
+# Unity 專案結構說明
+
+Unity 專案不是「單一個檔案」，而是一個「資料夾」。
+只要確認資料夾內有以下三個重要目錄，就是完整的專案：
+
+1.  **Assets** (資產)：
+    -   你做的所有圖片、程式碼、場景都在這裡。
+2.  **Packages** (套件)：
+    -   專案有用到的外掛紀錄。
+3.  **ProjectSettings** (設定)：
+    -   遊戲的設定檔 (如解析度、Icon)。
+
+> 其他如 `Library`, `Logs` 都是自動產生的，沒有也沒關係。
+
+---
+
+# 如何開啟舊專案
+
+1.  打開 **Unity Hub**。
+2.  確認你在 **Projects** 分頁。
+3.  點選右上角的 **Add (加入)** 按鈕。
+4.  瀏覽到你剛剛 **解壓縮** 的資料夾。
+5.  **選擇最外層** (看得到 Assets 的那一層)。
+6.  按下 **Select Folder**。
+
+---
+
+# 處理版本問題
+
+如果專案是用不同版本的 Unity 做的 (例如老師用 2022.3.5，你用 2022.3.20)：
+
+1.  Hub 會顯示黃色驚嘆號，或版本號碼是灰色的。
+2.  點選 **Unity Version** 的數字欄位。
+3.  選擇你電腦裡 **已安裝的版本** (Recommended)。
+4.  按下 **Open**。
+5.  跳出警告視窗 "Change Editor Version?" -> 勇敢按下 **Continue / Change Version**。
+
+> 通常版本號最後一碼不同，都不會被版本影響太多。
 
 ---
 
@@ -73,35 +129,28 @@ style: |
 
 ---
 
-# 步驟 1：準備素材 (Sprite Sheet)
+# 步驟 1：準備素材 (Sprite Assets)
 
-通常遊戲素材會把很多小圖塞在同一張大圖裡，我們稱為 **Sprite Sheet**。
+在 Unity 中處理 2D 素材有兩種常見方式：
 
-1.  匯入一張充滿磚塊的圖片。
-2.  如果不切開，它就是一張大圖。
-3.  我們需要用 **Sprite Editor** 把它切成一塊塊。
+1.  **Sprite Sheet (大圖)**：把很多角色動作或地圖磚塊塞在同一張大圖裡，需要切割。
+2.  **Multiple Sprites (多張小圖)**：每個磚塊分開存成一張張獨立的圖片。
+
+**本次教學使用後者 (多張小圖)**，因為管理起來比較直觀。
 
 
----
-
-# 步驟 2：切割圖片 (Slicing)
-
-1.  點選圖片，看 Inspector。
-2.  **Sprite Mode**：從 `Single` 改為 **`Multiple`**。
-3.  按下 **Apply**。
-4.  點擊 **Sprite Editor** 按鈕 (如果沒安裝 2D Sprite 套件會找不到，請去 Package Manager 裝)。
 
 ---
 
-# Sprite Editor 操作
+# 步驟 2：調整圖片設定 (Import Settings)
 
-1.  點選左上角的 **Slice** 下拉選單。
-2.  **Type**：
-    -   **Automatic**：自動偵測邊緣 (適合不規則圖案)。
-    -   **Grid By Cell Size**：固定大小切割 (適合標準磚塊，如 64x64)。
-3.  設定好後按下 **Slice** 按鈕。
-4.  你會看到圖片被切出白色的框線。
-5.  記得按右上角的 **Apply** 存檔。
+因為我們是一張張的小圖，不需要切割 (Sprite Editor)，但要確認尺寸設定。
+
+1.  在 Project 視窗，**全選** 剛剛匯入的所有圖片。
+2.  看 Inspector 設定：
+    -   **Pixels Per Unit (PPU)**：這很重要！如果你的磚塊是 128x128，這裡就要設 128 (讓它在世界中剛好是一格)。
+    -   **Filter Mode**：如果是像素風請選 `Point (no filter)`，平滑風格選 `Bilinear`。
+3.  按下右下角的 **Apply** 套用設定。
 
 ---
 
@@ -129,8 +178,8 @@ style: |
 
 現在我們有空的調色盤，要把顏料 (圖片) 放上去。
 
-1.  打開 Project 視窗，找到剛剛切好的圖片。
-2.  **直接拖曳**整張圖 (或是切開的小圖) 到 **Tile Palette** 視窗的灰色區域。
+1.  打開 Project 視窗，找到剛剛匯入的圖片。
+2.  **直接拖曳**所有圖片 (可全選) 到 **Tile Palette** 視窗的灰色區域。
 3.  Unity 會問你要把這些 Tile 檔案存在哪。
     -   存到 `Assets/Tiles/`。
 4.  完成後，你就會在調色盤上看到一格格的磚塊了！
@@ -200,28 +249,6 @@ Unity 預設只有 `Default` 圖層。我們來新增：
 
 ---
 
-# 實戰應用：多層地圖
-
-現在我們來做多層次關卡。
-
-1.  在 Grid 下方，選取 Tilemap 按 Ctrl+D 複製一份，改名 `Background_Map`。
-2.  Inspector -> Tilemap Renderer -> **Sorting Layer** 改為 `Background`。
-3.  再複製一份 `Ground_Map`，Sorting Layer 改為 `Ground`。
-4.  再複製一份 `Deco_Map`，Sorting Layer 改為 `Props`。
-
-**現在你有三張透明片疊在一起，可以在不同層畫畫了！**
-
----
-
-# Focus Mode (專注模式)
-
-當你有好幾層 Tilemap 時，很容易畫錯層。
-
--   看 Scene 視窗右下角，有個 **Tilemap Focus** 下拉選單。
--   選擇你要畫的那一層。
--   其他層會變暗或隱藏，讓你專心畫當前這一層。
-
----
 
 # 消除縫隙 (Fixing Gaps)
 
@@ -235,6 +262,29 @@ Unity 預設只有 `Default` 圖層。我們來新增：
 2.  Inspector -> **Filter Mode** 改為 **Point (no filter)**。
 3.  如果是像素風遊戲 (Pixel Art)，這步是必須的！
 4.  **Compression** (壓縮) 改為 **None** 也會有幫助。
+
+---
+
+
+
+# 步驟 8：加入碰撞器 (Map Collision)
+
+畫好地圖後，角色卻會掉下去？因為地圖還沒有「實體」。
+
+1.  點選 **Ground** 圖層 (玩家要踩的那一層)。
+2.  **Add Component** -> 搜尋 **Tilemap Collider 2D**。
+    -   你會看到每個磚塊都有綠色的框線。
+
+---
+
+# 優化碰撞器 (Composite Collider)
+
+每個磚塊都有一個 Collider 雖然可以運作，但效能不好，且角色移動容易卡住。
+
+1.  在同一個物件上，再 **Add Component** -> **Composite Collider 2D**。
+    -   Rigidbody 2D 的 **Body Type** 改為 **Static** (很重要！不然地板會掉下去)。
+2.  回去找 **Tilemap Collider 2D**，勾選 **Used By Composite**。
+3.  你會發現所有綠色框線合併成一個整體的形狀了！
 
 ---
 
@@ -263,7 +313,7 @@ Unity 預設只有 `Default` 圖層。我們來新增：
 
 今天我們學會了：
 
-1.  **Sprite Mode: Multiple** 切割圖片。
+1.  **Sprite** 圖片的匯入與設定 (PPU, Filter Mode)。
 2.  **Tile Palette** 製作與管理。
 3.  **Grid & Tilemap** 的父子關係。
 4.  **Sorting Layers** 後製定圖層順序。
@@ -281,12 +331,3 @@ Unity 預設只有 `Default` 圖層。我們來新增：
 -   方法 (Start, Update)。
 -   讓電腦在 Console 說 "Hello World"。
 
----
-
-# Q & A
-
--   找不到 Tile Palette？
--   畫不上去？(檢查有沒有選對 Tilemap 物件)
--   圖片切壞了？(Sprite Editor Reset 重切)
-
-*(助教巡堂協助)*

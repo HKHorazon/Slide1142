@@ -379,6 +379,22 @@ setTimeout(function() {
 
 ---
 
+# 補充：現代開發的主流 - TypeScript
+
+雖然我們現在學的是 JavaScript，但一定要知道：
+**目前業界真正開發時，幾乎都是使用 TypeScript (TS)！**
+
+-   **TypeScript 是什麼？**
+    -   它是 JavaScript 的**嚴格版** (由 Microsoft 開發)。
+    -   加強了型別檢查 (避免你把字串當數字算)。
+-   **為什麼要用？**
+    -   JS 太自由容易出錯，TS 能在寫程式碼時就抓出錯誤 (紅字警告)。
+-   **不用擔心**
+    -   TS 寫完後，還是會翻譯 (Compile) 成 JS 給瀏覽器看。
+    -   **只要 JS 基礎打好，學 TS 很快！**
+
+---
+
 # 總結
 
 JavaScript 的核心流程就是三步驟：
