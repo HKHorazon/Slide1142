@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 16
+### Chapter 16
+
 # 手機觸控操作 (Touch Controls)
 
 ## Horazon

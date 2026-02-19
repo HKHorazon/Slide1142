@@ -60,13 +60,13 @@ table th:nth-child(2) {
 | 週次 | 主題 |
 | :---: | :--- |
 | **W1** | **課程簡介與環境建置** |
-| W2 | Chapter 01 |
-| W3 | Chapter 02 |
-| W4 | Chapter 03 |
-| W5 | Chapter 04 |
-| W6 | Chapter 05 |
-| W7 | Chapter 06 |
-| W8 | Chapter 07 |
+| W2 | 課程簡介 & 遊戲引擎概論 |
+| W3 | 專案建置 & 介面導覽 |
+| W4 | 2D 世界建構 (Tilemap) |
+| W5 | 物理系統與世界互動 (Physics 2D) |
+| W6 | 程式基礎入門 (C# for Unity) |
+| W7 | 互動機制與金幣 |
+| W8 | 攝影機運鏡 (Cinemachine) |
 | **W9** | **期中考週 (Midterm)** |
 
 ---
@@ -90,12 +90,12 @@ table th:nth-child(2) {
 
 | 週次 | 主題 |
 | :---: | :--- |
-| W10 | Chapter 08 |
-| W11 | Chapter 09 |
-| W12 | Chapter 10 |
-| W13 | Chapter 11 |
-| W14 | Chapter 12 |
-| W15 | Chapter 13 |
-| W16 | Chapter 14 |
-| **W17** | **期末考週 (Final)** |
-| W18 | 彈性教學與總結 |
+| W10 | 視差滾動 (Parallax Scrolling) |
+| W11 | 角色膠囊 (Player Setup) |
+| W12 | 角色移動 (Movement) |
+| W13 | 跳躍與地面檢測 (Jump Logic) |
+| W14 | 角色動畫 (Animator) |
+| W15 | UI 介面設計 (Canvas) |
+| W16 | 遊戲流程控制 (GameManager) |
+| W17 | 彈性教學與總結 |
+| **W18** | **期末考週 (Final)** |

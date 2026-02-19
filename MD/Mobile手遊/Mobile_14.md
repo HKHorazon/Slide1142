@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 14
+### Chapter 14
+
 # 遊戲流程控制 (GameManager)
 
 ## Horazon

@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 13
+### Chapter 13
+
 # UI 介面設計 (Canvas)
 
 ## Horazon

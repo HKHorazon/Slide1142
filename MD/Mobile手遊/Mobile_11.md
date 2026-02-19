@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 11
+### Chapter 11
+
 # 跳躍與地面檢測 (Jump Logic)
 
 ## Horazon

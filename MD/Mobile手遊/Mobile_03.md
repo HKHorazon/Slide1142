@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 03
+### Chapter 03
+
 # 2D 世界建構 (Tilemap)
 
 ## Horazon

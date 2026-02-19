@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 07
+### Chapter 07
+
 # 攝影機運鏡 (Cinemachine)
 
 ## Horazon

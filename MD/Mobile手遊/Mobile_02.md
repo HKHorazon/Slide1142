@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 02
+### Chapter 02
+
 # 專案建置 & 介面導覽
 
 ## Horazon

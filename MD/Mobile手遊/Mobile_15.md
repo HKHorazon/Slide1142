@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 15
+### Chapter 15
+
 # 手機部署 (Build & Run)
 
 ## Horazon

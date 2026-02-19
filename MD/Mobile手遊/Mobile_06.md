@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 06
+### Chapter 06
+
 # 互動機制與金幣 
 
 ## Horazon

@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 09
+### Chapter 09
+
 # 角色膠囊 (Player Setup)
 
 ## Horazon

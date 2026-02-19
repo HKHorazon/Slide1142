@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 05
+### Chapter 05
+
 # 程式基礎入門 (C# for Unity)
 
 ## Horazon
@@ -23,7 +24,7 @@ style: |
 
 ---
 
-# 複習：上週重點
+# 複習：前段重點
 
 -   [x] 使用 **Rigidbody 2D** 讓物件有重力。
 -   [x] 使用 **Collider 2D** 讓物件有實體。

@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 01
+### Chapter 01
+
 # 課程簡介 & 遊戲引擎概論
 
 ## Horazon

@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 04
+### Chapter 04
+
 # 物理系統與世界互動 (Physics 2D)
 
 ## Horazon

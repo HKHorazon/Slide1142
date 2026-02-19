@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 10
+### Chapter 10
+
 # 角色移動 (Movement)
 
 ## Horazon

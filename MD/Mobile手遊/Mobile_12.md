@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 12
+### Chapter 12
+
 # 角色動畫 (Animator)
 
 ## Horazon

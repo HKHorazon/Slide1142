@@ -15,7 +15,8 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-# Chapter 08
+### Chapter 08
+
 # 視差滾動 (Parallax Scrolling)
 
 ## Horazon
