@@ -22,10 +22,11 @@ style: |
 
 <!-- _class: lead -->
 <!-- _paginate: false -->
+### Homework 2
 
 # C# 程式設計
 ## 課後練習 作業二
-### (範圍：Ch.7 - Ch.8)
+## (範圍：Ch.7 - Ch.8)
 
 ---
 

@@ -23,15 +23,6 @@ style: |
 
 ---
 
-# 複習：上週重點
-
--   [x] 熟悉了 Unity 五大視窗。
--   [x] 學會使用 **Sprite Renderer** 顯示圖片。
--   [x] 學會 **Transform** (移動、旋轉、縮放)。
--   [x] 了解 **Sorting Order** 的前後關係。
-
----
-
 # 本章目標
 
 今天我們要打造遊戲的舞台！
@@ -49,6 +40,7 @@ style: |
 # 從 GitHub 下載專案
 
 1.  **取得連結**：使用老師提供的 GitHub 專案網址。
+    - https://github.com/HKHorazon/MobileBase/tree/master
 2.  **下載檔案**：
     -   點選綠色的 **<> Code** 按鈕。
     -   選擇 **Download ZIP**。
@@ -56,6 +48,8 @@ style: |
     -   下載後是一個 `.zip` 檔。
     -   **請按右鍵 -> 解壓縮 (Extract All)**。
     -   <span style="color:red">不要直接點兩下進去執行，會發生錯誤！</span>這點非常重要！
+
+<img src="../../IMAGE/Mobile/Ch3/image-9.png" style="position: absolute; right: 50px; top: 160px; width: 400px;">
 
 ---
 
@@ -84,6 +78,8 @@ Unity 專案不是「單一個檔案」，而是一個「資料夾」。
 5.  **選擇最外層** (看得到 Assets 的那一層)。
 6.  按下 **Select Folder**。
 
+<img src="../../IMAGE/Mobile/Ch3/image-10.png" style="position: absolute; right: 250px; top: 250px; width: 300px;">
+
 ---
 
 # 處理版本問題
@@ -97,6 +93,20 @@ Unity 專案不是「單一個檔案」，而是一個「資料夾」。
 5.  跳出警告視窗 "Change Editor Version?" -> 勇敢按下 **Continue / Change Version**。
 
 > 通常版本號最後一碼不同，都不會被版本影響太多。
+
+---
+
+# 實作練習：放置平台 (Platform)
+
+除了 tilemap，我們也可以使用一般物件來製作關卡元件。
+
+1.  在 **Project** 視窗，找到 `Prefab` 資料夾。
+2.  找到 `Platform` (或是長條狀的圖片)。
+3.  直接拖曳到場景中。
+4.  使用 **Rect Tool (T)** 拉動藍色節點，調整它的寬度。
+5.  把它放在空中，當作一個「浮動平台」。
+
+> **Tip**: 也可以用 **Scale (R)** 來縮放，但 Rect Tool 對於 UI 和 2D 物件比較直觀。
 
 ---
 
@@ -282,7 +292,6 @@ Unity 預設只有 `Default` 圖層。我們來新增：
 每個磚塊都有一個 Collider 雖然可以運作，但效能不好，且角色移動容易卡住。
 
 1.  在同一個物件上，再 **Add Component** -> **Composite Collider 2D**。
-    -   Rigidbody 2D 的 **Body Type** 改為 **Static** (很重要！不然地板會掉下去)。
 2.  回去找 **Tilemap Collider 2D**，勾選 **Used By Composite**。
 3.  你會發現所有綠色框線合併成一個整體的形狀了！
 
@@ -316,18 +325,5 @@ Unity 預設只有 `Default` 圖層。我們來新增：
 1.  **Sprite** 圖片的匯入與設定 (PPU, Filter Mode)。
 2.  **Tile Palette** 製作與管理。
 3.  **Grid & Tilemap** 的父子關係。
-4.  **Sorting Layers** 後製定圖層順序。
-5.  使用筆刷繪製出多層次的遊戲場景。
 
----
-
-# 下週預告
-
-地圖畫好了，但還只是「畫」。
-下週我們要開始寫程式，讓電腦聽你的話！
-
--   C# 程式語言入門。
--   變數 (什麼是 int, float?)。
--   方法 (Start, Update)。
--   讓電腦在 Console 說 "Hello World"。
 

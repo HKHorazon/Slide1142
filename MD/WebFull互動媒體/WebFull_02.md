@@ -243,8 +243,8 @@ style: |
 
 <style scoped>
 table {
-    font-size: 0.7em;
-    width: 90%;
+    font-size: 0.8em;
+    width: 80%;
     margin: 0 auto;
 }
 </style>

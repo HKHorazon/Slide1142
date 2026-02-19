@@ -51,10 +51,12 @@ style: |
 為了讓大家專注在「關卡設計」與「物理體驗」，
 老師已經準備好寫好程式的角色了。
 
-1.  前往 **GitHub** (或是老師提供的雲端硬碟)。
-2.  下載 **Horazon_Mobile_Ch04.zip** (範例名稱)。
-3.  **解壓縮** (這很重要！)。
-4.  使用 Unity Hub **Add** 專案並開啟。
+1. Github 下載：  
+https://github.com/HKHorazon/MobileBase/tree/master
+2.  **解壓縮** (這很重要！)。
+3.  使用 Unity Hub **Add** 專案並開啟。
+
+(細節請看上一章節投影片)
 
 ---
 
@@ -92,7 +94,6 @@ Unity 內建了強大的物理引擎 (Box2D)。
 -   **反彈力 (Bounciness)**
 -   **碰撞偵測 (Collision Detection)**
 
-**你不需要自己寫 F=ma，只要掛上 Component 就好！**
 
 ---
 
@@ -100,9 +101,9 @@ Unity 內建了強大的物理引擎 (Box2D)。
 
 要有物理反應，必須要有這兩個 Component：
 
-1.  **Rigidbody 2D (身體)**
+1.  **Rigidbody 2D**
     -   讓物件受重力影響，可以被推動。
-2.  **Collider 2D (形狀)**
+2.  **Collider 2D**
     -   定義物件的實體範圍，讓它不會穿牆。
 
 > **Warning**: 請務必選有 **2D** 字尾的 Component！(3D 的 BoxCollider 沒用)
@@ -114,11 +115,16 @@ Unity 內建了強大的物理引擎 (Box2D)。
 點選場景中的 **Player**，看 Inspector：
 
 -   **Body Type**：
-    -   **Dynamic** (預設)：受重力與力影響 (主角、敵人、箱子)。
-    -   **Kinematic**：不受重力影響，但會推動別人 (移動平台)。
-    -   **Static**：完全不動 (牆壁、地板)。
+    -   **Dynamic** (預設)：受重力與力影響 
+    (主角、敵人、箱子)。
+    -   **Kinematic**：不受重力影響，但會推動別人 
+    (移動平台)。
+    -   **Static**：完全不動 
+    (牆壁、地板)。
 -   **Mass**：質量 (越重越難推)。
 -   **Gravity Scale**：重力倍率 (1=地球重力，0=無重力)。
+
+<img src="../../IMAGE/Mobile/Ch4/image-11.png" style="position: absolute; right: 50px; top: 150px; width: 400px;">
 
 ---
 
@@ -132,6 +138,7 @@ Unity 內建了強大的物理引擎 (Box2D)。
 -   **一定要勾選 Freeze Rotation Z**，鎖住 Z 軸旋轉，讓主角永遠站著。
 
 *(老師的 Prefab 已經幫你勾好了，但你自己做物件時要記得！)*
+
 
 ---
 
@@ -160,6 +167,8 @@ Unity 內建了強大的物理引擎 (Box2D)。
 -   **Capsule Collider 2D**：膠囊形 (最適合**人類角色**)。
 -   **Polygon Collider 2D**：多邊形 (不規則地形)。
 
+<img src="../../IMAGE/Mobile/Ch4/image-12.png" style="position: absolute; right: 50px; top: 450px; width: 450px;">
+
 ---
 
 # Physics Material 2D (物理材質)
@@ -175,7 +184,7 @@ Unity 內建了強大的物理引擎 (Box2D)。
 
 # 套用物理材質
 
-1.  建立一個新的 **Square** 當作地板 (或是用現有的箱子)。
+1.  建立一個新的 **Platform** 當作地板。
 2.  找到它的 **Box Collider 2D**。
 3.  將剛剛做好的 Material 拖曳到 **Material** 欄位中。
 
@@ -219,4 +228,3 @@ Unity 內建了強大的物理引擎 (Box2D)。
 -   物件穿過地板掉下去？
     -   檢查地板有沒有裝 Collider。
 
-*(助教巡堂協助)*

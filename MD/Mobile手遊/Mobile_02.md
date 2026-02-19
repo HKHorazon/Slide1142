@@ -79,8 +79,13 @@ style: |
 當載入完成，你會看到預設的版面配置 (Layout)。
 我們將它分為五大區塊來介紹。
 
+![alt text width:800px](../../IMAGE/Mobile/Ch2/image.png)
 
-*(講師現場操作示範)*
+---
+
+# 1. Scene View (場景視窗)
+
+![alt text](../../IMAGE/Mobile/Ch2/image-1.png)
 
 ---
 
@@ -93,6 +98,12 @@ style: |
 -   **中鍵按住 + 移動**：平移視角 (Pan)。
 -   **滾輪滾動**：縮放視角 (Zoom)。
 -   **點選物件 + 按 F**：聚焦該物件 (Focus)，鏡頭會飛過去。
+
+---
+
+# 2. Game View (遊戲視窗)
+
+![alt text](../../IMAGE/Mobile/Ch2/image-2.png)
 
 ---
 
@@ -112,6 +123,10 @@ style: |
 
 # 3. Hierarchy (階層視窗)
 
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start;">
+
+<div>
+
 這是**場景內容清單**。
 目前場景裡有哪些東西，這裡就會列出來。
 
@@ -122,6 +137,22 @@ style: |
 ### 父子關係 (Parenting)：
 -   把 A 物件拖到 B 物件身上，A 就會變成 B 的小孩。
 -   移動 B 時，A 會跟著動 (像是拿著槍的人，人動槍跟著動)。
+
+</div>
+
+<div>
+
+![alt text](../../IMAGE/Mobile/Ch2/image-3.png)
+
+</div>
+
+</div>
+
+---
+
+# 4. Project (專案視窗)
+
+![alt text](../../IMAGE/Mobile/Ch2/image-4.png)
 
 ---
 
@@ -179,6 +210,8 @@ style: |
 -   **T (Rect)**：矩形工具，UI 與 2D 常用，直接拉邊框。
 -   **Y**：綜合工具 (不常用)。
 
+![bg right 20%](image-7.png)
+
 ---
 
 # 實作練習 1：建立物件
@@ -189,6 +222,8 @@ style: |
 2.  選擇 **2D Object** -> **Sprites** -> **Square** (正方形)。
 3.  你會看到畫面中間出現一個白色方塊。
 4.  且 Hierarchy 多了一個名為 `Square` 的物件。
+
+![bg right w:600px](image-8.png)
 
 ---
 
@@ -201,6 +236,7 @@ style: |
 3.  **縮放 (R)**：拉動中間的小方塊 (等比例) 或 軸向方塊。
 
 > **觀察 Inspector**：數值會隨著你的操作即時改變。
+
 
 ---
 
