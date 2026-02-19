@@ -80,7 +80,7 @@ def get_category_settings(category_name):
             
     return defaults
 
-def export_file(file_path):
+def export_file(file_path, force=False):
     if not os.path.exists(file_path):
         print(f"Error: File not found: {file_path}")
         return
@@ -88,6 +88,17 @@ def export_file(file_path):
     output_path = get_output_path(file_path)
     output_dir = os.path.dirname(output_path)
     
+    # Check if we should skip
+    if not force and os.path.exists(output_path):
+        try:
+            input_mtime = os.path.getmtime(file_path)
+            output_mtime = os.path.getmtime(output_path)
+            if input_mtime < output_mtime:
+                print(f"[Skipping] {file_path} (Up to date)")
+                return
+        except Exception as e:
+            print(f"Warning: Could not check mtime for {file_path}: {e}")
+
     if output_dir:
         os.makedirs(output_dir, exist_ok=True)
 
@@ -107,7 +118,7 @@ def export_file(file_path):
     except subprocess.CalledProcessError as e:
         print(f"[Error] Failed to export {file_path}: {e}")
 
-def export_folder(folder_path):
+def export_folder(folder_path, force=False):
     if not os.path.exists(folder_path):
         print(f"Error: Folder not found: {folder_path}")
         return
@@ -116,11 +127,11 @@ def export_folder(folder_path):
         for file in files:
             if file.endswith('.md'):
                 full_path = os.path.join(root, file)
-                export_file(full_path)
+                export_file(full_path, force)
 
-def export_all():
+def export_all(force=False):
     print(f"Exporting all files from {INPUT_ROOT_DIR}...")
-    export_folder(INPUT_ROOT_DIR)
+    export_folder(INPUT_ROOT_DIR, force)
 
 def generate_index_html():
     """Generates an index.html in the DISPLAY_DIR listing all PDFs."""
@@ -321,18 +332,20 @@ if __name__ == "__main__":
     # New flag to only regenerate index
     group.add_argument("-i", "--index", action="store_true", help="Only regenerate the index HTML")
 
+    parser.add_argument("--force", action="store_true", help="Force rebuild of PDF files even if MD is not modified.")
+
     args = parser.parse_args()
 
     if args.index:
         generate_index_html()
     else:
         if args.file:
-            export_file(args.file)
+            export_file(args.file, args.force)
         elif args.dir:
-            export_folder(args.dir)
+            export_folder(args.dir, args.force)
         else:
             if os.path.exists(INPUT_ROOT_DIR):
-                export_all()
+                export_all(args.force)
             else:
                 print(f"Error: Default input directory '{INPUT_ROOT_DIR}' not found.")
         
