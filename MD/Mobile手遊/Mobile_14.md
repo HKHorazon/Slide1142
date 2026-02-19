@@ -17,7 +17,7 @@ style: |
 
 ### Chapter 14
 
-# 遊戲流程控制 (GameManager)
+# 遊戲流程控制
 
 ## Horazon
 ## 手機遊戲開發

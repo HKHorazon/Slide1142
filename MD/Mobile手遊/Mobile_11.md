@@ -17,7 +17,7 @@ style: |
 
 ### Chapter 11
 
-# 跳躍與地面檢測 (Jump Logic)
+# 玩家角色-跳躍
 
 ## Horazon
 ## 手機遊戲開發

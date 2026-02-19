@@ -17,7 +17,7 @@ style: |
 
 ### Chapter 12
 
-# 角色動畫 (Animator)
+# 玩家角色-動畫
 
 ## Horazon
 ## 手機遊戲開發

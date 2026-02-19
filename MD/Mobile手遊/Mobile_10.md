@@ -17,7 +17,7 @@ style: |
 
 ### Chapter 10
 
-# 角色移動 (Movement)
+# 玩家角色-移動
 
 ## Horazon
 ## 手機遊戲開發

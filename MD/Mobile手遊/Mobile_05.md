@@ -17,7 +17,7 @@ style: |
 
 ### Chapter 05
 
-# 程式基礎入門 (C# for Unity)
+# 程式基礎入門(C#)
 
 ## Horazon
 ## 手機遊戲開發

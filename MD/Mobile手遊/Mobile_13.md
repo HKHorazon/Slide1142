@@ -17,7 +17,7 @@ style: |
 
 ### Chapter 13
 
-# UI 介面設計 (Canvas)
+# UI 介面設計 
 
 ## Horazon
 ## 手機遊戲開發

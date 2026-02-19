@@ -17,7 +17,7 @@ style: |
 
 ### Chapter 07
 
-# 攝影機運鏡 (Cinemachine)
+# 攝影機運鏡
 
 ## Horazon
 ## 手機遊戲開發

@@ -17,7 +17,7 @@ style: |
 
 ### Chapter 15
 
-# 手機部署 (Build & Run)
+# 手機部署 
 
 ## Horazon
 ## 手機遊戲開發

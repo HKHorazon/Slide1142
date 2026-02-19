@@ -17,7 +17,7 @@ style: |
 
 ### Chapter 08
 
-# 視差滾動 (Parallax Scrolling)
+# 視差滾動背景
 
 ## Horazon
 ## 手機遊戲開發

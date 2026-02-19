@@ -17,7 +17,7 @@ style: |
 
 ### Chapter 16
 
-# 手機觸控操作 (Touch Controls)
+# 手機觸控操作
 
 ## Horazon
 ## 手機遊戲開發

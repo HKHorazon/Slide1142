@@ -17,7 +17,7 @@ style: |
 
 ### Chapter 04
 
-# 物理系統與世界互動 (Physics 2D)
+# 物理系統
 
 ## Horazon
 ## 手機遊戲開發

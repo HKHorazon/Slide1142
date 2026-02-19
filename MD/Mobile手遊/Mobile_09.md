@@ -17,7 +17,7 @@ style: |
 
 ### Chapter 09
 
-# 角色膠囊 (Player Setup)
+# 玩家角色-基礎
 
 ## Horazon
 ## 手機遊戲開發

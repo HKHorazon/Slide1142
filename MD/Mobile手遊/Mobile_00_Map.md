@@ -92,10 +92,10 @@ table th:nth-child(2) {
 | :---: | :--- |
 | W10 | 視差滾動 (Parallax Scrolling) |
 | W11 | 角色膠囊 (Player Setup) |
-| W12 | 角色移動 (Movement) |
+| W12 | 玩家角色移動跳躍 |
 | W13 | 跳躍與地面檢測 (Jump Logic) |
-| W14 | 角色動畫 (Animator) |
+| W14 | 玩家角色-動畫 |
 | W15 | UI 介面設計 (Canvas) |
 | W16 | 遊戲流程控制 (GameManager) |
-| W17 | 彈性教學與總結 |
-| **W18** | **期末考週 (Final)** |
+| **W17** | **期末考週 (Final)** |
+| W18 | 彈性教學與總結 |
