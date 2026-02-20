@@ -97,5 +97,5 @@ table th:nth-child(2) {
 | W14 | 封裝與建構子 (Encapsulation & Constructor) |
 | W15 | 繼承與多型 (Inheritance & Polymorphism) |
 | W16 | 集合與泛型 (Collections & Generics) |
-| **W17** | **期末考週 (Final)** |
-| W18 | 彈性教學與總結 |
+| W17 | 彈性教學與總結 |
+| **W18** | **期末考週 (Final)** |
