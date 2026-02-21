@@ -16,7 +16,7 @@ style: |
 <!-- _paginate: false -->
 
 ### Chapter 03
-# 快速架站體驗 - Google Sites
+# Google Sites
 
 ## Horazon
 ## 互動媒體設計 (一學期)
@@ -27,7 +27,6 @@ style: |
 
 <br>
 
-在上週我們規劃好了網站架構，這週我們要實際把網站做出來。
 對於初學者與非工程師來說，架站平台 (Website Builder) 是最好的起點。
 
 -   **自架網站**

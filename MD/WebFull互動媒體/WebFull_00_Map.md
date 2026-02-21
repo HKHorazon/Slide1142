@@ -62,7 +62,7 @@ table th:nth-child(2) {
 | **W1** | **課程簡介與環境建置** |
 | W2 | 課程簡介與網站製作概論 |
 | W3 | 網站類型介紹 |
-| W4 | 快速架站體驗 - Google Sites |
+| W4 | Google Sites |
 | W5 | 靜態網站規劃與架構 |
 | W6 | UI/UX 設計導論 - Figma 基礎 |
 | W7 | 網頁原型製作 - Figma 實作 |

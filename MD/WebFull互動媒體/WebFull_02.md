@@ -18,6 +18,7 @@ style: |
 ### Chapter 02
 # 網站類型介紹
 
+## Horazon
 ## WebFull 互動媒體 (一學期)
 
 ---
