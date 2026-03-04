@@ -171,6 +171,49 @@ btn.addEventListener("click", function() {
 
 ---
 
+# 進階應用：抓取網路資料 (fetch API)
+
+<br>
+
+只改自己的網頁還不夠，我們可以去「抓」別人的資料！
+
+```javascript
+const btn = document.getElementById("dog-btn");
+const img = document.getElementById("dog-img");
+
+btn.addEventListener("click", function() {
+    // 呼叫狗狗圖片 API
+    fetch("https://dog.ceo/api/breeds/image/random")
+        .then(res => res.json())
+        .then(data => {
+            img.src = data.message; // 把圖片網址換掉
+        });
+});
+```
+> **恭喜！你剛完成了第一次「打通網路」的體驗。**
+
+---
+
+# 微互動：AOS 滾動動畫
+
+<br>
+
+想讓你的網頁像蘋果官網一樣有高級感？
+不需要自己寫厚厚的 JS，只要套用 **AOS (Animate On Scroll)** 套件即可。
+
+1. 在 HTML `<head>` 引入 AOS 的 CSS 與 JS 檔案庫。
+2. 在你想加入動畫的元素加上 `data-aos="fade-up"`。
+```html
+<div data-aos="fade-up" data-aos-duration="1000">
+   我會從下面飛出來！
+</div>
+```
+3. 在 JS 寫一行啟動碼：`AOS.init();`
+
+> **這些「微小而精密」的互動，會大幅提升你最終實作的質感！**
+
+---
+
 # 總結：DOM 操作三部曲
 
 <br>
@@ -187,14 +230,16 @@ btn.addEventListener("click", function() {
 
 <br>
 
-現在我們的網頁在電腦看很漂亮，但在手機看可能就跑版了。
+寫程式很累對吧？
+尤其是被那些分號、括號搞得頭很痛的時候。
 
-**響應式網頁設計**
--   如何讓網頁適應手機、平板、桌面？
--   深入 Media Queries。
--   Flexbox 和 Grid 在 RWD 的應用。
--   行動優先 (Mobile First) 的設計思維。
+下週我們要進入**快樂天堂**：
 
-準備拿出你的手機來測試網頁吧！
+**進階無程式碼平台 - Wix**
+-   不用寫一行程式碼。
+-   拖拉放完成專業網站。
+-   直接發布上線。
+
+但別忘了，正是因為你懂了 HTML/CSS 基礎，你用 Wix 會比別人強 100 倍 (因為你懂它的原理)！
 
 ---

@@ -16,258 +16,220 @@ style: |
 <!-- _paginate: false -->
 
 ### Chapter 10
-# 網頁排版佈局 - CSS Flexbox & Grid
+# 響應式網頁設計 (RWD)
 
 ## Horazon
 ## 互動媒體設計 (一學期)
 
 ---
 
-# 為什麼需要排版系統？
+# 什麼是 RWD？
 
 <br>
 
-在很多年前，要讓兩個東西「並排」，我們得用 `<table>` 或是 `float` 這些很髒的手段。
-現在，CSS 提供了兩套強大的排版系統，讓你可以**隨心所欲**地控制與排列網頁元素：
+**響應式網頁設計**
 
-1.  **Flexbox**：處理單行或單列的排列 (例如：導覽列)。
-2.  **Grid**：處理整個頁面的網格佈局 (例如：照片牆、儀表板)。
+以前，我們得做兩個網站：
+-   `www.example.com` (電腦版)
+-   `m.example.com` (手機版)
+
+現在，我們只需要做**一個網站**，它會自動適應任何螢幕大小 (手機、平板、筆電、大螢幕)。
+這就是 RWD。
 
 ---
 
-# Part 1: Flexbox
+# 核心三要素
 
 <br>
 
-Flexbox 的核心觀念只有兩個角色：
--   **Flex Container**：爸爸。
--   **Flex Item**：兒子。
+要達成 RWD，必須具備三個條件：
 
-只要在爸爸身上設定 `display: flex`，兒子們就會乖乖聽話。
+1.  **Viewport Meta Tag**：告訴瀏覽器「我要做 RWD」。
+2.  **流動佈局 (Fluid Layout)**：寬度用 `%` 而不是 `px`。
+3.  **媒體查詢 (Media Queries)**：CSS 的條件判斷式。
+
+---
+
+# 1. Viewport 設定
+
+<br>
+
+如果你沒加這一行，手機瀏覽器會以為它是電腦螢幕，然後把網頁縮很小 (像以前的 iPhone 3GS 看網頁那樣)。
+
+請確保你的 HTML `<head>` 裡有這一行 (VS Code 的 `!` 會自動幫你加)：
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+-   `width=device-width`：寬度 = 裝置寬度。
+-   `initial-scale=1.0`：初始縮放比例 1:1 (不縮放)。
+
+---
+
+# 2. 圖片自適應
+
+<br>
+
+這是最容易壞掉的地方。如果圖片寬度 800px，手機寬度只有 375px，圖片就會爆出去。
+
+**萬用解法 (CSS Reset 裡必加)**：
 
 ```css
-.container {
-    display: flex; /* 兒子們會變成橫排 */
+img {
+    max-width: 100%;
+    height: auto;
 }
 ```
 
----
-
-# 1. 主軸對齊
-
-<br>
-
-決定兒子們在**橫向**怎麼排。
-屬性：**`justify-content`**
-
--   `flex-start`：靠左 (預設)。
--   `flex-end`：靠右。
--   `center`：置中。
--   `space-between`：左右推到底，中間平均分配 (導覽列最常用！)。
--   `space-around`：每個兒子周圍都有平均的留白。
+-   `max-width: 100%`：圖片最大只能跟父容器一樣寬。
+-   `height: auto`：高度自動計算，保持圖片比例不變形。
 
 ---
 
-# 2. 交錯軸對齊
+# 3. 媒體查詢 (Media Queries)
 
 <br>
 
-決定兒子們在**縱向**怎麼排。
-屬性：**`align-items`**
-
--   `stretch`：拉長填滿 (預設)。
--   `flex-start`：靠上。
--   `flex-end`：靠下。
--   `center`：垂直置中 (最常用！)。
-
-> **聖杯佈局 (完全置中)**：
-> `.box { display: flex; justify-content: center; align-items: center; }`
-
----
-
-# 3. 排列方向與換行
-
-<br>
-
--   **`flex-direction`**：
-    -   `row`：橫排 (預設, 左->右)。
-    -   `column`：直排 (上->下, 手機版常用)。
-    -   `row-reverse`：反向橫排 (右->左)。
-
--   **`flex-wrap`**：
-    -   `nowrap`：死都不換行 (預設, 空間不夠會擠壓兒子)。
-    -   `wrap`：空間不夠就自動換行。
-
----
-
-# Flex 項目屬性
-
-<br>
-
-這些是寫在**兒子**身上的。
-
--   **`flex-grow`**：
-    -   `flex-grow: 1;` -> 有剩餘空間就放大填滿。
-    -   如果所有兒子都設 1，大家均分空間。
--   **`flex-shrink`**：
-    -   `flex-shrink: 0;` -> 空間不夠也不准縮小 (保持原大小)。
--   **`order`**：
-    -   不用改 HTML 順序，直接用 CSS 改變排列順序。
-    -   `order: 1` 會排在 `order: 0` 後面。
-
----
-
-# 實戰練習：導覽列
-
-<br>
-
-我們用 Flexbox 做一個經典的導覽列：
+CSS 的核心魔法。
+「如果螢幕寬度滿則某個條件，就套用這些 CSS。」
 
 ```css
-nav {
-    display: flex;
-    justify-content: space-between; /* Logo左，選單右 */
-    align-items: center;            /* 垂直置中 */
-    padding: 20px;
-    background: #333;
+/* 預設樣式 (電腦版) */
+body {
+    background: white;
+    font-size: 16px;
 }
-.menu {
-    display: flex;
-    gap: 20px; /* 選單項目之間的距離 */
-}
-```
 
----
-
-# Part 2: CSS Grid
-
-<br>
-
-如果 Flexbox 是一條線，那 Grid 就是一張棋盤。
-它是最強大的排版系統，可以輕鬆畫出兩欄、三欄、甚至複雜的報紙版面。
-
-```css
-.container {
-    display: grid;
-    /* 定義三欄：200px, 自動, 100px */
-    grid-template-columns: 200px auto 100px;
-}
-```
-
----
-
-# Grid 的單位：`fr`
-
-<br>
-
-`fr` 是 Grid 專用的單位，代表「剩餘空間的比例」。
-
-```css
-.container {
-    display: grid;
-    /* 切成三等份 (1:1:1) */
-    grid-template-columns: 1fr 1fr 1fr;
-    /* 第一欄佔 1 份，第二欄佔 2 份，第三欄佔 1 份 */
-    grid-template-columns: 1fr 2fr 1fr;
-    
-    gap: 20px; /* 格子之間的溝槽 */
-}
-```
-
-這種寫法比用 `%` 計算寬度快多了！
-
----
-
-# Grid 區域
-
-<br>
-
-這招超像在畫 ASCII Art，非常直觀！
-
-```css
-.container {
-    display: grid;
-    grid-template-areas: 
-        "header header header"
-        "sidebar main main"
-        "footer footer footer";
-}
-.header { grid-area: header; }
-.sidebar { grid-area: sidebar; }
-.main { grid-area: main; }
-.footer { grid-area: footer; }
-```
-
----
-
-# RWD 響應式排版
-
-<br>
-
-配合 **Media Query**，我們可以輕鬆改變佈局。
-
-電腦版 (3欄)：
-```css
-.cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-```
-
-手機版 (1欄)：
-```css
+/* 當螢幕寬度 "小於" 768px 時 (平板/手機) */
 @media (max-width: 768px) {
-    .cards {
-        grid-template-columns: 1fr; /* 變成直的一排 */
+    body {
+        background: lightgray;
+        font-size: 14px;
     }
 }
 ```
 
 ---
 
-# Flexbox vs Grid：怎麼選？
+# 斷點
 
 <br>
 
-| 特性 | Flexbox | Grid |
-| :--- | :--- | :--- |
-| **維度** | 一維 (線) | 二維 (面) |
-| **對齊基礎** | 內容優先 | 版面優先 |
-| **適合場景** | 導覽列、按鈕組、卡片內的排版 | 整個網頁的架構、照片牆、複雜儀表板 |
-| **學習曲線** | 簡單 | 稍微複雜 |
+我們通常會設定幾個關鍵的斷點來切換樣式：
 
-> **結論**：不要二選一，通常是**大架構用 Grid**，**小元件用 Flexbox**。
+1.  **Mobile (手機)**：< 576px
+2.  **Tablet (平板)**：576px ~ 768px
+3.  **Desktop (桌面)**：> 992px
+4.  **Large Desktop (大螢幕)**：> 1200px
+
+> **Bootstrap** 或 **Tailwind CSS** 等框架都幫你定義好這些斷點了。
 
 ---
 
-# 實作練習：Holy Grail Layout
+# 行動優先 (Mobile First)
 
 <br>
 
-請做出經典的網站架構：
-1.  **Header**：置頂，橫向填滿。
-2.  **Main Content**：中間三欄式 (左側邊欄、主內容、右側邊欄)。
-3.  **Footer**：置底，橫向填滿。
+以前我們習慣先寫電腦版，再用 `@media (max-width)` 去修手機版。
+現在主流推薦 **Mobile First**：
 
-**要求**：
--   使用 Grid 劃分大區域。
--   Header 裡面的 Logo 和選單使用 Flexbox 排列。
--   在手機版時，側邊欄要變到主內容下方 (變成單欄)。
+**先寫手機版 CSS，再用 `@media (min-width)` 去加強電腦版。**
+
+```css
+/* 預設樣式 (手機版) */
+.container { padding: 10px; }
+
+/* 當螢幕 "大於" 768px 時 (平板/電腦) */
+@media (min-width: 768px) {
+    .container { padding: 40px; }
+}
+```
+
+**好處**：手機版程式碼最精簡，效能最好 (不用覆蓋樣式)。
 
 ---
 
-# 學習資源推薦
+# RWD 導覽列
 
 <br>
 
-覺得很難記？玩遊戲學吧！
+RWD 最經典的挑戰就是 Navbar。
 
-1.  **Flexbox Froggy** (青蛙過街)
-    -   用 css code 幫青蛙跳到荷葉上。
-2.  **Grid Garden** (種蘿蔔)
-    -   用 grid code 幫蘿蔔澆水。
+-   **大螢幕**：選單橫排顯示 (Home, About, Contact)。
+-   **小螢幕**：選單隱藏，變成一個「三條線 (漢堡圖示)」。
+    -   點擊漢堡圖示 -> 選單從旁邊或上面滑出來。
 
-這兩個遊戲玩通關，你的排版功力就超過 80% 的工程師了。
+這需要結合 **HTML (結構)** + **CSS (隱藏/顯示)** + **JS (點擊切換 Class)**。
+
+---
+
+# Flexbox 在 RWD 的應用
+
+<br>
+
+記得 `flex-direction` 嗎？
+
+```css
+.card-group {
+    display: flex;
+    flex-direction: column; /* 手機版：直排 */
+}
+
+@media (min-width: 768px) {
+    .card-group {
+        flex-direction: row; /* 電腦版：橫排 */
+    }
+}
+```
+
+只要一行 CSS，就能讓版面從直的變橫的！
+
+---
+
+# Grid 在 RWD 的應用
+
+<br>
+
+Grid 更強大，直接改欄數。
+
+```css
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* 手機版：1欄 */
+    gap: 10px;
+}
+
+@media (min-width: 576px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr; /* 平板：2欄 */
+    }
+}
+
+@media (min-width: 992px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* 電腦：4欄 */
+    }
+}
+```
+
+---
+
+# 實作練習：響應式卡片
+
+<br>
+
+利用上次的卡片元件，做一個 RWD 畫廊：
+
+1.  **HTML**：放 6 張卡片。
+2.  **CSS (Mobile First)**：
+    -   預設 `grid-template-columns: 1fr` (單欄)。
+    -   圖片 `max-width: 100%`。
+3.  **Media Query**：
+    -   `@media (min-width: 768px)` -> 改成 3 欄 (`1fr 1fr 1fr`)。
+
+**測試方式**：
+打開 Chrome 開發者工具 (`F12`)，切換到手機模式 (Device Toolbar)，拉動寬度看看變化。
 
 ---
 
@@ -275,7 +237,7 @@ nav {
 
 <br>
 
-網頁漂亮是漂亮，但它是「死」的。
+網頁漂亮是漂亮，也都適應了各種螢幕大小，但它是「死」的。
 我們要賦予它「邏輯」與「互動」。
 
 **程式邏輯入門 - JavaScript 基礎**

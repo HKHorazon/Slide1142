@@ -16,94 +16,273 @@ style: |
 <!-- _paginate: false -->
 
 ### Chapter 09
-# 期中專案發表
+# 網頁排版佈局 - CSS Flexbox & Grid
 
 ## Horazon
 ## 互動媒體設計 (一學期)
 
 ---
 
-# 專案主題：個人展示網站
+# 為什麼需要排版系統？
 
 <br>
 
-期中考的目標是檢驗各位前半學期的所學：
-**企劃 -> 設計 -> 基礎實作**
+在很多年前，要讓兩個東西「並排」，我們得用 `<table>` 或是 `float` 這些很髒的手段。
+現在，CSS 提供了兩套強大的排版系統，讓你可以**隨心所欲**地控制與排列網頁元素：
 
-### 主題選擇 (三選一)：
-1.  **個人作品集**：介紹你自己、技能、作品。
-2.  **興趣推廣站**：介紹你喜歡的遊戲、動漫、電影。
-3.  **活動網站**：為一個虛構或真實的活動做宣傳頁。
+1.  **Flexbox**：處理單行或單列的排列 (例如：導覽列)。
+2.  **Grid**：處理整個頁面的網格佈局 (例如：照片牆、儀表板)。
 
 ---
 
-# 繳交項目
+# Part 1: Flexbox
 
 <br>
 
-你需要準備以下內容，並上台報告 (3分鐘)：
+Flexbox 的核心觀念只有兩個角色：
+-   **Flex Container**：爸爸。
+-   **Flex Item**：兒子。
 
-1.  **網站企劃書 (PDF)**
-    -   網站目標、TA (目標客群)。
-    -   網站架構圖 (Sitemap)。
-2.  **UI 設計稿 (Figma)**
-    -   至少 3 個頁面 (首頁 + 2 內頁)。
-    -   必須包含 Component (導覽列) 與 Grid System。
-    -   **加分項**：製作成可互動的 Prototype。
-3.  **基礎 HTML 結構**
-    -   只有 HTML 沒關係 (CSS 若未完成可接受)。
-    -   結構要正確 (使用 `<nav>`, `<main>`, `<footer>`)。
+只要在爸爸身上設定 `display: flex`，兒子們就會乖乖聽話。
+
+```css
+.container {
+    display: flex; /* 兒子們會變成橫排 */
+}
+```
 
 ---
 
-# 評分標準
+# 1. 主軸對齊
 
 <br>
 
-| 項目 | 佔比 | 說明 |
+決定兒子們在**橫向**怎麼排。
+屬性：**`justify-content`**
+
+-   `flex-start`：靠左 (預設)。
+-   `flex-end`：靠右。
+-   `center`：置中。
+-   `space-between`：左右推到底，中間平均分配 (導覽列最常用！)。
+-   `space-around`：每個兒子周圍都有平均的留白。
+
+---
+
+# 2. 交錯軸對齊
+
+<br>
+
+決定兒子們在**縱向**怎麼排。
+屬性：**`align-items`**
+
+-   `stretch`：拉長填滿 (預設)。
+-   `flex-start`：靠上。
+-   `flex-end`：靠下。
+-   `center`：垂直置中 (最常用！)。
+
+> **聖杯佈局 (完全置中)**：
+> `.box { display: flex; justify-content: center; align-items: center; }`
+
+---
+
+# 3. 排列方向與換行
+
+<br>
+
+-   **`flex-direction`**：
+    -   `row`：橫排 (預設, 左->右)。
+    -   `column`：直排 (上->下, 手機版常用)。
+    -   `row-reverse`：反向橫排 (右->左)。
+
+-   **`flex-wrap`**：
+    -   `nowrap`：死都不換行 (預設, 空間不夠會擠壓兒子)。
+    -   `wrap`：空間不夠就自動換行。
+
+---
+
+# Flex 項目屬性
+
+<br>
+
+這些是寫在**兒子**身上的。
+
+-   **`flex-grow`**：
+    -   `flex-grow: 1;` -> 有剩餘空間就放大填滿。
+    -   如果所有兒子都設 1，大家均分空間。
+-   **`flex-shrink`**：
+    -   `flex-shrink: 0;` -> 空間不夠也不准縮小 (保持原大小)。
+-   **`order`**：
+    -   不用改 HTML 順序，直接用 CSS 改變排列順序。
+    -   `order: 1` 會排在 `order: 0` 後面。
+
+---
+
+# 實戰練習：導覽列
+
+<br>
+
+我們用 Flexbox 做一個經典的導覽列：
+
+```css
+nav {
+    display: flex;
+    justify-content: space-between; /* Logo左，選單右 */
+    align-items: center;            /* 垂直置中 */
+    padding: 20px;
+    background: #333;
+}
+.menu {
+    display: flex;
+    gap: 20px; /* 選單項目之間的距離 */
+}
+```
+
+---
+
+# Part 2: CSS Grid
+
+<br>
+
+如果 Flexbox 是一條線，那 Grid 就是一張棋盤。
+它是最強大的排版系統，可以輕鬆畫出兩欄、三欄、甚至複雜的報紙版面。
+
+```css
+.container {
+    display: grid;
+    /* 定義三欄：200px, 自動, 100px */
+    grid-template-columns: 200px auto 100px;
+}
+```
+
+---
+
+# Grid 的單位：`fr`
+
+<br>
+
+`fr` 是 Grid 專用的單位，代表「剩餘空間的比例」。
+
+```css
+.container {
+    display: grid;
+    /* 切成三等份 (1:1:1) */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 第一欄佔 1 份，第二欄佔 2 份，第三欄佔 1 份 */
+    grid-template-columns: 1fr 2fr 1fr;
+    
+    gap: 20px; /* 格子之間的溝槽 */
+}
+```
+
+這種寫法比用 `%` 計算寬度快多了！
+
+---
+
+# Grid 區域
+
+<br>
+
+這招超像在畫 ASCII Art，非常直觀！
+
+```css
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+}
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+```
+
+---
+
+# RWD 響應式排版
+
+<br>
+
+配合 **Media Query**，我們可以輕鬆改變佈局。
+
+電腦版 (3欄)：
+```css
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+```
+
+手機版 (1欄)：
+```css
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr; /* 變成直的一排 */
+    }
+}
+```
+
+---
+
+# Flexbox vs Grid：怎麼選？
+
+<br>
+
+| 特性 | Flexbox | Grid |
 | :--- | :--- | :--- |
-| **完整性** | **40%** | 上述三個繳交項目是否齊全？ |
-| **視覺設計** | **30%** | Figma 的美感、配色、排版是否專業？ |
-| **技術實作** | **20%** | HTML 結構是否正確？標籤使用是否恰當？ |
-| **口頭報告** | **10%** | 簡報是否流暢？時間控制 (3分鐘)。 |
+| **維度** | 一維 (線) | 二維 (面) |
+| **對齊基礎** | 內容優先 | 版面優先 |
+| **適合場景** | 導覽列、按鈕組、卡片內的排版 | 整個網頁的架構、照片牆、複雜儀表板 |
+| **學習曲線** | 簡單 | 稍微複雜 |
+
+> **結論**：不要二選一，通常是**大架構用 Grid**，**小元件用 Flexbox**。
 
 ---
 
-# 報告流程
+# 實作練習：Holy Grail Layout
 
 <br>
 
-1.  **自我介紹** (10秒)。
-2.  **主題說明** (30秒)：為什麼做這個？給誰看？
-3.  **Figma 展示** (90秒)：
-    -   操作你的 Prototype。
-    -   講解你的設計巧思 (配色、排版)。
-4.  **程式碼展示** (30秒)：
-    -   打開 VS Code，秀出你的 index.html。
-    -   用 Live Server 開啟網頁。
-5.  **Q&A** (20秒)。
+請做出經典的網站架構：
+1.  **Header**：置頂，橫向填滿。
+2.  **Main Content**：中間三欄式 (左側邊欄、主內容、右側邊欄)。
+3.  **Footer**：置底，橫向填滿。
+
+**要求**：
+-   使用 Grid 劃分大區域。
+-   Header 裡面的 Logo 和選單使用 Flexbox 排列。
+-   在手機版時，側邊欄要變到主內容下方 (變成單欄)。
 
 ---
 
-# 繳交方式
+# 學習資源推薦
 
 <br>
 
--   請將所有檔案 (企劃書、程式碼資料夾) 壓縮成一個 `.zip` 檔。
--   檔名格式：`學號_姓名_期中專案.zip`。
--   Figma 請提供 **Share Link** (開啟 Anyone with the link - Can view)，並貼在作業繳交區的備註欄，或附在企劃書內。
+覺得很難記？玩遊戲學吧！
 
-**截止時間：本週上課結束前。**
+1.  **Flexbox Froggy** (青蛙過街)
+    -   用 css code 幫青蛙跳到荷葉上。
+2.  **Grid Garden** (種蘿蔔)
+    -   用 grid code 幫蘿蔔澆水。
+
+這兩個遊戲玩通關，你的排版功力就超過 80% 的工程師了。
 
 ---
 
-# 預祝各位 報告順利！
+# 下週預告
 
 <br>
 
-放輕鬆，把這幾個禮拜做的東西秀出來就好。
-如果有未完成的部分，誠實說明遇到的困難，也會有同情分數 (?)。
+現在我們的網頁在電腦看很漂亮，但在手機看可能就跑版了。
 
-加油！
+**響應式網頁設計 (RWD)**
+-   如何讓網頁適應手機、平板、桌面？
+-   深入 Media Queries。
+-   Flexbox 和 Grid 在 RWD 的應用。
+-   行動優先 (Mobile First) 的設計思維。
+
+準備拿出你的手機來測試網頁吧！
 
 ---

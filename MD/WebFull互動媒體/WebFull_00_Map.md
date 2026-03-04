@@ -65,7 +65,7 @@ table th:nth-child(2) {
 | W4 | Google Sites |
 | W5 | 靜態網站規劃與架構 |
 | W6 | UI/UX 設計導論 - Figma 基礎 |
-| W7 | 網頁原型製作 - Figma 實作 |
+| W7 | 進階無程式碼平台 - Wix |
 | W8 | 網頁結構基礎 - HTML |
 | **W9** | **期中考週 (Midterm)** |
 
@@ -91,11 +91,11 @@ table th:nth-child(2) {
 | 週次 | 主題 |
 | :---: | :--- |
 | W10 | 網頁樣式美化 - CSS |
-| W11 | 期中專案發表 |
-| W12 | 網頁排版佈局 - CSS Flexbox & Grid |
+| W11 | 網頁排版佈局 - CSS Flexbox & Grid |
+| W12 | 響應式網頁設計 (RWD) |
 | W13 | 程式邏輯入門 - JavaScript 基礎 |
 | W14 | 網頁互動實作 - DOM 操作與事件 |
-| W15 | 響應式網頁設計 (RWD) |
-| W16 | 進階無程式碼平台 - Wix |
+| W15 | 現代網頁製作 |
+| W16 | AI 開發神器 - Bolt.new |
 | W17 | 彈性教學與總結 |
 | **W18** | **期末考週 (Final)** |
