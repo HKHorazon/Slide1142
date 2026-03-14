@@ -19,7 +19,7 @@ style: |
 # 進階無程式碼平台 - Wix
 
 ## Horazon
-## 互動媒體設計 (一學期)
+## 互動媒體設計
 
 ---
 
@@ -54,8 +54,8 @@ style: |
 
 <br>
 
-前往 [wix.com](https://wix.com) 註冊。
-Wix 會問你很多問題，你可以選 **"Create a new site"**。
+前往 [https://wix.com](https://wix.com) 註冊。
+Wix 會問你很多問題，你可以選 **"建立新網站/Create a new site"**。
 
 這時會有兩條路：
 1.  **Wix ADI (人工智慧設計)**：回答幾個問題，AI 幫你生成網站 (太簡單，不推薦)。
@@ -81,6 +81,8 @@ Wix 會問你很多問題，你可以選 **"Create a new site"**。
 
 # Step 3: 新增元件 (Add Elements)
 
+<img src="image-1.png" style="position: absolute; right: 60px; top: 150px; width: 300px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
+
 <br>
 
 按下左上角的 `+` 號：
@@ -89,20 +91,24 @@ Wix 會問你很多問題，你可以選 **"Create a new site"**。
 -   **Image**：上傳自己的圖，或用 Wix 提供的免費圖庫。
 -   **Button**：各種樣式的按鈕，記得設定連結 (Link)。
 -   **Strip (長條)**：**重要！** 這是網頁的「區塊」。
-    -   建議把內容都放在 Strip 裡面，比較好管理背景圖和視差滾動效果。
+    -   建議把內容都放在 Strip 裡面，比較好管理
+    背景圖和視差滾動效果。
 
 ---
 
 # Step 4: 管理頁面 (Pages)
 
-<br>
 
 點擊左側的 **Pages & Menu**。
 
 -   **新增頁面**：Home, About, Portfolio, Contact。
 -   **調整順序**：拖拉改變導覽列的順序。
--   **隱藏頁面**：有些頁面不想出現在選單 (例如「感謝購買」頁)，可以設為 Hide。
+-   **隱藏頁面**：有些頁面不想出現在選單 (例如「感謝購買」頁)
+                ，可以設為 Hide。
 -   **子選單**：把頁面往右拖一點，變成 Dropdown Menu。
+
+
+<img src="image-2.png" style="position: absolute; right: 60px; top: 150px; width: 300px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
 
 ---
 
@@ -134,6 +140,8 @@ Wix 不是完全的 RWD (它不是用 % 計算)，它是**絕對定位**。
 
 -   雖然有點長，但它是免費的且全球可存取！
 -   你可以把它貼到 IG 自介或履歷表上。
+
+<img src="image-3.png" style="position: absolute; right: 60px; top: 250px; width: 500px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
 
 ---
 
@@ -174,4 +182,3 @@ Wix 不是完全的 RWD (它不是用 % 計算)，它是**絕對定位**。
 
 多多練習，熟悉各大模版與元件的運用！
 
----

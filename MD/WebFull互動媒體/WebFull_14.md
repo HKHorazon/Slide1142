@@ -19,7 +19,7 @@ style: |
 # AI 開發神器 - Bolt.new 
 
 ## Horazon
-## 互動媒體設計 (一學期)
+## 互動媒體設計
 
 ---
 
@@ -27,7 +27,7 @@ style: |
 
 <br>
 
-[**Bolt.new**](https://bolt.new/) 是一個由 StackBlitz 團隊開發的「**AI 驅動全端 Web 開發環境**」。
+[**Bolt.new (https://bolt.new/) **](https://bolt.new/) 是一個由 StackBlitz 團隊開發的「**AI 驅動全端 Web 開發環境**」。
 
 簡單來說：
 你只要在瀏覽器中打字跟 AI 聊天，告訴它你想做什麼網站，

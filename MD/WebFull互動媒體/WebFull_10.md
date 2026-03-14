@@ -19,7 +19,7 @@ style: |
 # 響應式網頁設計 (RWD)
 
 ## Horazon
-## 互動媒體設計 (一學期)
+## 互動媒體設計
 
 ---
 
@@ -199,13 +199,11 @@ Grid 更強大，直接改欄數。
     grid-template-columns: 1fr; /* 手機版：1欄 */
     gap: 10px;
 }
-
 @media (min-width: 576px) {
     .gallery {
         grid-template-columns: 1fr 1fr; /* 平板：2欄 */
     }
 }
-
 @media (min-width: 992px) {
     .gallery {
         grid-template-columns: 1fr 1fr 1fr 1fr; /* 電腦：4欄 */
@@ -246,6 +244,4 @@ Grid 更強大，直接改欄數。
 -   迴圈 (`for`)
 -   函式 (`function`)
 
-準備好你的邏輯腦，下週見！
 
----

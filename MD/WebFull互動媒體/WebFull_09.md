@@ -19,7 +19,7 @@ style: |
 # 網頁排版佈局 - CSS Flexbox & Grid
 
 ## Horazon
-## 互動媒體設計 (一學期)
+## 互動媒體設計
 
 ---
 
@@ -227,7 +227,11 @@ nav {
 
 # Flexbox vs Grid：怎麼選？
 
-<br>
+<style scoped>
+table {
+    font-size: 28px;
+}
+</style>
 
 | 特性 | Flexbox | Grid |
 | :--- | :--- | :--- |
@@ -264,8 +268,10 @@ nav {
 
 1.  **Flexbox Froggy** (青蛙過街)
     -   用 css code 幫青蛙跳到荷葉上。
+    -   [https://flexboxfroggy.com/ ](https://flexboxfroggy.com/)
 2.  **Grid Garden** (種蘿蔔)
     -   用 grid code 幫蘿蔔澆水。
+    -   [https://cssgridgarden.com/](https://cssgridgarden.com/)
 
 這兩個遊戲玩通關，你的排版功力就超過 80% 的工程師了。
 
@@ -283,6 +289,3 @@ nav {
 -   Flexbox 和 Grid 在 RWD 的應用。
 -   行動優先 (Mobile First) 的設計思維。
 
-準備拿出你的手機來測試網頁吧！
-
----

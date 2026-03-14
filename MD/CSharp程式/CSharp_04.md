@@ -175,9 +175,7 @@ Console.WriteLine(myName+" 的分數是 "+score+" 分");
 ---
 # 輸出技巧
 ```cs
-using System;
-
-var myName = "小明";
+string myName = "小明";
 int score = 95;
 
 Console.WriteLine(myName+" 的分數是 "+score+" 分");
@@ -205,6 +203,50 @@ Console.WriteLine($"{myName} 的分數是 {score} 分");
 int score = 100;    // 建立變數並給予初始值 100
 score = 80;         // 重新賦值為 80 (舊的 100 消失了)
 score = 50;         // 再次更換為 50
+```
+
+---
+
+<!-- Console.ReadLine() -->
+
+
+---
+# 取得使用者輸入 (Console.ReadLine)
+
+在寫程式時，我們經常需要依靠 **使用者輸入** 來改變變數的內容。
+`Console.ReadLine()` 是一個很好用的指令，它會暫停程式，**等待你在小黑窗輸入文字並按下** `Enter` **鍵**，最後將你輸入的內容儲存到變數中。
+
+```cs
+// 1. 提示使用者輸入 (使用 Write，字不會換行)
+Console.Write("請輸入你的名字：");
+
+// 2. 建立字串變數 myName，等待並接收使用者的輸入
+string myName = Console.ReadLine();
+
+// 3. 把使用者輸入的內容印出來
+Console.WriteLine($"哈囉，{myName}！歡迎來到 C# 的世界！");
+```
+
+---
+
+# 取得數字輸入 (進階內容)
+
+> ⚠️ **注意**：這部分對初學者來說稍微有點複雜，如果現在不懂沒關係。
+
+`Console.ReadLine()` 永遠只能取得 **「文字」(字串 String)**。
+如果你想要讓使用者輸入 **數字 (int)**，例如：年齡、身高，我們必須多做一個動作：**把文字轉換成數字**。
+
+```cs
+Console.WriteLine("請輸入你的年齡：");
+
+// 這是文字喔！例如輸入 "18"
+string inputAge = Console.ReadLine(); 
+
+// 關鍵語法！使用 int.Parse() 把文字變身成真正的數字
+//如果你看到別人使用 Convert.ToInt32()，也是可以的
+int age = int.Parse(inputAge);
+
+Console.WriteLine($"你明年就會變成 {age + 1} 歲囉！");
 ```
 
 ---

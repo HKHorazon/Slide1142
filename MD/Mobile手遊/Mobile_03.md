@@ -129,6 +129,21 @@ Unity 專案不是「單一個檔案」，而是一個「資料夾」。
 
 ---
 
+# 檢查與安裝 Tilemap 套件
+
+在開始使用之前，我們需要確認 Unity 專案是否有安裝 Tilemap 功能。
+
+1.  **如何檢查**：
+    -   點選上方選單 **Window** -> **Package Manager**。
+    -   將左上角的 Packages 切換為 **Unity Registry**。
+    -   在右側搜尋框輸入 `Tilemap` 或 `2D`。
+2.  **如何安裝**：
+    -   找到 **2D Tilemap Editor** 套件。
+    -   如果右下角有 **Install** 按鈕，請點選安裝並等待跑條完成。
+    -   如果顯示 **Remove** 或是右下角出現綠色打勾，代表已經安裝好了！
+
+---
+
 # Tilemap 四大天王
 
 要使用這套系統，你需要認識四個名詞：
@@ -323,7 +338,7 @@ Unity 預設只有 `Default` 圖層。我們來新增：
 
 今天我們學會了：
 
-1.  **Sprite** 圖片的匯入與設定 (PPU, Filter Mode)。
+1.  **Sprite** 圖片的匯入與設定 。
 2.  **Tile Palette** 製作與管理。
 3.  **Grid & Tilemap** 的父子關係。
 
