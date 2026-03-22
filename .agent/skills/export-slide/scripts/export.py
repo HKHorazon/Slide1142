@@ -108,6 +108,7 @@ def export_file(file_path, force=False):
         'marp', file_path,
         '--pdf',
         '--allow-local-files',
+        '--html',
         '--theme-set', DEFAULT_THEME,
         '-o', output_path
     ]
