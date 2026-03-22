@@ -46,18 +46,72 @@ style: |
 
 ---
 
-# 傳統做法 vs 現代做法
+# 傳統作法1
 
-### 以前 (Old School)：
--   自己寫 C# 腳本 `CameraFollow.cs`。
--   每一幀去抓玩家的座標 `transform.position`。
--   自己算平滑移動 `Vector3.Lerp`。
--   自己寫判斷不要超出邊界 `Mathf.Clamp`。
--   **太累了！又容易有 Bug。**
+最直覺的做法：把 **Camera 拖進 Player 的 Hierarchy 底下**。
 
-### 現在 (Modern)：
--   **Cinemachine**：Unity 官方推出的智慧攝影機系統。
--   **不用寫一行程式碼**，就能做到 3A 級的運鏡效果。
+-   Camera 成為 Player 的**子物件 (Child)**。
+-   子物件會自動跟隨父物件移動。
+-   Player 走到哪，Camera 就跟到哪。
+
+### 缺點：
+-   攝影機與角色**完全同步**，畫面沒有緩衝感，容易頭暈。
+-   角色旋轉時，Camera 也會跟著轉。
+-   無法設定邊界限制，玩家走到地圖外仍會跟著拍。
+
+
+---
+
+
+# 傳統作法2
+
+自己寫 C# 腳本 `CameraFollow.cs`，每幀追蹤玩家位置：
+
+```csharp
+public class CameraFollow : MonoBehaviour
+{
+    public Transform target;   // 拖入 Player
+    public float smoothSpeed = 0.1f;
+
+    void LateUpdate()
+    {
+        Vector3 target_pos = new Vector3(target.position.x, target.position.y, transform.position.z);
+        transform.position = Vector3.Lerp(transform.position, target_pos, smoothSpeed);
+    }
+}
+```
+-   還要自己加邊界 (`Mathf.Clamp`)、Dead Zone...
+
+---
+
+# 現代做法 : Cinemachine
+
+**Cinemachine** = **Cinema（電影）** + **Machine（機械）**
+
+這是 Unity 官方開發的智慧攝影機套件。
+靈感來自真實電影拍攝的運鏡技術，讓遊戲可以像電影一樣說故事。
+
+---
+
+# 電影運鏡 → 遊戲運鏡
+
+電影攝影師常用的技巧，Cinemachine 都內建了：
+
+-   **跟拍 (Follow Shot)**：攝影機跟著演員奔跑，保持距離感。
+    → Cinemachine 的 **Follow + Damping**。
+
+-   **特寫切換 (Close-up Cut)**：劇情關鍵時刻，鏡頭瞬間切到臉部。
+    → Cinemachine 的 **多機位 Priority 切換**。
+
+-   **震動鏡頭 (Shaky Cam)**：爆炸、撞擊時鏡頭晃動，增加衝擊感。
+    → Cinemachine 的 **Impulse**。
+
+-   **構圖留白**：跑酷片常把主角放在畫面左側，右邊留給前方視野。
+    → Cinemachine 的 **Screen X 偏移**。
+
+<br>
+
+**不用寫一行程式碼**，就能做到這些效果。
 
 ---
 
@@ -215,7 +269,7 @@ A:
 
 ---
 
-# 多機位切換 (Cutscenes)
+# 進階技巧：多機位切換 (Cutscenes)
 
 如果你想做過場動畫，比如特寫魔王出場。
 

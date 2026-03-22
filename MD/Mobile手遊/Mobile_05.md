@@ -228,5 +228,5 @@ if (hp <= 0)
     -   Edit -> Preferences -> External Tools -> 檢查 Editor 有沒有選 Visual Studio。
 -   Console 沒東西？
     -   檢查腳本有沒有**掛載**到場景物件上！(這是新手最常犯的錯)
-
-*(助教巡堂協助)*
+-   無法執行？
+    -   代表你掛載的腳本，有錯誤(bug)，必須修復才能執行

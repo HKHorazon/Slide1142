@@ -170,7 +170,7 @@ public class PlayerCollection : MonoBehaviour
 
 # 陷阱製作 (Trap)
 
-1.  找一張尖刺的圖片 (或用三角形 Sprite)。
+1.  找一張尖刺的圖片 。
 2.  製作成 **Trap Prefab**。
 3.  Tag 設為 `Trap`。
 4.  Collider 勾選 **Is Trigger**。
@@ -179,12 +179,10 @@ public class PlayerCollection : MonoBehaviour
 
 # 實作練習 4：死亡邏輯 (重來)
 
-在 `PlayerCollection` 最上方加入：
-`using UnityEngine.SceneManagement;`
+在 `PlayerCollection` 最上方加入： `using UnityEngine.SceneManagement;`
 
 修改 `OnTriggerEnter2D`：
 
----
 
 ```csharp
     void OnTriggerEnter2D(Collider2D other)
@@ -250,4 +248,3 @@ public class PlayerCollection : MonoBehaviour
     -   檢查 Player 有沒有掛 `PlayerCollection` 腳本。
     -   檢查 Player 有沒有 `Rigidbody 2D`。
 
-*(助教巡堂協助)*
