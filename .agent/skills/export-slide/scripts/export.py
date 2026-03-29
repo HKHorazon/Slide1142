@@ -206,27 +206,18 @@ def generate_index_html():
                 priority = 1 if "HW" in file else 0
                 categories_data[category_folder]["data"].append((priority, file, formatted_name, rel_link))
 
-    # Also scan for .html files in INPUT_ROOT_DIR (e.g. MD/Special/Links.html)
-    for root, dirs, files in os.walk(INPUT_ROOT_DIR):
-        for file in files:
+    # Also scan for custom .html files in DISPLAY_DIR (e.g. display/Links.html)
+    if os.path.exists(DISPLAY_DIR):
+        for file in os.listdir(DISPLAY_DIR):
             if file.endswith('.html') and file != 'index.html':
-                full_path = os.path.join(root, file)
+                full_path = os.path.join(DISPLAY_DIR, file)
                 
-                # Calculate paths
-                display_abs = os.path.abspath(DISPLAY_DIR)
-                html_abs = os.path.abspath(full_path)
-                try:
-                    rel_link = os.path.relpath(html_abs, display_abs)
-                    rel_link = rel_link.replace(os.sep, '/')
-                except ValueError:
-                    rel_link = html_abs
+                # Relative link is simply the filename since index.html is in the same folder
+                rel_link = file
                 
-                # Determine Category
-                rel_root = os.path.relpath(root, INPUT_ROOT_DIR)
-                if rel_root == '.':
-                    category_folder = "Uncategorized"
-                else:
-                    category_folder = rel_root
+                # Determine Category - Custom HTMLs in display/ usually go to "Special" or similar
+                # Let's check if it came from MD/ folder originally or just use a default
+                category_folder = "Special" # Default for display manual files
                 
                 if category_folder not in categories_data:
                     categories_data[category_folder] = {
@@ -234,9 +225,6 @@ def generate_index_html():
                         "settings": get_category_settings(category_folder)
                     }
                 
-                if not categories_data[category_folder]["settings"]["IsDisplay"]:
-                    continue
-
                 # Try to get title from <title> tag
                 title = None
                 try:
