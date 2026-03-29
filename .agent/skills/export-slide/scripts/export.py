@@ -213,7 +213,8 @@ def generate_index_html():
                 full_path = os.path.join(DISPLAY_DIR, file)
                 
                 # Relative link is simply the filename since index.html is in the same folder
-                rel_link = file
+                # Using ./ prefix to help make_index.py identify and replace it for root index
+                rel_link = f"./{file}"
                 
                 # Determine Category - Custom HTMLs in display/ usually go to "Special" or similar
                 # Let's check if it came from MD/ folder originally or just use a default
