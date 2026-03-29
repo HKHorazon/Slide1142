@@ -27,6 +27,7 @@ def make_index():
             
             # Adjust links for root location
             content = content.replace('../PDF', 'PDF')
+            content = content.replace('../MD', 'MD')
             
             with open(root_index, "w", encoding="utf-8") as f:
                 f.write(content)
