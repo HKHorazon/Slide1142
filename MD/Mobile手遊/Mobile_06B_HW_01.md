@@ -15,11 +15,11 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 
-### Homework 1
+### Midterm  Homework
 
-# 手機程式設計
-## 課後作業 作業一
-## (範圍：Ch.1 - Ch.6)
+# 期中作業
+## 期中作業
+
 
 ---
 

@@ -68,6 +68,7 @@ style: |
 自己寫 C# 腳本 `CameraFollow.cs`，每幀追蹤玩家位置：
 
 ```csharp
+
 public class CameraFollow : MonoBehaviour
 {
     public Transform target;   // 拖入 Player
@@ -79,6 +80,7 @@ public class CameraFollow : MonoBehaviour
         transform.position = Vector3.Lerp(transform.position, target_pos, smoothSpeed);
     }
 }
+
 ```
 -   還要自己加邊界 (`Mathf.Clamp`)、Dead Zone...
 
@@ -118,7 +120,7 @@ public class CameraFollow : MonoBehaviour
 # 安裝 Cinemachine
 
 Cinemachine 是一個 Package，需要透過 Package Manager 安裝。
-*(註：Unity 2021 以後的 2D 模板通常預裝了，如果沒有請照做)*
+*(有可能預裝，如果沒有請照做)*
 
 1.  上方選單 **Window** -> **Package Manager**。
 2.  左上角切換為 **Unity Registry**。
@@ -218,7 +220,7 @@ Cinemachine 最強大的地方在於它的跟隨邏輯。
 
 # 邊界限制 (Confiner)
 
-我們不希望玩家看到地圖外面的藍色虛空 (Blue Void)。
+我們不希望玩家看到地圖外面的藍色虛空。
 我們需要限制攝影機的移動範圍。
 
 使用 **Cinemachine Confiner 2D** 擴充功能。
