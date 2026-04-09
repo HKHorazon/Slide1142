@@ -114,7 +114,9 @@ def export_file(file_path, force=False):
     ]
 
     try:
-        subprocess.run(command, check=True)
+        # 在 Windows 環境下，直接執行 .cmd 檔案需要加上 shell=True
+        is_windows = sys.platform.startswith('win')
+        subprocess.run(command, check=True, shell=is_windows)
         print(f"[Done] Success!")
     except subprocess.CalledProcessError as e:
         print(f"[Error] Failed to export {file_path}: {e}")
