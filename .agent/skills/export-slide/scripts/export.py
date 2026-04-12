@@ -105,11 +105,12 @@ def export_file(file_path, force=False):
     print(f"[Exporting] {file_path} -> {output_path}")
 
     command = [
-        'marp', file_path,
+        'npx', '@marp-team/marp-cli', file_path,
         '--pdf',
         '--allow-local-files',
         '--html',
         '--theme-set', DEFAULT_THEME,
+        '--no-stdin',
         '-o', output_path
     ]
 
