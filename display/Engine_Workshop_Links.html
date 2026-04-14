@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Engine & Production Workshop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #8b5cf6;
+            --primary-hover: #7c3aed;
+            --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-gradient);
+            background-attachment: fixed;
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 48px 32px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(139, 92, 246, 0.1);
+            color: #c4b5fd;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.description {
+            color: #94a3b8;
+            font-size: 1.125rem;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: white;
+            padding: 18px 32px;
+            border-radius: 16px;
+            font-weight: 600;
+            font-size: 1.125rem;
+            text-decoration: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 10px 15px -3px rgba(139, 92, 246, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgba(139, 92, 246, 0.4);
+        }
+
+        .btn-primary svg {
+            margin-right: 12px;
+        }
+
+        footer {
+            margin-top: 48px;
+            color: #64748b;
+            font-size: 0.875rem;
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        footer strong {
+            color: #94a3b8;
+            font-weight: 600;
+        }
+
+        .logo-placeholder {
+            margin-bottom: 24px;
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(45deg, #8b5cf6, #ec4899);
+            border-radius: 16px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 24px;
+            color: white;
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 2rem; }
+            .card { padding: 32px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="logo-placeholder">G</div>
+            <span class="badge">Session Material</span>
+            <h1>Game Engine & Production</h1>
+            <p class="description">Digital Sandbox: Exploring Computer Graphics, Physics Simulation, and Game Development Logic.</p>
+            
+            <div class="button-group">
+                <a href="../PDF/Special/Game_Workshop_EngineEN.pdf" class="btn-primary" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="12" y1="18" x2="12" y2="12"></line>
+                        <polyline points="9 15 12 12 15 15"></polyline>
+                    </svg>
+                    Download Presentation (PDF)
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <strong>Horazon</strong><br>
+            Dept. of Multimedia Game Development and Application<br>
+            Hungkuang University
+        </footer>
+    </div>
+</body>
+</html>
