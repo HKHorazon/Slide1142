@@ -321,12 +321,12 @@ img:nth-of-type(3) { right: 20px; }
 ---
 <style scoped>
   table {
-    width: 1000px;
+    width: 900px;
     border-collapse: collapse;
     font-size: 1em;
   }
   th{
-    width:250px;
+    width:300px;
   }
 </style>
 
@@ -356,9 +356,12 @@ img:nth-of-type(3) { right: 20px; }
   th{
     width:250px;
   }
-  td:nth-child(4), th:nth-child(4) {
+  td:nth-child(3), th:nth-child(3) {
+    width:150px
+  }
+  td:nth-child(2), th:nth-child(2), td:nth-child(4), th:nth-child(4) {
     text-align: right !important;
-    width:200px
+    width:230px
   }
 </style>
 
