@@ -241,7 +241,7 @@ img:nth-of-type(2) { right: 20px; }
 <style scoped>
 img {
   position: absolute;
-  object-fit: contain;
+  object-fit: cover;
   top: 110px;
   height: 560px;
   width: 400px;
@@ -261,7 +261,7 @@ img:nth-of-type(3) { right: 20px; }
 <style scoped>
 img {
   position: absolute;
-  object-fit: contain;
+  object-fit: cover;
   top: 110px;
   height: 560px;
   width: 400px;
@@ -280,7 +280,7 @@ img:nth-of-type(3) { right: 20px; }
 <style scoped>
 img {
   position: absolute;
-  object-fit: contain;
+  object-fit: cover;
   top: 110px;
   height: 560px;
   width: 400px;
