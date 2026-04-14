@@ -32,6 +32,27 @@ style: |
 
 ---
 
+# 本投影片連結
+
+<style scoped>
+  p {
+    font-size: 1.1em;
+    color: #be185d;
+  }
+  img {
+    display: block;
+    margin: 16px auto 0;
+    width: 400px;
+    height: 400px;
+  }
+</style>
+
+https://hkhorazon.github.io/Slide1142/PDF/Special/Japan2026.pdf
+![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://hkhorazon.github.io/Slide1142/PDF/Special/Japan2026.pdf)
+
+
+---
+
 <style scoped>
   table {
     width: 1000px;
@@ -319,9 +340,9 @@ img:nth-of-type(3) { right: 20px; }
 
 <br>
 
-| 人數 | 10人 | 12人 | 14人 | 
-| :--- | :--- | :--- | :--- | 
-| 補助金額| 6,500元 | 5,417元 | 4,643元 | 
+| 人數 | 10人 | 12人 | 
+| :--- | :--- | :--- | 
+| 補助金額| 6,500元 | 5,417元 | 
 
 
 
