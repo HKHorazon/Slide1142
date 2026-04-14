@@ -165,7 +165,7 @@ img {
 <style scoped>
 img {
   position: absolute;
-  object-fit: contain;
+  object-fit: cover;
   width: 610px;
   height: 280px;
 }
@@ -191,8 +191,8 @@ img {
   height: 560px;
   width: 610px;
 }
-img:nth-of-type(1) { left: 20px; }
-img:nth-of-type(2) { right: 20px; }
+img:nth-of-type(1) { left: 90px; }
+img:nth-of-type(2) { right: 90px; }
 </style>
 
 # 新宿
@@ -228,8 +228,8 @@ img {
   height: 560px;
   width: 610px;
 }
-img:nth-of-type(1) { left: 20px; }
-img:nth-of-type(2) { right: 20px; }
+img:nth-of-type(1) { left: 90px; }
+img:nth-of-type(2) { right: 90px; }
 </style>
 
 # 三鷹之森吉卜力美術館
