@@ -70,7 +70,6 @@ style: |
 | 製作方式 | 加分比例 |
 | :--- | :--- |
 | [Wix](https://www.wix.com/) | +15% |
-| [Bolt.new](https://bolt.new/) | +15% |
 | [Google Sites](https://sites.google.com/) | +5% |
 | [Canva](https://www.canva.com/) | +0% |
 | 其他方式 | 視情況而定|

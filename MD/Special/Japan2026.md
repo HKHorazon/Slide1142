@@ -20,18 +20,12 @@ style: |
   }
 
 ---
-<style scoped>
-h1{
-  font-size:3em;
-}
-</style>
-
 
 <!-- _class: lead -->
 <!--_paginate: false-->
 
 ### 
-# 2026 日本短期研習遊學行程
+# 2026 日本遊學行程規劃
 
 ## Horazon
 ## 弘光科技大學 多媒體與遊戲發展系
@@ -76,8 +70,6 @@ h1{
 # 行程總覽 
 
 
-六天五夜行程，實際活動有可能小幅調整。
-
 | 日期 | 上午 | 下午 | 晚上 | 住宿 |
 | :--- | :--- | :--- | :--- | :--- |
 | 9/6 | 出發 (桃園機場) | 抵達東京機場 | 新宿探索 | 新宿 |
@@ -87,18 +79,6 @@ h1{
 | 9/10 | 淺草寺 | 晴空塔 | 自由行動 | 上野 |
 | 9/11 | 退房 | 前往機場 | 歸途 (桃園機場) | 台灣家裡 |
 
-
----
-
-# 東京地鐵圖
-
-![alt text width:850px center](image-15.png)
-
----
-
-# 東京地鐵圖2
-
-![alt text center width:1300px](image-16.png)
 
 ---
 
@@ -165,6 +145,157 @@ img:nth-of-type(2) {
 ![](./hotel_ueno.jpg)
 ![](image-13.png)
 
+---
+<style scoped>
+img {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 550px;
+  object-fit: contain;
+}
+</style>
+
+# 出發
+
+![alt text](<LINE_ALBUM_2025 0831第一天相簿_260414_3.jpg>)
+
+---
+<style scoped>
+img {
+  position: absolute;
+  object-fit: contain;
+  width: 610px;
+  height: 280px;
+}
+img:nth-of-type(1) { left: 20px;  top: 110px; }
+img:nth-of-type(2) { right: 20px; top: 110px; }
+img:nth-of-type(3) { left: 20px;  bottom: 20px; }
+img:nth-of-type(4) { right: 20px; bottom: 20px; }
+</style>
+
+# 課程
+
+![alt text](LINE_ALBUM_200250901第二天_260414_2.jpg)
+![alt text](<LINE_ALBUM_2025 0902第三天_260414_2.jpg>)
+![alt text](LINE_ALBUM_20250903第四天_260414_2.jpg)
+![alt text](LINE_ALBUM_20250903第四天_260414_3.jpg)
+
+---
+<style scoped>
+img {
+  position: absolute;
+  object-fit: contain;
+  top: 110px;
+  height: 560px;
+  width: 610px;
+}
+img:nth-of-type(1) { left: 20px; }
+img:nth-of-type(2) { right: 20px; }
+</style>
+
+# 新宿
+
+![alt text](<LINE_ALBUM_2025 0831第一天相簿_260414_2.jpg>)
+![alt text](<LINE_ALBUM_2025 0831第一天相簿_260414_1.jpg>)
+
+
+---
+<style scoped>
+img {
+  position: absolute;
+  object-fit: contain;
+  top: 110px;
+  height: 560px;
+  width: 610px;
+}
+img:nth-of-type(1) { left: 20px; }
+img:nth-of-type(2) { right: 20px; }
+</style>
+
+# 原宿
+![alt text](<LINE_ALBUM_2025 0902第三天_260414_3.jpg>)
+![alt text](<LINE_ALBUM_2025 0902第三天_260414_1.jpg>)
+
+
+---
+<style scoped>
+img {
+  position: absolute;
+  object-fit: contain;
+  top: 110px;
+  height: 560px;
+  width: 610px;
+}
+img:nth-of-type(1) { left: 20px; }
+img:nth-of-type(2) { right: 20px; }
+</style>
+
+# 三鷹之森吉卜力美術館
+
+![alt text](LINE_ALBUM_200250901第二天_260414_1.jpg)
+![alt text](LINE_ALBUM_200250901第二天_260414_3.jpg)
+
+---
+<style scoped>
+img {
+  position: absolute;
+  object-fit: contain;
+  top: 110px;
+  height: 560px;
+  width: 400px;
+}
+img:nth-of-type(1) { left: 20px; }
+img:nth-of-type(2) { left: 440px; }
+img:nth-of-type(3) { right: 20px; }
+</style>
+
+# 晴空塔
+![alt text](<LINE_ALBUM_2025 0904第五天_260414_4-1.jpg>) 
+![alt text](LINE_ALBUM_20250904第五天，早上淺草寺，中午晴空塔美食街用餐，下午葛飾區烏龍派出所_260414-1.jpg)
+![alt text](<LINE_ALBUM_2025 0904第五天_260414_6.jpg>)
+
+--- 
+
+<style scoped>
+img {
+  position: absolute;
+  object-fit: contain;
+  top: 110px;
+  height: 560px;
+  width: 400px;
+}
+img:nth-of-type(1) { left: 20px; }
+img:nth-of-type(2) { left: 440px; }
+img:nth-of-type(3) { right: 20px; }
+</style>
+
+# 上野 / 淺草寺
+![alt text](<LINE_ALBUM_2025 0904第五天_260414_1.jpg>) 
+![alt text](LINE_ALBUM_20250903第四天_260414_1.jpg) 
+![alt text](LINE_ALBUM_20250904第五天，早上淺草寺，中午晴空塔美食街用餐，下午葛飾區烏龍派出所_260414B-1.jpg)
+
+---
+<style scoped>
+img {
+  position: absolute;
+  object-fit: contain;
+  top: 110px;
+  height: 560px;
+  width: 400px;
+}
+img:nth-of-type(1) { left: 20px; }
+img:nth-of-type(2) { left: 440px; }
+img:nth-of-type(3) { right: 20px; }
+</style>
+
+# 秋葉原
+
+![alt text](<LINE_ALBUM_2025 0904第五天_260414_3.jpg>) 
+![alt text](圖片1.jpg) 
+![alt text](<LINE_ALBUM_2025 0904第五天_260414_5.jpg>)
+
 
 ---
 <style scoped>
@@ -177,6 +308,7 @@ img:nth-of-type(2) {
     width:250px;
   }
 </style>
+
 # 學校補助金額
 
 總計金額 120,000元，皆用於學生
@@ -196,19 +328,12 @@ img:nth-of-type(2) {
 ---
 <style scoped>
   table {
-    width: 900px;
+    width: 1000px;
     border-collapse: collapse;
     font-size: 1em;
   }
   th{
     width:250px;
-  }
-  td:nth-child(2), th:nth-child(2) {
-    text-align: right !important;
-    width:200px
-  }
-  td:nth-child(3), th:nth-child(3) {
-    width:100px
   }
   td:nth-child(4), th:nth-child(4) {
     text-align: right !important;
@@ -223,7 +348,7 @@ img:nth-of-type(2) {
 | 來回機票 | 22,000 元 | 來回 | 22,000 元 |
 | 新宿住宿 | 3,000 元 | 3 | 9,000 元 |
 | 上野住宿 | 2,000 元 | 2 | 4,000 元 |
-| 補助 | -5,500 元 | 每人 | -5,500 元 |
+| 補助 | -5,500 | 每人 | -5,500 元 |
 | 雜費 |  | 每人 | 500 元 |
 | 總和 |  |  |  30,000 元 |   
 
@@ -246,6 +371,7 @@ img:nth-of-type(2) {
 
 
 ---
+
 
 <style scoped>
   strong {
@@ -344,9 +470,11 @@ img:nth-of-type(2) {
 
 # 回程配合事項
 
+- **照片及影片**：會請大家提供旅程紀錄。
+
 - **學生心得報告**：回程後需要撰寫心得報告與填寫問卷，請務必配合。
 
-- **其他活動**：可能會有其活動(如：採訪活動) 須配合，請同意才報名。
+- **其他活動**：開學後可能會有其他活動(如：採訪) 須配合，請同意才報名。
 
 
 ---
@@ -385,13 +513,15 @@ img:nth-of-type(2) {
 
 <div class="qr-grid">
   <div class="qr-card">
-    <a href="https://line.me/R/ti/g/kAhR3bjrRh">Line群</a><br/>
+    <a href="https://line.me/R/ti/g/kAhR3bjrRh">Line群</a>
+    <br/>四月30日
+    <br/>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://line.me/R/ti/g/kAhR3bjrRh" alt="Line群 QR Code" />
   </div>
 
   <div class="qr-card">
     <a href="https://forms.gle/5XPw4Q74jRwzARZK7">系上報名表</a>
-    <br/>四月底
+    <br/>四月30日
     <br/>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://forms.gle/5XPw4Q74jRwzARZK7" alt="系上報名表 QR Code" />
   </div>
