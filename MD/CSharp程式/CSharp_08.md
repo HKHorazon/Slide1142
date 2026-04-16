@@ -1,6 +1,5 @@
 ---
 marp: true
-
 theme: HoraStyle
 paginate: true
 style: |
@@ -294,35 +293,6 @@ for (int i = 0; i < nums.Length - 1; i++)
 Console.WriteLine(string.Join(", ", nums));
 ```
 
----
-<!--簡單介紹一下 資料結構 & 演算法-->
----
-
-# 常見範例 3 : 選擇排序法
-
-用程式碼模擬從小到大排序的過程。
-
-`cs
-int[] nums = { 10, 5, 40, 30, 20 };
-
-for (int i = 0; i < nums.Length - 1; i++)
-{
-    int minIndex = i;
-    for (int j = i + 1; j < nums.Length; j++)
-    {
-        if (nums[j] < nums[minIndex])
-        {
-            minIndex = j;
-        }
-    }
-    // 交換最小值
-    int temp = nums[i];
-    nums[i] = nums[minIndex];
-    nums[minIndex] = temp;
-}
-
-Console.WriteLine(string.Join(", ", nums));
-`
 
 ---
 
@@ -334,7 +304,7 @@ Console.WriteLine(string.Join(", ", nums));
   - 範例：**陣列 (Array)**。
 
 - **演算法 (Algorithm)**：
-  - 解決問題的明確步驟與流程。s
+  - 解決問題的明確步驟與流程。
   - 就像是：**食譜**、**組裝說明書**。
   - 範例：**排序 (Sort)**、**搜尋 (Search)**。
 
