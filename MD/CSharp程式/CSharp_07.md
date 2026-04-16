@@ -58,7 +58,7 @@ while (條件運算式)
         translate: 850px -300px
     }
 </style>
-![While Flowchart](../../MERMAID/IMAGE/while.png)
+![While Flowchart](../../IMAGE/CSharp程式/CSharp_07/CSharp_07_While Flowchart.png)
 
 ---
 
@@ -98,7 +98,7 @@ do
         translate: 850px -250px
     }
 </style>
-![Do-While Flowchart](../../MERMAID/IMAGE/do_while.png)
+![Do-While Flowchart](../../IMAGE/CSharp程式/CSharp_07/CSharp_07_Do-While Flowchart.png)
 
 ---
 
@@ -139,7 +139,7 @@ for (初始化; 條件; 迭代)
         translate: 850px -300px
     }
 </style>
-![For Flowchart](../../MERMAID/IMAGE/for.png)
+![For Flowchart](../../IMAGE/CSharp程式/CSharp_07/CSharp_07_For Flowchart.png)
 
 ---
 

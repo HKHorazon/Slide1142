@@ -81,7 +81,7 @@ Wix 會問你很多問題，你可以選 **"建立新網站/Create a new site"**
 
 # Step 3: 新增元件 (Add Elements)
 
-<img src="image-1.png" style="position: absolute; right: 60px; top: 150px; width: 300px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
+<img src="../../IMAGE/WebHalf互動媒體/Web_09/Web_09_01.png" style="position: absolute; right: 60px; top: 150px; width: 300px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
 
 <br>
 
@@ -108,7 +108,7 @@ Wix 會問你很多問題，你可以選 **"建立新網站/Create a new site"**
 -   **子選單**：把頁面往右拖一點，變成 Dropdown Menu。
 
 
-<img src="image-2.png" style="position: absolute; right: 60px; top: 150px; width: 300px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
+<img src="../../IMAGE/WebHalf互動媒體/Web_09/Web_09_02.png" style="position: absolute; right: 60px; top: 150px; width: 300px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
 
 ---
 
@@ -141,7 +141,7 @@ Wix 不是完全的 RWD (它不是用 % 計算)，它是**絕對定位**。
 -   雖然有點長，但它是免費的且全球可存取！
 -   你可以把它貼到 IG 自介或履歷表上。
 
-<img src="image-3.png" style="position: absolute; right: 60px; top: 250px; width: 500px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
+<img src="../../IMAGE/WebHalf互動媒體/Web_09/Web_09_03.png" style="position: absolute; right: 60px; top: 250px; width: 500px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
 
 ---
 

@@ -75,7 +75,7 @@ Word、Excel
 
 # 程式語言學習曲線
 
-![Ranking](../../IMAGE/CSharp/Ch1/CSharp_Ch01_04.png)
+![Ranking](../../IMAGE/CSharp程式/CSharp_01/CSharp_01_Ranking.png)
 
 ---
 

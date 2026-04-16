@@ -184,7 +184,7 @@ Scripts/UI/MenuPanel.cs
 # 流程圖
 
 
-![drop-shadow width:1000](../../IMAGE/Project_112音樂遊戲/Flowchart.png)
+![drop-shadow width:1000](../../IMAGE/Project_112/Project_112音樂遊戲/Project_112音樂遊戲_drop-shadow width1000.png)
 
 ---
 # 場景與UI程式1
@@ -229,7 +229,7 @@ Scripts/UI/MenuPanel.cs
 
 所有製作請用1920x1080中出現大小製作
 
-![bg right drop-shadow width:620](../../IMAGE/Project_112音樂遊戲/BG.png)
+![bg right drop-shadow width:620](../../IMAGE/Project_112/Project_112音樂遊戲/Project_112音樂遊戲_bg right drop-shadow width620.png)
 
 ---
 
@@ -246,7 +246,7 @@ Scripts/UI/MenuPanel.cs
 所有製作請用1920x1080中出現大小製作
 
 
-![bg right drop-shadow width:550](../../IMAGE/Project_112音樂遊戲/CHAR.png)
+![bg right drop-shadow width:550](../../IMAGE/Project_112/Project_112音樂遊戲/Project_112音樂遊戲_bg right drop-shadow width550.png)
 
 ---
 

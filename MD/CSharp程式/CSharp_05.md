@@ -65,7 +65,7 @@ str = "Hi";
 運算元 (operand)
 運算子 (operator)
 
-&nbsp; &nbsp; &nbsp; ![drop-shadow](../../IMAGE/CSharp/Ch5/CSharp_Ch05_01.png)
+&nbsp; &nbsp; &nbsp; ![drop-shadow](../../IMAGE/CSharp程式/CSharp_05/CSharp_05_drop-shadow.png)
 
 由於乘法有兩個運算元，則屬於二元運算子 (binary operator)
 
@@ -108,7 +108,7 @@ img {
   translate: 400px -650px;
 }
 </style>
-![小駝峰式](../../IMAGE/CSharp/Ch4/CSharp_Ch04_03.jpeg)
+![小駝峰式](../../IMAGE/CSharp程式/CSharp_05/CSharp_05_小駝峰式.jpeg)
 
 
 ---

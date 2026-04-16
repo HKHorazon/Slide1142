@@ -125,7 +125,7 @@ Unity 內建了強大的物理引擎 (Box2D)。
 -   **Mass**：質量 (越重越難推)。
 -   **Gravity Scale**：重力倍率 (1=地球重力，0=無重力)。
 
-<img src="../../IMAGE/Mobile/Ch4/image-11.png" style="position: absolute; right: 50px; top: 150px; width: 400px;">
+<img src="../../IMAGE/Mobile手遊/Mobile_04/Mobile_04_01.png" style="position: absolute; right: 50px; top: 150px; width: 400px;">
 
 ---
 
@@ -168,7 +168,7 @@ Unity 內建了強大的物理引擎 (Box2D)。
 -   **Capsule Collider 2D**：膠囊形 (最適合**人類角色**)。
 -   **Polygon Collider 2D**：多邊形 (不規則地形)。
 
-<img src="../../IMAGE/Mobile/Ch4/image-12.png" style="position: absolute; right: 50px; top: 450px; width: 450px;">
+<img src="../../IMAGE/Mobile手遊/Mobile_04/Mobile_04_02.png" style="position: absolute; right: 50px; top: 450px; width: 450px;">
 
 ---
 

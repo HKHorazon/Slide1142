@@ -34,7 +34,7 @@ https://visualstudio.microsoft.com/zh-hant/downloads/
 # 開啟專案
 #### 在初學程式的時候，我們使用較純粹的方式來學習
 #### 主控台應用程式 (必須選擇C#)
-![開啟專案](../../IMAGE/CSharp/Ch3/CSharp_Ch03_02.png)
+![開啟專案](../../IMAGE/CSharp程式/CSharp_03/CSharp_03_開啟專案.png)
 
 開啟時會要求你決定名稱，及一些其他設定(可忽略)
 
@@ -47,7 +47,7 @@ img {
   translate: 0 -20px
 }
 </style>
-![IDE展示](../../IMAGE/CSharp/Ch3/CSharp_Ch03_13.png)
+![IDE展示](../../IMAGE/CSharp程式/CSharp_03/CSharp_03_IDE展示.png)
 
 ---
 # Visual Studio 主要介面
@@ -89,12 +89,12 @@ Console.WriteLine("Hello, World!");
 ```
 按下<mark>執行按鈕</mark>，
 
-![執行按鈕](../../IMAGE/CSharp/Ch3/CSharp_Ch03_05.png)
+![執行按鈕](../../IMAGE/CSharp程式/CSharp_03/CSharp_03_執行按鈕.png)
 
 <br>
 
 你就會看到Hello, World! 文字
-![結果](../../IMAGE/CSharp/Ch3/CSharp_Ch03_14.png)
+![結果](../../IMAGE/CSharp程式/CSharp_03/CSharp_03_結果.png)
 
 ---
 # 程式碼：註解

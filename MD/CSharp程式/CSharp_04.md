@@ -155,7 +155,7 @@ img[alt="小駝峰式"] {
   width: 250px;
 }
 </style>
-![小駝峰式](../../IMAGE/CSharp/Ch3/CSharp_Ch03_12.png)
+![小駝峰式](../../IMAGE/CSharp程式/CSharp_04/CSharp_04_小駝峰式.png)
 
 ---
 
@@ -313,4 +313,4 @@ img {
   translate: 0 -50px;
 }
 </style>
-![溢位例外](../../IMAGE/CSharp/Ch3/CSharp_Ch03_10.png)
+![溢位例外](../../IMAGE/CSharp程式/CSharp_04/CSharp_04_溢位例外.png)

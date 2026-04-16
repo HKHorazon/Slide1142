@@ -161,7 +161,7 @@ Figma Sites 提供了大量預設的模組，讓你不必從零手刻：
     -   **Navigation**：上方的導覽列清單。
     -   **Features**：產品或服務特色介紹區塊。
 
-<img src="../../IMAGE/Web/Ch5/image-1.png" style="position: absolute; right: 60px; top: 110px; width: 300px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
+<img src="../../IMAGE/WebFull互動媒體/WebFull_05/WebFull_05_01.png" style="position: absolute; right: 60px; top: 110px; width: 300px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
 
 ---
 
@@ -196,7 +196,7 @@ Figma Sites 提供了大量預設的模組，讓你不必從零手刻：
 
 </div>
 
-<img src="../../IMAGE/Web/Ch5/image-2.png" style="position: absolute; right: 60px; top: 150px; width: 200px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
+<img src="../../IMAGE/WebFull互動媒體/WebFull_05/WebFull_05_02.png" style="position: absolute; right: 60px; top: 150px; width: 200px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
 
 
 ---
@@ -211,7 +211,7 @@ Figma Sites 提供了大量預設的模組，讓你不必從零手刻：
 -   **Preview (預覽)**：點擊 `▶` 旁邊的小箭頭下拉選單，選擇 **Inline Preview** (`Shift + Space`)，會直接在畫布上浮現一個小視窗，適合邊改邊看互動效果。
 -   這對於測試 Hover 或確認 Breakpoints 有沒有跑版非常有幫助！
 
-<img src="../../IMAGE/Web/Ch5/image-3.png" style="position: absolute; right: 60px; top: 150px; width: 300px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
+<img src="../../IMAGE/WebFull互動媒體/WebFull_05/WebFull_05_03.png" style="position: absolute; right: 60px; top: 150px; width: 300px; border-radius: 10px; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
 
 ---
 

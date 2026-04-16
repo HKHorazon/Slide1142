@@ -178,7 +178,7 @@ th:nth-child(4) { width: 80%; } /* 說明 */
 3.  **Border** (邊框)：盒子的框線。
 4.  **Margin** (外距)：盒子與盒子之間的距離。
 
-![盒子模型 center w:300px](../../IMAGE/Web/Ch8/Web_Ch08_02.png)
+![盒子模型 center w:300px](../../IMAGE/WebHalf互動媒體/Web_05/Web_05_盒子模型 center w300px.png)
 
 ---
 

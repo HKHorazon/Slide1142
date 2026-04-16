@@ -133,8 +133,8 @@ img:nth-of-type(2) {
 * **交通便捷**：JR新宿站東口步行約 5 分鐘；西武新宿站步行 3 分鐘。
 * **標準雙人房**：約 NT$ 6,000 - 8,000 / 晚。
 
-![](image-12.png)
-![](./hotel_shinjuku.jpg)
+![](../../IMAGE/Special/Japan2026/Japan2026_01.png)
+![](../../IMAGE/Special/Japan2026/Japan2026_02.jpg)
 
 
 ----
@@ -166,8 +166,8 @@ img:nth-of-type(2) {
 * **交通便捷**：JR上野站「入谷口」步行僅 2 分鐘；京成上野站（往返成田機場）步行 8 分鐘。
 * **標準雙人房**：約 NT$ 3,500 - 4,500 / 晚。
 
-![](./hotel_ueno.jpg)
-![](image-13.png)
+![](../../IMAGE/Special/Japan2026/Japan2026_03.jpg)
+![](../../IMAGE/Special/Japan2026/Japan2026_04.png)
 
 ---
 <style scoped>
@@ -183,7 +183,7 @@ img {
 
 # 出發
 
-![alt text](<LINE_ALBUM_2025 0831第一天相簿_260414_3.jpg>)
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_06.jpg>)
 
 ---
 <style scoped>
@@ -201,10 +201,10 @@ img:nth-of-type(4) { right: 20px; bottom: 20px; }
 
 # 課程
 
-![alt text](LINE_ALBUM_200250901第二天_260414_2.jpg)
-![alt text](<LINE_ALBUM_2025 0902第三天_260414_2.jpg>)
-![alt text](LINE_ALBUM_20250903第四天_260414_2.jpg)
-![alt text](LINE_ALBUM_20250903第四天_260414_3.jpg)
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text.jpg>)
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_10.jpg>)
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_12.jpg>)
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_14.jpg>)
 
 ---
 <style scoped>
@@ -221,8 +221,8 @@ img:nth-of-type(2) { right: 90px; }
 
 # 新宿
 
-![alt text](<LINE_ALBUM_2025 0831第一天相簿_260414_2.jpg>)
-![alt text](<LINE_ALBUM_2025 0831第一天相簿_260414_1.jpg>)
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_16.jpg>)
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_18.jpg>)
 
 
 ---
@@ -239,8 +239,8 @@ img:nth-of-type(2) { right: 20px; }
 </style>
 
 # 原宿
-![alt text](<LINE_ALBUM_2025 0902第三天_260414_3.jpg>)
-![alt text](<LINE_ALBUM_2025 0902第三天_260414_1.jpg>)
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_20.jpg>)
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_22.jpg>)
 
 
 ---
@@ -258,8 +258,8 @@ img:nth-of-type(2) { right: 90px; }
 
 # 三鷹之森吉卜力美術館
 
-![alt text](LINE_ALBUM_200250901第二天_260414_1.jpg)
-![alt text](LINE_ALBUM_200250901第二天_260414_3.jpg)
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_24.jpg>)
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_26.jpg>)
 
 ---
 <style scoped>
@@ -276,9 +276,9 @@ img:nth-of-type(3) { right: 20px; }
 </style>
 
 # 晴空塔
-![alt text](<LINE_ALBUM_2025 0904第五天_260414_4-1.jpg>) 
-![alt text](LINE_ALBUM_20250904第五天，早上淺草寺，中午晴空塔美食街用餐，下午葛飾區烏龍派出所_260414-1.jpg)
-![alt text](<LINE_ALBUM_2025 0904第五天_260414_6.jpg>)
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_28.jpg>) 
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_30.jpg>)
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_32.jpg>)
 
 --- 
 
@@ -296,9 +296,9 @@ img:nth-of-type(3) { right: 20px; }
 </style>
 
 # 上野 / 淺草寺
-![alt text](<LINE_ALBUM_2025 0904第五天_260414_1.jpg>) 
-![alt text](LINE_ALBUM_20250903第四天_260414_1.jpg) 
-![alt text](LINE_ALBUM_20250904第五天，早上淺草寺，中午晴空塔美食街用餐，下午葛飾區烏龍派出所_260414B-1.jpg)
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_34.jpg>) 
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_36.jpg>) 
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_38.jpg>)
 
 ---
 <style scoped>
@@ -316,9 +316,9 @@ img:nth-of-type(3) { right: 20px; }
 
 # 秋葉原
 
-![alt text](<LINE_ALBUM_2025 0904第五天_260414_3.jpg>) 
-![alt text](圖片1.jpg) 
-![alt text](<LINE_ALBUM_2025 0904第五天_260414_5.jpg>)
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_40.jpg>) 
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_42.jpg>) 
+![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_44.jpg>)
 
 
 ---

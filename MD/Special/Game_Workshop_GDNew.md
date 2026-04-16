@@ -214,7 +214,7 @@ GDevelop 的介面分為三個主要區域：
 
 # 角色與地形
 
-![alt text](image.png)
+![alt text](<../../IMAGE/Special/Game_Workshop_GDNew/Game_Workshop_GDNew_alt text.png>)
 
 ---
 
@@ -260,7 +260,7 @@ GDevelop 的介面分為三個主要區域：
 
 # TileMap
 
-![alt text](image-1.png)
+![alt text](<../../IMAGE/Special/Game_Workshop_GDNew/Game_Workshop_GDNew_alt text_03.png>)
 
 ---
 
@@ -299,8 +299,8 @@ GDevelop 的介面分為三個主要區域：
 ---
 # 金幣：完成畫面
 
-![width:800px](image-3.png)
-![alt text](image-2.png)
+![width:800px](../../IMAGE/Special/Game_Workshop_GDNew/Game_Workshop_GDNew_width800px.png)
+![alt text](<../../IMAGE/Special/Game_Workshop_GDNew/Game_Workshop_GDNew_alt text_06.png>)
 
 ---
 
@@ -331,9 +331,9 @@ GDevelop 的介面分為三個主要區域：
 
 # 勝利條件
 
-![alt text](image-5.png)
+![alt text](<../../IMAGE/Special/Game_Workshop_GDNew/Game_Workshop_GDNew_alt text_08.png>)
 </br>
-![alt text](image-4.png)
+![alt text](<../../IMAGE/Special/Game_Workshop_GDNew/Game_Workshop_GDNew_alt text_10.png>)
 
 ---
 
@@ -346,7 +346,7 @@ GDevelop 的介面分為三個主要區域：
 - **Condition**：`Player` Y position > 1000
 - **Action**：**Change the scene** → 選擇目前場景 (重新載入)
 
-![alt text](image-6.png)
+![alt text](<../../IMAGE/Special/Game_Workshop_GDNew/Game_Workshop_GDNew_alt text_12.png>)
 
 ---
 
@@ -358,7 +358,7 @@ GDevelop 的介面分為三個主要區域：
 2. **Condition**：`Player` collision with `Spike`
 3. **Action**：**Change the scene** (重新開始)
 
-![alt text](image-7.png)
+![alt text](<../../IMAGE/Special/Game_Workshop_GDNew/Game_Workshop_GDNew_alt text_14.png>)
 
 ---
 

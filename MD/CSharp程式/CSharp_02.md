@@ -53,7 +53,7 @@ img {
   transform: translateX(500px) translateY(20px);
 }
 </style>
-![HighVsLow](../../IMAGE/CSharp/Ch2/CSharp_Ch02_02.gif)
+![HighVsLow](../../IMAGE/CSharp程式/CSharp_02/CSharp_02_HighVsLow.gif)
 
 ---
 # 編譯器與直譯器

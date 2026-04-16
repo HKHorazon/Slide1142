@@ -50,7 +50,7 @@ style: |
     -   **請按右鍵 -> 解壓縮 (Extract All)**。
     -   <span style="color:red">不要直接點兩下進去執行，會發生錯誤！</span>這點非常重要！
 
-<img src="../../IMAGE/Mobile/Ch3/image-9.png" style="position: absolute; right: 50px; top: 160px; width: 400px;">
+<img src="../../IMAGE/Mobile手遊/Mobile_03/Mobile_03_01.png" style="position: absolute; right: 50px; top: 160px; width: 400px;">
 
 ---
 
@@ -79,7 +79,7 @@ Unity 專案不是「單一個檔案」，而是一個「資料夾」。
 5.  **選擇最外層** (看得到 Assets 的那一層)。
 6.  按下 **Select Folder**。
 
-<img src="../../IMAGE/Mobile/Ch3/image-10.png" style="position: absolute; right: 250px; top: 250px; width: 300px;">
+<img src="../../IMAGE/Mobile手遊/Mobile_03/Mobile_03_02.png" style="position: absolute; right: 250px; top: 250px; width: 300px;">
 
 ---
 
