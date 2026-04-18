@@ -1,0 +1,17 @@
+classDiagram
+    class Monster {
+        <<abstract>>
+        +int Hp
+        +int Atk
+        +Shout()* void
+    }
+    class Slime {
+        +Slime()
+        +Shout() void
+    }
+    class Goblin {
+        +Goblin()
+        +Shout() void
+    }
+    Monster <|-- Slime
+    Monster <|-- Goblin
