@@ -190,7 +190,7 @@ class Hero {
 
 <br>
 
-![Class Diagram w:900](../../IMAGE/CSharp程式/CSharp_11/CSharp_11_Class Diagram w900.png)
+![Class Diagram w:900](../../IMAGE/CSharp程式/CSharp_11/CSharp_11_Class_Diagram_w900.png)
 <!-- 請自行將 MERMAID/MD/ClassDiagram_HeroWeapon.mmd 轉檔為圖片並放置於 MERMAID/IMAGE -->
 
 
