@@ -183,7 +183,7 @@ img {
 
 # 出發
 
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_06.jpg>)
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_06.jpg)
 
 ---
 <style scoped>
@@ -201,10 +201,10 @@ img:nth-of-type(4) { right: 20px; bottom: 20px; }
 
 # 課程
 
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text.jpg>)
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_10.jpg>)
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_12.jpg>)
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_14.jpg>)
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text.jpg)
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_10.jpg)
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_12.jpg)
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_14.jpg)
 
 ---
 <style scoped>
@@ -221,8 +221,8 @@ img:nth-of-type(2) { right: 90px; }
 
 # 新宿
 
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_16.jpg>)
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_18.jpg>)
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_16.jpg)
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_18.jpg)
 
 
 ---
@@ -239,8 +239,8 @@ img:nth-of-type(2) { right: 20px; }
 </style>
 
 # 原宿
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_20.jpg>)
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_22.jpg>)
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_20.jpg)
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_22.jpg)
 
 
 ---
@@ -258,8 +258,8 @@ img:nth-of-type(2) { right: 90px; }
 
 # 三鷹之森吉卜力美術館
 
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_24.jpg>)
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_26.jpg>)
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_24.jpg)
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_26.jpg)
 
 ---
 <style scoped>
@@ -276,9 +276,9 @@ img:nth-of-type(3) { right: 20px; }
 </style>
 
 # 晴空塔
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_28.jpg>) 
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_30.jpg>)
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_32.jpg>)
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_28.jpg) 
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_30.jpg)
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_32.jpg)
 
 --- 
 
@@ -296,9 +296,9 @@ img:nth-of-type(3) { right: 20px; }
 </style>
 
 # 上野 / 淺草寺
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_34.jpg>) 
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_36.jpg>) 
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_38.jpg>)
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_34.jpg) 
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_36.jpg) 
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_38.jpg)
 
 ---
 <style scoped>
@@ -316,9 +316,9 @@ img:nth-of-type(3) { right: 20px; }
 
 # 秋葉原
 
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_40.jpg>) 
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_42.jpg>) 
-![alt text](<../../IMAGE/Special/Japan2026/Japan2026_alt text_44.jpg>)
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_40.jpg) 
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_42.jpg) 
+![alt text](../../IMAGE/Special/Japan2026/Japan2026_alt_text_44.jpg)
 
 
 ---

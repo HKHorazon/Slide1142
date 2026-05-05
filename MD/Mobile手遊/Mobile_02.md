@@ -78,13 +78,13 @@ style: |
 當載入完成，你會看到預設的版面配置 (Layout)。
 我們將它分為五大區塊來介紹。
 
-![alt text width:800px](../../IMAGE/Mobile手遊/Mobile_02/Mobile_02_alt text width800px.png)
+![alt text width:800px](../../IMAGE/Mobile手遊/Mobile_02/Mobile_02_alt_text_width800px.png)
 
 ---
 
 # 1. Scene View (場景視窗)
 
-![alt text](../../IMAGE/Mobile手遊/Mobile_02/Mobile_02_alt text.png)
+![alt text](../../IMAGE/Mobile手遊/Mobile_02/Mobile_02_alt_text.png)
 
 ---
 
@@ -102,7 +102,7 @@ style: |
 
 # 2. Game View (遊戲視窗)
 
-![alt text](../../IMAGE/Mobile手遊/Mobile_02/Mobile_02_alt text_04.png)
+![alt text](../../IMAGE/Mobile手遊/Mobile_02/Mobile_02_alt_text_04.png)
 
 ---
 
@@ -141,7 +141,7 @@ style: |
 
 <div>
 
-![alt text](../../IMAGE/Mobile手遊/Mobile_02/Mobile_02_alt text_06.png)
+![alt text](../../IMAGE/Mobile手遊/Mobile_02/Mobile_02_alt_text_06.png)
 
 </div>
 
@@ -151,7 +151,7 @@ style: |
 
 # 4. Project (專案視窗)
 
-![alt text](../../IMAGE/Mobile手遊/Mobile_02/Mobile_02_alt text_08.png)
+![alt text](../../IMAGE/Mobile手遊/Mobile_02/Mobile_02_alt_text_08.png)
 
 ---
 
@@ -209,7 +209,7 @@ style: |
 -   **T (Rect)**：矩形工具，UI 與 2D 常用，直接拉邊框。
 -   **Y**：綜合工具 (不常用)。
 
-![bg right 20%](../../IMAGE/Mobile手遊/Mobile_02/Mobile_02_bg right 20%.png)
+![bg right 20%](../../IMAGE/Mobile手遊/Mobile_02/Mobile_02_bg_right_20%.png)
 
 ---
 
@@ -222,7 +222,7 @@ style: |
 3.  你會看到畫面中間出現一個白色方塊。
 4.  且 Hierarchy 多了一個名為 `Square` 的物件。
 
-![bg right w:600px](../../IMAGE/Mobile手遊/Mobile_02/Mobile_02_bg right w600px.png)
+![bg right w:600px](../../IMAGE/Mobile手遊/Mobile_02/Mobile_02_bg_right_w600px.png)
 
 ---
 

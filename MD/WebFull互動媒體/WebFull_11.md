@@ -214,18 +214,117 @@ let w = 70;
 
 ---
 
-# 下週預告
+# 補充：陣列的常用操作
 
 <br>
 
-今天的程式碼都只能在黑黑的 Console 裡面跑，很無聊吧？
-下週我們要讓 JS 來控制 HTML！
+陣列 (Array) 在 JS 裡面非常常用，我們常常需要新增或刪除裡面的資料。
 
-**網頁互動實作 - DOM 操作與事件**
--   如何按一個按鈕就改變背景顏色？
--   如何把 BMI 的結果顯示在網頁上？
--   什麼是 DOM (Document Object Model)？
+- **`length`**：取得陣列的長度（有幾個資料）。
+- **`push()`**：把資料塞進陣列的**最後面**。
+- **`pop()`**：把陣列**最後面**的資料拿出來。
 
-準備好，下週你的網頁就會「活」過來了！
+```javascript
+let fruits = ["Apple", "Banana"];
+console.log(fruits.length); // 印出 2
+
+fruits.push("Orange"); // 變成 ["Apple", "Banana", "Orange"]
+let last = fruits.pop(); // last 會變成 "Orange"，陣列變回原本的樣子
+```
 
 ---
+
+# 補充：寫程式的好習慣
+
+<br>
+
+寫程式不是只要「能動」就好，還要讓自己和別人「看得懂」。
+
+1. **加上註解**：
+   - 單行註解：`// 這是一行註解`
+   - 多行註解：`/* 這是多行註解 */`
+2. **變數命名規則 (小駝峰式 Camel Case)**：
+   - 第一個單字小寫，後面的單字第一個字母大寫。
+   - 例如：`myFirstName`, `totalScore`, `btnSubmit`。
+3. **適當的縮排**：讓程式碼有階層感，不會像是一團亂碼。
+
+---
+
+# 補充：字串的常用操作
+
+<br>
+
+字串不只能用來顯示文字，還有很多內建的工具可以使用。
+
+- **`length`**：取得字串的長度。
+- **`toUpperCase()`**：把所有英文字母變成大寫。
+- **`replace()`**：替換字串裡面的文字。
+
+```javascript
+let text = "Hello JavaScript!";
+console.log(text.length); // 印出 17
+
+console.log(text.toUpperCase()); // "HELLO JAVASCRIPT!"
+console.log(text.replace("Hello", "Hi")); // "Hi JavaScript!"
+```
+
+---
+
+# 補充：物件 (Object) 的基本操作
+
+<br>
+
+當我們想要把多個相關的資料綁在一起時，就會使用「物件」。
+像是描述一個學生的資料：
+
+```javascript
+let student = {
+    name: "小明",
+    age: 18,
+    isMale: true
+};
+
+// 取得物件裡面的資料：使用「點 (.)」
+console.log(student.name); // 印出 "小明"
+
+// 修改物件裡面的資料
+student.age = 19;
+console.log(student.age); // 印出 19
+```
+
+---
+
+# 補充：Math 數學函式
+
+<br>
+
+JS 內建了一個 `Math` 工具箱，可以幫我們做各種數學計算。
+
+- **`Math.round()`**：四捨五入。
+- **`Math.ceil()`**：無條件進位。
+- **`Math.floor()`**：無條件捨去。
+- **`Math.random()`**：產生一個 0 到 1 之間的隨機小數 (不包含 1)。
+
+```javascript
+console.log(Math.round(3.6)); // 印出 4
+console.log(Math.floor(3.9)); // 印出 3
+
+// 產生 0 ~ 9 的隨機整數
+let randomNum = Math.floor(Math.random() * 10);
+```
+
+---
+
+# 總結：JavaScript 核心觀念
+
+<br>
+
+恭喜你完成了 JavaScript 的基礎！
+這幾天我們學到了：
+
+1. **變數與資料型別**：儲存各種資料 (數字、字串、布林)。
+2. **運算子與條件判斷**：讓程式學會算數與「做決定 (`if...else`)」。
+3. **迴圈**：讓程式不知疲倦地重複做事 (`for`)。
+4. **函式與陣列/物件**：把程式碼與資料整理得井然有序。
+
+> **多寫、多錯、多查資料，這就是成為工程師的必經之路！**

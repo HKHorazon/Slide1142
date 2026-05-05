@@ -103,7 +103,7 @@ if(布林邏輯運算式)
         translate: 950px -300px
     }
 </style>
-![If Flowchart](../../IMAGE/CSharp程式/CSharp_06/CSharp_06_If Flowchart.png)
+![If Flowchart](../../IMAGE/CSharp程式/CSharp_06/CSharp_06_If_Flowchart.png)
 
 ---
 
@@ -170,7 +170,7 @@ else
         translate: 750px -300px
     }
 </style>
-![If-Else Flowchart](../../IMAGE/CSharp程式/CSharp_06/CSharp_06_If-Else Flowchart.png)
+![If-Else Flowchart](../../IMAGE/CSharp程式/CSharp_06/CSharp_06_If-Else_Flowchart.png)
 
 ---
 
@@ -204,7 +204,7 @@ else
         translate: 750px -650px
     }
 </style>
-![If-Else-If Flowchart](../../IMAGE/CSharp程式/CSharp_06/CSharp_06_If-Else-If Flowchart.png)
+![If-Else-If Flowchart](../../IMAGE/CSharp程式/CSharp_06/CSharp_06_If-Else-If_Flowchart.png)
 
 
 ---
@@ -274,8 +274,8 @@ if(周末)
     }
 </style>
 <!-- 調整至右側 -->
-![Logic Operators](../../IMAGE/CSharp程式/CSharp_06/CSharp_06_Logic Operators.png)
-![Logic Operators](../../IMAGE/CSharp程式/CSharp_06/CSharp_06_Logic Operators_06.png)
+![Logic Operators](../../IMAGE/CSharp程式/CSharp_06/CSharp_06_Logic_Operators.png)
+![Logic Operators](../../IMAGE/CSharp程式/CSharp_06/CSharp_06_Logic_Operators_06.png)
 
 ---
 # 運用與思考
@@ -347,14 +347,14 @@ switch (expression)
         translate: 520px -400px
     }
 </style>
-![Switch Flowchart](../../IMAGE/CSharp程式/CSharp_06/CSharp_06_Switch Flowchart.png)
+![Switch Flowchart](../../IMAGE/CSharp程式/CSharp_06/CSharp_06_Switch_Flowchart.png)
 
 
 ---
 
 # 運算子綜合練習 (1/3)：基礎邏輯
 
-![LogicTest center](../../IMAGE/CSharp程式/CSharp_06/CSharp_06_LogicTest center.png)
+![LogicTest center](../../IMAGE/CSharp程式/CSharp_06/CSharp_06_LogicTest_center.png)
 
 ### 請試著回答以下條件會選中哪些數字？
 
