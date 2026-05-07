@@ -226,20 +226,110 @@ btn.addEventListener("click", function() {
 
 ---
 
-# 下週預告
+# 補充：取得輸入框的值 (Input Value)
 
 <br>
 
-寫程式很累對吧？
-尤其是被那些分號、括號搞得頭很痛的時候。
+除了點擊按鈕，我們也很常需要讀取使用者在表單填寫的資料。
 
-下週我們要進入**快樂天堂**：
+```html
+<input type="text" id="myInput" placeholder="請輸入名字">
+<button id="sendBtn">送出</button>
+```
 
-**進階無程式碼平台 - Wix**
--   不用寫一行程式碼。
--   拖拉放完成專業網站。
--   直接發布上線。
+```javascript
+const input = document.getElementById("myInput");
+const btn = document.getElementById("sendBtn");
 
-但別忘了，正是因為你懂了 HTML/CSS 基礎，你用 Wix 會比別人強 100 倍 (因為你懂它的原理)！
+btn.addEventListener("click", function() {
+    // 使用 .value 來取得輸入框的內容
+    const userName = input.value;
+    alert("你好，" + userName + "！");
+});
+```
 
 ---
+
+# 補充：動態建立 HTML 元素
+
+<br>
+
+有時候我們不只要「修改」現有的元素，還需要「無中生有」創造新元素。
+
+```javascript
+// 1. 創造一個新的 <li> 標籤
+const newLi = document.createElement("li");
+
+// 2. 設定它的內容
+newLi.innerText = "這是我用 JS 動態產生的一句話！";
+
+// 3. 把他塞進現有的 <ul> 裡面 (假設 id="myList")
+const list = document.getElementById("myList");
+list.appendChild(newLi);
+```
+
+> **這就是所謂的「資料驅動畫畫面」的基礎！**
+> 很多購物車、留言板都是這樣做出來的。
+
+---
+
+# 補充：表單事件與阻擋預設行為
+
+<br>
+
+當我們送出 `<form>` 表單時，網頁預設會「重新整理」。
+如果我們想要自己用 JS 處理資料，就需要阻擋這個預設行為。
+
+```html
+<form id="myForm">
+    <input type="text" placeholder="輸入內容">
+    <button type="submit">送出表單</button>
+</form>
+```
+
+```javascript
+const form = document.getElementById("myForm");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault(); // 阻擋表單預設的重新整理
+    alert("表單已經被 JS 接管囉！");
+});
+```
+
+---
+
+# 補充：計時器 (Timer)
+
+<br>
+
+如果我們想要延遲一段時間再執行程式，或者每隔一段時間重複執行：
+
+### 1. `setTimeout` (延遲一次)
+```javascript
+setTimeout(function() {
+    console.log("3 秒鐘到了！");
+}, 3000); // 3000 毫秒 = 3 秒
+```
+
+### 2. `setInterval` (不斷重複)
+```javascript
+let count = 0;
+setInterval(function() {
+    count++;
+    console.log("經過了 " + count + " 秒");
+}, 1000); // 每 1000 毫秒執行一次
+```
+
+---
+
+# 總結：前端三劍客的組合
+
+<br>
+
+到這裡，你已經掌握了網頁開發的「前端三劍客」：
+
+1. **HTML (骨架)**：決定網頁有哪些內容 (文字、圖片、輸入框)。
+2. **CSS (皮膚)**：決定網頁長什麼樣子 (顏色、排版、動畫)。
+3. **JavaScript (靈魂)**：決定網頁能做什麼互動 (點擊按鈕、抓取資料、計算邏輯)。
+
+> **從現在開始，你不再只是網頁的「瀏覽者」，而是網頁的「創造者」！**
