@@ -26,38 +26,7 @@ style: |
 
 # C# 程式設計
 ## 課後練習 作業二
-## (範圍：Ch.7 - Ch.8)
-
----
----
-marp: true
-theme: HoraStyle
-paginate: true
-style: |
-  :root {
-    --title-bg: linear-gradient(90deg, #2563eb, #3b82f6);
-    --title-text-color: #ffffff;
-  }
-  section.lead {
-    background: linear-gradient(135deg, #172554 0%, #000000 100%);
-  }
-  table {
-    font-size: 28px;
-    width: 100%;
-  }
-  th, td {
-    padding: 10px;
-    text-align: left;
-  }
----
-
-<!-- _class: lead -->
-<!-- _paginate: false -->
-### Homework 2
-
-# C# 程式設計
-## 課後練習 作業二
-## (範圍：Ch.7 - Ch.8)
+## (範圍：Ch.7 - Ch.10)
 
 ---
 
