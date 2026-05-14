@@ -237,7 +237,7 @@ void OnDrawGizmosSelected()
 邏輯提示：
 1.  多一個變數 `bool canDoubleJump`。
 2.  如果 `isGrounded` 為 true -> `canDoubleJump = true`。
-3.  如果按下跳跃：
+3.  如果按下跳躍：
     -   在地板上 -> 跳。
     -   在空中 且 `canDoubleJump` -> 跳，並把 `canDoubleJump = false`。
 

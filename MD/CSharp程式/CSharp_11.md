@@ -209,7 +209,16 @@ class Hero {
 
 ---
 
-# Class vs Struct：世紀大對決
+# Class vs Struct
+
+<style scoped>
+table {
+    font-size: 35px;
+}
+th, td {
+    padding: 4px 8px;
+}
+</style>
 
 | 特性 | Class (類別) | Struct (結構) |
 | :--- | :--- | :--- |
@@ -220,20 +229,18 @@ class Hero {
 | **適用場景** | 大型物件、邏輯複雜、需要繼承 | 小型資料 (座標、簡單數值) |
 | **預設值** | null | 該型別的預設值 (全為0) |
 
-> **記憶點**：
-> 要做**物件 (Object)** 用 Class (如: Player, Enemy, GameManager)。
-> 要做**單純資料 (Data)** 用 Struct (如: Vector3, Color, Rect)。
-
 ---
 
 # 總結
 
-- **Class (類別)** 是設計圖，定義屬性與行為。
-- **Object (物件)** 是實體，使用 `new` 關鍵字建立。
-- 類別包含 **Fields (變數)** 與 **Methods (函式)**。
-- 類別是 **參考型別**，變數存的是記憶體地址。
+**Struct (結構)**
+- 實值型別，資料存在 Stack，賦值時**複製整個數值**。
+- 適合輕量純資料 (如: Vector3, Color, Rect)。
 
----
+**Class (類別) & Object (物件)**
+- **Class** 是設計圖（包含 Fields + Methods），**Object** 是用 `new` 建立的實體。
+- 參考型別，資料存在 Heap，賦值時複製**地址**。
+- 適合大型物件、需要繼承 (如: Player, Enemy, GameManager)。
 
 
 ---
@@ -263,6 +270,8 @@ class BankAccount
     }
 }
 ```
+
+---
 
 # 綜合範例：學生成績系統
 
