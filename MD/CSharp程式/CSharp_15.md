@@ -16,7 +16,7 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 ### Ch. 15
-# 集合與泛型 (Collections & Generics)
+# 集合與泛型 
 ## Horazon
 ## C#程式設計
 
@@ -95,7 +95,7 @@ int s = scores["A001"]; // 90
 
 ---
 
-#Dictionary 的特性
+# Dictionary 的特性
 
 - **Key 必須唯一**：不能有兩個 "A001"。
 - **無序**：字典裡的資料順序是不固定的。
@@ -156,10 +156,3 @@ foreach (KeyValuePair<string, int> pair in scores)
 | 只是先排個隊 (先進先出) | **Queue\<T\>** |
 | 堆疊 (後進先出) | **Stack\<T\>** |
 
----
-
-<!-- _class: lead -->
-
-# 課程結束
-## 恭喜你完成了 C# 基礎課程！
-### 接下來，帶著這些知識進入 Unity 的世界吧！
