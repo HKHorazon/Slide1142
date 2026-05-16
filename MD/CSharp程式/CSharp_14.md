@@ -16,150 +16,206 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 ### Ch. 14
-# 集合與泛型 (Collections & Generics)
+# 命名空間、引用與組件
+## (Namespace, using & DLL)
 ## Horazon
 ## C#程式設計
 
 ---
 
-# 陣列 (Array) 的缺點
+# 為什麼需要命名空間？
 
-回顧一下陣列：
+假設你和同學都寫了一個叫做 `Player` 的類別。
+兩個 `Player` 放在同一個程式裡，編譯器會不知道要用哪一個！
+
+**命名空間 (Namespace)** 就像「姓氏」，幫類別加上識別標誌：
+
 ```cs
-int[] scores = new int[5]; // 長度固定為 5
+// 你寫的
+MyGame.Player
+
+// 同學寫的
+HisGame.Player
 ```
 
-1.  **長度固定**：建立後就不能改變。如果玩家撿到第 6 個道具怎麼辦？
-2.  **功能較少**：要刪除中間某個元素很麻煩 (需要移動後面所有元素)。
-
-在實際開發中，我們更常使用 **集合 (Collections)**。
+這樣兩個 `Player` 就不會衝突了。
 
 ---
 
-# List\<T\>：動態陣列
+# 宣告命名空間
 
-`List<T>` 是 C# 中最常用的集合，可以把它想像成「會自動長大的陣列」。
-`<T>` 代表 **泛型 (Generic)**，意思是「你可以指定裡面要裝什麼型別」。
-
-```cs
-using System.Collections.Generic; // 必須引用
-
-// 建立一個裝字串的 List
-List<string> items = new List<string>();
-
-// 新增資料 (Add)
-items.Add("紅藥水");
-items.Add("藍藥水");
-```
-現在長度是 2。如果再 Add，長度會自動變 3。
-
----
-
-# List\<T\> 常用操作
+用 `namespace` 關鍵字包住你的類別：
 
 ```cs
-List<string> enemies = new List<string>() { "史萊姆", "哥布林" };
-
-// 1. 取得資料 (跟陣列一樣用索引)
-string e = enemies[0]; 
-
-// 2. 取得數量 (是 Count 不是 Length)
-int count = enemies.Count;
-
-// 3. 插入資料 (Insert)
-enemies.Insert(0, "魔王"); // 插在最前面
-
-// 4. 移除資料 (Remove)
-enemies.Remove("史萊姆"); // 刪除特定物件
-enemies.RemoveAt(0);      // 刪除第 0 個
-```
-
----
-
-# Dictionary\<Key, Value\>：字典
-
-如果你想透過「名字」或「ID」來找資料，而不是透過索引 (0, 1, 2...)，就使用 **字典**。
-它是由 **鍵 (Key)** 與 **值 (Value)** 組成的對應表。
-
-```cs
-// Key是字串 (學號), Value是整數 (分數)
-Dictionary<string, int> scores = new Dictionary<string, int>();
-
-// 新增 (Key 不能重複！)
-scores.Add("A001", 90);
-scores.Add("A002", 80);
-
-// 取值 (透過 Key)
-int s = scores["A001"]; // 90
-```
-
----
-
-#Dictionary 的特性
-
-- **Key 必須唯一**：不能有兩個 "A001"。
-- **無序**：字典裡的資料順序是不固定的。
-- **快速查找**：就算有一萬筆資料，透過 Key 找資料依然非常快 (接近 O(1))。
-
-常用方法：
-```cs
-if (scores.ContainsKey("A003")) {
-    // 檢查有沒有這個 Key，避免報錯
-}
-
-scores.Remove("A001"); // 移除
-```
-
----
-
-# foreach 迴圈
-
-遍歷集合最簡單的方法是 `foreach`。
-
-```cs
-List<string> names = new List<string> { "Alice", "Bob", "Cat" };
-
-foreach (string name in names)
+namespace MyGame
 {
-    Console.WriteLine(name);
+    class Player
+    {
+        public string Name = "勇者";
+    }
 }
 ```
 
-對於 Dictionary：
+在另一個地方使用時，需要寫完整名稱：
+
 ```cs
-foreach (KeyValuePair<string, int> pair in scores)
-{
-    Console.WriteLine($"{pair.Key}: {pair.Value}");
-}
+MyGame.Player hero = new MyGame.Player();
 ```
 
 ---
 
-# 泛型 (Generics) 的好處
+# using 指令
 
-為什麼要寫 `<string>` 或 `<int>`？
-這稱為 **泛型**。
+每次都寫完整名稱很麻煩。
+使用 `using` 可以告訴編譯器「我要用這個命名空間」：
 
-1.  **型別安全**：編譯器會幫你檢查，你不能把 `int` 放進 `List<string>`。
-2.  **效能更好**：避免了裝箱/拆箱 (Boxing/Unboxing) 的效能損耗。
-3.  **程式碼重用**：`List` 這個類別只要寫一次，就能給各種類別使用。
+```cs
+using MyGame; // 引入命名空間
+
+// 現在可以直接用，不需要寫 MyGame.
+Player hero = new Player();
+```
+
+這就是為什麼每支程式開頭都會看到：
+```cs
+using System;
+using System.Collections.Generic;
+```
 
 ---
 
-# 總結：該用哪個？
+# 巢狀命名空間
 
-| 需求 | 選擇 |
+命名空間可以有層級，用 `.` 分隔：
+
+```cs
+namespace MyGame.Enemies
+{
+    class Slime { }
+    class Goblin { }
+}
+
+namespace MyGame.Items
+{
+    class Potion { }
+}
+```
+
+使用時：
+```cs
+using MyGame.Enemies;
+
+Slime s = new Slime();
+```
+
+---
+
+# .NET 常見命名空間
+
+| 命名空間 | 內容 |
 | :--- | :--- |
-| **長度固定**，追求極致效能 | **陣列 (Array)** |
-| **長度不固定**，需要頻繁增刪 | **List\<T\>** (最常用) |
-| 需要透過 **ID / 名稱** 來找資料 | **Dictionary\<Key, Value\>** |
-| 只是先排個隊 (先進先出) | **Queue\<T\>** |
-| 堆疊 (後進先出) | **Stack\<T\>** |
+| `System` | 基本型別、Console、Math |
+| `System.Collections.Generic` | List、Dictionary |
+| `System.IO` | 檔案讀寫 |
+| `System.Text` | 字串處理 (StringBuilder) |
+| `System.Linq` | 資料查詢 |
+| `UnityEngine` | Unity 核心功能 |
 
 ---
 
-<!-- _class: lead -->
+# 什麼是 DLL？
 
-# 課程結束
-## 恭喜你完成了 C# 基礎課程！
-### 接下來，帶著這些知識進入 Unity 的世界吧！
+**DLL (Dynamic Link Library)** 是已經編譯好的程式碼，打包成一個 `.dll` 檔案。
+
+- 你寫的 C# 程式碼 `.cs` → 編譯後 → `.dll`
+- 別人寫好的功能，直接引用 `.dll` 就能使用，不需要原始碼。
+
+### 生活比喻
+就像買現成的「零件」組裝：
+不需要自己製造馬達，直接買來裝上就好。
+
+---
+
+# 引用 DLL (組件)
+
+在 Visual Studio 中，可以手動加入 DLL 參考：
+
+1. 在專案上右鍵 → **新增參考 (Add Reference)**
+2. 選擇 `.dll` 檔案
+3. 在程式碼加上對應的 `using`
+
+```cs
+// 引用後，才能使用裡面的命名空間
+using SomeLibrary;
+
+var obj = new SomeLibrary.MyClass();
+```
+
+
+---
+
+# 全域 using (C# 10+)
+
+在 C# 10 之後，可以在專案層級定義「全域 using」，
+讓整個專案所有檔案都自動引入，不需要每個檔案重複寫：
+
+```cs
+// GlobalUsings.cs
+global using System;
+global using System.Collections.Generic;
+global using UnityEngine;
+```
+
+現代 Unity 和 ASP.NET Core 專案都大量使用這個功能。
+
+---
+
+# 最上層陳述式 (Top-level Statements)
+
+傳統 C# 程式需要大量「儀式性」的樣板程式碼：
+
+```cs
+using System;
+
+namespace MyApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World");
+        }
+    }
+}
+```
+
+對初學者來說，真正要學的只有第 9 行，其他都是「規定要寫的」。
+
+---
+
+# 最上層陳述式 (C# 9+)
+
+C# 9 之後，可以省略 `class Program` 和 `Main`，直接寫邏輯，甚至連using都消失了：
+
+```cs
+// 這就是完整的程式！
+
+Console.WriteLine("Hello World");
+```
+
+- 編譯器會**自動**幫你產生 `Main` 方法。
+- 原本需要寫`using System;`
+- **整個專案只能有一個**檔案使用最上層陳述式。
+
+---
+
+
+# 總結
+
+| 概念 | 說明 |
+| :--- | :--- |
+| **namespace** | 幫類別加上「姓氏」，避免命名衝突 |
+| **using** | 省略命名空間前綴，讓程式碼更簡潔 |
+| **DLL** | 編譯後的程式庫，可直接引用使用 |
+| **global using** | C# 10+ 的全域引用，減少重複 using |
+

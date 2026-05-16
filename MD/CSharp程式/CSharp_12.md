@@ -250,6 +250,128 @@ class Player {
 掌握封裝，你的程式碼將更健壯、更安全！
 
 ---
+---
 
-<!-- TODO 移除下張預告 -->
+<!-- _class: lead -->
+<!-- _paginate: false -->
+### Ch. 12.2
+# 靜態 (static)
+## Horazon
+## C#程式設計
 
+---
+
+# 實例 vs. 靜態
+
+到目前為止，我們建立的變數和方法都屬於**物件 (實例)**：
+
+```cs
+Player p1 = new Player("勇者", 100);
+Player p2 = new Player("魔王", 999);
+
+p1.HP = 100; // p1 自己的 HP
+p2.HP = 50;  // p2 自己的 HP，跟 p1 無關
+```
+
+每個物件都有**自己的一份**資料。
+
+但有些資料是**全部物件共用**的，例如「目前場上共有幾個玩家？」
+
+---
+
+# static 關鍵字
+
+在成員前加上 `static`，這個成員就**屬於類別本身**，而不是某個物件。
+
+```cs
+class Player
+{
+    public string Name { get; set; }
+    public int HP { get; set; }
+
+    // 靜態欄位：所有 Player 共用同一份
+    public static int Count = 0;
+
+    public Player(string name, int hp)
+    {
+        Name = name; HP = hp;
+        Count++; // 每建立一個 Player，計數 +1
+    }
+}
+```
+
+---
+
+# 使用靜態成員
+
+靜態成員透過**類別名稱**存取，不需要建立物件：
+
+```cs
+Player p1 = new Player("勇者", 100);
+Player p2 = new Player("魔王", 999);
+
+// 透過類別名稱存取，不是 p1.Count
+Console.WriteLine(Player.Count); // 2
+```
+
+`Math` 類別就是最常見的例子：
+
+```cs
+// 不需要 new Math()，直接用類別名稱呼叫
+double r = Math.Sqrt(16); // 4
+int max  = Math.Max(10, 20); // 20
+```
+
+---
+
+# 靜態方法的限制
+
+靜態方法**不能存取**非靜態的成員，因為執行時不知道是哪個物件：
+
+```cs
+class Player
+{
+    public int HP = 100; // 實例成員
+
+    public static void PrintHP()
+    {
+        // ❌ 錯誤！HP 屬於哪個物件？不知道！
+        Console.WriteLine(HP);
+    }
+}
+```
+
+靜態方法只能操作**靜態成員**或**傳入的參數**。
+
+---
+
+# 靜態類別 (Static Class)
+
+如果一個類別所有成員都是靜態的，可以直接把**類別**也設為 `static`：
+
+```cs
+static class GameConfig
+{
+    public static int MaxPlayers = 4;
+    public static float MusicVolume = 0.8f;
+    public static string Version = "1.0.0";
+}
+
+Console.WriteLine(GameConfig.Version); // 1.0.0
+```
+
+靜態類別**不能被 `new`**，也不能被繼承。
+適合用於設定檔、共用工具方法。
+
+---
+
+# static 總結
+
+| | **實例成員** | **靜態成員 (static)** |
+| :--- | :--- | :--- |
+| **屬於** | 每個物件自己 | 類別本身 |
+| **存取方式** | `物件.成員` | `類別名稱.成員` |
+| **需要 new？** | 需要 | 不需要 |
+| **適合用途** | 每個物件不同的資料 | 全域共用的資料或工具 |
+
+**原則：** 當資料或行為與「特定物件無關」時，考慮使用 `static`。

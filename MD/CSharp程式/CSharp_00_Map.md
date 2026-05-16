@@ -96,6 +96,6 @@ table th:nth-child(2) {
 | W13 | 類別與物件 (Class & Object) |
 | W14 | 封裝與建構子 (Encapsulation & Constructor) |
 | W15 | 繼承與多型 (Inheritance & Polymorphism) |
-| W16 | 集合與泛型 (Collections & Generics) |
+| W16 | 命名空間、引用與組件 |
 | W17 | 彈性教學與總結 |
 | **W18** | **期末考週 (Final)** |
