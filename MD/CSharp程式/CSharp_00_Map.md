@@ -94,8 +94,8 @@ table th:nth-child(2) {
 | W11 | 字串 (String) |
 | W12 | 函式與方法 |
 | W13 | 類別與物件 (Class & Object) |
-| W14 | 封裝與建構子 (Encapsulation & Constructor) |
-| W15 | 繼承與多型 (Inheritance & Polymorphism) |
+| W14 | 封裝與建構子 |
+| W15 | 繼承與多型 |
 | W16 | 命名空間、引用與組件 |
 | W17 | 彈性教學與總結 |
 | **W18** | **期末考週 (Final)** |

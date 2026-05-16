@@ -16,7 +16,7 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 ### Ch. 12
-# 封裝與建構子 (Encapsulation & Constructor)
+# 封裝與建構子 
 ## Horazon
 ## C#程式設計
 
@@ -249,7 +249,6 @@ class Player {
 
 掌握封裝，你的程式碼將更健壯、更安全！
 
----
 ---
 
 <!-- _class: lead -->

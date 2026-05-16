@@ -16,7 +16,7 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 ### Ch. 13
-# 繼承與多型 (Inheritance & Polymorphism)
+# 繼承與多型 
 ## Horazon
 ## C#程式設計
 
