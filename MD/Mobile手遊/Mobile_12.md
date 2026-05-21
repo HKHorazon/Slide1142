@@ -111,9 +111,12 @@ style: |
 
 幫角色加上 **Animator** 元件
 
+![alt text](image-18.png)
+
 並建立 **Animator Controller** 檔案
 
 
+![alt text](image-17.png)
 
 ---
 
@@ -121,6 +124,8 @@ style: |
 
 -   **Animation Clip**：動作片段 (影片檔)
 -   **Animator Controller**：大腦，決定要播哪一支 (播放器)
+
+![alt text](image-16.png)
 
 ---
 
@@ -300,6 +305,8 @@ Jump 的 Transition Duration 加一點 (例如 0.1 秒)
 
 可以掩蓋這個問題
 
+![alt text](image-19.png)
+
 ---
 
 # 總結
@@ -309,4 +316,129 @@ Jump 的 Transition Duration 加一點 (例如 0.1 秒)
 3.  **Parameters**：溝通橋樑
 4.  **Code**：`SetFloat` / `SetBool`
 
-主角不僅能動，還動得很有生命力
+---
+
+# 補充：有限狀態機
+
+**FSM (Finite State Machine)**
+
+一種把行為拆成「有限個狀態」的設計方式
+
+任何時刻只能處於 **一個** 狀態
+
+---
+
+# FSM 三要素
+
+1.  **State (狀態)**：Idle、Run、Jump…
+2.  **Transition (轉換)**：狀態之間的連線
+3.  **Condition (條件)**：什麼時候可以轉換
+
+> Unity Animator 就是一個視覺化 FSM
+
+---
+
+# 生活中的 FSM
+
+紅綠燈：
+
+-   狀態：紅 / 黃 / 綠
+-   轉換：綠 → 黃 → 紅 → 綠
+-   條件：時間到
+
+電梯、自動門、洗衣機都是 FSM
+
+---
+
+# 遊戲中的 FSM
+
+**角色行為**
+
+-   待機 / 移動 / 攻擊 / 受傷 / 死亡
+
+**敵人 AI**
+
+-   巡邏 / 追擊 / 攻擊 / 逃跑
+
+**遊戲流程**
+
+-   主選單 / 遊戲中 / 暫停 / 結算
+
+
+---
+
+# FSM 的限制
+
+只能在**一個**狀態 → 角色不能「邊跑邊揮劍」？
+
+**解法**：
+
+-   Animator 的 **Layer** (上下半身分離)
+-   **Sub-State Machine** (子狀態機)
+-   進階做法：**HFSM** / **Behavior Tree**
+
+---
+
+# 補充：遊戲2D動畫的常見形式
+
+2D 動畫不只一種做法
+
+選擇會影響**美術流程**、**檔案大小**、**效能**
+
+---
+
+# (1) Sprite Sheet 逐格動畫
+
+把每一格畫面排在一張圖上輪流播放
+
+✅ 製作直覺、像翻動畫本
+✅ Unity 內建支援 (本章做法)
+❌ 動作越多、圖越大
+❌ 換裝困難
+
+![alt text](image-20.png)
+
+---
+
+# (2) 骨骼動畫 (Skeletal)
+
+像紙偶：身體拆成零件 + 骨架控制
+
+**常見工具**：Spine、DragonBones、Unity Anima2D
+
+✅ 檔案小、可重複利用
+✅ 容易換裝、做表情
+❌ 學習曲線高、需要美術配合
+
+![width:500px](image-21.png)
+
+---
+
+# (3) Live2D
+
+骨骼動畫的進化版
+用變形 (Mesh Deformer) 模擬 2.5D 立體感
+常見於：
+
+-   Vtuber
+-   日系手遊立繪 (碧藍航線、原神立繪)
+
+![width:500px](image-22.png)
+
+---
+
+# (4) 程式動畫 (Tween)
+
+不畫圖，用程式補間 (Position / Scale / Rotation)
+
+```csharp
+transform.DOScale(1.2f, 0.2f);
+```
+
+常見於：
+
+-   UI 彈跳效果
+-   特效、彈簧反饋
+
+工具：**DOTween**、Unity Animation Curve
+
