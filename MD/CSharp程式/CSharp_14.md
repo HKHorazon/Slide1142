@@ -182,7 +182,11 @@ class Bird : Animal, IFlyable, ISinger {
 
 
 
-<!-- _style: "table { font-size: 22px; }" -->
+<style scoped>
+table {
+    font-size: 32px;
+}
+</style>
 
 # 抽象類別 vs 介面
 
