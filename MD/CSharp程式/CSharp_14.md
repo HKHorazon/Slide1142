@@ -180,6 +180,10 @@ class Bird : Animal, IFlyable, ISinger {
 
 ---
 
+
+
+<!-- _style: "table { font-size: 22px; }" -->
+
 # 抽象類別 vs 介面
 
 | 比較項目 | 抽象類別 (`abstract class`) | 介面 (`interface`) |
@@ -288,7 +292,6 @@ Slime s = new Slime();
 | `System.IO` | 檔案讀寫 |
 | `System.Text` | 字串處理 (StringBuilder) |
 | `System.Linq` | 資料查詢 |
-| `UnityEngine` | Unity 核心功能 |
 
 ---
 
