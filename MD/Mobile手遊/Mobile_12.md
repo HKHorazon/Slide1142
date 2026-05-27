@@ -421,7 +421,7 @@ Jump 的 Transition Duration 加一點 (例如 0.1 秒)
 常見於：
 
 -   Vtuber
--   日系手遊立繪 (碧藍航線、原神立繪)
+-   日系手遊立繪 
 
 ![width:500px](image-22.png)
 

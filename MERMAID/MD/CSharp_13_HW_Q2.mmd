@@ -1,5 +1,11 @@
 classDiagram
-    class Weapon {
-        +String WeaponName
-        +Attack() void
+    class Vehicle {
+        +Brand : string
+        +Speed : int
+        +Position : int
+        +Move() : void
     }
+    class Bicycle {
+        +RingBell() : void
+    }
+    Vehicle <|-- Bicycle

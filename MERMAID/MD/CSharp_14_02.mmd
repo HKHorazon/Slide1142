@@ -1,0 +1,23 @@
+classDiagram
+    class Animal {
+        <<abstract>>
+    }
+    class IFlyable {
+        <<interface>>
+        +Fly() : void
+    }
+    class ISwimmable {
+        <<interface>>
+        +Swim() : void
+    }
+    class Dog {
+        +Swim() : void
+    }
+    class Bird {
+        +Fly() : void
+    }
+    
+    Animal <|-- Dog
+    Animal <|-- Bird
+    ISwimmable <|.. Dog
+    IFlyable <|.. Bird

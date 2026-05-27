@@ -1,0 +1,16 @@
+classDiagram
+    class Animal {
+        <<abstract>>
+        +Name : string
+        +MakeSound() : void
+        +Eat() : void
+    }
+    class Cat {
+        +MakeSound() : void
+    }
+    class Dog {
+        +MakeSound() : void
+    }
+    
+    Animal <|-- Cat
+    Animal <|-- Dog

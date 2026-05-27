@@ -16,10 +16,179 @@ style: |
 <!-- _class: lead -->
 <!-- _paginate: false -->
 ### Ch. 14
-# 命名空間、引用與組件
-## (Namespace, using & DLL)
+# 抽象、介面與命名空間
+## (Abstract, Interface & Namespace)
 ## Horazon
 ## C#程式設計
+
+---
+
+# 延續上一章的動物園...
+
+上一章我們建立了 `Animal` (父類別)，以及 `Cat`、`Dog` (子類別)。
+
+```cs
+class Animal {
+    public virtual void MakeSound() { 
+        Console.WriteLine("動物發出未知的聲音"); 
+    }
+}
+```
+
+但仔細想想：
+1. 世界上真的有「一種動物」叫做「動物」嗎？沒有，只有具體的貓、狗、鳥。
+2. 我們不應該允許別人 `new Animal()` 建立一個模糊的「動物」物件。
+3. `MakeSound()` 在父類別裡寫「未知的聲音」很奇怪，因為每種動物的叫聲都不同。
+
+---
+
+# 抽象類別 (Abstract Class) 登場！
+
+**抽象類別 (Abstract Class)** 就是一個「不完整」的類別。
+
+特性：
+1. **不能被實例化**：不允許使用 `new Animal()`。
+2. **作為樣板**：它純粹是拿來被「繼承」的。
+3. **可以包含抽象方法**：只定義方法名稱，不寫大括號 `{}` 的內容，強制子類別一定要自己實作！
+
+我們使用 **`abstract`** 關鍵字來宣告。
+
+---
+
+# 抽象類別與抽象方法範例
+
+```cs
+// 加上 abstract 代表它是抽象類別，不能被 new
+abstract class Animal {
+    public string Name { get; set; }
+    
+    // 抽象方法：沒有 {} 實作，只有宣告，必須是 public 或 protected
+    // 加上 abstract，強迫所有子類別必須「覆寫 (override)」這個方法！
+    public abstract void MakeSound();
+    
+    // 抽象類別內也可以有一般的具體方法
+    public void Eat() {
+        Console.WriteLine(Name + " 正在吃東西...");
+    }
+}
+```
+
+---
+
+# 子類別實作抽象方法
+
+子類別繼承抽象類別後，**必須**使用 `override` 實作所有的抽象方法，否則編譯會失敗！
+
+```cs
+class Cat : Animal {
+    // 必須覆寫 MakeSound，否則會報錯！
+    public override void MakeSound() {
+        Console.WriteLine(Name + " 說：喵喵！");
+    }
+}
+
+class Dog : Animal {
+    // 必須覆寫 MakeSound，否則會報錯！
+    public override void MakeSound() {
+        Console.WriteLine(Name + " 說：汪汪！");
+    }
+}
+```
+
+---
+
+# 抽象類別的 UML 表示
+
+在 UML 類別圖中，**抽象類別名稱**與**抽象方法**會使用 **`<<abstract>>`** 標記，並以 *斜體* 表示。
+
+![抽象類別的 UML](../../MERMAID/IMAGE/CSharp_14_01.png)
+
+*箭頭為實線空心三角形，代表繼承關係（Generalization）。*
+
+---
+
+# 為什麼需要介面？ (多重繼承的問題)
+
+在 C# 中，**一個子類別只能繼承一個父類別**（單一繼承）。
+
+但如果我們有以下需求：
+- 飛機可以飛，鳥也可以飛。
+- 飛機是機器，鳥是動物，牠們沒有共同的父類別。
+- 狗會游泳，鴨子會游泳，魚也會游泳，但牠們在繼承鏈中完全不同。
+
+如果想要強迫這些不同類別都擁有「飛」或「游泳」的功能，該怎麼辦？
+這時候就要使用 **介面 (Interface)**！
+
+---
+
+# 什麼是介面？ (Interface)
+
+**介面** 是一組「行為的契約」。它比抽象類別更極端：
+1. **沒有任何實作**：介面裡的方法都只能宣告，不能寫 `{}` (C# 8.0 之前)。
+2. **不能包含成員欄位**：不能存儲資料變數。
+3. **可以多重實作**：一個類別可以同時實作多個介面！
+
+在 C# 中，介面習慣以 **`I`** 開頭（例如 `IFlyable`, `ISwimmable`）。
+
+---
+
+# 宣告與實作介面
+
+```cs
+// 宣告一個「會游泳」的介面
+interface ISwimmable {
+    void Swim(); // 預設就是 public abstract，不用寫修飾詞
+}
+
+// 狗狗繼承 Animal，同時「實作」ISwimmable 介面
+class Dog : Animal, ISwimmable {
+    public override void MakeSound() { Console.WriteLine("汪汪！"); }
+    
+    // 必須實作 Swim() 方法
+    public void Swim() {
+        Console.WriteLine(Name + " 正在用狗爬式游泳！");
+    }
+}
+```
+
+---
+
+# 介面的多重實作
+
+類別只能繼承一個爸爸，但可以遵守多個契約！
+
+```cs
+interface IFlyable { void Fly(); }
+interface ISinger { void Sing(); }
+
+// 鳥類繼承 Animal，同時實作 IFlyable 與 ISinger
+class Bird : Animal, IFlyable, ISinger {
+    public override void MakeSound() { Console.WriteLine("啾啾！"); }
+    public void Fly() { Console.WriteLine(Name + " 在天空中飛翔！"); }
+    public void Sing() { Console.WriteLine(Name + " 在愉快地歌唱！"); }
+}
+```
+
+---
+
+# 介面的 UML 表示
+
+在 UML 中，介面使用 **`<<interface>>`** 標記。
+類別與介面之間的實作關係，使用 **虛線空心三角形** 指向介面，這在 UML 中稱為 **實現 (Realization)**。
+
+![介面的 UML](../../MERMAID/IMAGE/CSharp_14_02.png)
+
+---
+
+# 抽象類別 vs 介面
+
+| 比較項目 | 抽象類別 (`abstract class`) | 介面 (`interface`) |
+| :--- | :--- | :--- |
+| **繼承數量** | 單一繼承 (只能繼承一個) | 多重實作 (可以實作多個) |
+| **成員欄位** | 可以包含變數 (欄位) | 不能包含任何欄位 |
+| **方法實作** | 可以有具體實作的方法 | 只能宣告方法，不能有實作 |
+| **設計意義** | 「它是什麼」(Is-A) | 「它能做什麼」(Can-Do) |
+| **舉例** | 貓是動物 (Cat **is an** Animal) | 狗會游泳 (Dog **can** Swim) |
 
 ---
 
@@ -151,7 +320,6 @@ using SomeLibrary;
 var obj = new SomeLibrary.MyClass();
 ```
 
-
 ---
 
 # 全域 using (C# 10+)
@@ -214,7 +382,7 @@ static void Main(string[] args)
 
 # 最上層陳述式 (C# 9+)
 
-C# 9 之後，可以省略 `class Program` 和 `Main`，直接寫邏輯，甚至連using都消失了：
+C# 9 之後，可以省略 `class Program` 和 `Main`，直接寫邏輯，甚至連 using 都可簡化：
 
 ```cs
 // 這就是完整的程式！
@@ -223,18 +391,18 @@ Console.WriteLine("Hello World");
 ```
 
 - 編譯器會**自動**幫你產生 `Main` 方法。
-- 原本需要寫`using System;`
+- 原本需要寫 `using System;`
 - **整個專案只能有一個**檔案使用最上層陳述式。
 
 ---
 
-
-# 總結
+# 本章總結
 
 | 概念 | 說明 |
 | :--- | :--- |
+| **抽象類別 (`abstract`)** | 不完整的類別，不能被實例化，強制子類別覆寫抽象方法 |
+| **介面 (`interface`)** | 行為的契約，只宣告不實作，支援類別的「多重實作」 |
 | **namespace** | 幫類別加上「姓氏」，避免命名衝突 |
 | **using** | 省略命名空間前綴，讓程式碼更簡潔 |
 | **DLL** | 編譯後的程式庫，可直接引用使用 |
 | **global using** | C# 10+ 的全域引用，減少重複 using |
-
