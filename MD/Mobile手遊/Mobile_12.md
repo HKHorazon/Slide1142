@@ -59,7 +59,7 @@ style: |
 -   `Run` 系列
 -   `Jump`
 
-![alt text](image.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text.png>)
 
 ---
 
@@ -79,7 +79,7 @@ style: |
 3.  按 **Play** 預覽
 
 太快？調整 **Samples** (預設 60，改 12~24)
-![alt text](image-1.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_03.png>)
 
 ---
 
@@ -90,7 +90,7 @@ style: |
 3.  拖入跑步連續圖
 4.  調整 Samples 速度
 
-![alt text](image-2.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_05.png>)
 
 ---
 
@@ -102,7 +102,7 @@ style: |
 這邊只有單張圖片
 更強的製作，通常是「起跳 → 滯空 → 落地」三段
 
-![alt text](image-3.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_07.png>)
 
 
 ---
@@ -111,12 +111,12 @@ style: |
 
 幫角色加上 **Animator** 元件
 
-![alt text](image-18.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_09.png>)
 
 並建立 **Animator Controller** 檔案
 
 
-![alt text](image-17.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_11.png>)
 
 ---
 
@@ -125,7 +125,7 @@ style: |
 -   **Animation Clip**：動作片段 (影片檔)
 -   **Animator Controller**：大腦，決定要播哪一支 (播放器)
 
-![alt text](image-16.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_13.png>)
 
 ---
 
@@ -137,7 +137,7 @@ style: |
     -   **Player_Idle** (橘色)：預設狀態
     -   **Player_Run** / **Player_Jump** (灰色)
 
-![width:800px](image-4.png)
+![width:800px](../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_width800px.png)
 
 ---
 
@@ -145,7 +145,7 @@ style: |
 - 如果橘色不在 Idle 上：
 - 在 Idle 按右鍵 → **Set as Layer Default State**
 
-![alt text](image-5.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_16.png>)
 
 ---
 
@@ -158,7 +158,7 @@ Animator 視窗左側 **Parameters** 分頁，點 `+`：
 1.  **Speed** (Float)：移動速度
 2.  **IsGround** (Bool)：是否在地板上
 
-![alt text](image-7.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_18.png>)
 
 ---
 
@@ -170,8 +170,8 @@ Animator 視窗左側 **Parameters** 分頁，點 `+`：
     -   **Transition Duration**：0
     -   **Conditions**：`Speed` Greater `0.1`
 
-![alt text](image-8.png)
-![alt text](image-9.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_20.png>)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_22.png>)
 
 ---
 
@@ -181,7 +181,7 @@ Animator 視窗左側 **Parameters** 分頁，點 `+`：
 
 Conditions：`Speed` Less `0.1`
 
-![alt text](image-10.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_24.png>)
 
 ---
 
@@ -193,8 +193,8 @@ Conditions：`Speed` Less `0.1`
 2.  Has Exit Time：關閉
 3.  Conditions：`IsGround` False
 
-![alt text](image-11.png)
-![alt text](image-12.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_26.png>)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_28.png>)
 
 ---
 
@@ -206,8 +206,8 @@ Conditions：`Speed` Less `0.1`
 
 Conditions：`IsGround` True
 
-![alt text](image-13.png)
-![alt text](image-14.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_30.png>)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_32.png>)
 
 ---
 
@@ -251,7 +251,7 @@ void Update()
 2.  勾選 **Multiplier** → **Parameter**
 3.  選 `Speed`
 
-![alt text](image-15.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_34.png>)
 
 ---
 
@@ -305,7 +305,7 @@ Jump 的 Transition Duration 加一點 (例如 0.1 秒)
 
 可以掩蓋這個問題
 
-![alt text](image-19.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_36.png>)
 
 ---
 
@@ -396,7 +396,7 @@ Jump 的 Transition Duration 加一點 (例如 0.1 秒)
 ❌ 動作越多、圖越大
 ❌ 換裝困難
 
-![alt text](image-20.png)
+![alt text](<../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_alt text_38.png>)
 
 ---
 
@@ -410,7 +410,7 @@ Jump 的 Transition Duration 加一點 (例如 0.1 秒)
 ✅ 容易換裝、做表情
 ❌ 學習曲線高、需要美術配合
 
-![width:500px](image-21.png)
+![width:500px](../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_width500px.png)
 
 ---
 
@@ -423,7 +423,7 @@ Jump 的 Transition Duration 加一點 (例如 0.1 秒)
 -   Vtuber
 -   日系手遊立繪 
 
-![width:500px](image-22.png)
+![width:500px](../../IMAGE/Mobile手遊/Mobile_12/Mobile_12_width500px_41.png)
 
 ---
 
@@ -441,4 +441,14 @@ transform.DOScale(1.2f, 0.2f);
 -   特效、彈簧反饋
 
 工具：**DOTween**、Unity Animation Curve
+
+---
+
+# 本章運作流程
+
+![本章運作流程](../../MERMAID/IMAGE/Mobile_12_01.png)
+
+-   **程式**：傳送參數 (`SetFloat` / `SetBool`)
+-   **Animator**：依條件決定播哪一支
+-   **Animation**：實際播放的動作片段
 
