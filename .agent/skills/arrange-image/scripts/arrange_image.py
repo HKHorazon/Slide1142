@@ -3,8 +3,8 @@ import sys
 import re
 import shutil
 
-BASE_MD_DIR = r"e:\弘光\課程\114.2\MD"
-BASE_IMG_DIR = r"e:\弘光\課程\114.2\IMAGE"
+BASE_MD_DIR = r"d:\Projects_Others\1142\Slide1142\MD"
+BASE_IMG_DIR = r"d:\Projects_Others\1142\Slide1142\IMAGE"
 
 def clean_filename(name):
     # 移除無法做為檔名的字元

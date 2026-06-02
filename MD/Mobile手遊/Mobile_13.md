@@ -17,260 +17,234 @@ style: |
 
 ### Chapter 13
 
-# UI 介面設計 
+# 手機部署 
 
 ## Horazon
 ## 手機程式設計
 
 ---
 
-# 複習：上週重點
+<!-- 說明iOS 程式語言、商店、測試的難度 -->
 
--   [x] 製作了 Idle, Run, Jump 動畫片段。
--   [x] 設定 Animator Controller 狀態機。
--   [x] 透過程式傳遞參數，讓主角動起來。
+# 平台比較：iOS 很難搞
 
-現在遊戲玩起來很有感了，但是...
-「我吃了多少金幣？」
-「我還剩多少血？」
-今天我們要加上**抬頭顯示器 (HUD)**。
+想把遊戲放到 iPhone 上？先有心理準備。
 
----
+-   **程式語言**：Swift / Objective-C (用 Unity 開發可以不用碰)。
+-   **開發環境**：一定要有 **Mac 電腦** + **Xcode**，缺一不可。
+-   **商店**：只能透過 **App Store**，而且審核嚴格、常被退件。
+-   **費用**：Apple Developer 帳號 **$99 美金/年**。
+-   **測試**：要透過 TestFlight，不能隨手把檔案丟給朋友裝。
 
-# 本章目標
-
-1.  認識 **Canvas (畫布)** 系統。
-2.  使用 **TextMeshPro** 顯示高品質文字。
-3.  掌握 **RectTransform** 與 **Anchors (錨點)**。
-4.  製作金幣計數器 UI。
+*(又貴又麻煩，所以今天我們先不碰 iOS)*
 
 ---
 
-# 什麼是 UI？
+<!-- 說明android 程式語言、商店、.apk的狀況  -->
 
-UI = User Interface (使用者介面)。
-在遊戲中，通常指飄在螢幕最上層，**這層不會被攝影機移動影響**。
+# 平台比較：Android 親民
 
--   血條 (Health Bar)
--   分數 (Score)
--   按鈕 (Button)
--   搖桿 (Joystick)
+Android 開放很多。
 
----
+-   **程式語言**：Java / Kotlin (一樣，用 Unity 不用碰)。
+-   **開發環境**：Windows / Mac 都可以。
+-   **商店**：Google Play (上架費 **$25 美金，繳一次終身**)。
+-   **關鍵優勢**：可以直接輸出 **.apk** 檔案！
+    -   不用上架，把檔案放到手機或模擬器就能安裝。
+    -   就像在電腦上裝 `.exe` 一樣方便。
 
-# 建立 Canvas
-
-所有 UI 元素都必須放在 **Canvas** 底下。
-
-1.  Hierarchy 右鍵 -> **UI** -> **Canvas**。
-2.  你會發現場景中出現一個**超級巨大**的白框。
-    -   別擔心，這是正常的。
-    -   Canvas 的 1 單位 = 螢幕的 1 像素 (1 pixel)。
-    -   遊戲世界的 1 單位 = 1 公尺 (1 meter)。
-
-3.  同時會自動產生一個 `EventSystem` 物件 (千萬別刪！刪了按鈕會失效)。
 
 ---
 
-# Canvas Scaler (重要設定)
+# 步驟 1：切換平台 (Switch Platform)
 
-為了適應不同手機的解析度 (iPhone, Samsung...)，我們需要設定縮放模式。
+Unity 預設是用 PC (Windows/Mac) 模式開發。
+我們要切換到 Android。
 
-1.  選取 Canvas。
-2.  Inspector -> **Canvas Scaler** 元件。
-3.  **UI Scale Mode**: 改為 **Scale With Screen Size**。
-4.  **Reference Resolution**: 設為 **1920 x 1080** (標準 HD)。
+1.  **File** -> **Build Settings**。
+2.  在 Platform 下拉選單選擇 **Android**。
+3.  按下右下角的 **Switch Platform** 按鈕。
+4.  *(這步會跑很久，因為 Unity 要重新壓縮所有貼圖)*。
 
-*這樣一來，不管手機螢幕多大，UI 都會自動等比例縮放。*
-
----
-
-# TextMeshPro (TMP)
-
-Unity 舊版的 `Text` 很模糊，現在我們都用 `TextMeshPro`。
-
-1.  Canvas 右鍵 -> **UI** -> **Text - TextMeshPro**。
-2.  第一次使用會跳出視窗：**TMP Importer**。
-3.  點擊 **Import TMP Essentials**。
-    -   (下面的 Examples & Extras 不用裝)。
-4.  完成後，你會看到一個清晰銳利的文字物件。
 
 ---
 
-# 實作練習 1：金幣計數器
+<!-- 設定起始場景 -->
 
-1.  在 Project 找一張金幣圖示 (Icon)。
-2.  Canvas 右鍵 -> **UI** -> **Image**。
-    -   Source Image: 拖入金幣圖。
-    -   把圖移到左上角。
-3.  建立一個 **Text (TMP)**。
-    -   內容寫 `x 0`。
-    -   放在金幣圖示旁邊。
-    -   字體調大一點 (例如 60)。
-    -   顏色改為黃色或白色。
+# 設定起始場景 (Scenes In Build)
 
----
+打包前，必須先告訴 Unity「要包含哪些場景」。
 
-# RectTransform 與 錨點 (Anchors)
+1.  在 **Build Settings** 視窗上方的 **Scenes In Build** 清單。
+2.  把你的場景都拖進去。
 
-這是 UI 最難懂也最重要的部分。
-
-如果你把金幣 UI 放在左上角，但手機變寬了 (iPad)，UI 會跑掉嗎？
-
-### Anchors (錨點)
-Inspector 中有一個方塊圖示 (Anchor Presets)。
--   點擊它，按住 **Shift + Alt**。
--   選擇 **左上角 (Top-Left)**。
--   這代表：**UI 的左上角，永遠對齊螢幕的左上角**。
-
-*不管螢幕怎麼變，金幣 UI 永遠會在左上角！*
+![](image-4.png)
+> 現在只有一個場景，未來有多個場景時，都要放入，而且第一個場景是打開遊戲先看到的。
 
 ---
 
-# 實作練習 2：連結程式
+# 步驟 2：設定 Player Settings
 
-UI 做好了，但還是顯示 0。我們要用程式更新它。
+這是你 App 的身分證。
 
-建立腳本 `UIManager.cs`：
+1.  在 Build Settings 視窗左下角，點 **Player Settings**。
+2.  展開 **Player** 分頁。
 
-```csharp
-using UnityEngine;
-using TMPro; // 1. 引用 TMP 命名空間
-
-public class UIManager : MonoBehaviour
-{
-    public TextMeshProUGUI scoreText; // 2. 宣告 UI 變數
-
-    public void UpdateScoreUI(int newScore)
-    {
-        scoreText.text = "x " + newScore.ToString();
-    }
-}
-```
+### Company Name & Product Name
+-   **Company Name**：你的名字或公司名 (如 `HorazonGame`)。
+-   **Product Name**：遊戲顯示在手機上的名稱 (如 `Super Cat`)。
 
 ---
 
-# 單例模式 (Singleton) 預告
+# Player Settings
 
-為了讓所有東西 (金幣、玩家) 都能輕易找到 UIManager，我們通常會用**單例模式**。
-這我們下週會詳細講，今天先用簡單的 `FindObjectOfType`。
+![center width:700px](image-5.png)
 
----
-
-# 修改 PlayerCollection 腳本
-
-回到之前寫的吃金幣腳本 (`PlayerCollection.cs`)。
-
-```csharp
-    // 加入變數
-    public UIManager uiManager;
-
-    void Start()
-    {
-        // 自動尋找場景中的 UIManager
-        uiManager = FindObjectOfType<UIManager>();
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Coin"))
-        {
-            score++;
-            // 更新 UI
-            uiManager.UpdateScoreUI(score); 
-            // ... (原本的音效與銷毀邏輯)
-        }
-    }
-```
 
 ---
 
-# 整合測試
+# 設定 Icon (圖示)
 
-1.  在 Hierarchy 建立一個空物件 `GameManager` (或 `_System`)。
-2.  掛上 `UIManager` 腳本。
-3.  把剛剛做的 TMP 文字物件，拖進 `Score Text` 欄位。
-4.  按下 **Play**。
-5.  去吃金幣。
-    -   UI 數字有跟著跳動嗎？
+選一張漂亮的圖當 App 圖示。
 
----
-
-# 進階 UI：世界座標 UI (World Space)
-
-有時候我們想要 UI 跟著主角跑 (例如頭頂的血條、講話的氣泡)。
-
-1.  建立一個新的 Canvas。
-2.  Render Mode 改為 **World Space**。
-3.  把 Canvas 縮得很小 (因為世界座標 1單位 = 1公尺)。
-4.  把這個 Canvas 拖到 Player 物件底下，成為子物件。
-5.  調整位置到頭頂。
-
-*現在你就有一個跟著主角移動的 UI 了！*
+1.  在 Player Settings -> **Default Icon**。
+2.  點選 Select，選擇你的圖片。
+3.  *(Unity 會自動幫你裁切成各種大小)*。
 
 ---
 
-# 字型問題 (Font Asset)
+# 重要設定：Identification
 
-TextMeshPro 預設不支援中文字。
-如果你輸入中文，會變成方塊 (口口口)。
+展開 **Other Settings** -> **Identification**。
 
-### 解決方案：
-1.  準備一個 `.ttf` 或 `.otf` 字型檔 (例如 Google Noto Sans)。
-2.  Window -> TextMeshPro -> **Font Asset Creator**。
-3.  設定 Source Font File。
-4.  Character Set 選擇 **Custom Characters**，貼上你會用到的所有中文字 (或常用幾千字)。
-5.  Generate Font Atlas -> Save。
-6.  把這個新的 Asset 丟給 TMP 使用。
+### Package Name (套件名稱)
+-   這是 App 在 Android 系統裡的**唯一身分證字號**。
+-   格式：`com.公司名.產品名` (全小寫)。
+-   例如：`com.horazon.supercat`。
 
-*(課堂上我們主要用英文就好，比較省事)*
+### Minimum API Level
+-   支援的最低 Android 版本。
+-   建議設為 **Android 7.0 (Nougat)** 或 8.0，相容性較好。
 
 ---
 
-# 常見錯誤 (Debug)
+# 重要設定：Configuration
 
-Q: UI 被場景擋住了？
+### Scripting Backend
+-   **Mono**：建置快，相容性好 (開發測試用)。
+-   **IL2CPP**：效能好，安全性高 (上架 Google Play 必選)。
+    -   注意：選 IL2CPP 需要花更久時間打包，且需要安裝 NDK。
+
+### Target Architectures
+-   如果是 IL2CPP，記得勾選 **ARM64** (支援現代手機)。
+
+*(建議先選 Mono 比較快)*
+
+---
+
+
+# 步驟 3：建置 APK (Build)
+
+我們不接手機、不除錯，直接輸出 .apk 檔。
+
+1.  在 Build Settings 視窗。
+2.  按下 **Build** (不是 Build And Run)。
+3.  選擇一個資料夾存放 APK (建議開個 `Builds` 資料夾)。
+4.  取檔名 `MyGame_v1.apk`。
+5.  存檔，開始編譯！
+
+---
+
+# 等待建置 (Building...)
+
+Unity 會開始編譯。
+-   Compiling Shader...
+-   Building Gradle Project...
+-   Packaging APK...
+
+如果一切順利，剛剛指定的 `Builds` 資料夾裡，就會出現一個 **`.apk` 檔案！**
+
+---
+
+# 如果沒有成功...
+
+## 聲明：
+
+### 說實話，我在備課的時候，完全無法確認學校電腦這部分的狀況...
+### 如果真得無法建立.apk，就暫時不在課堂上處理了
+### 這段處理起來很麻煩 
+
+---
+
+# 常見錯誤：JDK / SDK 找不到？
+
+Q: 跳出視窗說 "JDK not found"？
+
 A:
-1.  Canvas 的 Sort Order 預設很高，理論上會在最上層。
-2.  如果是 World Space Canvas，它就跟一般物件一樣受 Sorting Layer 影響，記得把它改為 `UI` Layer。
+1.  Edit -> **Preferences** -> **External Tools**。
+2.  檢查 **JDK, SDK, NDK** 是否都勾選了 **Installed with Unity**？
+3.  如果沒勾，或是路徑是空的 -> 代表你安裝 Unity 時忘了勾 Android Build Support 裡的 OpenJDK。
+4.  **解法**：開 Unity Hub -> Installs -> Add Modules -> 補勾。
 
-Q: 按鈕按不到？
+---
+
+# 常見錯誤：Build 失敗 (Gradle Error)
+
+Q: 紅字一堆 "Gradle Build Failed"？
+
 A:
-1.  檢查 EventSystem 還在不在？
-2.  檢查前面有沒有 Image 擋住了射線 (Raycast Target 要關掉)。
+這通常是路徑或套件名稱問題。
+1.  檢查 **Company Name / Product Name** 有沒有中文或怪符號？
+2.  檢查 **Package Name** 格式對不對？(`com.xxx.xxx`)
+3.  檢查專案路徑有沒有中文？(`D:\我的遊戲\...` -> 母湯)
+
+---
+
+# 步驟 4：安裝到手機
+
+有了 .apk，怎麼放進手機？(這就是直接 Build 的好處)
+
+1.  把 `.apk` 檔傳到手機：用 **USB 拷貝**、**Line 傳給自己**、或丟雲端硬碟。
+2.  在手機上點開這個 `.apk` 檔。
+3.  手機會警告「**未知的來源**」-> 點 **允許安裝**。
+4.  安裝完成，桌面就出現你的遊戲了！
+
+*(同一個檔案也能直接安裝到模擬器，不用上架商店)*
+
+---
+
+# 優化：螢幕方向 (Orientation)
+
+如果你的遊戲是橫向的，但手機一轉就變直向？
+
+1.  Player Settings -> **Resolution and Presentation**。
+2.  **Default Orientation**：
+    -   **Portrait**：直向 (如跑酷、益智)。
+    -   **Landscape Left/Right**：橫向 (如捲軸動作)。
+    -   **Auto Rotation**：自動旋轉。
+
+*(本課程建議鎖定為 Landscape)*
 
 ---
 
 # 總結
 
-UI 是玩家獲取資訊的窗口。
+今天我們成功把遊戲帶出了電腦。
 
-1.  **Canvas** 是所有 UI 的家。
-2.  **Anchor** 決定 UI 在不同螢幕的位置。
-3.  **TextMeshPro** 顯示文字。
-4.  透過腳本 **UpdateScoreUI** 即時更新數值。
+1.  **Switch Platform** 切換到 Android。
+2.  設定 **Package Name** 與 **Icon**。
+3.  直接 **Build** 輸出 `.apk`。
+4.  傳到手機、允許 **未知來源** 安裝。
+
+看到自己的遊戲在手機上跑，是開發者最有成就感的一刻！
 
 ---
 
 # 下週預告
 
-我們現在有計分，有主角，有地圖。
-但死掉只能重來，沒有勝利畫面，也沒有主選單。
+我們已經能打包了，測試的話，應該會發現無法操控!：
 
-下週我們將整合遊戲流程 (Game Loop)：
--   **GameManager** (遊戲總管)。
--   Start Scene (主畫面)。
--   Level Scene (遊戲關卡)。
--   GameOver Scene (結算畫面)。
+-   **Mobile Input** (手機專用操作)。
+-   虛擬搖桿 (Joystick) 或按鈕。
+-   多點觸控 (Multi-touch) 概念。
 
----
-
-# Q & A
-
--   可以做血條 (Slider) 嗎？
-    -   可以，Unity 有 Slider 元件。
-    -   程式控制 `slider.value = currentHp / maxHp;`。
--   字體可以加外框嗎？
-    -   TMP 的 Material 面板打開，勾選 **Outline** 就可以調粗細和顏色了。
-
-*(助教巡堂協助)*

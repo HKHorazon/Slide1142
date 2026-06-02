@@ -1,17 +1,16 @@
 classDiagram
-    class Monster {
+    class Vehicle {
         <<abstract>>
-        +int Hp
-        +int Atk
-        +Shout()* void
+        +Brand : string
+        +Speed : int
+        +Position : int
+        +Move()* : void
     }
-    class Slime {
-        +Slime()
-        +Shout() void
+    class Car {
+        +Move() : void
     }
-    class Goblin {
-        +Goblin()
-        +Shout() void
+    class Bicycle {
+        +Move() : void
     }
-    Monster <|-- Slime
-    Monster <|-- Goblin
+    Vehicle <|-- Car
+    Vehicle <|-- Bicycle

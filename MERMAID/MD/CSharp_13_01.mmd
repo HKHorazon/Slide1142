@@ -1,0 +1,19 @@
+classDiagram
+    class Animal {
+        +Name : string
+        +Age : int
+        +Eat() : void
+    }
+    class Cat {
+        +Meow() : void
+    }
+    class Dog {
+        +Bark() : void
+    }
+    class Bird {
+        +Fly() : void
+    }
+    
+    Animal <|-- Cat
+    Animal <|-- Dog
+    Animal <|-- Bird
