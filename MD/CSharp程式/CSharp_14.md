@@ -405,6 +405,13 @@ Console.WriteLine("Hello World");
 
 # 本章總結
 
+<style scoped>
+    table {
+        width : 80%;
+        font-size:1em
+    }
+</style>
+
 | 概念 | 說明 |
 | :--- | :--- |
 | **抽象類別 (`abstract`)** | 不完整的類別，不能被實例化，強制子類別覆寫抽象方法 |
